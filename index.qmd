@@ -1,0 +1,64 @@
+---
+title: "ECON 3200 The Economics of Globalization"
+---
+
+Welcome to the TA website for **ECON 3200: The Economics of Globalization**.
+
+**Instructor:** Professor James Harrigan  
+**Teaching Assistant:** Eric Guang-Xuan Zhou  
+**Email:** [xus4ny@virginia.edu](mailto:xus4ny@virginia.edu)  
+**Office Hours:** We 1:30PM - 3:30PM in Monroe Basement
+
+## Important Announcements
+
+::: {.callout-important collapse="true" title="August 30, 2026 — An important note about Homework 1, Q2"}
+
+If you try to follow the textbook instructions using the current WTO Data Portal, you may find that the annual merchandise export data no longer provide the “by destination” option needed for the exercise.
+
+To make sure everyone can complete the problem, I have uploaded two additional files to the Homework 1 Assignment page on Canvas:
+
+1. **WTO_ABD_Export_2024**, which is the export data at a reporter–partner level
+2. **Regional_Compositions.xlsx**, which provides the WTO regional classifications
+
+Please download both files and use an LLM (ChatGPT, Claude, Gemini, etc.) to construct the regional trade matrix needed for Question 2.
+
+A suggested workflow is:
+
+1. Upload both files to the LLM.
+2. Use `Regional_Compositions.xlsx` to assign both reporters and partners to the appropriate WTO regions. Australia and New Zealand should be treated as a separate region from Asia.
+3. Aggregate the reporter–partner export data into regional bilateral trade flows.
+4. Construct a **9 × 9 matrix** with exporting regions as rows and destination regions as columns. The nine rows and columns should be:
+   - World
+   - Africa
+   - Asia
+   - Australia and New Zealand
+   - Commonwealth of Independent States (CIS)
+   - Europe
+   - Middle East
+   - North America
+   - South and Central America and the Caribbean
+5. Check that the matrix is constructed correctly, and then use it to answer parts (a)–(i) of Question 2.
+
+:::
+
+
+**Discussion Sections**
+
+- **Section 101:** Wednesday, 6:00–6:50 PM, Monroe Hall 122
+- **Section 102:** Wednesday, 7:00–7:50 PM, Monroe Hall 122
+
+**Discussion Notes:** [View Discussion Materials](discussion-materials.qmd)
+
+## Upcoming Deadlines
+
+| Assignment | Deadline |
+|---|---|
+| Homework 1 | 9/3 3:30pm |
+
+## Exams
+
+| Exam | Date |
+|---|---|
+| Exam 1 | September 22, 2026 |
+| Exam 2 | October 29, 2026 |
+| Exam 3 | December 11, 2026 |

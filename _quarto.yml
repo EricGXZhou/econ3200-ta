@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  title: "ECON 3200: The Economics of Globalization"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: discussion-materials.qmd
+        text: Discussion Materials
+      - text: Trade
+        menu:
+          - href: trade/gravity.qmd
+            text: Gravity Model
+          - href: trade/ricardian.qmd
+            text: Ricardian Model
+      - href: migration/index.qmd
+        text: Migration
+      - href: macro/index.qmd
+        text: International Macroeconomics
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+    include-after-body: collapse-sections.html
+
+

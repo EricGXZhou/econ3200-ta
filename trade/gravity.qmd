@@ -1,0 +1,462 @@
+---
+title: "The Gravity Model"
+---
+
+Why do large and nearby countries tend to trade more with each other?
+
+## 1. The Basic Idea
+
+The gravity model is a simple way to organize patterns in international trade data.
+
+The basic idea is:
+
+- **Larger countries trade more.**
+- **Countries that are closer together trade more.**
+
+This is similar to Newton's law of gravity: the force between two objects is stronger when the objects are larger and weaker when they are farther apart.
+
+In international trade, country size is measured by GDP, while distance captures one important source of trade costs.
+
+## 2. The Gravity Equation
+
+For two countries, $A$ and $B$, the gravity equation can be written as
+
+$$
+Trade_{AB}
+=
+T
+\times
+\frac{Y_A Y_B}{d_{AB}^{\alpha}}
+\times
+\varepsilon_{AB}.
+$$
+
+where
+
+- $Trade_{AB}$ = trade between countries $A$ and $B$
+- $Y_A$ = GDP of country $A$
+- $Y_B$ = GDP of country $B$
+- $d_{AB}$ = distance between the two countries
+- $T$ = a constant
+- $\alpha$ = the effect of distance on trade
+- $\varepsilon_{AB}$ = other factors affecting trade between $A$ and $B$
+
+### How to Read the Equation
+
+The gravity equation says that bilateral trade is larger when the two countries are economically larger and smaller when they are farther apart.
+
+Holding everything else constant:
+
+- If $Y_A$ increases, trade between $A$ and $B$ increases.
+- If $Y_B$ increases, trade between $A$ and $B$ increases.
+- If $d_{AB}$ increases, trade between $A$ and $B$ decreases.
+
+Because GDP enters multiplicatively,
+
+$$
+Trade_{AB}
+\propto
+Y_A Y_B.
+$$
+
+Because distance appears in the denominator,
+
+$$
+Trade_{AB}
+\propto
+\frac{1}{d_{AB}^{\alpha}}.
+$$
+
+## 3. Taking Logs
+
+The gravity equation is multiplicative:
+
+$$
+Trade_{AB}
+=
+T
+\times
+\frac{Y_A Y_B}{d_{AB}^{\alpha}}
+\times
+\varepsilon_{AB}.
+$$
+
+Taking natural logs turns this into a linear equation:
+
+$$
+\ln Trade_{AB}
+=
+\ln T
++
+\ln Y_A
++
+\ln Y_B
+-
+\alpha \ln d_{AB}
++
+\ln \varepsilon_{AB}.
+$$
+
+### Why Take Logs?
+
+Taking logs makes the gravity equation easier to interpret because it turns multiplication into addition and powers into coefficients.
+
+For example,
+
+$$
+d_{AB}^{-\alpha}
+$$
+
+becomes
+
+$$
+-\alpha \ln d_{AB}.
+$$
+
+The log form therefore makes it easy to see how proportional changes in GDP and distance are related to proportional changes in trade.
+
+It also gives us a linear equation that can be taken directly to the data.
+
+## 4. Economic Interpretation
+
+In the log form of the gravity equation,
+
+$$
+\ln Trade_{AB}
+=
+\ln T
++
+\ln Y_A
++
+\ln Y_B
+-
+\alpha \ln d_{AB}
++
+\ln \varepsilon_{AB},
+$$
+
+the coefficients on $\ln Y_A$ and $\ln Y_B$ are both equal to 1.
+
+This means that, holding everything else constant:
+
+- a 1% increase in country $A$'s GDP is associated with a 1% increase in trade between $A$ and $B$;
+- a 1% increase in country $B$'s GDP is also associated with a 1% increase in trade between $A$ and $B$.
+
+The coefficient on log distance is
+
+$$
+-\alpha.
+$$
+
+This means that $\alpha$ is the **distance elasticity of trade**.
+
+For example, if
+
+$$
+\alpha = 1,
+$$
+
+then a 1% increase in distance is associated with a 1% decrease in bilateral trade, holding GDP and other factors constant.
+
+More generally,
+
+$$
+\%\Delta Trade_{AB}
+\approx
+-\alpha \times \%\Delta d_{AB}.
+$$
+
+## 5. Trade Elasticity and Distance
+
+Suppose
+
+$$
+\alpha = 1.
+$$
+
+Then the gravity equation implies
+
+$$
+Trade_{AB}
+\propto
+\frac{1}{d_{AB}}.
+$$
+
+So if the distance between two countries doubles,
+
+$$
+d_{AB}
+\rightarrow
+2d_{AB},
+$$
+
+predicted trade becomes
+
+$$
+\frac{1}{2}
+$$
+
+of its original level.
+
+For example, if two otherwise identical country pairs are 1,000 miles and 2,000 miles apart, the gravity model with $\alpha=1$ predicts that the more distant pair trades only half as much.
+
+### A Common Mistake
+
+A student says:
+
+> "If $\alpha=1$, then doubling distance means distance increases by 100%, so trade must fall by 100%."
+
+This is incorrect.
+
+The approximation
+
+$$
+\%\Delta Trade_{AB}
+\approx
+-\alpha \times \%\Delta d_{AB}
+$$
+
+works best for **small percentage changes**.
+
+For a large change such as doubling distance, use the gravity equation directly.
+
+If
+
+$$
+Trade_{AB}
+\propto
+\frac{1}{d_{AB}}
+$$
+
+and distance doubles,
+
+$$
+d_{AB}\rightarrow 2d_{AB},
+$$
+
+then
+
+$$
+Trade_{AB}
+\rightarrow
+\frac{1}{2}Trade_{AB}.
+$$
+
+So trade falls by **50%**, not 100%.
+
+## 6. Extensive and Intensive Margins
+
+The gravity relationship can arise through two different margins of trade.
+
+### Extensive Margin
+
+The **extensive margin** refers to the number of different products that two countries trade with each other.
+
+Large and nearby countries tend to trade **more varieties of products**.
+
+For example, the United States trades many different products with Canada, Mexico, and China, but may trade only a small number of products with a smaller or more distant country.
+
+### Intensive Margin
+
+The **intensive margin** refers to how much countries trade of each product that is already being traded.
+
+Large and nearby countries tend to trade **larger quantities of each product**.
+
+For example, the United States may import much more auto parts from Mexico than from a more distant trading partner.
+
+### A Common Mistake
+
+A student observes that two countries trade much more with each other and concludes:
+
+> "They must simply be trading larger quantities of the same products."
+
+This conclusion is incomplete.
+
+Higher bilateral trade can come from:
+
+1. **Extensive margin:** the countries trade more different products;
+2. **Intensive margin:** they trade more of each product that is already traded;
+3. **Both margins at the same time.**
+
+In the data, the gravity relationship operates through both margins.
+
+## 7. What Gravity Explains — and What It Does Not
+
+The gravity equation is very useful for describing patterns in trade data.
+
+It tells us that:
+
+- larger countries tend to trade more;
+- nearby countries tend to trade more;
+- these patterns fit the data surprisingly well.
+
+But the gravity equation by itself does **not** explain why countries trade particular goods.
+
+For example, gravity can help explain why the United States trades more with Canada than with a small, distant country.
+
+But it does not by itself explain why the United States exports one product and imports another.
+
+To understand the **pattern of specialization and comparative advantage**, we need economic theory such as the Ricardian model.
+
+## 8. Practice Problems
+
+### Practice 1: How Does Country Size Affect Trade?
+
+Suppose bilateral trade is described by
+
+$$
+Trade_{AB}
+=
+T
+\times
+\frac{Y_A Y_B}{d_{AB}^{\alpha}}
+\times
+\varepsilon_{AB}.
+$$
+
+Assume distance and all other factors remain unchanged.
+
+A student says:
+
+> "If country $A$ becomes twice as large, trade between $A$ and $B$ should also become twice as large. If both countries become twice as large, trade should still only double."
+
+Is this reasoning correct?
+
+Answer the following:
+
+1. If $Y_A$ doubles while $Y_B$ stays unchanged, by what factor does $Trade_{AB}$ change?
+
+2. If both $Y_A$ and $Y_B$ double, by what factor does $Trade_{AB}$ change?
+
+3. Explain why the second case is not the same as simply doubling trade once.
+
+### Practice 2: What Happens When Distance Doubles?
+
+Suppose
+
+$$
+\alpha = 1.
+$$
+
+Then the gravity equation implies
+
+$$
+Trade_{AB}
+\propto
+\frac{1}{d_{AB}}.
+$$
+
+A student says:
+
+> "If distance doubles, distance increases by 100%. Since the distance elasticity is $-1$, trade must fall by 100%."
+
+Is this reasoning correct?
+
+Answer the following:
+
+1. If distance changes from $d_{AB}$ to $2d_{AB}$, what happens to predicted trade?
+
+2. By what percentage does trade actually fall?
+
+3. Why does the elasticity approximation
+
+$$
+\%\Delta Trade_{AB}
+\approx
+-\alpha \times \%\Delta d_{AB}
+$$
+
+give a misleading answer when distance changes by such a large amount?
+
+### Practice 3: Why Do We Need to Control for GDP?
+
+Suppose the United States trades more with a large, distant country than with a small, nearby country.
+
+A student concludes:
+
+> "This shows that distance does not really reduce trade."
+
+Is this conclusion correct?
+
+Answer the following:
+
+1. According to the gravity equation, what two major factors affect bilateral trade?
+
+2. Why is it misleading to compare trade across country pairs without accounting for country size?
+
+3. Suppose two trading partners are the same distance from the United States, but one has twice the GDP of the other. Which one should the gravity model predict more U.S. trade with?
+
+4. Suppose instead that two trading partners have the same GDP, but one is farther from the United States. Which one should the gravity model predict more U.S. trade with?
+
+5. Explain what economists mean by studying the effect of distance on trade while **holding GDP constant**.
+
+### Practice 4: Extensive Margin or Intensive Margin?
+
+The gravity relationship can operate through two margins:
+
+- **Extensive margin:** countries trade more different products.
+- **Intensive margin:** countries trade more of products that are already being traded.
+
+For each scenario below, identify whether it represents an **extensive margin**, an **intensive margin**, or **both**.
+
+#### Scenario A
+
+The United States already imports auto parts from Mexico. The value of those imports increases substantially, but the set of auto parts being imported does not change.
+
+#### Scenario B
+
+The United States begins importing several types of products from a country that it did not previously import at all.
+
+#### Scenario C
+
+Trade between two countries increases because they begin trading more product categories, and at the same time trade more within product categories that were already traded.
+
+#### Scenario D
+
+The United States imports auto parts from both Mexico and Taiwan, but imports much more auto parts from Mexico.
+
+Answer the following:
+
+1. Classify each scenario as extensive margin, intensive margin, or both.
+
+2. A student says:
+
+> "If two countries trade more with each other, that must mean they are trading a larger quantity of the same goods."
+
+Why is this statement incomplete?
+
+### Practice 5: Does More Trade Reveal Comparative Advantage?
+
+Suppose the United States trades much more with Canada than with a smaller and more distant country.
+
+A student concludes:
+
+> "Because the United States trades so much with Canada, Canada must have a comparative advantage in most of the goods that it exports to the United States."
+
+Is this conclusion justified by the gravity model?
+
+Answer the following:
+
+1. What does the gravity model help explain about trade between two countries?
+
+2. Does the gravity equation by itself tell us which goods each country should export?
+
+3. What additional economic concept is needed to explain why one country exports one good and imports another?
+
+### Practice 6: Do Larger Countries Depend More on International Trade?
+
+The gravity model predicts that larger countries tend to have larger bilateral trade flows.
+
+A student concludes:
+
+> "Because large countries trade more in absolute terms, they must also be more relied on international trade."
+
+Is this conclusion correct?
+
+Answer the following:
+
+1. What does the gravity model predict about the level of trade when country GDP increases?
+
+2. Is a larger level of trade the same thing as having a larger trade-to-GDP ratio?
+
+3. Why might a very large country have a large amount of international trade but a relatively low trade-to-GDP ratio?

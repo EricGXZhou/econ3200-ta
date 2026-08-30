@@ -1,0 +1,1059 @@
+---
+title: "The Ricardian Model"
+---
+
+Why do countries trade, and what determines what each country exports?
+
+The Ricardian model studies how differences in **productivity** across countries can create **gains from trade**.
+
+## 1. Model Setup
+
+We begin with a simple world:
+
+- Two countries: **Home** and **Foreign**
+- Two goods: **Cloth** ($C$) and **Wheat** ($W$)
+- Labor is **the only** factor of production
+- Workers can move freely between industries within a country
+- Firms are perfectly competitive
+- Technology has **constant returns to scale**
+
+For Home, let:
+
+- $L$ = total number of workers
+- $L_C$ = workers producing cloth
+- $L_W$ = workers producing wheat
+- $MPL_C$ = marginal product of labor in cloth
+- $MPL_W$ = marginal product of labor in wheat
+
+Total labor must satisfy
+
+$$
+L = L_C + L_W.
+$$
+
+## 2. Production and the PPF
+
+### Production
+
+In the Ricardian model, labor is the only input used to produce both goods.
+
+For cloth,
+
+$$
+Q_C = MPL_C \times L_C.
+$$
+
+For wheat,
+
+$$
+Q_W = MPL_W \times L_W.
+$$
+
+The marginal product of labor tells us how much output one worker can produce.
+
+For example, suppose
+
+$$
+MPL_C = 2
+\qquad \text{and} \qquad
+MPL_W = 4.
+$$
+
+Then one worker can produce either **2 units of cloth** or **4 units of wheat**, and
+
+$$
+Q_C = 2L_C,
+\qquad
+Q_W = 4L_W.
+$$
+
+### From Labor Allocation to the PPF
+
+Recall that total labor satisfies
+
+$$
+L = L_C + L_W.
+$$
+
+Using the production equations,
+
+$$
+L_C = \frac{Q_C}{MPL_C}
+\qquad \text{and} \qquad
+L_W = \frac{Q_W}{MPL_W}.
+$$
+
+Substituting these into the labor constraint gives
+
+$$
+L
+=
+\frac{Q_C}{MPL_C}
++
+\frac{Q_W}{MPL_W}.
+$$
+
+Rearranging,
+
+$$
+Q_C
+=
+MPL_C L
+-
+\frac{MPL_C}{MPL_W}Q_W.
+$$
+
+This equation is the **production possibilities frontier (PPF)**.
+
+Using the numerical example
+
+$$
+L = 25,\qquad MPL_C = 2,\qquad MPL_W = 4,
+$$
+
+the PPF becomes
+
+$$
+Q_C
+=
+2(25)
+-
+\frac{2}{4}Q_W,
+$$
+
+so
+
+$$
+Q_C
+=
+50
+-
+\frac{1}{2}Q_W.
+$$
+
+The PPF has two important endpoints.
+
+If all workers produce cloth, then
+
+$$
+L_C = 25,\qquad L_W = 0,
+$$
+
+so
+
+$$
+Q_C = 50,\qquad Q_W = 0.
+$$
+
+If all workers produce wheat, then
+
+$$
+L_C = 0,\qquad L_W = 25,
+$$
+
+so
+
+$$
+Q_C = 0,\qquad Q_W = 100.
+$$
+
+Therefore, the PPF runs from
+
+$$
+(Q_W,Q_C)=(0,50)
+$$
+
+to
+
+$$
+(Q_W,Q_C)=(100,0).
+$$
+
+### Economic Intuition
+
+The PPF shows the trade-off created by a fixed amount of labor.
+
+To produce more wheat, Home must move workers from the cloth industry to the wheat industry. As a result,
+
+- wheat production increases, but
+- cloth production decreases.
+
+Because the marginal products of labor are constant, this trade-off is also constant. That is why the Ricardian PPF is a **straight line**.
+
+```{=html}
+<div style="max-width: 650px; margin: 2rem auto;">
+<svg viewBox="0 0 600 420" style="width:100%; height:auto;">
+
+  <!-- Axes -->
+  <line x1="80" y1="340" x2="550" y2="340"
+        stroke="black" stroke-width="2"/>
+  <line x1="80" y1="340" x2="80" y2="40"
+        stroke="black" stroke-width="2"/>
+
+  <!-- PPF -->
+  <line x1="80" y1="90" x2="520" y2="340"
+        stroke="steelblue" stroke-width="4"/>
+
+  <!-- Axis labels in math format -->
+  <foreignObject x="470" y="360" width="120" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:15px;">
+      \( \text{Wheat}(Q_W) \)
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="40" width="120" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:15px;">
+      \( \text{Cloth}(Q_C) \)
+    </div>
+  </foreignObject>
+
+  <!-- Endpoint numbers -->
+  <text x="50" y="85" font-size="18">50</text>
+  <text x="505" y="365" font-size="18">100</text>
+
+  <!-- PPF label in math format -->
+  <foreignObject x="290" y="180" width="260" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:16px;">
+      \( \text{PPF: } Q_C = 50 - \frac{1}{2}Q_W \)
+    </div>
+  </foreignObject>
+
+</svg>
+</div>
+```
+
+## 3. Opportunity Cost
+
+From the PPF,
+
+$$
+Q_C
+=
+MPL_C L
+-
+\frac{MPL_C}{MPL_W}Q_W,
+$$
+
+the slope is
+
+$$
+-\frac{MPL_C}{MPL_W}.
+$$
+
+The absolute value of this slope,
+
+$$
+\frac{MPL_C}{MPL_W},
+$$
+
+is the **opportunity cost of wheat in terms of cloth**.
+
+It tells us how much cloth production must fall when Home produces one additional unit of wheat.
+
+Using the numerical example,
+
+$$
+MPL_C = 2
+\qquad \text{and} \qquad
+MPL_W = 4,
+$$
+
+the opportunity cost of one additional unit of wheat is
+
+$$
+\frac{MPL_C}{MPL_W}
+=
+\frac{2}{4}
+=
+\frac{1}{2}.
+$$
+
+So producing **1 more unit of wheat costs Home 1/2 unit of cloth**.
+
+## 4. Autarky Equilibrium
+
+**Autarky** means that Home cannot trade with other countries.
+
+In autarky, Home must produce both cloth and wheat for its own consumption.
+
+Let
+
+- $P_C$ = price of cloth
+- $P_W$ = price of wheat
+- $w$ = wage
+
+Because firms are perfectly competitive, a worker is paid the value of what that worker produces.
+
+In the cloth industry,
+
+$$
+w = P_C MPL_C.
+$$
+
+In the wheat industry,
+
+$$
+w = P_W MPL_W.
+$$
+
+Workers can move freely between the two industries. Therefore, in equilibrium, the wage must be the same in both industries.
+
+Since the wage must be the same in both industries,
+
+$$
+P_C MPL_C
+=
+P_W MPL_W.
+$$
+
+Rearranging,
+
+$$
+\frac{P_W}{P_C}
+=
+\frac{MPL_C}{MPL_W}.
+$$
+
+So in autarky, the **relative price of wheat** is determined by relative productivity.
+
+Using the numerical example,
+
+$$
+MPL_C = 2
+\qquad \text{and} \qquad
+MPL_W = 4,
+$$
+
+we get
+
+$$
+\frac{P_W}{P_C}
+=
+\frac{2}{4}
+=
+\frac{1}{2}.
+$$
+
+So in autarky, **one unit of wheat is worth one-half unit of cloth**.
+
+### Economic Intuition
+
+In autarky, the relative price of wheat must equal its opportunity cost.
+
+If wheat were worth more than its opportunity cost, firms would want to move workers into wheat production.
+
+If wheat were worth less than its opportunity cost, firms would want to move workers into cloth production.
+
+Therefore, equilibrium requires
+
+$$
+\frac{P_W}{P_C}
+=
+\frac{MPL_C}{MPL_W}.
+$$
+
+## 5. Comparative Advantage
+
+Now introduce Foreign.
+
+Suppose Foreign has
+
+$$
+MPL_C^* = 1,
+\qquad
+MPL_W^* = 1.
+$$
+
+So one Foreign worker can produce either
+
+- 1 unit of cloth, or
+- 1 unit of wheat.
+
+Foreign's opportunity cost of wheat is therefore
+
+$$
+\frac{MPL_C^*}{MPL_W^*}
+=
+\frac{1}{1}
+=
+1.
+$$
+
+Home's opportunity cost of wheat is
+
+$$
+\frac{MPL_C}{MPL_W}
+=
+\frac{2}{4}
+=
+\frac{1}{2}.
+$$
+
+Since
+
+$$
+\frac{1}{2} < 1,
+$$
+
+Home has a **comparative advantage in wheat**.
+
+Foreign therefore has a **comparative advantage in cloth**.
+
+### Economic Intuition
+
+Comparative advantage is about **relative efficiency**, not absolute productivity.
+
+Home is more productive than Foreign in both goods:
+
+- Home produces 2 units of cloth per worker, while Foreign produces 1.
+- Home produces 4 units of wheat per worker, while Foreign produces 1.
+
+So Home has an **absolute advantage in both goods**.
+
+But Home gives up $2$ unit of wheat to produce one more unit of cloth, while Foreign gives up 1 unit of wheat.
+
+That is why Foreign has a **comparative advantage in cloth**, even though Home is more productive in both goods.
+
+## 6. Opening to Trade
+
+When Home and Foreign open to trade, they face a common international relative price of wheat:
+
+$$
+\frac{P_W^I}{P_C^I}.
+$$
+
+For trade to occur, this international relative price must lie between the two countries' autarky relative prices:
+
+$$
+\frac{P_W}{P_C}
+<
+\frac{P_W^I}{P_C^I}
+<
+\frac{P_W^*}{P_C^*}.
+$$
+
+In our numerical example,
+
+$$
+\frac{1}{2}
+<
+\frac{P_W^I}{P_C^I}
+<
+1.
+$$
+
+Suppose the international relative price is
+
+$$
+\frac{P_W^I}{P_C^I}
+=
+\frac{2}{3}.
+$$
+
+Recall that Home's autarky relative price is
+
+$$
+\frac{P_W}{P_C}
+=
+\frac{1}{2}.
+$$
+
+Since
+
+$$
+\frac{2}{3}
+>
+\frac{1}{2},
+$$
+
+wheat is now relatively more valuable on the international market than it was in Home under autarky.
+
+In Home, the wage in the wheat industry is
+
+$$
+w_W = P_W^I MPL_W.
+$$
+
+The wage in the cloth industry is
+
+$$
+w_C = P_C^I MPL_C.
+$$
+
+Using
+
+$$
+\frac{P_W^I}{P_C^I}
+=
+\frac{2}{3},
+\qquad
+MPL_W = 4,
+\qquad
+MPL_C = 2,
+$$
+
+we have
+
+$$
+P_W^I MPL_W
+>
+P_C^I MPL_C.
+$$
+
+So workers can earn more in the wheat industry.
+
+Because workers can move freely between sectors, all workers move into wheat production.
+
+Therefore,
+
+$$
+L_W = L,
+\qquad
+L_C = 0.
+$$
+
+With
+
+$$
+L = 25
+\qquad \text{and} \qquad
+MPL_W = 4,
+$$
+
+Home produces
+
+$$
+Q_W = MPL_W L = 4 \times 25 = 100,
+$$
+
+and
+
+$$
+Q_C = 0.
+$$
+
+So after opening to trade, Home **fully specializes in wheat**.
+
+For Foreign, recall that the autarky relative price of wheat is
+
+$$
+\frac{P_W^*}{P_C^*}
+=
+1.
+$$
+
+But the international relative price is
+
+$$
+\frac{P_W^I}{P_C^I}
+=
+\frac{2}{3}.
+$$
+
+Since
+
+$$
+\frac{2}{3}
+<
+1,
+$$
+
+wheat is relatively less valuable on the international market than it was in Foreign under autarky.
+
+Therefore, workers in Foreign move into cloth production.
+
+Suppose Foreign has
+
+$$
+L^* = 100.
+$$
+
+Since all Foreign workers move into cloth production,
+
+$$
+L_C^* = L^* = 100,
+\qquad
+L_W^* = 0.
+$$
+
+Therefore,
+
+$$
+Q_C^*
+=
+MPL_C^* L_C^*
+=
+1 \times 100
+=
+100,
+$$
+
+and
+
+$$
+Q_W^* = 0.
+$$
+
+So after opening to trade, Foreign **fully specializes in cloth**.
+
+## 7. Gains from Trade
+
+With trade, production no longer has to equal consumption.
+
+We will use:
+
+- $Q_C$ and $Q_W$ for **production**
+- $C_C$ and $C_W$ for **consumption**
+
+Home specializes in wheat, so its production is
+
+$$
+Q_C = 0,
+\qquad
+Q_W = 100.
+$$
+
+But Home can export some of its wheat and use the export revenue to import cloth.
+
+Therefore, Home can consume **both wheat and cloth**, even though it produces only wheat.
+
+Home earns income by producing wheat:
+
+$$
+\text{income}
+=
+P_W^I Q_W.
+$$
+
+Since Home produces
+
+$$
+Q_W = MPL_W L,
+$$
+
+its income is
+
+$$
+\text{income}
+=
+P_W^I MPL_W L.
+$$
+
+Home spends this income on cloth and wheat:
+
+$$
+P_C^I C_C
++
+P_W^I C_W.
+$$
+
+Therefore, the trade budget constraint is
+
+$$
+P_W^I MPL_W L
+=
+P_C^I C_C
++
+P_W^I C_W.
+$$
+
+Rearranging the trade budget constraint,
+
+$$
+C_C
+=
+\frac{P_W^I}{P_C^I} MPL_W L
+-
+\frac{P_W^I}{P_C^I} C_W.
+$$
+
+Using
+
+$$
+\frac{P_W^I}{P_C^I}
+=
+\frac{2}{3},
+\qquad
+MPL_W = 4,
+\qquad
+L = 25,
+$$
+
+we get
+
+$$
+C_C
+=
+\frac{2}{3}(4)(25)
+-
+\frac{2}{3}C_W,
+$$
+
+so
+
+$$
+C_C
+=
+\frac{200}{3}
+-
+\frac{2}{3}C_W.
+$$
+
+Under autarky, Home's consumption possibilities are limited by the PPF:
+
+$$
+C_C
+=
+50
+-
+\frac{1}{2}C_W.
+$$
+
+With trade, Home's consumption possibilities are
+
+$$
+C_C
+=
+\frac{200}{3}
+-
+\frac{2}{3}C_W.
+$$
+
+The slope changes from
+
+$$
+-\frac{1}{2}
+$$
+
+to
+
+$$
+-\frac{2}{3}.
+$$
+
+This happens because the relevant trade-off is no longer determined by Home's production technology alone. With trade, Home can exchange wheat for cloth at the **international relative price**.
+
+The intercept changes from
+
+$$
+50
+$$
+
+to
+
+$$
+\frac{200}{3}
+$$
+
+People are able to purchase more cloth by using all incomes ($C_W = 0$).
+
+### Economic Intuition
+
+Trade expands Home's consumption possibilities.
+
+Under autarky, Home can only consume combinations that lie on its own PPF.
+
+With trade, Home can specialize in wheat and exchange wheat for cloth at the international relative price.
+
+Because the international relative price is more favorable than Home's autarky trade-off, Home can reach consumption bundles that were not feasible before trade.
+
+This is the **gain from trade**.
+
+
+```{=html}
+<div style="max-width: 650px; margin: 2rem auto;">
+<svg viewBox="0 0 600 420" style="width:100%; height:auto;">
+
+  <!-- Axes -->
+  <line x1="80" y1="340" x2="550" y2="340"
+        stroke="black" stroke-width="2"/>
+  <line x1="80" y1="340" x2="80" y2="30"
+        stroke="black" stroke-width="2"/>
+
+  <!-- Autarky PPF -->
+  <line x1="80" y1="90" x2="520" y2="340"
+        stroke="steelblue" stroke-width="4"/>
+
+  <!-- Trade budget line -->
+  <line x1="80" y1="40" x2="520" y2="340"
+        stroke="darkorange" stroke-width="4"/>
+  <!-- Axis labels -->
+  <foreignObject x="470" y="360" width="120" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:15px;">
+      \( \text{Wheat}(C_W) \)
+    </div>
+  </foreignObject>
+
+  <foreignObject x="0" y="30" width="120" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:15px;">
+      \( \text{Cloth}(C_C) \)
+    </div>
+  </foreignObject>
+
+    <!-- Line labels -->
+  <foreignObject x="135" y="240" width="250" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:15px;">
+      \( \text{Autarky PPF: } C_C = 50 - \frac{1}{2}C_W \)
+    </div>
+  </foreignObject>
+
+  <foreignObject x="265" y="125" width="300" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:15px;">
+      \( \text{Trade budget line: } C_C = \frac{200}{3} - \frac{2}{3}C_W \)
+    </div>
+  </foreignObject>
+
+    <!-- Autarky consumption point -->
+  <circle cx="256" cy="190" r="6" fill="steelblue"/>
+
+  <foreignObject x="120" y="190" width="180" height="35">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:13px;">
+      \( \text{Autarky consumption} \)
+    </div>
+  </foreignObject>
+
+    <!-- Trade consumption point -->
+  <circle cx="280" cy="176" r="6" fill="darkorange"/>
+
+  <foreignObject x="290" y="158" width="180" height="35">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:13px;">
+      \( \text{Trade consumption} \)
+    </div>
+  </foreignObject>
+
+</svg>
+</div>
+```
+
+## 8. Practice Problems
+
+### Practice 1: Why Does Home Fully Specialize?
+
+Recall that Home has
+
+$$
+MPL_C = 2,
+\qquad
+MPL_W = 4,
+$$
+
+and the international relative price is
+
+$$
+\frac{P_W^I}{P_C^I}
+=
+\frac{2}{3}.
+$$
+
+At this international price,
+
+$$
+P_W^I MPL_W
+>
+P_C^I MPL_C,
+$$
+
+so workers earn more in the wheat industry.
+
+A student argues:
+
+> "Workers will initially move into wheat, but as more workers enter the wheat industry, the marginal product of labor in wheat should fall. Eventually, wages in the two industries will become equal again, so Home will continue producing both goods."
+
+Is this reasoning correct in the Ricardian model?
+
+And explain why Home **fully specializes in wheat** in the Ricardian model.
+
+
+### Practice 2: When Does Home Not Fully Specialize?
+
+Recall that Home has
+
+$$
+MPL_C = 2,
+\qquad
+MPL_W = 4.
+$$
+
+Suppose the international relative price of wheat is instead
+
+$$
+\frac{P_W^I}{P_C^I}
+=
+\frac{1}{2}.
+$$
+
+A student says:
+
+> "Home has a comparative advantage in wheat, so it should still fully specialize in wheat."
+
+Is this correct?
+
+Answer the following:
+
+1. Compare the wage in the wheat industry,
+
+$$
+w_W = P_W^I MPL_W,
+$$
+
+with the wage in the cloth industry,
+
+$$
+w_C = P_C^I MPL_C.
+$$
+
+2. Are workers strictly better off working in one industry?
+
+3. Does Home have to fully specialize in this case?
+
+4. Explain why any allocation of labor between cloth and wheat can be consistent with equilibrium.
+
+
+### Practice 3: Does Full Specialization Mean Consuming Only One Good?
+
+Under trade, Home fully specializes in wheat:
+
+$$
+Q_W = 100,
+\qquad
+Q_C = 0.
+$$
+
+A student concludes:
+
+> "Since Home produces no cloth, Home must also consume no cloth."
+
+Is this correct?
+
+Suppose Home chooses to consume
+
+$$
+C_W = 40.
+$$
+
+Using Home's trade budget constraint,
+
+$$
+C_C
+=
+\frac{200}{3}
+-
+\frac{2}{3}C_W,
+$$
+
+answer the following:
+
+1. How much cloth does Home consume?
+
+2. How much wheat does Home export?
+
+3. How much cloth does Home import?
+
+4. Explain why full specialization in production does **not** imply full specialization in consumption.
+
+
+### Practice 4: Do Gains from Trade Mean Producing Outside the PPF?
+
+A student looks at the gains-from-trade diagram and says:
+
+> "Trade makes Home better off because it allows Home to produce outside its production possibilities frontier."
+
+Is this statement correct?
+
+Answer the following:
+
+1. Under trade, where must Home's **production point** lie relative to its PPF?
+
+2. What can lie outside Home's PPF after trade: the production point, the consumption point, or both?
+
+3. Explain how Home can consume a bundle outside its PPF without producing outside its PPF.
+
+### Practice 5: Why Must the World Relative Price Lie Between the Two Autarky Prices?
+
+Recall that
+
+$$
+\frac{P_W}{P_C}
+=
+\frac{1}{2}
+$$
+
+in Home, while
+
+$$
+\frac{P_W^*}{P_C^*}
+=
+1
+$$
+
+in Foreign.
+
+Suppose instead that the international relative price of wheat were
+
+$$
+\frac{P_W^I}{P_C^I}
+=
+\frac{3}{2}.
+$$
+
+Answer the following:
+
+1. In Home, which industry would pay the higher wage?
+
+2. In Foreign, which industry would pay the higher wage?
+
+3. Which good would each country want to produce?
+
+4. Can this be an equilibrium in which Home exports wheat and Foreign exports cloth?
+
+5. Use this example to explain why, in the two-country Ricardian equilibrium,
+
+$$
+\frac{P_W}{P_C}
+<
+\frac{P_W^I}{P_C^I}
+<
+\frac{P_W^*}{P_C^*}.
+$$
+
+### Practice 6: Gain from Trade and Real Income
+
+Recall that Home has
+
+$$
+MPL_W = 4,
+\qquad
+MPL_C = 2,
+$$
+
+while Foreign has
+
+$$
+MPL_W^* = 1,
+\qquad
+MPL_C^* = 1.
+$$
+
+The international relative price is
+
+$$
+\frac{P_W^I}{P_C^I}
+=
+\frac{2}{3}.
+$$
+
+Home specializes in wheat, while Foreign specializes in cloth.
+
+Answer the following:
+
+1. What is Home's real wage in terms of wheat after trade?
+
+2. What is Home's real wage in terms of cloth after trade?
+
+3. What is Foreign's real wage in terms of cloth after trade?
+
+4. What is Foreign's real wage in terms of wheat after trade?
+
+5. Compare these real wages with the corresponding real wages under autarky. Does each country gain from trade?
+
+6. After trade, which country's workers have the higher real income when measured in terms of wheat? What about when measured in terms of cloth?
