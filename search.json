@@ -1,0 +1,191 @@
+[
+  {
+    "objectID": "trade/ricardian.html",
+    "href": "trade/ricardian.html",
+    "title": "The Ricardian Model",
+    "section": "",
+    "text": "Why do countries trade, and what determines what each country exports?\nThe Ricardian model studies how differences in productivity across countries can create gains from trade."
+  },
+  {
+    "objectID": "trade/ricardian.html#model-setup",
+    "href": "trade/ricardian.html#model-setup",
+    "title": "The Ricardian Model",
+    "section": "1. Model Setup",
+    "text": "1. Model Setup\nWe begin with a simple world:\n\nTwo countries: Home and Foreign\nTwo goods: Cloth (\\(C\\)) and Wheat (\\(W\\))\nLabor is the only factor of production\nWorkers can move freely between industries within a country\nFirms are perfectly competitive\nTechnology has constant returns to scale\n\nFor Home, let:\n\n\\(L\\) = total number of workers\n\\(L_C\\) = workers producing cloth\n\\(L_W\\) = workers producing wheat\n\\(MPL_C\\) = marginal product of labor in cloth\n\\(MPL_W\\) = marginal product of labor in wheat\n\nTotal labor must satisfy\n\\[\nL = L_C + L_W.\n\\]"
+  },
+  {
+    "objectID": "trade/ricardian.html#production-and-the-ppf",
+    "href": "trade/ricardian.html#production-and-the-ppf",
+    "title": "The Ricardian Model",
+    "section": "2. Production and the PPF",
+    "text": "2. Production and the PPF\n\nProduction\nIn the Ricardian model, labor is the only input used to produce both goods.\nFor cloth,\n\\[\nQ_C = MPL_C \\times L_C.\n\\]\nFor wheat,\n\\[\nQ_W = MPL_W \\times L_W.\n\\]\nThe marginal product of labor tells us how much output one worker can produce.\nFor example, suppose\n\\[\nMPL_C = 2\n\\qquad \\text{and} \\qquad\nMPL_W = 4.\n\\]\nThen one worker can produce either 2 units of cloth or 4 units of wheat, and\n\\[\nQ_C = 2L_C,\n\\qquad\nQ_W = 4L_W.\n\\]\n\n\nFrom Labor Allocation to the PPF\nRecall that total labor satisfies\n\\[\nL = L_C + L_W.\n\\]\nUsing the production equations,\n\\[\nL_C = \\frac{Q_C}{MPL_C}\n\\qquad \\text{and} \\qquad\nL_W = \\frac{Q_W}{MPL_W}.\n\\]\nSubstituting these into the labor constraint gives\n\\[\nL\n=\n\\frac{Q_C}{MPL_C}\n+\n\\frac{Q_W}{MPL_W}.\n\\]\nRearranging,\n\\[\nQ_C\n=\nMPL_C L\n-\n\\frac{MPL_C}{MPL_W}Q_W.\n\\]\nThis equation is the production possibilities frontier (PPF).\nUsing the numerical example\n\\[\nL = 25,\\qquad MPL_C = 2,\\qquad MPL_W = 4,\n\\]\nthe PPF becomes\n\\[\nQ_C\n=\n2(25)\n-\n\\frac{2}{4}Q_W,\n\\]\nso\n\\[\nQ_C\n=\n50\n-\n\\frac{1}{2}Q_W.\n\\]\nThe PPF has two important endpoints.\nIf all workers produce cloth, then\n\\[\nL_C = 25,\\qquad L_W = 0,\n\\]\nso\n\\[\nQ_C = 50,\\qquad Q_W = 0.\n\\]\nIf all workers produce wheat, then\n\\[\nL_C = 0,\\qquad L_W = 25,\n\\]\nso\n\\[\nQ_C = 0,\\qquad Q_W = 100.\n\\]\nTherefore, the PPF runs from\n\\[\n(Q_W,Q_C)=(0,50)\n\\]\nto\n\\[\n(Q_W,Q_C)=(100,0).\n\\]\n\n\nEconomic Intuition\nThe PPF shows the trade-off created by a fixed amount of labor.\nTo produce more wheat, Home must move workers from the cloth industry to the wheat industry. As a result,\n\nwheat production increases, but\ncloth production decreases.\n\nBecause the marginal products of labor are constant, this trade-off is also constant. That is why the Ricardian PPF is a straight line.\n\n\n\n  \n  \n  \n\n  \n  \n\n  \n  \n    \n      \\( \\text{Wheat}(Q_W) \\)\n    \n  \n\n  \n    \n      \\( \\text{Cloth}(Q_C) \\)\n    \n  \n\n  \n  50\n  100\n\n  \n  \n    \n      \\( \\text{PPF: } Q_C = 50 - \\frac{1}{2}Q_W \\)"
+  },
+  {
+    "objectID": "trade/ricardian.html#opportunity-cost",
+    "href": "trade/ricardian.html#opportunity-cost",
+    "title": "The Ricardian Model",
+    "section": "3. Opportunity Cost",
+    "text": "3. Opportunity Cost\nFrom the PPF,\n\\[\nQ_C\n=\nMPL_C L\n-\n\\frac{MPL_C}{MPL_W}Q_W,\n\\]\nthe slope is\n\\[\n-\\frac{MPL_C}{MPL_W}.\n\\]\nThe absolute value of this slope,\n\\[\n\\frac{MPL_C}{MPL_W},\n\\]\nis the opportunity cost of wheat in terms of cloth.\nIt tells us how much cloth production must fall when Home produces one additional unit of wheat.\nUsing the numerical example,\n\\[\nMPL_C = 2\n\\qquad \\text{and} \\qquad\nMPL_W = 4,\n\\]\nthe opportunity cost of one additional unit of wheat is\n\\[\n\\frac{MPL_C}{MPL_W}\n=\n\\frac{2}{4}\n=\n\\frac{1}{2}.\n\\]\nSo producing 1 more unit of wheat costs Home 1/2 unit of cloth."
+  },
+  {
+    "objectID": "trade/ricardian.html#autarky-equilibrium",
+    "href": "trade/ricardian.html#autarky-equilibrium",
+    "title": "The Ricardian Model",
+    "section": "4. Autarky Equilibrium",
+    "text": "4. Autarky Equilibrium\nAutarky means that Home cannot trade with other countries.\nIn autarky, Home must produce both cloth and wheat for its own consumption.\nLet\n\n\\(P_C\\) = price of cloth\n\\(P_W\\) = price of wheat\n\\(w\\) = wage\n\nBecause firms are perfectly competitive, a worker is paid the value of what that worker produces.\nIn the cloth industry,\n\\[\nw = P_C MPL_C.\n\\]\nIn the wheat industry,\n\\[\nw = P_W MPL_W.\n\\]\nWorkers can move freely between the two industries. Therefore, in equilibrium, the wage must be the same in both industries.\nSince the wage must be the same in both industries,\n\\[\nP_C MPL_C\n=\nP_W MPL_W.\n\\]\nRearranging,\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{MPL_C}{MPL_W}.\n\\]\nSo in autarky, the relative price of wheat is determined by relative productivity.\nUsing the numerical example,\n\\[\nMPL_C = 2\n\\qquad \\text{and} \\qquad\nMPL_W = 4,\n\\]\nwe get\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{2}{4}\n=\n\\frac{1}{2}.\n\\]\nSo in autarky, one unit of wheat is worth one-half unit of cloth.\n\nEconomic Intuition\nIn autarky, the relative price of wheat must equal its opportunity cost.\nIf wheat were worth more than its opportunity cost, firms would want to move workers into wheat production.\nIf wheat were worth less than its opportunity cost, firms would want to move workers into cloth production.\nTherefore, equilibrium requires\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{MPL_C}{MPL_W}.\n\\]"
+  },
+  {
+    "objectID": "trade/ricardian.html#comparative-advantage",
+    "href": "trade/ricardian.html#comparative-advantage",
+    "title": "The Ricardian Model",
+    "section": "5. Comparative Advantage",
+    "text": "5. Comparative Advantage\nNow introduce Foreign.\nSuppose Foreign has\n\\[\nMPL_C^* = 1,\n\\qquad\nMPL_W^* = 1.\n\\]\nSo one Foreign worker can produce either\n\n1 unit of cloth, or\n1 unit of wheat.\n\nForeign’s opportunity cost of wheat is therefore\n\\[\n\\frac{MPL_C^*}{MPL_W^*}\n=\n\\frac{1}{1}\n=\n1.\n\\]\nHome’s opportunity cost of wheat is\n\\[\n\\frac{MPL_C}{MPL_W}\n=\n\\frac{2}{4}\n=\n\\frac{1}{2}.\n\\]\nSince\n\\[\n\\frac{1}{2} &lt; 1,\n\\]\nHome has a comparative advantage in wheat.\nForeign therefore has a comparative advantage in cloth.\n\nEconomic Intuition\nComparative advantage is about relative efficiency, not absolute productivity.\nHome is more productive than Foreign in both goods:\n\nHome produces 2 units of cloth per worker, while Foreign produces 1.\nHome produces 4 units of wheat per worker, while Foreign produces 1.\n\nSo Home has an absolute advantage in both goods.\nBut Home gives up \\(2\\) unit of wheat to produce one more unit of cloth, while Foreign gives up 1 unit of wheat.\nThat is why Foreign has a comparative advantage in cloth, even though Home is more productive in both goods."
+  },
+  {
+    "objectID": "trade/ricardian.html#opening-to-trade",
+    "href": "trade/ricardian.html#opening-to-trade",
+    "title": "The Ricardian Model",
+    "section": "6. Opening to Trade",
+    "text": "6. Opening to Trade\nWhen Home and Foreign open to trade, they face a common international relative price of wheat:\n\\[\n\\frac{P_W^I}{P_C^I}.\n\\]\nFor trade to occur, this international relative price must lie between the two countries’ autarky relative prices:\n\\[\n\\frac{P_W}{P_C}\n&lt;\n\\frac{P_W^I}{P_C^I}\n&lt;\n\\frac{P_W^*}{P_C^*}.\n\\]\nIn our numerical example,\n\\[\n\\frac{1}{2}\n&lt;\n\\frac{P_W^I}{P_C^I}\n&lt;\n1.\n\\]\nSuppose the international relative price is\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3}.\n\\]\nRecall that Home’s autarky relative price is\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{1}{2}.\n\\]\nSince\n\\[\n\\frac{2}{3}\n&gt;\n\\frac{1}{2},\n\\]\nwheat is now relatively more valuable on the international market than it was in Home under autarky.\nIn Home, the wage in the wheat industry is\n\\[\nw_W = P_W^I MPL_W.\n\\]\nThe wage in the cloth industry is\n\\[\nw_C = P_C^I MPL_C.\n\\]\nUsing\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3},\n\\qquad\nMPL_W = 4,\n\\qquad\nMPL_C = 2,\n\\]\nwe have\n\\[\nP_W^I MPL_W\n&gt;\nP_C^I MPL_C.\n\\]\nSo workers can earn more in the wheat industry.\nBecause workers can move freely between sectors, all workers move into wheat production.\nTherefore,\n\\[\nL_W = L,\n\\qquad\nL_C = 0.\n\\]\nWith\n\\[\nL = 25\n\\qquad \\text{and} \\qquad\nMPL_W = 4,\n\\]\nHome produces\n\\[\nQ_W = MPL_W L = 4 \\times 25 = 100,\n\\]\nand\n\\[\nQ_C = 0.\n\\]\nSo after opening to trade, Home fully specializes in wheat.\nFor Foreign, recall that the autarky relative price of wheat is\n\\[\n\\frac{P_W^*}{P_C^*}\n=\n1.\n\\]\nBut the international relative price is\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3}.\n\\]\nSince\n\\[\n\\frac{2}{3}\n&lt;\n1,\n\\]\nwheat is relatively less valuable on the international market than it was in Foreign under autarky.\nTherefore, workers in Foreign move into cloth production.\nSuppose Foreign has\n\\[\nL^* = 100.\n\\]\nSince all Foreign workers move into cloth production,\n\\[\nL_C^* = L^* = 100,\n\\qquad\nL_W^* = 0.\n\\]\nTherefore,\n\\[\nQ_C^*\n=\nMPL_C^* L_C^*\n=\n1 \\times 100\n=\n100,\n\\]\nand\n\\[\nQ_W^* = 0.\n\\]\nSo after opening to trade, Foreign fully specializes in cloth."
+  },
+  {
+    "objectID": "trade/ricardian.html#gains-from-trade",
+    "href": "trade/ricardian.html#gains-from-trade",
+    "title": "The Ricardian Model",
+    "section": "7. Gains from Trade",
+    "text": "7. Gains from Trade\nWith trade, production no longer has to equal consumption.\nWe will use:\n\n\\(Q_C\\) and \\(Q_W\\) for production\n\\(C_C\\) and \\(C_W\\) for consumption\n\nHome specializes in wheat, so its production is\n\\[\nQ_C = 0,\n\\qquad\nQ_W = 100.\n\\]\nBut Home can export some of its wheat and use the export revenue to import cloth.\nTherefore, Home can consume both wheat and cloth, even though it produces only wheat.\nHome earns income by producing wheat:\n\\[\n\\text{income}\n=\nP_W^I Q_W.\n\\]\nSince Home produces\n\\[\nQ_W = MPL_W L,\n\\]\nits income is\n\\[\n\\text{income}\n=\nP_W^I MPL_W L.\n\\]\nHome spends this income on cloth and wheat:\n\\[\nP_C^I C_C\n+\nP_W^I C_W.\n\\]\nTherefore, the trade budget constraint is\n\\[\nP_W^I MPL_W L\n=\nP_C^I C_C\n+\nP_W^I C_W.\n\\]\nRearranging the trade budget constraint,\n\\[\nC_C\n=\n\\frac{P_W^I}{P_C^I} MPL_W L\n-\n\\frac{P_W^I}{P_C^I} C_W.\n\\]\nUsing\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3},\n\\qquad\nMPL_W = 4,\n\\qquad\nL = 25,\n\\]\nwe get\n\\[\nC_C\n=\n\\frac{2}{3}(4)(25)\n-\n\\frac{2}{3}C_W,\n\\]\nso\n\\[\nC_C\n=\n\\frac{200}{3}\n-\n\\frac{2}{3}C_W.\n\\]\nUnder autarky, Home’s consumption possibilities are limited by the PPF:\n\\[\nC_C\n=\n50\n-\n\\frac{1}{2}C_W.\n\\]\nWith trade, Home’s consumption possibilities are\n\\[\nC_C\n=\n\\frac{200}{3}\n-\n\\frac{2}{3}C_W.\n\\]\nThe slope changes from\n\\[\n-\\frac{1}{2}\n\\]\nto\n\\[\n-\\frac{2}{3}.\n\\]\nThis happens because the relevant trade-off is no longer determined by Home’s production technology alone. With trade, Home can exchange wheat for cloth at the international relative price.\nThe intercept changes from\n\\[\n50\n\\]\nto\n\\[\n\\frac{200}{3}\n\\]\nPeople are able to purchase more cloth by using all incomes (\\(C_W = 0\\)).\n\nEconomic Intuition\nTrade expands Home’s consumption possibilities.\nUnder autarky, Home can only consume combinations that lie on its own PPF.\nWith trade, Home can specialize in wheat and exchange wheat for cloth at the international relative price.\nBecause the international relative price is more favorable than Home’s autarky trade-off, Home can reach consumption bundles that were not feasible before trade.\nThis is the gain from trade.\n\n\n\n  \n  \n  \n\n  \n  \n\n  \n  \n  \n  \n    \n      \\( \\text{Wheat}(C_W) \\)\n    \n  \n\n  \n    \n      \\( \\text{Cloth}(C_C) \\)\n    \n  \n\n    \n  \n    \n      \\( \\text{Autarky PPF: } C_C = 50 - \\frac{1}{2}C_W \\)\n    \n  \n\n  \n    \n      \\( \\text{Trade budget line: } C_C = \\frac{200}{3} - \\frac{2}{3}C_W \\)\n    \n  \n\n    \n  \n\n  \n    \n      \\( \\text{Autarky consumption} \\)\n    \n  \n\n    \n  \n\n  \n    \n      \\( \\text{Trade consumption} \\)"
+  },
+  {
+    "objectID": "trade/ricardian.html#practice-problems",
+    "href": "trade/ricardian.html#practice-problems",
+    "title": "The Ricardian Model",
+    "section": "8. Practice Problems",
+    "text": "8. Practice Problems\n\nPractice 1: Why Does Home Fully Specialize?\nRecall that Home has\n\\[\nMPL_C = 2,\n\\qquad\nMPL_W = 4,\n\\]\nand the international relative price is\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3}.\n\\]\nAt this international price,\n\\[\nP_W^I MPL_W\n&gt;\nP_C^I MPL_C,\n\\]\nso workers earn more in the wheat industry.\nA student argues:\n\n“Workers will initially move into wheat, but as more workers enter the wheat industry, the marginal product of labor in wheat should fall. Eventually, wages in the two industries will become equal again, so Home will continue producing both goods.”\n\nIs this reasoning correct in the Ricardian model?\nAnd explain why Home fully specializes in wheat in the Ricardian model.\n\n\nPractice 2: When Does Home Not Fully Specialize?\nRecall that Home has\n\\[\nMPL_C = 2,\n\\qquad\nMPL_W = 4.\n\\]\nSuppose the international relative price of wheat is instead\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{1}{2}.\n\\]\nA student says:\n\n“Home has a comparative advantage in wheat, so it should still fully specialize in wheat.”\n\nIs this correct?\nAnswer the following:\n\nCompare the wage in the wheat industry,\n\n\\[\nw_W = P_W^I MPL_W,\n\\]\nwith the wage in the cloth industry,\n\\[\nw_C = P_C^I MPL_C.\n\\]\n\nAre workers strictly better off working in one industry?\nDoes Home have to fully specialize in this case?\nExplain why any allocation of labor between cloth and wheat can be consistent with equilibrium.\n\n\n\nPractice 3: Does Full Specialization Mean Consuming Only One Good?\nUnder trade, Home fully specializes in wheat:\n\\[\nQ_W = 100,\n\\qquad\nQ_C = 0.\n\\]\nA student concludes:\n\n“Since Home produces no cloth, Home must also consume no cloth.”\n\nIs this correct?\nSuppose Home chooses to consume\n\\[\nC_W = 40.\n\\]\nUsing Home’s trade budget constraint,\n\\[\nC_C\n=\n\\frac{200}{3}\n-\n\\frac{2}{3}C_W,\n\\]\nanswer the following:\n\nHow much cloth does Home consume?\nHow much wheat does Home export?\nHow much cloth does Home import?\nExplain why full specialization in production does not imply full specialization in consumption.\n\n\n\nPractice 4: Do Gains from Trade Mean Producing Outside the PPF?\nA student looks at the gains-from-trade diagram and says:\n\n“Trade makes Home better off because it allows Home to produce outside its production possibilities frontier.”\n\nIs this statement correct?\nAnswer the following:\n\nUnder trade, where must Home’s production point lie relative to its PPF?\nWhat can lie outside Home’s PPF after trade: the production point, the consumption point, or both?\nExplain how Home can consume a bundle outside its PPF without producing outside its PPF.\n\n\n\nPractice 5: Why Must the World Relative Price Lie Between the Two Autarky Prices?\nRecall that\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{1}{2}\n\\]\nin Home, while\n\\[\n\\frac{P_W^*}{P_C^*}\n=\n1\n\\]\nin Foreign.\nSuppose instead that the international relative price of wheat were\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{3}{2}.\n\\]\nAnswer the following:\n\nIn Home, which industry would pay the higher wage?\nIn Foreign, which industry would pay the higher wage?\nWhich good would each country want to produce?\nCan this be an equilibrium in which Home exports wheat and Foreign exports cloth?\nUse this example to explain why, in the two-country Ricardian equilibrium,\n\n\\[\n\\frac{P_W}{P_C}\n&lt;\n\\frac{P_W^I}{P_C^I}\n&lt;\n\\frac{P_W^*}{P_C^*}.\n\\]\n\n\nPractice 6: Gain from Trade and Real Income\nRecall that Home has\n\\[\nMPL_W = 4,\n\\qquad\nMPL_C = 2,\n\\]\nwhile Foreign has\n\\[\nMPL_W^* = 1,\n\\qquad\nMPL_C^* = 1.\n\\]\nThe international relative price is\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3}.\n\\]\nHome specializes in wheat, while Foreign specializes in cloth.\nAnswer the following:\n\nWhat is Home’s real wage in terms of wheat after trade?\nWhat is Home’s real wage in terms of cloth after trade?\nWhat is Foreign’s real wage in terms of cloth after trade?\nWhat is Foreign’s real wage in terms of wheat after trade?\nCompare these real wages with the corresponding real wages under autarky. Does each country gain from trade?\nAfter trade, which country’s workers have the higher real income when measured in terms of wheat? What about when measured in terms of cloth?"
+  },
+  {
+    "objectID": "trade/gravity.html",
+    "href": "trade/gravity.html",
+    "title": "The Gravity Model",
+    "section": "",
+    "text": "Why do large and nearby countries tend to trade more with each other?"
+  },
+  {
+    "objectID": "trade/gravity.html#the-basic-idea",
+    "href": "trade/gravity.html#the-basic-idea",
+    "title": "The Gravity Model",
+    "section": "1. The Basic Idea",
+    "text": "1. The Basic Idea\nThe gravity model is a simple way to organize patterns in international trade data.\nThe basic idea is:\n\nLarger countries trade more.\nCountries that are closer together trade more.\n\nThis is similar to Newton’s law of gravity: the force between two objects is stronger when the objects are larger and weaker when they are farther apart.\nIn international trade, country size is measured by GDP, while distance captures one important source of trade costs."
+  },
+  {
+    "objectID": "trade/gravity.html#the-gravity-equation",
+    "href": "trade/gravity.html#the-gravity-equation",
+    "title": "The Gravity Model",
+    "section": "2. The Gravity Equation",
+    "text": "2. The Gravity Equation\nFor two countries, \\(A\\) and \\(B\\), the gravity equation can be written as\n\\[\nTrade_{AB}\n=\nT\n\\times\n\\frac{Y_A Y_B}{d_{AB}^{\\alpha}}\n\\times\n\\varepsilon_{AB}.\n\\]\nwhere\n\n\\(Trade_{AB}\\) = trade between countries \\(A\\) and \\(B\\)\n\\(Y_A\\) = GDP of country \\(A\\)\n\\(Y_B\\) = GDP of country \\(B\\)\n\\(d_{AB}\\) = distance between the two countries\n\\(T\\) = a constant\n\\(\\alpha\\) = the effect of distance on trade\n\\(\\varepsilon_{AB}\\) = other factors affecting trade between \\(A\\) and \\(B\\)\n\n\nHow to Read the Equation\nThe gravity equation says that bilateral trade is larger when the two countries are economically larger and smaller when they are farther apart.\nHolding everything else constant:\n\nIf \\(Y_A\\) increases, trade between \\(A\\) and \\(B\\) increases.\nIf \\(Y_B\\) increases, trade between \\(A\\) and \\(B\\) increases.\nIf \\(d_{AB}\\) increases, trade between \\(A\\) and \\(B\\) decreases.\n\nBecause GDP enters multiplicatively,\n\\[\nTrade_{AB}\n\\propto\nY_A Y_B.\n\\]\nBecause distance appears in the denominator,\n\\[\nTrade_{AB}\n\\propto\n\\frac{1}{d_{AB}^{\\alpha}}.\n\\]"
+  },
+  {
+    "objectID": "trade/gravity.html#taking-logs",
+    "href": "trade/gravity.html#taking-logs",
+    "title": "The Gravity Model",
+    "section": "3. Taking Logs",
+    "text": "3. Taking Logs\nThe gravity equation is multiplicative:\n\\[\nTrade_{AB}\n=\nT\n\\times\n\\frac{Y_A Y_B}{d_{AB}^{\\alpha}}\n\\times\n\\varepsilon_{AB}.\n\\]\nTaking natural logs turns this into a linear equation:\n\\[\n\\ln Trade_{AB}\n=\n\\ln T\n+\n\\ln Y_A\n+\n\\ln Y_B\n-\n\\alpha \\ln d_{AB}\n+\n\\ln \\varepsilon_{AB}.\n\\]\n\nWhy Take Logs?\nTaking logs makes the gravity equation easier to interpret because it turns multiplication into addition and powers into coefficients.\nFor example,\n\\[\nd_{AB}^{-\\alpha}\n\\]\nbecomes\n\\[\n-\\alpha \\ln d_{AB}.\n\\]\nThe log form therefore makes it easy to see how proportional changes in GDP and distance are related to proportional changes in trade.\nIt also gives us a linear equation that can be taken directly to the data."
+  },
+  {
+    "objectID": "trade/gravity.html#economic-interpretation",
+    "href": "trade/gravity.html#economic-interpretation",
+    "title": "The Gravity Model",
+    "section": "4. Economic Interpretation",
+    "text": "4. Economic Interpretation\nIn the log form of the gravity equation,\n\\[\n\\ln Trade_{AB}\n=\n\\ln T\n+\n\\ln Y_A\n+\n\\ln Y_B\n-\n\\alpha \\ln d_{AB}\n+\n\\ln \\varepsilon_{AB},\n\\]\nthe coefficients on \\(\\ln Y_A\\) and \\(\\ln Y_B\\) are both equal to 1.\nThis means that, holding everything else constant:\n\na 1% increase in country \\(A\\)’s GDP is associated with a 1% increase in trade between \\(A\\) and \\(B\\);\na 1% increase in country \\(B\\)’s GDP is also associated with a 1% increase in trade between \\(A\\) and \\(B\\).\n\nThe coefficient on log distance is\n\\[\n-\\alpha.\n\\]\nThis means that \\(\\alpha\\) is the distance elasticity of trade.\nFor example, if\n\\[\n\\alpha = 1,\n\\]\nthen a 1% increase in distance is associated with a 1% decrease in bilateral trade, holding GDP and other factors constant.\nMore generally,\n\\[\n\\%\\Delta Trade_{AB}\n\\approx\n-\\alpha \\times \\%\\Delta d_{AB}.\n\\]"
+  },
+  {
+    "objectID": "trade/gravity.html#trade-elasticity-and-distance",
+    "href": "trade/gravity.html#trade-elasticity-and-distance",
+    "title": "The Gravity Model",
+    "section": "5. Trade Elasticity and Distance",
+    "text": "5. Trade Elasticity and Distance\nSuppose\n\\[\n\\alpha = 1.\n\\]\nThen the gravity equation implies\n\\[\nTrade_{AB}\n\\propto\n\\frac{1}{d_{AB}}.\n\\]\nSo if the distance between two countries doubles,\n\\[\nd_{AB}\n\\rightarrow\n2d_{AB},\n\\]\npredicted trade becomes\n\\[\n\\frac{1}{2}\n\\]\nof its original level.\nFor example, if two otherwise identical country pairs are 1,000 miles and 2,000 miles apart, the gravity model with \\(\\alpha=1\\) predicts that the more distant pair trades only half as much.\n\nA Common Mistake\nA student says:\n\n“If \\(\\alpha=1\\), then doubling distance means distance increases by 100%, so trade must fall by 100%.”\n\nThis is incorrect.\nThe approximation\n\\[\n\\%\\Delta Trade_{AB}\n\\approx\n-\\alpha \\times \\%\\Delta d_{AB}\n\\]\nworks best for small percentage changes.\nFor a large change such as doubling distance, use the gravity equation directly.\nIf\n\\[\nTrade_{AB}\n\\propto\n\\frac{1}{d_{AB}}\n\\]\nand distance doubles,\n\\[\nd_{AB}\\rightarrow 2d_{AB},\n\\]\nthen\n\\[\nTrade_{AB}\n\\rightarrow\n\\frac{1}{2}Trade_{AB}.\n\\]\nSo trade falls by 50%, not 100%."
+  },
+  {
+    "objectID": "trade/gravity.html#extensive-and-intensive-margins",
+    "href": "trade/gravity.html#extensive-and-intensive-margins",
+    "title": "The Gravity Model",
+    "section": "6. Extensive and Intensive Margins",
+    "text": "6. Extensive and Intensive Margins\nThe gravity relationship can arise through two different margins of trade.\n\nExtensive Margin\nThe extensive margin refers to the number of different products that two countries trade with each other.\nLarge and nearby countries tend to trade more varieties of products.\nFor example, the United States trades many different products with Canada, Mexico, and China, but may trade only a small number of products with a smaller or more distant country.\n\n\nIntensive Margin\nThe intensive margin refers to how much countries trade of each product that is already being traded.\nLarge and nearby countries tend to trade larger quantities of each product.\nFor example, the United States may import much more auto parts from Mexico than from a more distant trading partner.\n\n\nA Common Mistake\nA student observes that two countries trade much more with each other and concludes:\n\n“They must simply be trading larger quantities of the same products.”\n\nThis conclusion is incomplete.\nHigher bilateral trade can come from:\n\nExtensive margin: the countries trade more different products;\nIntensive margin: they trade more of each product that is already traded;\nBoth margins at the same time.\n\nIn the data, the gravity relationship operates through both margins."
+  },
+  {
+    "objectID": "trade/gravity.html#what-gravity-explains-and-what-it-does-not",
+    "href": "trade/gravity.html#what-gravity-explains-and-what-it-does-not",
+    "title": "The Gravity Model",
+    "section": "7. What Gravity Explains — and What It Does Not",
+    "text": "7. What Gravity Explains — and What It Does Not\nThe gravity equation is very useful for describing patterns in trade data.\nIt tells us that:\n\nlarger countries tend to trade more;\nnearby countries tend to trade more;\nthese patterns fit the data surprisingly well.\n\nBut the gravity equation by itself does not explain why countries trade particular goods.\nFor example, gravity can help explain why the United States trades more with Canada than with a small, distant country.\nBut it does not by itself explain why the United States exports one product and imports another.\nTo understand the pattern of specialization and comparative advantage, we need economic theory such as the Ricardian model."
+  },
+  {
+    "objectID": "trade/gravity.html#practice-problems",
+    "href": "trade/gravity.html#practice-problems",
+    "title": "The Gravity Model",
+    "section": "8. Practice Problems",
+    "text": "8. Practice Problems\n\nPractice 1: How Does Country Size Affect Trade?\nSuppose bilateral trade is described by\n\\[\nTrade_{AB}\n=\nT\n\\times\n\\frac{Y_A Y_B}{d_{AB}^{\\alpha}}\n\\times\n\\varepsilon_{AB}.\n\\]\nAssume distance and all other factors remain unchanged.\nA student says:\n\n“If country \\(A\\) becomes twice as large, trade between \\(A\\) and \\(B\\) should also become twice as large. If both countries become twice as large, trade should still only double.”\n\nIs this reasoning correct?\nAnswer the following:\n\nIf \\(Y_A\\) doubles while \\(Y_B\\) stays unchanged, by what factor does \\(Trade_{AB}\\) change?\nIf both \\(Y_A\\) and \\(Y_B\\) double, by what factor does \\(Trade_{AB}\\) change?\nExplain why the second case is not the same as simply doubling trade once.\n\n\n\nPractice 2: What Happens When Distance Doubles?\nSuppose\n\\[\n\\alpha = 1.\n\\]\nThen the gravity equation implies\n\\[\nTrade_{AB}\n\\propto\n\\frac{1}{d_{AB}}.\n\\]\nA student says:\n\n“If distance doubles, distance increases by 100%. Since the distance elasticity is \\(-1\\), trade must fall by 100%.”\n\nIs this reasoning correct?\nAnswer the following:\n\nIf distance changes from \\(d_{AB}\\) to \\(2d_{AB}\\), what happens to predicted trade?\nBy what percentage does trade actually fall?\nWhy does the elasticity approximation\n\n\\[\n\\%\\Delta Trade_{AB}\n\\approx\n-\\alpha \\times \\%\\Delta d_{AB}\n\\]\ngive a misleading answer when distance changes by such a large amount?\n\n\nPractice 3: Why Do We Need to Control for GDP?\nSuppose the United States trades more with a large, distant country than with a small, nearby country.\nA student concludes:\n\n“This shows that distance does not really reduce trade.”\n\nIs this conclusion correct?\nAnswer the following:\n\nAccording to the gravity equation, what two major factors affect bilateral trade?\nWhy is it misleading to compare trade across country pairs without accounting for country size?\nSuppose two trading partners are the same distance from the United States, but one has twice the GDP of the other. Which one should the gravity model predict more U.S. trade with?\nSuppose instead that two trading partners have the same GDP, but one is farther from the United States. Which one should the gravity model predict more U.S. trade with?\nExplain what economists mean by studying the effect of distance on trade while holding GDP constant.\n\n\n\nPractice 4: Extensive Margin or Intensive Margin?\nThe gravity relationship can operate through two margins:\n\nExtensive margin: countries trade more different products.\nIntensive margin: countries trade more of products that are already being traded.\n\nFor each scenario below, identify whether it represents an extensive margin, an intensive margin, or both.\n\nScenario A\nThe United States already imports auto parts from Mexico. The value of those imports increases substantially, but the set of auto parts being imported does not change.\n\n\nScenario B\nThe United States begins importing several types of products from a country that it did not previously import at all.\n\n\nScenario C\nTrade between two countries increases because they begin trading more product categories, and at the same time trade more within product categories that were already traded.\n\n\nScenario D\nThe United States imports auto parts from both Mexico and Taiwan, but imports much more auto parts from Mexico.\nAnswer the following:\n\nClassify each scenario as extensive margin, intensive margin, or both.\nA student says:\n\n\n“If two countries trade more with each other, that must mean they are trading a larger quantity of the same goods.”\n\nWhy is this statement incomplete?\n\n\n\nPractice 5: Does More Trade Reveal Comparative Advantage?\nSuppose the United States trades much more with Canada than with a smaller and more distant country.\nA student concludes:\n\n“Because the United States trades so much with Canada, Canada must have a comparative advantage in most of the goods that it exports to the United States.”\n\nIs this conclusion justified by the gravity model?\nAnswer the following:\n\nWhat does the gravity model help explain about trade between two countries?\nDoes the gravity equation by itself tell us which goods each country should export?\nWhat additional economic concept is needed to explain why one country exports one good and imports another?\n\n\n\nPractice 6: Do Larger Countries Depend More on International Trade?\nThe gravity model predicts that larger countries tend to have larger bilateral trade flows.\nA student concludes:\n\n“Because large countries trade more in absolute terms, they must also be more relied on international trade.”\n\nIs this conclusion correct?\nAnswer the following:\n\nWhat does the gravity model predict about the level of trade when country GDP increases?\nIs a larger level of trade the same thing as having a larger trade-to-GDP ratio?\nWhy might a very large country have a large amount of international trade but a relatively low trade-to-GDP ratio?"
+  },
+  {
+    "objectID": "macro/index.html",
+    "href": "macro/index.html",
+    "title": "International Macroeconomics",
+    "section": "",
+    "text": "Topics and learning materials for Part III of ECON 3200."
+  },
+  {
+    "objectID": "discussion-materials.html",
+    "href": "discussion-materials.html",
+    "title": "Discussion Materials",
+    "section": "",
+    "text": "Weekly discussion notes, supplementary materials, and homework answer key will be posted here."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ECON 3200 The Economics of Globalization",
+    "section": "",
+    "text": "Welcome to the TA website for ECON 3200: The Economics of Globalization.\nInstructor: Professor James Harrigan\nTeaching Assistant: Eric Guang-Xuan Zhou\nEmail: xus4ny@virginia.edu\nOffice Hours: We 1:30PM - 3:30PM in Monroe Basement"
+  },
+  {
+    "objectID": "index.html#important-announcements",
+    "href": "index.html#important-announcements",
+    "title": "ECON 3200 The Economics of Globalization",
+    "section": "Important Announcements",
+    "text": "Important Announcements\n\n\n\n\n\n\nImportantAugust 30, 2026 — An important note about Homework 1, Q2\n\n\n\n\n\nIf you try to follow the textbook instructions using the current WTO Data Portal, you may find that the annual merchandise export data no longer provide the “by destination” option needed for the exercise.\nTo make sure everyone can complete the problem, I have uploaded two additional files to the Homework 1 Assignment page on Canvas:\n\nWTO_ABD_Export_2024, which is the export data at a reporter–partner level\nRegional_Compositions.xlsx, which provides the WTO regional classifications\n\nPlease download both files and use an LLM (ChatGPT, Claude, Gemini, etc.) to construct the regional trade matrix needed for Question 2.\nA suggested workflow is:\n\nUpload both files to the LLM.\nUse Regional_Compositions.xlsx to assign both reporters and partners to the appropriate WTO regions. Australia and New Zealand should be treated as a separate region from Asia.\nAggregate the reporter–partner export data into regional bilateral trade flows.\nConstruct a 9 × 9 matrix with exporting regions as rows and destination regions as columns. The nine rows and columns should be:\n\nWorld\nAfrica\nAsia\nAustralia and New Zealand\nCommonwealth of Independent States (CIS)\nEurope\nMiddle East\nNorth America\nSouth and Central America and the Caribbean\n\nCheck that the matrix is constructed correctly, and then use it to answer parts (a)–(i) of Question 2.\n\n\n\n\nDiscussion Sections\n\nSection 101: Wednesday, 6:00–6:50 PM, Monroe Hall 122\nSection 102: Wednesday, 7:00–7:50 PM, Monroe Hall 122\n\nDiscussion Notes: View Discussion Materials"
+  },
+  {
+    "objectID": "index.html#upcoming-deadlines",
+    "href": "index.html#upcoming-deadlines",
+    "title": "ECON 3200 The Economics of Globalization",
+    "section": "Upcoming Deadlines",
+    "text": "Upcoming Deadlines\n\n\n\nAssignment\nDeadline\n\n\n\n\nHomework 1\n9/3 3:30pm"
+  },
+  {
+    "objectID": "index.html#exams",
+    "href": "index.html#exams",
+    "title": "ECON 3200 The Economics of Globalization",
+    "section": "Exams",
+    "text": "Exams\n\n\n\nExam\nDate\n\n\n\n\nExam 1\nSeptember 22, 2026\n\n\nExam 2\nOctober 29, 2026\n\n\nExam 3\nDecember 11, 2026"
+  },
+  {
+    "objectID": "migration/index.html",
+    "href": "migration/index.html",
+    "title": "Migration",
+    "section": "",
+    "text": "Topics and learning materials for Part II of ECON 3200."
+  },
+  {
+    "objectID": "trade/index.html",
+    "href": "trade/index.html",
+    "title": "International Trade & Investment",
+    "section": "",
+    "text": "Topics and learning materials for Part I of ECON 3200."
+  }
+]

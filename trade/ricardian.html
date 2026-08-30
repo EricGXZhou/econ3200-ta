@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The Ricardian Model – ECON 3200: The Economics of Globalization</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">ECON 3200: The Economics of Globalization</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../discussion-materials.html"> 
+<span class="menu-text">Discussion Materials</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-trade" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Trade</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-trade">    
+        <li>
+    <a class="dropdown-item" href="../trade/gravity.html">
+ <span class="dropdown-text">Gravity Model</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../trade/ricardian.html">
+ <span class="dropdown-text">Ricardian Model</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../migration/index.html"> 
+<span class="menu-text">Migration</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../macro/index.html"> 
+<span class="menu-text">International Macroeconomics</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#model-setup" id="toc-model-setup" class="nav-link active" data-scroll-target="#model-setup">1. Model Setup</a></li>
+  <li><a href="#production-and-the-ppf" id="toc-production-and-the-ppf" class="nav-link" data-scroll-target="#production-and-the-ppf">2. Production and the PPF</a>
+  <ul class="collapse">
+  <li><a href="#production" id="toc-production" class="nav-link" data-scroll-target="#production">Production</a></li>
+  <li><a href="#from-labor-allocation-to-the-ppf" id="toc-from-labor-allocation-to-the-ppf" class="nav-link" data-scroll-target="#from-labor-allocation-to-the-ppf">From Labor Allocation to the PPF</a></li>
+  <li><a href="#economic-intuition" id="toc-economic-intuition" class="nav-link" data-scroll-target="#economic-intuition">Economic Intuition</a></li>
+  </ul></li>
+  <li><a href="#opportunity-cost" id="toc-opportunity-cost" class="nav-link" data-scroll-target="#opportunity-cost">3. Opportunity Cost</a></li>
+  <li><a href="#autarky-equilibrium" id="toc-autarky-equilibrium" class="nav-link" data-scroll-target="#autarky-equilibrium">4. Autarky Equilibrium</a>
+  <ul class="collapse">
+  <li><a href="#economic-intuition-1" id="toc-economic-intuition-1" class="nav-link" data-scroll-target="#economic-intuition-1">Economic Intuition</a></li>
+  </ul></li>
+  <li><a href="#comparative-advantage" id="toc-comparative-advantage" class="nav-link" data-scroll-target="#comparative-advantage">5. Comparative Advantage</a>
+  <ul class="collapse">
+  <li><a href="#economic-intuition-2" id="toc-economic-intuition-2" class="nav-link" data-scroll-target="#economic-intuition-2">Economic Intuition</a></li>
+  </ul></li>
+  <li><a href="#opening-to-trade" id="toc-opening-to-trade" class="nav-link" data-scroll-target="#opening-to-trade">6. Opening to Trade</a></li>
+  <li><a href="#gains-from-trade" id="toc-gains-from-trade" class="nav-link" data-scroll-target="#gains-from-trade">7. Gains from Trade</a>
+  <ul class="collapse">
+  <li><a href="#economic-intuition-3" id="toc-economic-intuition-3" class="nav-link" data-scroll-target="#economic-intuition-3">Economic Intuition</a></li>
+  </ul></li>
+  <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems">8. Practice Problems</a>
+  <ul class="collapse">
+  <li><a href="#practice-1-why-does-home-fully-specialize" id="toc-practice-1-why-does-home-fully-specialize" class="nav-link" data-scroll-target="#practice-1-why-does-home-fully-specialize">Practice 1: Why Does Home Fully Specialize?</a></li>
+  <li><a href="#practice-2-when-does-home-not-fully-specialize" id="toc-practice-2-when-does-home-not-fully-specialize" class="nav-link" data-scroll-target="#practice-2-when-does-home-not-fully-specialize">Practice 2: When Does Home Not Fully Specialize?</a></li>
+  <li><a href="#practice-3-does-full-specialization-mean-consuming-only-one-good" id="toc-practice-3-does-full-specialization-mean-consuming-only-one-good" class="nav-link" data-scroll-target="#practice-3-does-full-specialization-mean-consuming-only-one-good">Practice 3: Does Full Specialization Mean Consuming Only One Good?</a></li>
+  <li><a href="#practice-4-do-gains-from-trade-mean-producing-outside-the-ppf" id="toc-practice-4-do-gains-from-trade-mean-producing-outside-the-ppf" class="nav-link" data-scroll-target="#practice-4-do-gains-from-trade-mean-producing-outside-the-ppf">Practice 4: Do Gains from Trade Mean Producing Outside the PPF?</a></li>
+  <li><a href="#practice-5-why-must-the-world-relative-price-lie-between-the-two-autarky-prices" id="toc-practice-5-why-must-the-world-relative-price-lie-between-the-two-autarky-prices" class="nav-link" data-scroll-target="#practice-5-why-must-the-world-relative-price-lie-between-the-two-autarky-prices">Practice 5: Why Must the World Relative Price Lie Between the Two Autarky Prices?</a></li>
+  <li><a href="#practice-6-gain-from-trade-and-real-income" id="toc-practice-6-gain-from-trade-and-real-income" class="nav-link" data-scroll-target="#practice-6-gain-from-trade-and-real-income">Practice 6: Gain from Trade and Real Income</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Ricardian Model</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Why do countries trade, and what determines what each country exports?</p>
+<p>The Ricardian model studies how differences in <strong>productivity</strong> across countries can create <strong>gains from trade</strong>.</p>
+<section id="model-setup" class="level2">
+<h2 class="anchored" data-anchor-id="model-setup">1. Model Setup</h2>
+<p>We begin with a simple world:</p>
+<ul>
+<li>Two countries: <strong>Home</strong> and <strong>Foreign</strong></li>
+<li>Two goods: <strong>Cloth</strong> (<span class="math inline">\(C\)</span>) and <strong>Wheat</strong> (<span class="math inline">\(W\)</span>)</li>
+<li>Labor is <strong>the only</strong> factor of production</li>
+<li>Workers can move freely between industries within a country</li>
+<li>Firms are perfectly competitive</li>
+<li>Technology has <strong>constant returns to scale</strong></li>
+</ul>
+<p>For Home, let:</p>
+<ul>
+<li><span class="math inline">\(L\)</span> = total number of workers</li>
+<li><span class="math inline">\(L_C\)</span> = workers producing cloth</li>
+<li><span class="math inline">\(L_W\)</span> = workers producing wheat</li>
+<li><span class="math inline">\(MPL_C\)</span> = marginal product of labor in cloth</li>
+<li><span class="math inline">\(MPL_W\)</span> = marginal product of labor in wheat</li>
+</ul>
+<p>Total labor must satisfy</p>
+<p><span class="math display">\[
+L = L_C + L_W.
+\]</span></p>
+</section>
+<section id="production-and-the-ppf" class="level2">
+<h2 class="anchored" data-anchor-id="production-and-the-ppf">2. Production and the PPF</h2>
+<section id="production" class="level3">
+<h3 class="anchored" data-anchor-id="production">Production</h3>
+<p>In the Ricardian model, labor is the only input used to produce both goods.</p>
+<p>For cloth,</p>
+<p><span class="math display">\[
+Q_C = MPL_C \times L_C.
+\]</span></p>
+<p>For wheat,</p>
+<p><span class="math display">\[
+Q_W = MPL_W \times L_W.
+\]</span></p>
+<p>The marginal product of labor tells us how much output one worker can produce.</p>
+<p>For example, suppose</p>
+<p><span class="math display">\[
+MPL_C = 2
+\qquad \text{and} \qquad
+MPL_W = 4.
+\]</span></p>
+<p>Then one worker can produce either <strong>2 units of cloth</strong> or <strong>4 units of wheat</strong>, and</p>
+<p><span class="math display">\[
+Q_C = 2L_C,
+\qquad
+Q_W = 4L_W.
+\]</span></p>
+</section>
+<section id="from-labor-allocation-to-the-ppf" class="level3">
+<h3 class="anchored" data-anchor-id="from-labor-allocation-to-the-ppf">From Labor Allocation to the PPF</h3>
+<p>Recall that total labor satisfies</p>
+<p><span class="math display">\[
+L = L_C + L_W.
+\]</span></p>
+<p>Using the production equations,</p>
+<p><span class="math display">\[
+L_C = \frac{Q_C}{MPL_C}
+\qquad \text{and} \qquad
+L_W = \frac{Q_W}{MPL_W}.
+\]</span></p>
+<p>Substituting these into the labor constraint gives</p>
+<p><span class="math display">\[
+L
+=
+\frac{Q_C}{MPL_C}
++
+\frac{Q_W}{MPL_W}.
+\]</span></p>
+<p>Rearranging,</p>
+<p><span class="math display">\[
+Q_C
+=
+MPL_C L
+-
+\frac{MPL_C}{MPL_W}Q_W.
+\]</span></p>
+<p>This equation is the <strong>production possibilities frontier (PPF)</strong>.</p>
+<p>Using the numerical example</p>
+<p><span class="math display">\[
+L = 25,\qquad MPL_C = 2,\qquad MPL_W = 4,
+\]</span></p>
+<p>the PPF becomes</p>
+<p><span class="math display">\[
+Q_C
+=
+2(25)
+-
+\frac{2}{4}Q_W,
+\]</span></p>
+<p>so</p>
+<p><span class="math display">\[
+Q_C
+=
+50
+-
+\frac{1}{2}Q_W.
+\]</span></p>
+<p>The PPF has two important endpoints.</p>
+<p>If all workers produce cloth, then</p>
+<p><span class="math display">\[
+L_C = 25,\qquad L_W = 0,
+\]</span></p>
+<p>so</p>
+<p><span class="math display">\[
+Q_C = 50,\qquad Q_W = 0.
+\]</span></p>
+<p>If all workers produce wheat, then</p>
+<p><span class="math display">\[
+L_C = 0,\qquad L_W = 25,
+\]</span></p>
+<p>so</p>
+<p><span class="math display">\[
+Q_C = 0,\qquad Q_W = 100.
+\]</span></p>
+<p>Therefore, the PPF runs from</p>
+<p><span class="math display">\[
+(Q_W,Q_C)=(0,50)
+\]</span></p>
+<p>to</p>
+<p><span class="math display">\[
+(Q_W,Q_C)=(100,0).
+\]</span></p>
+</section>
+<section id="economic-intuition" class="level3">
+<h3 class="anchored" data-anchor-id="economic-intuition">Economic Intuition</h3>
+<p>The PPF shows the trade-off created by a fixed amount of labor.</p>
+<p>To produce more wheat, Home must move workers from the cloth industry to the wheat industry. As a result,</p>
+<ul>
+<li>wheat production increases, but</li>
+<li>cloth production decreases.</li>
+</ul>
+<p>Because the marginal products of labor are constant, this trade-off is also constant. That is why the Ricardian PPF is a <strong>straight line</strong>.</p>
+<div style="max-width: 650px; margin: 2rem auto;">
+<svg viewbox="0 0 600 420" style="width:100%; height:auto;">
+
+  <!-- Axes -->
+  <line x1="80" y1="340" x2="550" y2="340" stroke="black" stroke-width="2"></line>
+  <line x1="80" y1="340" x2="80" y2="40" stroke="black" stroke-width="2"></line>
+
+  <!-- PPF -->
+  <line x1="80" y1="90" x2="520" y2="340" stroke="steelblue" stroke-width="4"></line>
+
+  <!-- Axis labels in math format -->
+  <foreignobject x="470" y="360" width="120" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:15px;">
+      \( \text{Wheat}(Q_W) \)
+    </div>
+  </foreignobject>
+
+  <foreignobject x="0" y="40" width="120" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:15px;">
+      \( \text{Cloth}(Q_C) \)
+    </div>
+  </foreignobject>
+
+  <!-- Endpoint numbers -->
+  <text x="50" y="85" font-size="18">50</text>
+  <text x="505" y="365" font-size="18">100</text>
+
+  <!-- PPF label in math format -->
+  <foreignobject x="290" y="180" width="260" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:16px;">
+      \( \text{PPF: } Q_C = 50 - \frac{1}{2}Q_W \)
+    </div>
+  </foreignobject>
+
+</svg>
+</div>
+</section>
+</section>
+<section id="opportunity-cost" class="level2">
+<h2 class="anchored" data-anchor-id="opportunity-cost">3. Opportunity Cost</h2>
+<p>From the PPF,</p>
+<p><span class="math display">\[
+Q_C
+=
+MPL_C L
+-
+\frac{MPL_C}{MPL_W}Q_W,
+\]</span></p>
+<p>the slope is</p>
+<p><span class="math display">\[
+-\frac{MPL_C}{MPL_W}.
+\]</span></p>
+<p>The absolute value of this slope,</p>
+<p><span class="math display">\[
+\frac{MPL_C}{MPL_W},
+\]</span></p>
+<p>is the <strong>opportunity cost of wheat in terms of cloth</strong>.</p>
+<p>It tells us how much cloth production must fall when Home produces one additional unit of wheat.</p>
+<p>Using the numerical example,</p>
+<p><span class="math display">\[
+MPL_C = 2
+\qquad \text{and} \qquad
+MPL_W = 4,
+\]</span></p>
+<p>the opportunity cost of one additional unit of wheat is</p>
+<p><span class="math display">\[
+\frac{MPL_C}{MPL_W}
+=
+\frac{2}{4}
+=
+\frac{1}{2}.
+\]</span></p>
+<p>So producing <strong>1 more unit of wheat costs Home 1/2 unit of cloth</strong>.</p>
+</section>
+<section id="autarky-equilibrium" class="level2">
+<h2 class="anchored" data-anchor-id="autarky-equilibrium">4. Autarky Equilibrium</h2>
+<p><strong>Autarky</strong> means that Home cannot trade with other countries.</p>
+<p>In autarky, Home must produce both cloth and wheat for its own consumption.</p>
+<p>Let</p>
+<ul>
+<li><span class="math inline">\(P_C\)</span> = price of cloth</li>
+<li><span class="math inline">\(P_W\)</span> = price of wheat</li>
+<li><span class="math inline">\(w\)</span> = wage</li>
+</ul>
+<p>Because firms are perfectly competitive, a worker is paid the value of what that worker produces.</p>
+<p>In the cloth industry,</p>
+<p><span class="math display">\[
+w = P_C MPL_C.
+\]</span></p>
+<p>In the wheat industry,</p>
+<p><span class="math display">\[
+w = P_W MPL_W.
+\]</span></p>
+<p>Workers can move freely between the two industries. Therefore, in equilibrium, the wage must be the same in both industries.</p>
+<p>Since the wage must be the same in both industries,</p>
+<p><span class="math display">\[
+P_C MPL_C
+=
+P_W MPL_W.
+\]</span></p>
+<p>Rearranging,</p>
+<p><span class="math display">\[
+\frac{P_W}{P_C}
+=
+\frac{MPL_C}{MPL_W}.
+\]</span></p>
+<p>So in autarky, the <strong>relative price of wheat</strong> is determined by relative productivity.</p>
+<p>Using the numerical example,</p>
+<p><span class="math display">\[
+MPL_C = 2
+\qquad \text{and} \qquad
+MPL_W = 4,
+\]</span></p>
+<p>we get</p>
+<p><span class="math display">\[
+\frac{P_W}{P_C}
+=
+\frac{2}{4}
+=
+\frac{1}{2}.
+\]</span></p>
+<p>So in autarky, <strong>one unit of wheat is worth one-half unit of cloth</strong>.</p>
+<section id="economic-intuition-1" class="level3">
+<h3 class="anchored" data-anchor-id="economic-intuition-1">Economic Intuition</h3>
+<p>In autarky, the relative price of wheat must equal its opportunity cost.</p>
+<p>If wheat were worth more than its opportunity cost, firms would want to move workers into wheat production.</p>
+<p>If wheat were worth less than its opportunity cost, firms would want to move workers into cloth production.</p>
+<p>Therefore, equilibrium requires</p>
+<p><span class="math display">\[
+\frac{P_W}{P_C}
+=
+\frac{MPL_C}{MPL_W}.
+\]</span></p>
+</section>
+</section>
+<section id="comparative-advantage" class="level2">
+<h2 class="anchored" data-anchor-id="comparative-advantage">5. Comparative Advantage</h2>
+<p>Now introduce Foreign.</p>
+<p>Suppose Foreign has</p>
+<p><span class="math display">\[
+MPL_C^* = 1,
+\qquad
+MPL_W^* = 1.
+\]</span></p>
+<p>So one Foreign worker can produce either</p>
+<ul>
+<li>1 unit of cloth, or</li>
+<li>1 unit of wheat.</li>
+</ul>
+<p>Foreign’s opportunity cost of wheat is therefore</p>
+<p><span class="math display">\[
+\frac{MPL_C^*}{MPL_W^*}
+=
+\frac{1}{1}
+=
+1.
+\]</span></p>
+<p>Home’s opportunity cost of wheat is</p>
+<p><span class="math display">\[
+\frac{MPL_C}{MPL_W}
+=
+\frac{2}{4}
+=
+\frac{1}{2}.
+\]</span></p>
+<p>Since</p>
+<p><span class="math display">\[
+\frac{1}{2} &lt; 1,
+\]</span></p>
+<p>Home has a <strong>comparative advantage in wheat</strong>.</p>
+<p>Foreign therefore has a <strong>comparative advantage in cloth</strong>.</p>
+<section id="economic-intuition-2" class="level3">
+<h3 class="anchored" data-anchor-id="economic-intuition-2">Economic Intuition</h3>
+<p>Comparative advantage is about <strong>relative efficiency</strong>, not absolute productivity.</p>
+<p>Home is more productive than Foreign in both goods:</p>
+<ul>
+<li>Home produces 2 units of cloth per worker, while Foreign produces 1.</li>
+<li>Home produces 4 units of wheat per worker, while Foreign produces 1.</li>
+</ul>
+<p>So Home has an <strong>absolute advantage in both goods</strong>.</p>
+<p>But Home gives up <span class="math inline">\(2\)</span> unit of wheat to produce one more unit of cloth, while Foreign gives up 1 unit of wheat.</p>
+<p>That is why Foreign has a <strong>comparative advantage in cloth</strong>, even though Home is more productive in both goods.</p>
+</section>
+</section>
+<section id="opening-to-trade" class="level2">
+<h2 class="anchored" data-anchor-id="opening-to-trade">6. Opening to Trade</h2>
+<p>When Home and Foreign open to trade, they face a common international relative price of wheat:</p>
+<p><span class="math display">\[
+\frac{P_W^I}{P_C^I}.
+\]</span></p>
+<p>For trade to occur, this international relative price must lie between the two countries’ autarky relative prices:</p>
+<p><span class="math display">\[
+\frac{P_W}{P_C}
+&lt;
+\frac{P_W^I}{P_C^I}
+&lt;
+\frac{P_W^*}{P_C^*}.
+\]</span></p>
+<p>In our numerical example,</p>
+<p><span class="math display">\[
+\frac{1}{2}
+&lt;
+\frac{P_W^I}{P_C^I}
+&lt;
+1.
+\]</span></p>
+<p>Suppose the international relative price is</p>
+<p><span class="math display">\[
+\frac{P_W^I}{P_C^I}
+=
+\frac{2}{3}.
+\]</span></p>
+<p>Recall that Home’s autarky relative price is</p>
+<p><span class="math display">\[
+\frac{P_W}{P_C}
+=
+\frac{1}{2}.
+\]</span></p>
+<p>Since</p>
+<p><span class="math display">\[
+\frac{2}{3}
+&gt;
+\frac{1}{2},
+\]</span></p>
+<p>wheat is now relatively more valuable on the international market than it was in Home under autarky.</p>
+<p>In Home, the wage in the wheat industry is</p>
+<p><span class="math display">\[
+w_W = P_W^I MPL_W.
+\]</span></p>
+<p>The wage in the cloth industry is</p>
+<p><span class="math display">\[
+w_C = P_C^I MPL_C.
+\]</span></p>
+<p>Using</p>
+<p><span class="math display">\[
+\frac{P_W^I}{P_C^I}
+=
+\frac{2}{3},
+\qquad
+MPL_W = 4,
+\qquad
+MPL_C = 2,
+\]</span></p>
+<p>we have</p>
+<p><span class="math display">\[
+P_W^I MPL_W
+&gt;
+P_C^I MPL_C.
+\]</span></p>
+<p>So workers can earn more in the wheat industry.</p>
+<p>Because workers can move freely between sectors, all workers move into wheat production.</p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+L_W = L,
+\qquad
+L_C = 0.
+\]</span></p>
+<p>With</p>
+<p><span class="math display">\[
+L = 25
+\qquad \text{and} \qquad
+MPL_W = 4,
+\]</span></p>
+<p>Home produces</p>
+<p><span class="math display">\[
+Q_W = MPL_W L = 4 \times 25 = 100,
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+Q_C = 0.
+\]</span></p>
+<p>So after opening to trade, Home <strong>fully specializes in wheat</strong>.</p>
+<p>For Foreign, recall that the autarky relative price of wheat is</p>
+<p><span class="math display">\[
+\frac{P_W^*}{P_C^*}
+=
+1.
+\]</span></p>
+<p>But the international relative price is</p>
+<p><span class="math display">\[
+\frac{P_W^I}{P_C^I}
+=
+\frac{2}{3}.
+\]</span></p>
+<p>Since</p>
+<p><span class="math display">\[
+\frac{2}{3}
+&lt;
+1,
+\]</span></p>
+<p>wheat is relatively less valuable on the international market than it was in Foreign under autarky.</p>
+<p>Therefore, workers in Foreign move into cloth production.</p>
+<p>Suppose Foreign has</p>
+<p><span class="math display">\[
+L^* = 100.
+\]</span></p>
+<p>Since all Foreign workers move into cloth production,</p>
+<p><span class="math display">\[
+L_C^* = L^* = 100,
+\qquad
+L_W^* = 0.
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+Q_C^*
+=
+MPL_C^* L_C^*
+=
+1 \times 100
+=
+100,
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+Q_W^* = 0.
+\]</span></p>
+<p>So after opening to trade, Foreign <strong>fully specializes in cloth</strong>.</p>
+</section>
+<section id="gains-from-trade" class="level2">
+<h2 class="anchored" data-anchor-id="gains-from-trade">7. Gains from Trade</h2>
+<p>With trade, production no longer has to equal consumption.</p>
+<p>We will use:</p>
+<ul>
+<li><span class="math inline">\(Q_C\)</span> and <span class="math inline">\(Q_W\)</span> for <strong>production</strong></li>
+<li><span class="math inline">\(C_C\)</span> and <span class="math inline">\(C_W\)</span> for <strong>consumption</strong></li>
+</ul>
+<p>Home specializes in wheat, so its production is</p>
+<p><span class="math display">\[
+Q_C = 0,
+\qquad
+Q_W = 100.
+\]</span></p>
+<p>But Home can export some of its wheat and use the export revenue to import cloth.</p>
+<p>Therefore, Home can consume <strong>both wheat and cloth</strong>, even though it produces only wheat.</p>
+<p>Home earns income by producing wheat:</p>
+<p><span class="math display">\[
+\text{income}
+=
+P_W^I Q_W.
+\]</span></p>
+<p>Since Home produces</p>
+<p><span class="math display">\[
+Q_W = MPL_W L,
+\]</span></p>
+<p>its income is</p>
+<p><span class="math display">\[
+\text{income}
+=
+P_W^I MPL_W L.
+\]</span></p>
+<p>Home spends this income on cloth and wheat:</p>
+<p><span class="math display">\[
+P_C^I C_C
++
+P_W^I C_W.
+\]</span></p>
+<p>Therefore, the trade budget constraint is</p>
+<p><span class="math display">\[
+P_W^I MPL_W L
+=
+P_C^I C_C
++
+P_W^I C_W.
+\]</span></p>
+<p>Rearranging the trade budget constraint,</p>
+<p><span class="math display">\[
+C_C
+=
+\frac{P_W^I}{P_C^I} MPL_W L
+-
+\frac{P_W^I}{P_C^I} C_W.
+\]</span></p>
+<p>Using</p>
+<p><span class="math display">\[
+\frac{P_W^I}{P_C^I}
+=
+\frac{2}{3},
+\qquad
+MPL_W = 4,
+\qquad
+L = 25,
+\]</span></p>
+<p>we get</p>
+<p><span class="math display">\[
+C_C
+=
+\frac{2}{3}(4)(25)
+-
+\frac{2}{3}C_W,
+\]</span></p>
+<p>so</p>
+<p><span class="math display">\[
+C_C
+=
+\frac{200}{3}
+-
+\frac{2}{3}C_W.
+\]</span></p>
+<p>Under autarky, Home’s consumption possibilities are limited by the PPF:</p>
+<p><span class="math display">\[
+C_C
+=
+50
+-
+\frac{1}{2}C_W.
+\]</span></p>
+<p>With trade, Home’s consumption possibilities are</p>
+<p><span class="math display">\[
+C_C
+=
+\frac{200}{3}
+-
+\frac{2}{3}C_W.
+\]</span></p>
+<p>The slope changes from</p>
+<p><span class="math display">\[
+-\frac{1}{2}
+\]</span></p>
+<p>to</p>
+<p><span class="math display">\[
+-\frac{2}{3}.
+\]</span></p>
+<p>This happens because the relevant trade-off is no longer determined by Home’s production technology alone. With trade, Home can exchange wheat for cloth at the <strong>international relative price</strong>.</p>
+<p>The intercept changes from</p>
+<p><span class="math display">\[
+50
+\]</span></p>
+<p>to</p>
+<p><span class="math display">\[
+\frac{200}{3}
+\]</span></p>
+<p>People are able to purchase more cloth by using all incomes (<span class="math inline">\(C_W = 0\)</span>).</p>
+<section id="economic-intuition-3" class="level3">
+<h3 class="anchored" data-anchor-id="economic-intuition-3">Economic Intuition</h3>
+<p>Trade expands Home’s consumption possibilities.</p>
+<p>Under autarky, Home can only consume combinations that lie on its own PPF.</p>
+<p>With trade, Home can specialize in wheat and exchange wheat for cloth at the international relative price.</p>
+<p>Because the international relative price is more favorable than Home’s autarky trade-off, Home can reach consumption bundles that were not feasible before trade.</p>
+<p>This is the <strong>gain from trade</strong>.</p>
+<div style="max-width: 650px; margin: 2rem auto;">
+<svg viewbox="0 0 600 420" style="width:100%; height:auto;">
+
+  <!-- Axes -->
+  <line x1="80" y1="340" x2="550" y2="340" stroke="black" stroke-width="2"></line>
+  <line x1="80" y1="340" x2="80" y2="30" stroke="black" stroke-width="2"></line>
+
+  <!-- Autarky PPF -->
+  <line x1="80" y1="90" x2="520" y2="340" stroke="steelblue" stroke-width="4"></line>
+
+  <!-- Trade budget line -->
+  <line x1="80" y1="40" x2="520" y2="340" stroke="darkorange" stroke-width="4"></line>
+  <!-- Axis labels -->
+  <foreignobject x="470" y="360" width="120" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:15px;">
+      \( \text{Wheat}(C_W) \)
+    </div>
+  </foreignobject>
+
+  <foreignobject x="0" y="30" width="120" height="40">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:15px;">
+      \( \text{Cloth}(C_C) \)
+    </div>
+  </foreignobject>
+
+    <!-- Line labels -->
+  <foreignobject x="135" y="240" width="250" height="45">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:15px;">
+      \( \text{Autarky PPF: } C_C = 50 - \frac{1}{2}C_W \)
+    </div>
+  </foreignobject>
+
+  <foreignobject x="265" y="125" width="300" height="50">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:15px;">
+      \( \text{Trade budget line: } C_C = \frac{200}{3} - \frac{2}{3}C_W \)
+    </div>
+  </foreignobject>
+
+    <!-- Autarky consumption point -->
+  <circle cx="256" cy="190" r="6" fill="steelblue"></circle>
+
+  <foreignobject x="120" y="190" width="180" height="35">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:13px;">
+      \( \text{Autarky consumption} \)
+    </div>
+  </foreignobject>
+
+    <!-- Trade consumption point -->
+  <circle cx="280" cy="176" r="6" fill="darkorange"></circle>
+
+  <foreignobject x="290" y="158" width="180" height="35">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="font-size:13px;">
+      \( \text{Trade consumption} \)
+    </div>
+  </foreignobject>
+
+</svg>
+</div>
+</section>
+</section>
+<section id="practice-problems" class="level2">
+<h2 class="anchored" data-anchor-id="practice-problems">8. Practice Problems</h2>
+<section id="practice-1-why-does-home-fully-specialize" class="level3">
+<h3 class="anchored" data-anchor-id="practice-1-why-does-home-fully-specialize">Practice 1: Why Does Home Fully Specialize?</h3>
+<p>Recall that Home has</p>
+<p><span class="math display">\[
+MPL_C = 2,
+\qquad
+MPL_W = 4,
+\]</span></p>
+<p>and the international relative price is</p>
+<p><span class="math display">\[
+\frac{P_W^I}{P_C^I}
+=
+\frac{2}{3}.
+\]</span></p>
+<p>At this international price,</p>
+<p><span class="math display">\[
+P_W^I MPL_W
+&gt;
+P_C^I MPL_C,
+\]</span></p>
+<p>so workers earn more in the wheat industry.</p>
+<p>A student argues:</p>
+<blockquote class="blockquote">
+<p>“Workers will initially move into wheat, but as more workers enter the wheat industry, the marginal product of labor in wheat should fall. Eventually, wages in the two industries will become equal again, so Home will continue producing both goods.”</p>
+</blockquote>
+<p>Is this reasoning correct in the Ricardian model?</p>
+<p>And explain why Home <strong>fully specializes in wheat</strong> in the Ricardian model.</p>
+</section>
+<section id="practice-2-when-does-home-not-fully-specialize" class="level3">
+<h3 class="anchored" data-anchor-id="practice-2-when-does-home-not-fully-specialize">Practice 2: When Does Home Not Fully Specialize?</h3>
+<p>Recall that Home has</p>
+<p><span class="math display">\[
+MPL_C = 2,
+\qquad
+MPL_W = 4.
+\]</span></p>
+<p>Suppose the international relative price of wheat is instead</p>
+<p><span class="math display">\[
+\frac{P_W^I}{P_C^I}
+=
+\frac{1}{2}.
+\]</span></p>
+<p>A student says:</p>
+<blockquote class="blockquote">
+<p>“Home has a comparative advantage in wheat, so it should still fully specialize in wheat.”</p>
+</blockquote>
+<p>Is this correct?</p>
+<p>Answer the following:</p>
+<ol type="1">
+<li>Compare the wage in the wheat industry,</li>
+</ol>
+<p><span class="math display">\[
+w_W = P_W^I MPL_W,
+\]</span></p>
+<p>with the wage in the cloth industry,</p>
+<p><span class="math display">\[
+w_C = P_C^I MPL_C.
+\]</span></p>
+<ol start="2" type="1">
+<li><p>Are workers strictly better off working in one industry?</p></li>
+<li><p>Does Home have to fully specialize in this case?</p></li>
+<li><p>Explain why any allocation of labor between cloth and wheat can be consistent with equilibrium.</p></li>
+</ol>
+</section>
+<section id="practice-3-does-full-specialization-mean-consuming-only-one-good" class="level3">
+<h3 class="anchored" data-anchor-id="practice-3-does-full-specialization-mean-consuming-only-one-good">Practice 3: Does Full Specialization Mean Consuming Only One Good?</h3>
+<p>Under trade, Home fully specializes in wheat:</p>
+<p><span class="math display">\[
+Q_W = 100,
+\qquad
+Q_C = 0.
+\]</span></p>
+<p>A student concludes:</p>
+<blockquote class="blockquote">
+<p>“Since Home produces no cloth, Home must also consume no cloth.”</p>
+</blockquote>
+<p>Is this correct?</p>
+<p>Suppose Home chooses to consume</p>
+<p><span class="math display">\[
+C_W = 40.
+\]</span></p>
+<p>Using Home’s trade budget constraint,</p>
+<p><span class="math display">\[
+C_C
+=
+\frac{200}{3}
+-
+\frac{2}{3}C_W,
+\]</span></p>
+<p>answer the following:</p>
+<ol type="1">
+<li><p>How much cloth does Home consume?</p></li>
+<li><p>How much wheat does Home export?</p></li>
+<li><p>How much cloth does Home import?</p></li>
+<li><p>Explain why full specialization in production does <strong>not</strong> imply full specialization in consumption.</p></li>
+</ol>
+</section>
+<section id="practice-4-do-gains-from-trade-mean-producing-outside-the-ppf" class="level3">
+<h3 class="anchored" data-anchor-id="practice-4-do-gains-from-trade-mean-producing-outside-the-ppf">Practice 4: Do Gains from Trade Mean Producing Outside the PPF?</h3>
+<p>A student looks at the gains-from-trade diagram and says:</p>
+<blockquote class="blockquote">
+<p>“Trade makes Home better off because it allows Home to produce outside its production possibilities frontier.”</p>
+</blockquote>
+<p>Is this statement correct?</p>
+<p>Answer the following:</p>
+<ol type="1">
+<li><p>Under trade, where must Home’s <strong>production point</strong> lie relative to its PPF?</p></li>
+<li><p>What can lie outside Home’s PPF after trade: the production point, the consumption point, or both?</p></li>
+<li><p>Explain how Home can consume a bundle outside its PPF without producing outside its PPF.</p></li>
+</ol>
+</section>
+<section id="practice-5-why-must-the-world-relative-price-lie-between-the-two-autarky-prices" class="level3">
+<h3 class="anchored" data-anchor-id="practice-5-why-must-the-world-relative-price-lie-between-the-two-autarky-prices">Practice 5: Why Must the World Relative Price Lie Between the Two Autarky Prices?</h3>
+<p>Recall that</p>
+<p><span class="math display">\[
+\frac{P_W}{P_C}
+=
+\frac{1}{2}
+\]</span></p>
+<p>in Home, while</p>
+<p><span class="math display">\[
+\frac{P_W^*}{P_C^*}
+=
+1
+\]</span></p>
+<p>in Foreign.</p>
+<p>Suppose instead that the international relative price of wheat were</p>
+<p><span class="math display">\[
+\frac{P_W^I}{P_C^I}
+=
+\frac{3}{2}.
+\]</span></p>
+<p>Answer the following:</p>
+<ol type="1">
+<li><p>In Home, which industry would pay the higher wage?</p></li>
+<li><p>In Foreign, which industry would pay the higher wage?</p></li>
+<li><p>Which good would each country want to produce?</p></li>
+<li><p>Can this be an equilibrium in which Home exports wheat and Foreign exports cloth?</p></li>
+<li><p>Use this example to explain why, in the two-country Ricardian equilibrium,</p></li>
+</ol>
+<p><span class="math display">\[
+\frac{P_W}{P_C}
+&lt;
+\frac{P_W^I}{P_C^I}
+&lt;
+\frac{P_W^*}{P_C^*}.
+\]</span></p>
+</section>
+<section id="practice-6-gain-from-trade-and-real-income" class="level3">
+<h3 class="anchored" data-anchor-id="practice-6-gain-from-trade-and-real-income">Practice 6: Gain from Trade and Real Income</h3>
+<p>Recall that Home has</p>
+<p><span class="math display">\[
+MPL_W = 4,
+\qquad
+MPL_C = 2,
+\]</span></p>
+<p>while Foreign has</p>
+<p><span class="math display">\[
+MPL_W^* = 1,
+\qquad
+MPL_C^* = 1.
+\]</span></p>
+<p>The international relative price is</p>
+<p><span class="math display">\[
+\frac{P_W^I}{P_C^I}
+=
+\frac{2}{3}.
+\]</span></p>
+<p>Home specializes in wheat, while Foreign specializes in cloth.</p>
+<p>Answer the following:</p>
+<ol type="1">
+<li><p>What is Home’s real wage in terms of wheat after trade?</p></li>
+<li><p>What is Home’s real wage in terms of cloth after trade?</p></li>
+<li><p>What is Foreign’s real wage in terms of cloth after trade?</p></li>
+<li><p>What is Foreign’s real wage in terms of wheat after trade?</p></li>
+<li><p>Compare these real wages with the corresponding real wages under autarky. Does each country gain from trade?</p></li>
+<li><p>After trade, which country’s workers have the higher real income when measured in terms of wheat? What about when measured in terms of cloth?</p></li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+
+  // Keep the homepage fully expanded
+
+  const path = window.location.pathname;
+
+  if (path.endsWith("/") || path.endsWith("/index.html")) {
+
+    return;
+
+  }
+
+
+
+  const main = document.querySelector("main");
+
+  if (!main) return;
+
+
+
+  const headings = Array.from(main.querySelectorAll("h2"));
+
+
+
+  headings.forEach((heading) => {
+
+    const section = document.createElement("details");
+
+    const summary = document.createElement("summary");
+
+
+
+    summary.innerHTML = heading.innerHTML;
+
+    section.appendChild(summary);
+
+
+
+    let next = heading.nextSibling;
+
+
+
+    while (next && !(next.nodeType === 1 && next.tagName === "H2")) {
+
+      const current = next;
+
+      next = next.nextSibling;
+
+      section.appendChild(current);
+
+    }
+
+
+
+    heading.replaceWith(section);
+
+  });
+
+});
+
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/EricGXZhou\.github\.io\/econ3200-ta\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
