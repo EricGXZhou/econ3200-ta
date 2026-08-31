@@ -26,6 +26,7 @@ format:
       - brand
     css: styles.css
     toc: true
-    include-after-body: collapse-sections.html
-
+    include-after-body:
+      - collapse-sections.html
+      - cloudflare-analytics.html
 
