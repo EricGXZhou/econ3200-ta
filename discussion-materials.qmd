@@ -2,16 +2,16 @@
 title: "Discussion Materials"
 ---
 
-## September 2 — Elasticity, Gravity, and Returns of Scale 
+::: {.week-card .current-week}
 
-### Log Functions
+<div class="week-date">SEPTEMBER 2, 2026</div>
 
-[Download Sep2_1_Log_Functions](materials/Sep2_1_Log_Functions.pdf){target="_blank"}
+## Elasticity, Gravity, and Returns to Scale
 
-### Gravity Model
+[Log Functions](materials/Sep2_1_Log_Functions.pdf){target="_blank" .material-link}
 
-[Download Sep2_2_Gravity](materials/Sep2_2_Gravity.pdf){target="_blank"}
+[Gravity Model](materials/Sep2_2_Gravity.pdf){target="_blank" .material-link}
 
-### Constant Returns to Scale
+[Constant Returns to Scale](materials/Sep2_3_CRS.pdf){target="_blank" .material-link}
 
-[Download Sep2_3_CRS](materials/Sep2_3_CRS.pdf){target="_blank"}
+:::
