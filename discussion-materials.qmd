@@ -2,5 +2,16 @@
 title: "Discussion Materials"
 ---
 
+## September 2 — Elasticity, Gravity, and Returns of Scale 
 
-Weekly discussion notes, supplementary materials, and homework answer key will be posted here.
+### Log Functions
+
+[Download Sep2_1_Log_Functions](materials/Sep2_1_Log_Functions.pdf){target="_blank"}
+
+### Gravity Model
+
+[Download Sep2_2_Gravity](materials/Sep2_2_Gravity.pdf){target="_blank"}
+
+### Constant Returns to Scale
+
+[Download Sep2_3_CRS](materials/Sep2_3_CRS.pdf){target="_blank"}
