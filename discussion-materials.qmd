@@ -4,14 +4,19 @@ title: "Discussion Materials"
 
 ::: {.week-card .current-week}
 
+<div class="week-date">SEPTEMBER 9, 2026</div>
+
+## Gravity and Returns to Scale
+
+[Gravity Model](materials/Sep9_1_Gravity.pdf){target="_blank" .material-link}
+
+[Constant Returns to Scale](materials/Sep9_2_CRS.pdf){target="_blank" .material-link}
+
+:::
+
 <div class="week-date">SEPTEMBER 2, 2026</div>
 
-## Elasticity, Gravity, and Returns to Scale
+## Elasticity
 
 [Log Functions](materials/Sep2_1_Log_Functions.pdf){target="_blank" .material-link}
 
-[Gravity Model](materials/Sep2_2_Gravity.pdf){target="_blank" .material-link}
-
-[Constant Returns to Scale](materials/Sep2_3_CRS.pdf){target="_blank" .material-link}
-
-:::

@@ -1,0 +1,601 @@
+---
+title: "The Specific Factors Model"
+---
+
+The Ricardian model shows that countries gain from trade, but it has only one factor of production: labor.
+
+Workers can move freely across sectors, so adjustment to trade is painless.
+
+The **Specific Factors Model** adds factors that cannot move across industries in the short run. This allows us to ask:
+
+> If trade benefits the economy as a whole, can some people still lose?
+
+---
+
+## 1. Model Setup
+
+There are two sectors:
+
+- Manufacturing $M$
+- Agriculture $A$
+
+Manufacturing uses capital and labor:
+
+$$
+Q_M = 5K^{0.5}L_M^{0.5}.
+$$
+
+Agriculture uses land and labor:
+
+$$
+Q_A = 10T^{0.5}L_A^{0.5}.
+$$
+
+Labor is mobile across sectors:
+
+$$
+L=L_M+L_A.
+$$
+
+But capital and land are **specific factors**:
+
+- $K$ can only be used in manufacturing;
+- $T$ can only be used in agriculture.
+
+Suppose
+
+$$
+K=100,
+\qquad
+T=81.
+$$
+
+Then
+
+$$
+Q_M=50L_M^{0.5},
+$$
+
+and
+
+$$
+Q_A=90L_A^{0.5}.
+$$
+
+The marginal products of labor are
+
+$$
+\boxed{
+MPL_M=25L_M^{-0.5}
+}
+$$
+
+and
+
+$$
+\boxed{
+MPL_A=45L_A^{-0.5}.
+}
+$$
+
+Because the specific factors are fixed,
+
+$$
+L_M\uparrow
+\Rightarrow
+MPL_M\downarrow,
+$$
+
+and
+
+$$
+L_A\uparrow
+\Rightarrow
+MPL_A\downarrow.
+$$
+
+This is **diminishing marginal product of labor**.
+
+> More workers have to share the same amount of capital or land.
+
+::: {.callout-note}
+### CRS vs. Diminishing MPL
+
+The production functions have constant returns to scale because increasing **both inputs** proportionally increases output proportionally.
+
+Diminishing MPL asks a different question: what happens when labor increases while the specific factor is fixed?
+
+So there is no contradiction.
+:::
+
+---
+
+## 2. Labor Market Equilibrium
+
+A competitive firm hires labor until
+
+$$
+\boxed{
+W=P_iMPL_i.
+}
+$$
+
+Therefore,
+
+$$
+W=P_M MPL_M
+$$
+
+in manufacturing, and
+
+$$
+W=P_A MPL_A
+$$
+
+in agriculture.
+
+Since labor can move between sectors, the wage must be the same in both:
+
+$$
+\boxed{
+P_M MPL_M=P_A MPL_A.
+}
+$$
+
+Substituting the marginal products,
+
+$$
+P_M25L_M^{-0.5}
+=
+P_A45L_A^{-0.5}.
+$$
+
+Rearranging,
+
+$$
+\frac{P_M}{P_A}
+=
+\frac95
+\left(
+\frac{L_M}{L_A}
+\right)^{0.5}.
+$$
+
+Therefore,
+
+$$
+\boxed{
+\frac{L_M}{L_A}
+=
+\frac{25}{81}
+\left(
+\frac{P_M}{P_A}
+\right)^2.
+}
+$$
+
+This gives the central prediction:
+
+$$
+\boxed{
+\frac{P_M}{P_A}\uparrow
+\Rightarrow
+\frac{L_M}{L_A}\uparrow.
+}
+$$
+
+When manufacturing becomes relatively more valuable, workers move from agriculture into manufacturing.
+
+Unlike the Ricardian model, this adjustment is gradual because
+
+$$
+L_M\uparrow
+\Rightarrow
+MPL_M\downarrow.
+$$
+
+---
+
+## 3. Numerical Example
+
+Suppose total labor is
+
+$$
+L=50,
+$$
+
+and
+
+$$
+P_A=1,
+\qquad
+P_M=\frac95.
+$$
+
+Then
+
+$$
+\frac{L_M}{L_A}
+=
+\frac{25}{81}
+\left(
+\frac95
+\right)^2
+=1.
+$$
+
+Therefore,
+
+$$
+L_M=L_A=25.
+$$
+
+The equilibrium wage is
+
+$$
+W
+=
+P_M MPL_M
+=
+\frac95
+\left[25(25)^{-0.5}\right]
+=9.
+$$
+
+The same wage is obtained from agriculture:
+
+$$
+W
+=
+P_A MPL_A
+=
+1\left[45(25)^{-0.5}\right]
+=9.
+$$
+
+---
+
+## 4. A Change in Relative Prices
+
+Suppose Home exports manufacturing goods.
+
+Opening to trade raises the relative price of manufacturing:
+
+$$
+\frac{P_M}{P_A}\uparrow.
+$$
+
+For simplicity, keep
+
+$$
+P_A=1
+$$
+
+and let $P_M$ double from
+
+$$
+\frac95
+$$
+
+to
+
+$$
+\frac{18}{5}.
+$$
+
+Then
+
+$$
+\frac{L_M}{L_A}
+=
+\frac{25}{81}
+\left(
+\frac{18}{5}
+\right)^2
+=4.
+$$
+
+Since
+
+$$
+L_M+L_A=50,
+$$
+
+we obtain
+
+$$
+\boxed{
+L_M=40,
+\qquad
+L_A=10.
+}
+$$
+
+Workers move from agriculture into manufacturing.
+
+So
+
+$$
+Q_M\uparrow,
+\qquad
+Q_A\downarrow.
+$$
+
+The new wage is
+
+$$
+W
+=
+P_A MPL_A
+=
+45(10)^{-0.5}
+\approx14.23.
+$$
+
+Thus,
+
+$$
+W:9\rightarrow14.23.
+$$
+
+The wage rises, but by less than the price of manufacturing.
+
+Why?
+
+Because
+
+$$
+W=P_M MPL_M.
+$$
+
+When workers enter manufacturing,
+
+$$
+L_M\uparrow
+\Rightarrow
+MPL_M\downarrow.
+$$
+
+Therefore,
+
+$$
+\boxed{
+\frac{\Delta W}{W}
+<
+\frac{\Delta P_M}{P_M}.
+}
+$$
+
+---
+
+## 5. Who Gains and Who Loses?
+
+### Mobile Labor
+
+Workers' wage rises.
+
+Since $P_A$ is unchanged,
+
+$$
+\frac{W}{P_A}\uparrow.
+$$
+
+Workers can buy more agricultural goods.
+
+But $P_M$ rises by more than the wage:
+
+$$
+\frac{W}{P_M}\downarrow.
+$$
+
+Workers can buy fewer manufacturing goods.
+
+Therefore,
+
+$$
+\boxed{
+\text{The effect on mobile labor is ambiguous.}
+}
+$$
+
+---
+
+### Capital Specific to Manufacturing
+
+Capital receives what remains after manufacturing workers are paid:
+
+$$
+\text{income of }K
+=
+P_MQ_M-WL_M.
+$$
+
+When $P_M$ rises:
+
+- manufacturing expands;
+- more workers enter manufacturing;
+- the return to manufacturing capital rises.
+
+Therefore,
+
+$$
+\boxed{
+\text{The specific factor in the expanding sector gains.}
+}
+$$
+
+---
+
+### Land Specific to Agriculture
+
+Land receives
+
+$$
+\text{income of }T
+=
+P_AQ_A-WL_A.
+$$
+
+When workers leave agriculture:
+
+- agricultural output falls;
+- the wage rises;
+- the return to land falls.
+
+Therefore,
+
+$$
+\boxed{
+\text{The specific factor in the shrinking sector loses.}
+}
+$$
+
+### Summary
+
+| Factor | Sector | Effect |
+|---|---|---|
+| Capital $K$ | Export sector $M$ | **Gains** |
+| Land $T$ | Import-competing sector $A$ | **Loses** |
+| Labor $L$ | Mobile | **Ambiguous** |
+
+The main lesson is:
+
+$$
+\boxed{
+\text{Trade can benefit the economy overall while creating winners and losers.}
+}
+$$
+
+---
+
+## 6. Application: The China Shock
+
+The labels "manufacturing" and "agriculture" are only examples.
+
+Suppose a U.S. industry competes with imports from China.
+
+Cheaper Chinese imports lower the price received by U.S. producers in that industry:
+
+$$
+P_I\downarrow.
+$$
+
+Therefore,
+
+$$
+P_I MPL_I\downarrow,
+$$
+
+so labor demand in the import-competing industry falls.
+
+The Specific Factors Model predicts:
+
+- employment falls in the import-competing sector;
+- mobile workers move toward other sectors;
+- factors specific to the import-competing sector lose;
+- consumers benefit from lower prices.
+
+So these statements can both be true:
+
+$$
+\boxed{
+\text{Consumers gain from cheaper imports}
+}
+$$
+
+and
+
+$$
+\boxed{
+\text{some workers and businesses lose from import competition.}
+}
+$$
+
+In reality, workers may also have industry-specific skills or experience. This can make adjustment slower and more costly than the simple model assumes.
+
+---
+
+## 7. Practice Problems
+
+### Practice 1: Diminishing Marginal Product
+
+Suppose
+
+$$
+Q_M=5K^{0.5}L_M^{0.5}.
+$$
+
+1. Show that the production function has constant returns to scale.
+2. Derive $MPL_M$.
+3. Holding $K$ fixed, what happens to $MPL_M$ when $L_M$ rises?
+4. Explain why constant returns to scale and diminishing MPL are not contradictory.
+
+---
+
+### Practice 2: Labor Market Equilibrium
+
+Suppose
+
+$$
+Q_M=50L_M^{0.5},
+\qquad
+Q_A=90L_A^{0.5},
+$$
+
+with
+
+$$
+L=50,
+\qquad
+P_A=1,
+\qquad
+P_M=\frac95.
+$$
+
+1. Find $L_M/L_A$.
+2. Find $L_M$ and $L_A$.
+3. Calculate the equilibrium wage.
+4. Explain why the wage must be equal across sectors.
+
+---
+
+### Practice 3: A Higher Manufacturing Price
+
+Continue from Practice 2.
+
+Suppose
+
+$$
+P_M
+$$
+
+doubles to
+
+$$
+\frac{18}{5},
+$$
+
+while $P_A=1$.
+
+1. Find the new $L_M/L_A$.
+2. Find the new $L_M$ and $L_A$.
+3. Calculate the new wage.
+4. Does the wage rise by more or less than $P_M$?
+5. Is mobile labor necessarily better off?
+6. Which specific factor gains and which loses?
+
+---
+
+### Practice 4: The China Shock
+
+A student says:
+
+> "Cheaper imports from China benefit U.S. consumers, so U.S. workers cannot be hurt."
+
+Use the Specific Factors Model to evaluate this statement.
+
+1. What happens to labor demand in the import-competing sector?
+2. What happens to employment in that sector?
+3. What happens to factors specific to that sector?
+4. Why can consumers gain while some workers and businesses lose?
+5. Does the existence of losers imply that the country as a whole loses from trade?

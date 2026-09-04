@@ -49,11 +49,12 @@ A suggested workflow is:
 
 **Discussion Notes:** [View Discussion Materials](discussion-materials.qmd)
 
-## Upcoming Deadlines
+## Homework Answer Key
 
-| Assignment | Deadline |
-|---|---|
-| Homework 1 | 9/3 3:30pm |
+| Assignment | Deadline | Answer Key
+|---|---|---|
+| Homework 1 | 9/3 3:30pm | [View Answer Key](materials/ECON_3200_F2026_HW1_Answer_Key.pdf){target="_blank"} |
+| Homework 2 | 9/10 3:30pm | View Answer Key |
 
 ## Exams
 
