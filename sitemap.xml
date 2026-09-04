@@ -1,35 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://EricGXZhou.github.io/econ3200-ta/trade/ricardian.html</loc>
+    <loc>https://EricGXZhou.github.io/econ3200-ta/trade/specific.html</loc>
+    <lastmod>2026-09-04T22:38:24.326Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EricGXZhou.github.io/econ3200-ta/trade/index.html</loc>
     <lastmod>2026-08-30T21:35:01.853Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EricGXZhou.github.io/econ3200-ta/trade/gravity.html</loc>
-    <lastmod>2026-08-30T21:35:01.853Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EricGXZhou.github.io/econ3200-ta/macro/index.html</loc>
-    <lastmod>2026-08-30T21:35:01.850Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EricGXZhou.github.io/econ3200-ta/discussion-materials.html</loc>
-    <lastmod>2026-08-31T07:27:06.693Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EricGXZhou.github.io/econ3200-ta/about.html</loc>
-    <lastmod>2026-08-30T21:35:01.848Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EricGXZhou.github.io/econ3200-ta/index.html</loc>
-    <lastmod>2026-08-30T21:35:01.849Z</lastmod>
   </url>
   <url>
     <loc>https://EricGXZhou.github.io/econ3200-ta/migration/index.html</loc>
     <lastmod>2026-08-30T21:35:01.852Z</lastmod>
   </url>
   <url>
-    <loc>https://EricGXZhou.github.io/econ3200-ta/trade/index.html</loc>
+    <loc>https://EricGXZhou.github.io/econ3200-ta/index.html</loc>
+    <lastmod>2026-09-04T22:37:06.679Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EricGXZhou.github.io/econ3200-ta/about.html</loc>
+    <lastmod>2026-08-30T21:35:01.848Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EricGXZhou.github.io/econ3200-ta/discussion-materials.html</loc>
+    <lastmod>2026-09-04T22:11:01.319Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EricGXZhou.github.io/econ3200-ta/macro/index.html</loc>
+    <lastmod>2026-08-30T21:35:01.850Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EricGXZhou.github.io/econ3200-ta/trade/gravity.html</loc>
+    <lastmod>2026-08-30T21:35:01.853Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EricGXZhou.github.io/econ3200-ta/trade/ricardian.html</loc>
     <lastmod>2026-08-30T21:35:01.853Z</lastmod>
   </url>
 </urlset>

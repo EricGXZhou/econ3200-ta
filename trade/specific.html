@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Gravity Model – ECON 3200: The Economics of Globalization</title>
+<title>The Specific Factors Model – ECON 3200: The Economics of Globalization</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -175,35 +175,24 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#the-basic-idea" id="toc-the-basic-idea" class="nav-link active" data-scroll-target="#the-basic-idea">1. The Basic Idea</a></li>
-  <li><a href="#the-gravity-equation" id="toc-the-gravity-equation" class="nav-link" data-scroll-target="#the-gravity-equation">2. The Gravity Equation</a>
+  <li><a href="#model-setup" id="toc-model-setup" class="nav-link active" data-scroll-target="#model-setup">1. Model Setup</a></li>
+  <li><a href="#labor-market-equilibrium" id="toc-labor-market-equilibrium" class="nav-link" data-scroll-target="#labor-market-equilibrium">2. Labor Market Equilibrium</a></li>
+  <li><a href="#numerical-example" id="toc-numerical-example" class="nav-link" data-scroll-target="#numerical-example">3. Numerical Example</a></li>
+  <li><a href="#a-change-in-relative-prices" id="toc-a-change-in-relative-prices" class="nav-link" data-scroll-target="#a-change-in-relative-prices">4. A Change in Relative Prices</a></li>
+  <li><a href="#who-gains-and-who-loses" id="toc-who-gains-and-who-loses" class="nav-link" data-scroll-target="#who-gains-and-who-loses">5. Who Gains and Who Loses?</a>
   <ul class="collapse">
-  <li><a href="#how-to-read-the-equation" id="toc-how-to-read-the-equation" class="nav-link" data-scroll-target="#how-to-read-the-equation">How to Read the Equation</a></li>
+  <li><a href="#mobile-labor" id="toc-mobile-labor" class="nav-link" data-scroll-target="#mobile-labor">Mobile Labor</a></li>
+  <li><a href="#capital-specific-to-manufacturing" id="toc-capital-specific-to-manufacturing" class="nav-link" data-scroll-target="#capital-specific-to-manufacturing">Capital Specific to Manufacturing</a></li>
+  <li><a href="#land-specific-to-agriculture" id="toc-land-specific-to-agriculture" class="nav-link" data-scroll-target="#land-specific-to-agriculture">Land Specific to Agriculture</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   </ul></li>
-  <li><a href="#taking-logs" id="toc-taking-logs" class="nav-link" data-scroll-target="#taking-logs">3. Taking Logs</a>
+  <li><a href="#application-the-china-shock" id="toc-application-the-china-shock" class="nav-link" data-scroll-target="#application-the-china-shock">6. Application: The China Shock</a></li>
+  <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems">7. Practice Problems</a>
   <ul class="collapse">
-  <li><a href="#why-take-logs" id="toc-why-take-logs" class="nav-link" data-scroll-target="#why-take-logs">Why Take Logs?</a></li>
-  </ul></li>
-  <li><a href="#economic-interpretation" id="toc-economic-interpretation" class="nav-link" data-scroll-target="#economic-interpretation">4. Economic Interpretation</a></li>
-  <li><a href="#trade-elasticity-and-distance" id="toc-trade-elasticity-and-distance" class="nav-link" data-scroll-target="#trade-elasticity-and-distance">5. Trade Elasticity and Distance</a>
-  <ul class="collapse">
-  <li><a href="#a-common-mistake" id="toc-a-common-mistake" class="nav-link" data-scroll-target="#a-common-mistake">A Common Mistake</a></li>
-  </ul></li>
-  <li><a href="#extensive-and-intensive-margins" id="toc-extensive-and-intensive-margins" class="nav-link" data-scroll-target="#extensive-and-intensive-margins">6. Extensive and Intensive Margins</a>
-  <ul class="collapse">
-  <li><a href="#extensive-margin" id="toc-extensive-margin" class="nav-link" data-scroll-target="#extensive-margin">Extensive Margin</a></li>
-  <li><a href="#intensive-margin" id="toc-intensive-margin" class="nav-link" data-scroll-target="#intensive-margin">Intensive Margin</a></li>
-  <li><a href="#a-common-mistake-1" id="toc-a-common-mistake-1" class="nav-link" data-scroll-target="#a-common-mistake-1">A Common Mistake</a></li>
-  </ul></li>
-  <li><a href="#what-gravity-explains-and-what-it-does-not" id="toc-what-gravity-explains-and-what-it-does-not" class="nav-link" data-scroll-target="#what-gravity-explains-and-what-it-does-not">7. What Gravity Explains — and What It Does Not</a></li>
-  <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems">8. Practice Problems</a>
-  <ul class="collapse">
-  <li><a href="#practice-1-how-does-country-size-affect-trade" id="toc-practice-1-how-does-country-size-affect-trade" class="nav-link" data-scroll-target="#practice-1-how-does-country-size-affect-trade">Practice 1: How Does Country Size Affect Trade?</a></li>
-  <li><a href="#practice-2-what-happens-when-distance-doubles" id="toc-practice-2-what-happens-when-distance-doubles" class="nav-link" data-scroll-target="#practice-2-what-happens-when-distance-doubles">Practice 2: What Happens When Distance Doubles?</a></li>
-  <li><a href="#practice-3-why-do-we-need-to-control-for-gdp" id="toc-practice-3-why-do-we-need-to-control-for-gdp" class="nav-link" data-scroll-target="#practice-3-why-do-we-need-to-control-for-gdp">Practice 3: Why Do We Need to Control for GDP?</a></li>
-  <li><a href="#practice-4-extensive-margin-or-intensive-margin" id="toc-practice-4-extensive-margin-or-intensive-margin" class="nav-link" data-scroll-target="#practice-4-extensive-margin-or-intensive-margin">Practice 4: Extensive Margin or Intensive Margin?</a></li>
-  <li><a href="#practice-5-does-more-trade-reveal-comparative-advantage" id="toc-practice-5-does-more-trade-reveal-comparative-advantage" class="nav-link" data-scroll-target="#practice-5-does-more-trade-reveal-comparative-advantage">Practice 5: Does More Trade Reveal Comparative Advantage?</a></li>
-  <li><a href="#practice-6-do-larger-countries-depend-more-on-international-trade" id="toc-practice-6-do-larger-countries-depend-more-on-international-trade" class="nav-link" data-scroll-target="#practice-6-do-larger-countries-depend-more-on-international-trade">Practice 6: Do Larger Countries Depend More on International Trade?</a></li>
+  <li><a href="#practice-1-diminishing-marginal-product" id="toc-practice-1-diminishing-marginal-product" class="nav-link" data-scroll-target="#practice-1-diminishing-marginal-product">Practice 1: Diminishing Marginal Product</a></li>
+  <li><a href="#practice-2-labor-market-equilibrium" id="toc-practice-2-labor-market-equilibrium" class="nav-link" data-scroll-target="#practice-2-labor-market-equilibrium">Practice 2: Labor Market Equilibrium</a></li>
+  <li><a href="#practice-3-a-higher-manufacturing-price" id="toc-practice-3-a-higher-manufacturing-price" class="nav-link" data-scroll-target="#practice-3-a-higher-manufacturing-price">Practice 3: A Higher Manufacturing Price</a></li>
+  <li><a href="#practice-4-the-china-shock" id="toc-practice-4-the-china-shock" class="nav-link" data-scroll-target="#practice-4-the-china-shock">Practice 4: The China Shock</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -213,7 +202,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">The Gravity Model</h1>
+<h1 class="title">The Specific Factors Model</h1>
 </div>
 
 
@@ -230,382 +219,505 @@ window.Quarto = {
 </header>
 
 
-<p>Why do large and nearby countries tend to trade more with each other?</p>
-<section id="the-basic-idea" class="level2">
-<h2 class="anchored" data-anchor-id="the-basic-idea">1. The Basic Idea</h2>
-<p>The gravity model is a simple way to organize patterns in international trade data.</p>
-<p>The basic idea is:</p>
+<p>The Ricardian model shows that countries gain from trade, but it has only one factor of production: labor.</p>
+<p>Workers can move freely across sectors, so adjustment to trade is painless.</p>
+<p>The <strong>Specific Factors Model</strong> adds factors that cannot move across industries in the short run. This allows us to ask:</p>
+<blockquote class="blockquote">
+<p>If trade benefits the economy as a whole, can some people still lose?</p>
+</blockquote>
+<hr>
+<section id="model-setup" class="level2">
+<h2 class="anchored" data-anchor-id="model-setup">1. Model Setup</h2>
+<p>There are two sectors:</p>
 <ul>
-<li><strong>Larger countries trade more.</strong></li>
-<li><strong>Countries that are closer together trade more.</strong></li>
+<li>Manufacturing <span class="math inline">\(M\)</span></li>
+<li>Agriculture <span class="math inline">\(A\)</span></li>
 </ul>
-<p>This is similar to Newton’s law of gravity: the force between two objects is stronger when the objects are larger and weaker when they are farther apart.</p>
-<p>In international trade, country size is measured by GDP, while distance captures one important source of trade costs.</p>
-</section>
-<section id="the-gravity-equation" class="level2">
-<h2 class="anchored" data-anchor-id="the-gravity-equation">2. The Gravity Equation</h2>
-<p>For two countries, <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, the gravity equation can be written as</p>
+<p>Manufacturing uses capital and labor:</p>
 <p><span class="math display">\[
-Trade_{AB}
-=
-T
-\times
-\frac{Y_A Y_B}{d_{AB}^{\alpha}}
-\times
-\varepsilon_{AB}.
+Q_M = 5K^{0.5}L_M^{0.5}.
 \]</span></p>
-<p>where</p>
+<p>Agriculture uses land and labor:</p>
+<p><span class="math display">\[
+Q_A = 10T^{0.5}L_A^{0.5}.
+\]</span></p>
+<p>Labor is mobile across sectors:</p>
+<p><span class="math display">\[
+L=L_M+L_A.
+\]</span></p>
+<p>But capital and land are <strong>specific factors</strong>:</p>
 <ul>
-<li><span class="math inline">\(Trade_{AB}\)</span> = trade between countries <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span></li>
-<li><span class="math inline">\(Y_A\)</span> = GDP of country <span class="math inline">\(A\)</span></li>
-<li><span class="math inline">\(Y_B\)</span> = GDP of country <span class="math inline">\(B\)</span></li>
-<li><span class="math inline">\(d_{AB}\)</span> = distance between the two countries</li>
-<li><span class="math inline">\(T\)</span> = a constant</li>
-<li><span class="math inline">\(\alpha\)</span> = the effect of distance on trade</li>
-<li><span class="math inline">\(\varepsilon_{AB}\)</span> = other factors affecting trade between <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span></li>
+<li><span class="math inline">\(K\)</span> can only be used in manufacturing;</li>
+<li><span class="math inline">\(T\)</span> can only be used in agriculture.</li>
 </ul>
-<section id="how-to-read-the-equation" class="level3">
-<h3 class="anchored" data-anchor-id="how-to-read-the-equation">How to Read the Equation</h3>
-<p>The gravity equation says that bilateral trade is larger when the two countries are economically larger and smaller when they are farther apart.</p>
-<p>Holding everything else constant:</p>
-<ul>
-<li>If <span class="math inline">\(Y_A\)</span> increases, trade between <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> increases.</li>
-<li>If <span class="math inline">\(Y_B\)</span> increases, trade between <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> increases.</li>
-<li>If <span class="math inline">\(d_{AB}\)</span> increases, trade between <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> decreases.</li>
-</ul>
-<p>Because GDP enters multiplicatively,</p>
-<p><span class="math display">\[
-Trade_{AB}
-\propto
-Y_A Y_B.
-\]</span></p>
-<p>Because distance appears in the denominator,</p>
-<p><span class="math display">\[
-Trade_{AB}
-\propto
-\frac{1}{d_{AB}^{\alpha}}.
-\]</span></p>
-</section>
-</section>
-<section id="taking-logs" class="level2">
-<h2 class="anchored" data-anchor-id="taking-logs">3. Taking Logs</h2>
-<p>The gravity equation is multiplicative:</p>
-<p><span class="math display">\[
-Trade_{AB}
-=
-T
-\times
-\frac{Y_A Y_B}{d_{AB}^{\alpha}}
-\times
-\varepsilon_{AB}.
-\]</span></p>
-<p>Taking natural logs turns this into a linear equation:</p>
-<p><span class="math display">\[
-\ln Trade_{AB}
-=
-\ln T
-+
-\ln Y_A
-+
-\ln Y_B
--
-\alpha \ln d_{AB}
-+
-\ln \varepsilon_{AB}.
-\]</span></p>
-<section id="why-take-logs" class="level3">
-<h3 class="anchored" data-anchor-id="why-take-logs">Why Take Logs?</h3>
-<p>Taking logs makes the gravity equation easier to interpret because it turns multiplication into addition and powers into coefficients.</p>
-<p>For example,</p>
-<p><span class="math display">\[
-d_{AB}^{-\alpha}
-\]</span></p>
-<p>becomes</p>
-<p><span class="math display">\[
--\alpha \ln d_{AB}.
-\]</span></p>
-<p>The log form therefore makes it easy to see how proportional changes in GDP and distance are related to proportional changes in trade.</p>
-<p>It also gives us a linear equation that can be taken directly to the data.</p>
-</section>
-</section>
-<section id="economic-interpretation" class="level2">
-<h2 class="anchored" data-anchor-id="economic-interpretation">4. Economic Interpretation</h2>
-<p>In the log form of the gravity equation,</p>
-<p><span class="math display">\[
-\ln Trade_{AB}
-=
-\ln T
-+
-\ln Y_A
-+
-\ln Y_B
--
-\alpha \ln d_{AB}
-+
-\ln \varepsilon_{AB},
-\]</span></p>
-<p>the coefficients on <span class="math inline">\(\ln Y_A\)</span> and <span class="math inline">\(\ln Y_B\)</span> are both equal to 1.</p>
-<p>This means that, holding everything else constant:</p>
-<ul>
-<li>a 1% increase in country <span class="math inline">\(A\)</span>’s GDP is associated with a 1% increase in trade between <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>;</li>
-<li>a 1% increase in country <span class="math inline">\(B\)</span>’s GDP is also associated with a 1% increase in trade between <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>.</li>
-</ul>
-<p>The coefficient on log distance is</p>
-<p><span class="math display">\[
--\alpha.
-\]</span></p>
-<p>This means that <span class="math inline">\(\alpha\)</span> is the <strong>distance elasticity of trade</strong>.</p>
-<p>For example, if</p>
-<p><span class="math display">\[
-\alpha = 1,
-\]</span></p>
-<p>then a 1% increase in distance is associated with a 1% decrease in bilateral trade, holding GDP and other factors constant.</p>
-<p>More generally,</p>
-<p><span class="math display">\[
-\%\Delta Trade_{AB}
-\approx
--\alpha \times \%\Delta d_{AB}.
-\]</span></p>
-</section>
-<section id="trade-elasticity-and-distance" class="level2">
-<h2 class="anchored" data-anchor-id="trade-elasticity-and-distance">5. Trade Elasticity and Distance</h2>
 <p>Suppose</p>
 <p><span class="math display">\[
-\alpha = 1.
+K=100,
+\qquad
+T=81.
 \]</span></p>
-<p>Then the gravity equation implies</p>
+<p>Then</p>
 <p><span class="math display">\[
-Trade_{AB}
-\propto
-\frac{1}{d_{AB}}.
+Q_M=50L_M^{0.5},
 \]</span></p>
-<p>So if the distance between two countries doubles,</p>
+<p>and</p>
 <p><span class="math display">\[
-d_{AB}
-\rightarrow
-2d_{AB},
+Q_A=90L_A^{0.5}.
 \]</span></p>
-<p>predicted trade becomes</p>
+<p>The marginal products of labor are</p>
 <p><span class="math display">\[
-\frac{1}{2}
+\boxed{
+MPL_M=25L_M^{-0.5}
+}
 \]</span></p>
-<p>of its original level.</p>
-<p>For example, if two otherwise identical country pairs are 1,000 miles and 2,000 miles apart, the gravity model with <span class="math inline">\(\alpha=1\)</span> predicts that the more distant pair trades only half as much.</p>
-<section id="a-common-mistake" class="level3">
-<h3 class="anchored" data-anchor-id="a-common-mistake">A Common Mistake</h3>
-<p>A student says:</p>
+<p>and</p>
+<p><span class="math display">\[
+\boxed{
+MPL_A=45L_A^{-0.5}.
+}
+\]</span></p>
+<p>Because the specific factors are fixed,</p>
+<p><span class="math display">\[
+L_M\uparrow
+\Rightarrow
+MPL_M\downarrow,
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+L_A\uparrow
+\Rightarrow
+MPL_A\downarrow.
+\]</span></p>
+<p>This is <strong>diminishing marginal product of labor</strong>.</p>
 <blockquote class="blockquote">
-<p>“If <span class="math inline">\(\alpha=1\)</span>, then doubling distance means distance increases by 100%, so trade must fall by 100%.”</p>
+<p>More workers have to share the same amount of capital or land.</p>
 </blockquote>
-<p>This is incorrect.</p>
-<p>The approximation</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>CRS vs.&nbsp;Diminishing MPL
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The production functions have constant returns to scale because increasing <strong>both inputs</strong> proportionally increases output proportionally.</p>
+<p>Diminishing MPL asks a different question: what happens when labor increases while the specific factor is fixed?</p>
+<p>So there is no contradiction.</p>
+</div>
+</div>
+<hr>
+</section>
+<section id="labor-market-equilibrium" class="level2">
+<h2 class="anchored" data-anchor-id="labor-market-equilibrium">2. Labor Market Equilibrium</h2>
+<p>A competitive firm hires labor until</p>
 <p><span class="math display">\[
-\%\Delta Trade_{AB}
-\approx
--\alpha \times \%\Delta d_{AB}
+\boxed{
+W=P_iMPL_i.
+}
 \]</span></p>
-<p>works best for <strong>small percentage changes</strong>.</p>
-<p>For a large change such as doubling distance, use the gravity equation directly.</p>
-<p>If</p>
+<p>Therefore,</p>
 <p><span class="math display">\[
-Trade_{AB}
-\propto
-\frac{1}{d_{AB}}
+W=P_M MPL_M
 \]</span></p>
-<p>and distance doubles,</p>
+<p>in manufacturing, and</p>
 <p><span class="math display">\[
-d_{AB}\rightarrow 2d_{AB},
+W=P_A MPL_A
 \]</span></p>
-<p>then</p>
+<p>in agriculture.</p>
+<p>Since labor can move between sectors, the wage must be the same in both:</p>
 <p><span class="math display">\[
-Trade_{AB}
-\rightarrow
-\frac{1}{2}Trade_{AB}.
+\boxed{
+P_M MPL_M=P_A MPL_A.
+}
 \]</span></p>
-<p>So trade falls by <strong>50%</strong>, not 100%.</p>
+<p>Substituting the marginal products,</p>
+<p><span class="math display">\[
+P_M25L_M^{-0.5}
+=
+P_A45L_A^{-0.5}.
+\]</span></p>
+<p>Rearranging,</p>
+<p><span class="math display">\[
+\frac{P_M}{P_A}
+=
+\frac95
+\left(
+\frac{L_M}{L_A}
+\right)^{0.5}.
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\boxed{
+\frac{L_M}{L_A}
+=
+\frac{25}{81}
+\left(
+\frac{P_M}{P_A}
+\right)^2.
+}
+\]</span></p>
+<p>This gives the central prediction:</p>
+<p><span class="math display">\[
+\boxed{
+\frac{P_M}{P_A}\uparrow
+\Rightarrow
+\frac{L_M}{L_A}\uparrow.
+}
+\]</span></p>
+<p>When manufacturing becomes relatively more valuable, workers move from agriculture into manufacturing.</p>
+<p>Unlike the Ricardian model, this adjustment is gradual because</p>
+<p><span class="math display">\[
+L_M\uparrow
+\Rightarrow
+MPL_M\downarrow.
+\]</span></p>
+<hr>
 </section>
+<section id="numerical-example" class="level2">
+<h2 class="anchored" data-anchor-id="numerical-example">3. Numerical Example</h2>
+<p>Suppose total labor is</p>
+<p><span class="math display">\[
+L=50,
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+P_A=1,
+\qquad
+P_M=\frac95.
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+\frac{L_M}{L_A}
+=
+\frac{25}{81}
+\left(
+\frac95
+\right)^2
+=1.
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+L_M=L_A=25.
+\]</span></p>
+<p>The equilibrium wage is</p>
+<p><span class="math display">\[
+W
+=
+P_M MPL_M
+=
+\frac95
+\left[25(25)^{-0.5}\right]
+=9.
+\]</span></p>
+<p>The same wage is obtained from agriculture:</p>
+<p><span class="math display">\[
+W
+=
+P_A MPL_A
+=
+1\left[45(25)^{-0.5}\right]
+=9.
+\]</span></p>
+<hr>
 </section>
-<section id="extensive-and-intensive-margins" class="level2">
-<h2 class="anchored" data-anchor-id="extensive-and-intensive-margins">6. Extensive and Intensive Margins</h2>
-<p>The gravity relationship can arise through two different margins of trade.</p>
-<section id="extensive-margin" class="level3">
-<h3 class="anchored" data-anchor-id="extensive-margin">Extensive Margin</h3>
-<p>The <strong>extensive margin</strong> refers to the number of different products that two countries trade with each other.</p>
-<p>Large and nearby countries tend to trade <strong>more varieties of products</strong>.</p>
-<p>For example, the United States trades many different products with Canada, Mexico, and China, but may trade only a small number of products with a smaller or more distant country.</p>
+<section id="a-change-in-relative-prices" class="level2">
+<h2 class="anchored" data-anchor-id="a-change-in-relative-prices">4. A Change in Relative Prices</h2>
+<p>Suppose Home exports manufacturing goods.</p>
+<p>Opening to trade raises the relative price of manufacturing:</p>
+<p><span class="math display">\[
+\frac{P_M}{P_A}\uparrow.
+\]</span></p>
+<p>For simplicity, keep</p>
+<p><span class="math display">\[
+P_A=1
+\]</span></p>
+<p>and let <span class="math inline">\(P_M\)</span> double from</p>
+<p><span class="math display">\[
+\frac95
+\]</span></p>
+<p>to</p>
+<p><span class="math display">\[
+\frac{18}{5}.
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+\frac{L_M}{L_A}
+=
+\frac{25}{81}
+\left(
+\frac{18}{5}
+\right)^2
+=4.
+\]</span></p>
+<p>Since</p>
+<p><span class="math display">\[
+L_M+L_A=50,
+\]</span></p>
+<p>we obtain</p>
+<p><span class="math display">\[
+\boxed{
+L_M=40,
+\qquad
+L_A=10.
+}
+\]</span></p>
+<p>Workers move from agriculture into manufacturing.</p>
+<p>So</p>
+<p><span class="math display">\[
+Q_M\uparrow,
+\qquad
+Q_A\downarrow.
+\]</span></p>
+<p>The new wage is</p>
+<p><span class="math display">\[
+W
+=
+P_A MPL_A
+=
+45(10)^{-0.5}
+\approx14.23.
+\]</span></p>
+<p>Thus,</p>
+<p><span class="math display">\[
+W:9\rightarrow14.23.
+\]</span></p>
+<p>The wage rises, but by less than the price of manufacturing.</p>
+<p>Why?</p>
+<p>Because</p>
+<p><span class="math display">\[
+W=P_M MPL_M.
+\]</span></p>
+<p>When workers enter manufacturing,</p>
+<p><span class="math display">\[
+L_M\uparrow
+\Rightarrow
+MPL_M\downarrow.
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\boxed{
+\frac{\Delta W}{W}
+&lt;
+\frac{\Delta P_M}{P_M}.
+}
+\]</span></p>
+<hr>
 </section>
-<section id="intensive-margin" class="level3">
-<h3 class="anchored" data-anchor-id="intensive-margin">Intensive Margin</h3>
-<p>The <strong>intensive margin</strong> refers to how much countries trade of each product that is already being traded.</p>
-<p>Large and nearby countries tend to trade <strong>larger quantities of each product</strong>.</p>
-<p>For example, the United States may import much more auto parts from Mexico than from a more distant trading partner.</p>
+<section id="who-gains-and-who-loses" class="level2">
+<h2 class="anchored" data-anchor-id="who-gains-and-who-loses">5. Who Gains and Who Loses?</h2>
+<section id="mobile-labor" class="level3">
+<h3 class="anchored" data-anchor-id="mobile-labor">Mobile Labor</h3>
+<p>Workers’ wage rises.</p>
+<p>Since <span class="math inline">\(P_A\)</span> is unchanged,</p>
+<p><span class="math display">\[
+\frac{W}{P_A}\uparrow.
+\]</span></p>
+<p>Workers can buy more agricultural goods.</p>
+<p>But <span class="math inline">\(P_M\)</span> rises by more than the wage:</p>
+<p><span class="math display">\[
+\frac{W}{P_M}\downarrow.
+\]</span></p>
+<p>Workers can buy fewer manufacturing goods.</p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\boxed{
+\text{The effect on mobile labor is ambiguous.}
+}
+\]</span></p>
+<hr>
 </section>
-<section id="a-common-mistake-1" class="level3">
-<h3 class="anchored" data-anchor-id="a-common-mistake-1">A Common Mistake</h3>
-<p>A student observes that two countries trade much more with each other and concludes:</p>
-<blockquote class="blockquote">
-<p>“They must simply be trading larger quantities of the same products.”</p>
-</blockquote>
-<p>This conclusion is incomplete.</p>
-<p>Higher bilateral trade can come from:</p>
-<ol type="1">
-<li><strong>Extensive margin:</strong> the countries trade more different products;</li>
-<li><strong>Intensive margin:</strong> they trade more of each product that is already traded;</li>
-<li><strong>Both margins at the same time.</strong></li>
-</ol>
-<p>In the data, the gravity relationship operates through both margins.</p>
-</section>
-</section>
-<section id="what-gravity-explains-and-what-it-does-not" class="level2">
-<h2 class="anchored" data-anchor-id="what-gravity-explains-and-what-it-does-not">7. What Gravity Explains — and What It Does Not</h2>
-<p>The gravity equation is very useful for describing patterns in trade data.</p>
-<p>It tells us that:</p>
+<section id="capital-specific-to-manufacturing" class="level3">
+<h3 class="anchored" data-anchor-id="capital-specific-to-manufacturing">Capital Specific to Manufacturing</h3>
+<p>Capital receives what remains after manufacturing workers are paid:</p>
+<p><span class="math display">\[
+\text{income of }K
+=
+P_MQ_M-WL_M.
+\]</span></p>
+<p>When <span class="math inline">\(P_M\)</span> rises:</p>
 <ul>
-<li>larger countries tend to trade more;</li>
-<li>nearby countries tend to trade more;</li>
-<li>these patterns fit the data surprisingly well.</li>
+<li>manufacturing expands;</li>
+<li>more workers enter manufacturing;</li>
+<li>the return to manufacturing capital rises.</li>
 </ul>
-<p>But the gravity equation by itself does <strong>not</strong> explain why countries trade particular goods.</p>
-<p>For example, gravity can help explain why the United States trades more with Canada than with a small, distant country.</p>
-<p>But it does not by itself explain why the United States exports one product and imports another.</p>
-<p>To understand the <strong>pattern of specialization and comparative advantage</strong>, we need economic theory such as the Ricardian model.</p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\boxed{
+\text{The specific factor in the expanding sector gains.}
+}
+\]</span></p>
+<hr>
+</section>
+<section id="land-specific-to-agriculture" class="level3">
+<h3 class="anchored" data-anchor-id="land-specific-to-agriculture">Land Specific to Agriculture</h3>
+<p>Land receives</p>
+<p><span class="math display">\[
+\text{income of }T
+=
+P_AQ_A-WL_A.
+\]</span></p>
+<p>When workers leave agriculture:</p>
+<ul>
+<li>agricultural output falls;</li>
+<li>the wage rises;</li>
+<li>the return to land falls.</li>
+</ul>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\boxed{
+\text{The specific factor in the shrinking sector loses.}
+}
+\]</span></p>
+</section>
+<section id="summary" class="level3">
+<h3 class="anchored" data-anchor-id="summary">Summary</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Factor</th>
+<th>Sector</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Capital <span class="math inline">\(K\)</span></td>
+<td>Export sector <span class="math inline">\(M\)</span></td>
+<td><strong>Gains</strong></td>
+</tr>
+<tr class="even">
+<td>Land <span class="math inline">\(T\)</span></td>
+<td>Import-competing sector <span class="math inline">\(A\)</span></td>
+<td><strong>Loses</strong></td>
+</tr>
+<tr class="odd">
+<td>Labor <span class="math inline">\(L\)</span></td>
+<td>Mobile</td>
+<td><strong>Ambiguous</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The main lesson is:</p>
+<p><span class="math display">\[
+\boxed{
+\text{Trade can benefit the economy overall while creating winners and losers.}
+}
+\]</span></p>
+<hr>
+</section>
+</section>
+<section id="application-the-china-shock" class="level2">
+<h2 class="anchored" data-anchor-id="application-the-china-shock">6. Application: The China Shock</h2>
+<p>The labels “manufacturing” and “agriculture” are only examples.</p>
+<p>Suppose a U.S. industry competes with imports from China.</p>
+<p>Cheaper Chinese imports lower the price received by U.S. producers in that industry:</p>
+<p><span class="math display">\[
+P_I\downarrow.
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+P_I MPL_I\downarrow,
+\]</span></p>
+<p>so labor demand in the import-competing industry falls.</p>
+<p>The Specific Factors Model predicts:</p>
+<ul>
+<li>employment falls in the import-competing sector;</li>
+<li>mobile workers move toward other sectors;</li>
+<li>factors specific to the import-competing sector lose;</li>
+<li>consumers benefit from lower prices.</li>
+</ul>
+<p>So these statements can both be true:</p>
+<p><span class="math display">\[
+\boxed{
+\text{Consumers gain from cheaper imports}
+}
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+\boxed{
+\text{some workers and businesses lose from import competition.}
+}
+\]</span></p>
+<p>In reality, workers may also have industry-specific skills or experience. This can make adjustment slower and more costly than the simple model assumes.</p>
+<hr>
 </section>
 <section id="practice-problems" class="level2">
-<h2 class="anchored" data-anchor-id="practice-problems">8. Practice Problems</h2>
-<section id="practice-1-how-does-country-size-affect-trade" class="level3">
-<h3 class="anchored" data-anchor-id="practice-1-how-does-country-size-affect-trade">Practice 1: How Does Country Size Affect Trade?</h3>
-<p>Suppose bilateral trade is described by</p>
-<p><span class="math display">\[
-Trade_{AB}
-=
-T
-\times
-\frac{Y_A Y_B}{d_{AB}^{\alpha}}
-\times
-\varepsilon_{AB}.
-\]</span></p>
-<p>Assume distance and all other factors remain unchanged.</p>
-<p>A student says:</p>
-<blockquote class="blockquote">
-<p>“If country <span class="math inline">\(A\)</span> becomes twice as large, trade between <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> should also become twice as large. If both countries become twice as large, trade should still only double.”</p>
-</blockquote>
-<p>Is this reasoning correct?</p>
-<p>Answer the following:</p>
-<ol type="1">
-<li><p>If <span class="math inline">\(Y_A\)</span> doubles while <span class="math inline">\(Y_B\)</span> stays unchanged, by what factor does <span class="math inline">\(Trade_{AB}\)</span> change?</p></li>
-<li><p>If both <span class="math inline">\(Y_A\)</span> and <span class="math inline">\(Y_B\)</span> double, by what factor does <span class="math inline">\(Trade_{AB}\)</span> change?</p></li>
-<li><p>Explain why the second case is not the same as simply doubling trade once.</p></li>
-</ol>
-</section>
-<section id="practice-2-what-happens-when-distance-doubles" class="level3">
-<h3 class="anchored" data-anchor-id="practice-2-what-happens-when-distance-doubles">Practice 2: What Happens When Distance Doubles?</h3>
+<h2 class="anchored" data-anchor-id="practice-problems">7. Practice Problems</h2>
+<section id="practice-1-diminishing-marginal-product" class="level3">
+<h3 class="anchored" data-anchor-id="practice-1-diminishing-marginal-product">Practice 1: Diminishing Marginal Product</h3>
 <p>Suppose</p>
 <p><span class="math display">\[
-\alpha = 1.
+Q_M=5K^{0.5}L_M^{0.5}.
 \]</span></p>
-<p>Then the gravity equation implies</p>
+<ol type="1">
+<li>Show that the production function has constant returns to scale.</li>
+<li>Derive <span class="math inline">\(MPL_M\)</span>.</li>
+<li>Holding <span class="math inline">\(K\)</span> fixed, what happens to <span class="math inline">\(MPL_M\)</span> when <span class="math inline">\(L_M\)</span> rises?</li>
+<li>Explain why constant returns to scale and diminishing MPL are not contradictory.</li>
+</ol>
+<hr>
+</section>
+<section id="practice-2-labor-market-equilibrium" class="level3">
+<h3 class="anchored" data-anchor-id="practice-2-labor-market-equilibrium">Practice 2: Labor Market Equilibrium</h3>
+<p>Suppose</p>
 <p><span class="math display">\[
-Trade_{AB}
-\propto
-\frac{1}{d_{AB}}.
+Q_M=50L_M^{0.5},
+\qquad
+Q_A=90L_A^{0.5},
 \]</span></p>
+<p>with</p>
+<p><span class="math display">\[
+L=50,
+\qquad
+P_A=1,
+\qquad
+P_M=\frac95.
+\]</span></p>
+<ol type="1">
+<li>Find <span class="math inline">\(L_M/L_A\)</span>.</li>
+<li>Find <span class="math inline">\(L_M\)</span> and <span class="math inline">\(L_A\)</span>.</li>
+<li>Calculate the equilibrium wage.</li>
+<li>Explain why the wage must be equal across sectors.</li>
+</ol>
+<hr>
+</section>
+<section id="practice-3-a-higher-manufacturing-price" class="level3">
+<h3 class="anchored" data-anchor-id="practice-3-a-higher-manufacturing-price">Practice 3: A Higher Manufacturing Price</h3>
+<p>Continue from Practice 2.</p>
+<p>Suppose</p>
+<p><span class="math display">\[
+P_M
+\]</span></p>
+<p>doubles to</p>
+<p><span class="math display">\[
+\frac{18}{5},
+\]</span></p>
+<p>while <span class="math inline">\(P_A=1\)</span>.</p>
+<ol type="1">
+<li>Find the new <span class="math inline">\(L_M/L_A\)</span>.</li>
+<li>Find the new <span class="math inline">\(L_M\)</span> and <span class="math inline">\(L_A\)</span>.</li>
+<li>Calculate the new wage.</li>
+<li>Does the wage rise by more or less than <span class="math inline">\(P_M\)</span>?</li>
+<li>Is mobile labor necessarily better off?</li>
+<li>Which specific factor gains and which loses?</li>
+</ol>
+<hr>
+</section>
+<section id="practice-4-the-china-shock" class="level3">
+<h3 class="anchored" data-anchor-id="practice-4-the-china-shock">Practice 4: The China Shock</h3>
 <p>A student says:</p>
 <blockquote class="blockquote">
-<p>“If distance doubles, distance increases by 100%. Since the distance elasticity is <span class="math inline">\(-1\)</span>, trade must fall by 100%.”</p>
+<p>“Cheaper imports from China benefit U.S. consumers, so U.S. workers cannot be hurt.”</p>
 </blockquote>
-<p>Is this reasoning correct?</p>
-<p>Answer the following:</p>
+<p>Use the Specific Factors Model to evaluate this statement.</p>
 <ol type="1">
-<li><p>If distance changes from <span class="math inline">\(d_{AB}\)</span> to <span class="math inline">\(2d_{AB}\)</span>, what happens to predicted trade?</p></li>
-<li><p>By what percentage does trade actually fall?</p></li>
-<li><p>Why does the elasticity approximation</p></li>
-</ol>
-<p><span class="math display">\[
-\%\Delta Trade_{AB}
-\approx
--\alpha \times \%\Delta d_{AB}
-\]</span></p>
-<p>give a misleading answer when distance changes by such a large amount?</p>
-</section>
-<section id="practice-3-why-do-we-need-to-control-for-gdp" class="level3">
-<h3 class="anchored" data-anchor-id="practice-3-why-do-we-need-to-control-for-gdp">Practice 3: Why Do We Need to Control for GDP?</h3>
-<p>Suppose the United States trades more with a large, distant country than with a small, nearby country.</p>
-<p>A student concludes:</p>
-<blockquote class="blockquote">
-<p>“This shows that distance does not really reduce trade.”</p>
-</blockquote>
-<p>Is this conclusion correct?</p>
-<p>Answer the following:</p>
-<ol type="1">
-<li><p>According to the gravity equation, what two major factors affect bilateral trade?</p></li>
-<li><p>Why is it misleading to compare trade across country pairs without accounting for country size?</p></li>
-<li><p>Suppose two trading partners are the same distance from the United States, but one has twice the GDP of the other. Which one should the gravity model predict more U.S. trade with?</p></li>
-<li><p>Suppose instead that two trading partners have the same GDP, but one is farther from the United States. Which one should the gravity model predict more U.S. trade with?</p></li>
-<li><p>Explain what economists mean by studying the effect of distance on trade while <strong>holding GDP constant</strong>.</p></li>
-</ol>
-</section>
-<section id="practice-4-extensive-margin-or-intensive-margin" class="level3">
-<h3 class="anchored" data-anchor-id="practice-4-extensive-margin-or-intensive-margin">Practice 4: Extensive Margin or Intensive Margin?</h3>
-<p>The gravity relationship can operate through two margins:</p>
-<ul>
-<li><strong>Extensive margin:</strong> countries trade more different products.</li>
-<li><strong>Intensive margin:</strong> countries trade more of products that are already being traded.</li>
-</ul>
-<p>For each scenario below, identify whether it represents an <strong>extensive margin</strong>, an <strong>intensive margin</strong>, or <strong>both</strong>.</p>
-<section id="scenario-a" class="level4">
-<h4 class="anchored" data-anchor-id="scenario-a">Scenario A</h4>
-<p>The United States already imports auto parts from Mexico. The value of those imports increases substantially, but the set of auto parts being imported does not change.</p>
-</section>
-<section id="scenario-b" class="level4">
-<h4 class="anchored" data-anchor-id="scenario-b">Scenario B</h4>
-<p>The United States begins importing several types of products from a country that it did not previously import at all.</p>
-</section>
-<section id="scenario-c" class="level4">
-<h4 class="anchored" data-anchor-id="scenario-c">Scenario C</h4>
-<p>Trade between two countries increases because they begin trading more product categories, and at the same time trade more within product categories that were already traded.</p>
-</section>
-<section id="scenario-d" class="level4">
-<h4 class="anchored" data-anchor-id="scenario-d">Scenario D</h4>
-<p>The United States imports auto parts from both Mexico and Taiwan, but imports much more auto parts from Mexico.</p>
-<p>Answer the following:</p>
-<ol type="1">
-<li><p>Classify each scenario as extensive margin, intensive margin, or both.</p></li>
-<li><p>A student says:</p></li>
-</ol>
-<blockquote class="blockquote">
-<p>“If two countries trade more with each other, that must mean they are trading a larger quantity of the same goods.”</p>
-</blockquote>
-<p>Why is this statement incomplete?</p>
-</section>
-</section>
-<section id="practice-5-does-more-trade-reveal-comparative-advantage" class="level3">
-<h3 class="anchored" data-anchor-id="practice-5-does-more-trade-reveal-comparative-advantage">Practice 5: Does More Trade Reveal Comparative Advantage?</h3>
-<p>Suppose the United States trades much more with Canada than with a smaller and more distant country.</p>
-<p>A student concludes:</p>
-<blockquote class="blockquote">
-<p>“Because the United States trades so much with Canada, Canada must have a comparative advantage in most of the goods that it exports to the United States.”</p>
-</blockquote>
-<p>Is this conclusion justified by the gravity model?</p>
-<p>Answer the following:</p>
-<ol type="1">
-<li><p>What does the gravity model help explain about trade between two countries?</p></li>
-<li><p>Does the gravity equation by itself tell us which goods each country should export?</p></li>
-<li><p>What additional economic concept is needed to explain why one country exports one good and imports another?</p></li>
-</ol>
-</section>
-<section id="practice-6-do-larger-countries-depend-more-on-international-trade" class="level3">
-<h3 class="anchored" data-anchor-id="practice-6-do-larger-countries-depend-more-on-international-trade">Practice 6: Do Larger Countries Depend More on International Trade?</h3>
-<p>The gravity model predicts that larger countries tend to have larger bilateral trade flows.</p>
-<p>A student concludes:</p>
-<blockquote class="blockquote">
-<p>“Because large countries trade more in absolute terms, they must also be more relied on international trade.”</p>
-</blockquote>
-<p>Is this conclusion correct?</p>
-<p>Answer the following:</p>
-<ol type="1">
-<li><p>What does the gravity model predict about the level of trade when country GDP increases?</p></li>
-<li><p>Is a larger level of trade the same thing as having a larger trade-to-GDP ratio?</p></li>
-<li><p>Why might a very large country have a large amount of international trade but a relatively low trade-to-GDP ratio?</p></li>
+<li>What happens to labor demand in the import-competing sector?</li>
+<li>What happens to employment in that sector?</li>
+<li>What happens to factors specific to that sector?</li>
+<li>Why can consumers gain while some workers and businesses lose?</li>
+<li>Does the existence of losers imply that the country as a whole loses from trade?</li>
 </ol>
 
 

@@ -1,66 +1,136 @@
 [
   {
-    "objectID": "trade/ricardian.html",
-    "href": "trade/ricardian.html",
-    "title": "The Ricardian Model",
+    "objectID": "trade/specific.html",
+    "href": "trade/specific.html",
+    "title": "The Specific Factors Model",
     "section": "",
-    "text": "Why do countries trade, and what determines what each country exports?\nThe Ricardian model studies how differences in productivity across countries can create gains from trade."
+    "text": "The Ricardian model shows that countries gain from trade, but it has only one factor of production: labor.\nWorkers can move freely across sectors, so adjustment to trade is painless.\nThe Specific Factors Model adds factors that cannot move across industries in the short run. This allows us to ask:"
   },
   {
-    "objectID": "trade/ricardian.html#model-setup",
-    "href": "trade/ricardian.html#model-setup",
-    "title": "The Ricardian Model",
+    "objectID": "trade/specific.html#model-setup",
+    "href": "trade/specific.html#model-setup",
+    "title": "The Specific Factors Model",
     "section": "1. Model Setup",
-    "text": "1. Model Setup\nWe begin with a simple world:\n\nTwo countries: Home and Foreign\nTwo goods: Cloth (\\(C\\)) and Wheat (\\(W\\))\nLabor is the only factor of production\nWorkers can move freely between industries within a country\nFirms are perfectly competitive\nTechnology has constant returns to scale\n\nFor Home, let:\n\n\\(L\\) = total number of workers\n\\(L_C\\) = workers producing cloth\n\\(L_W\\) = workers producing wheat\n\\(MPL_C\\) = marginal product of labor in cloth\n\\(MPL_W\\) = marginal product of labor in wheat\n\nTotal labor must satisfy\n\\[\nL = L_C + L_W.\n\\]"
+    "text": "1. Model Setup\nThere are two sectors:\n\nManufacturing \\(M\\)\nAgriculture \\(A\\)\n\nManufacturing uses capital and labor:\n\\[\nQ_M = 5K^{0.5}L_M^{0.5}.\n\\]\nAgriculture uses land and labor:\n\\[\nQ_A = 10T^{0.5}L_A^{0.5}.\n\\]\nLabor is mobile across sectors:\n\\[\nL=L_M+L_A.\n\\]\nBut capital and land are specific factors:\n\n\\(K\\) can only be used in manufacturing;\n\\(T\\) can only be used in agriculture.\n\nSuppose\n\\[\nK=100,\n\\qquad\nT=81.\n\\]\nThen\n\\[\nQ_M=50L_M^{0.5},\n\\]\nand\n\\[\nQ_A=90L_A^{0.5}.\n\\]\nThe marginal products of labor are\n\\[\n\\boxed{\nMPL_M=25L_M^{-0.5}\n}\n\\]\nand\n\\[\n\\boxed{\nMPL_A=45L_A^{-0.5}.\n}\n\\]\nBecause the specific factors are fixed,\n\\[\nL_M\\uparrow\n\\Rightarrow\nMPL_M\\downarrow,\n\\]\nand\n\\[\nL_A\\uparrow\n\\Rightarrow\nMPL_A\\downarrow.\n\\]\nThis is diminishing marginal product of labor.\n\nMore workers have to share the same amount of capital or land.\n\n\n\n\n\n\n\nNoteCRS vs. Diminishing MPL\n\n\n\nThe production functions have constant returns to scale because increasing both inputs proportionally increases output proportionally.\nDiminishing MPL asks a different question: what happens when labor increases while the specific factor is fixed?\nSo there is no contradiction."
   },
   {
-    "objectID": "trade/ricardian.html#production-and-the-ppf",
-    "href": "trade/ricardian.html#production-and-the-ppf",
-    "title": "The Ricardian Model",
-    "section": "2. Production and the PPF",
-    "text": "2. Production and the PPF\n\nProduction\nIn the Ricardian model, labor is the only input used to produce both goods.\nFor cloth,\n\\[\nQ_C = MPL_C \\times L_C.\n\\]\nFor wheat,\n\\[\nQ_W = MPL_W \\times L_W.\n\\]\nThe marginal product of labor tells us how much output one worker can produce.\nFor example, suppose\n\\[\nMPL_C = 2\n\\qquad \\text{and} \\qquad\nMPL_W = 4.\n\\]\nThen one worker can produce either 2 units of cloth or 4 units of wheat, and\n\\[\nQ_C = 2L_C,\n\\qquad\nQ_W = 4L_W.\n\\]\n\n\nFrom Labor Allocation to the PPF\nRecall that total labor satisfies\n\\[\nL = L_C + L_W.\n\\]\nUsing the production equations,\n\\[\nL_C = \\frac{Q_C}{MPL_C}\n\\qquad \\text{and} \\qquad\nL_W = \\frac{Q_W}{MPL_W}.\n\\]\nSubstituting these into the labor constraint gives\n\\[\nL\n=\n\\frac{Q_C}{MPL_C}\n+\n\\frac{Q_W}{MPL_W}.\n\\]\nRearranging,\n\\[\nQ_C\n=\nMPL_C L\n-\n\\frac{MPL_C}{MPL_W}Q_W.\n\\]\nThis equation is the production possibilities frontier (PPF).\nUsing the numerical example\n\\[\nL = 25,\\qquad MPL_C = 2,\\qquad MPL_W = 4,\n\\]\nthe PPF becomes\n\\[\nQ_C\n=\n2(25)\n-\n\\frac{2}{4}Q_W,\n\\]\nso\n\\[\nQ_C\n=\n50\n-\n\\frac{1}{2}Q_W.\n\\]\nThe PPF has two important endpoints.\nIf all workers produce cloth, then\n\\[\nL_C = 25,\\qquad L_W = 0,\n\\]\nso\n\\[\nQ_C = 50,\\qquad Q_W = 0.\n\\]\nIf all workers produce wheat, then\n\\[\nL_C = 0,\\qquad L_W = 25,\n\\]\nso\n\\[\nQ_C = 0,\\qquad Q_W = 100.\n\\]\nTherefore, the PPF runs from\n\\[\n(Q_W,Q_C)=(0,50)\n\\]\nto\n\\[\n(Q_W,Q_C)=(100,0).\n\\]\n\n\nEconomic Intuition\nThe PPF shows the trade-off created by a fixed amount of labor.\nTo produce more wheat, Home must move workers from the cloth industry to the wheat industry. As a result,\n\nwheat production increases, but\ncloth production decreases.\n\nBecause the marginal products of labor are constant, this trade-off is also constant. That is why the Ricardian PPF is a straight line.\n\n\n\n  \n  \n  \n\n  \n  \n\n  \n  \n    \n      \\( \\text{Wheat}(Q_W) \\)\n    \n  \n\n  \n    \n      \\( \\text{Cloth}(Q_C) \\)\n    \n  \n\n  \n  50\n  100\n\n  \n  \n    \n      \\( \\text{PPF: } Q_C = 50 - \\frac{1}{2}Q_W \\)"
+    "objectID": "trade/specific.html#labor-market-equilibrium",
+    "href": "trade/specific.html#labor-market-equilibrium",
+    "title": "The Specific Factors Model",
+    "section": "2. Labor Market Equilibrium",
+    "text": "2. Labor Market Equilibrium\nA competitive firm hires labor until\n\\[\n\\boxed{\nW=P_iMPL_i.\n}\n\\]\nTherefore,\n\\[\nW=P_M MPL_M\n\\]\nin manufacturing, and\n\\[\nW=P_A MPL_A\n\\]\nin agriculture.\nSince labor can move between sectors, the wage must be the same in both:\n\\[\n\\boxed{\nP_M MPL_M=P_A MPL_A.\n}\n\\]\nSubstituting the marginal products,\n\\[\nP_M25L_M^{-0.5}\n=\nP_A45L_A^{-0.5}.\n\\]\nRearranging,\n\\[\n\\frac{P_M}{P_A}\n=\n\\frac95\n\\left(\n\\frac{L_M}{L_A}\n\\right)^{0.5}.\n\\]\nTherefore,\n\\[\n\\boxed{\n\\frac{L_M}{L_A}\n=\n\\frac{25}{81}\n\\left(\n\\frac{P_M}{P_A}\n\\right)^2.\n}\n\\]\nThis gives the central prediction:\n\\[\n\\boxed{\n\\frac{P_M}{P_A}\\uparrow\n\\Rightarrow\n\\frac{L_M}{L_A}\\uparrow.\n}\n\\]\nWhen manufacturing becomes relatively more valuable, workers move from agriculture into manufacturing.\nUnlike the Ricardian model, this adjustment is gradual because\n\\[\nL_M\\uparrow\n\\Rightarrow\nMPL_M\\downarrow.\n\\]"
   },
   {
-    "objectID": "trade/ricardian.html#opportunity-cost",
-    "href": "trade/ricardian.html#opportunity-cost",
-    "title": "The Ricardian Model",
-    "section": "3. Opportunity Cost",
-    "text": "3. Opportunity Cost\nFrom the PPF,\n\\[\nQ_C\n=\nMPL_C L\n-\n\\frac{MPL_C}{MPL_W}Q_W,\n\\]\nthe slope is\n\\[\n-\\frac{MPL_C}{MPL_W}.\n\\]\nThe absolute value of this slope,\n\\[\n\\frac{MPL_C}{MPL_W},\n\\]\nis the opportunity cost of wheat in terms of cloth.\nIt tells us how much cloth production must fall when Home produces one additional unit of wheat.\nUsing the numerical example,\n\\[\nMPL_C = 2\n\\qquad \\text{and} \\qquad\nMPL_W = 4,\n\\]\nthe opportunity cost of one additional unit of wheat is\n\\[\n\\frac{MPL_C}{MPL_W}\n=\n\\frac{2}{4}\n=\n\\frac{1}{2}.\n\\]\nSo producing 1 more unit of wheat costs Home 1/2 unit of cloth."
+    "objectID": "trade/specific.html#numerical-example",
+    "href": "trade/specific.html#numerical-example",
+    "title": "The Specific Factors Model",
+    "section": "3. Numerical Example",
+    "text": "3. Numerical Example\nSuppose total labor is\n\\[\nL=50,\n\\]\nand\n\\[\nP_A=1,\n\\qquad\nP_M=\\frac95.\n\\]\nThen\n\\[\n\\frac{L_M}{L_A}\n=\n\\frac{25}{81}\n\\left(\n\\frac95\n\\right)^2\n=1.\n\\]\nTherefore,\n\\[\nL_M=L_A=25.\n\\]\nThe equilibrium wage is\n\\[\nW\n=\nP_M MPL_M\n=\n\\frac95\n\\left[25(25)^{-0.5}\\right]\n=9.\n\\]\nThe same wage is obtained from agriculture:\n\\[\nW\n=\nP_A MPL_A\n=\n1\\left[45(25)^{-0.5}\\right]\n=9.\n\\]"
   },
   {
-    "objectID": "trade/ricardian.html#autarky-equilibrium",
-    "href": "trade/ricardian.html#autarky-equilibrium",
-    "title": "The Ricardian Model",
-    "section": "4. Autarky Equilibrium",
-    "text": "4. Autarky Equilibrium\nAutarky means that Home cannot trade with other countries.\nIn autarky, Home must produce both cloth and wheat for its own consumption.\nLet\n\n\\(P_C\\) = price of cloth\n\\(P_W\\) = price of wheat\n\\(w\\) = wage\n\nBecause firms are perfectly competitive, a worker is paid the value of what that worker produces.\nIn the cloth industry,\n\\[\nw = P_C MPL_C.\n\\]\nIn the wheat industry,\n\\[\nw = P_W MPL_W.\n\\]\nWorkers can move freely between the two industries. Therefore, in equilibrium, the wage must be the same in both industries.\nSince the wage must be the same in both industries,\n\\[\nP_C MPL_C\n=\nP_W MPL_W.\n\\]\nRearranging,\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{MPL_C}{MPL_W}.\n\\]\nSo in autarky, the relative price of wheat is determined by relative productivity.\nUsing the numerical example,\n\\[\nMPL_C = 2\n\\qquad \\text{and} \\qquad\nMPL_W = 4,\n\\]\nwe get\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{2}{4}\n=\n\\frac{1}{2}.\n\\]\nSo in autarky, one unit of wheat is worth one-half unit of cloth.\n\nEconomic Intuition\nIn autarky, the relative price of wheat must equal its opportunity cost.\nIf wheat were worth more than its opportunity cost, firms would want to move workers into wheat production.\nIf wheat were worth less than its opportunity cost, firms would want to move workers into cloth production.\nTherefore, equilibrium requires\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{MPL_C}{MPL_W}.\n\\]"
+    "objectID": "trade/specific.html#a-change-in-relative-prices",
+    "href": "trade/specific.html#a-change-in-relative-prices",
+    "title": "The Specific Factors Model",
+    "section": "4. A Change in Relative Prices",
+    "text": "4. A Change in Relative Prices\nSuppose Home exports manufacturing goods.\nOpening to trade raises the relative price of manufacturing:\n\\[\n\\frac{P_M}{P_A}\\uparrow.\n\\]\nFor simplicity, keep\n\\[\nP_A=1\n\\]\nand let \\(P_M\\) double from\n\\[\n\\frac95\n\\]\nto\n\\[\n\\frac{18}{5}.\n\\]\nThen\n\\[\n\\frac{L_M}{L_A}\n=\n\\frac{25}{81}\n\\left(\n\\frac{18}{5}\n\\right)^2\n=4.\n\\]\nSince\n\\[\nL_M+L_A=50,\n\\]\nwe obtain\n\\[\n\\boxed{\nL_M=40,\n\\qquad\nL_A=10.\n}\n\\]\nWorkers move from agriculture into manufacturing.\nSo\n\\[\nQ_M\\uparrow,\n\\qquad\nQ_A\\downarrow.\n\\]\nThe new wage is\n\\[\nW\n=\nP_A MPL_A\n=\n45(10)^{-0.5}\n\\approx14.23.\n\\]\nThus,\n\\[\nW:9\\rightarrow14.23.\n\\]\nThe wage rises, but by less than the price of manufacturing.\nWhy?\nBecause\n\\[\nW=P_M MPL_M.\n\\]\nWhen workers enter manufacturing,\n\\[\nL_M\\uparrow\n\\Rightarrow\nMPL_M\\downarrow.\n\\]\nTherefore,\n\\[\n\\boxed{\n\\frac{\\Delta W}{W}\n&lt;\n\\frac{\\Delta P_M}{P_M}.\n}\n\\]"
   },
   {
-    "objectID": "trade/ricardian.html#comparative-advantage",
-    "href": "trade/ricardian.html#comparative-advantage",
-    "title": "The Ricardian Model",
-    "section": "5. Comparative Advantage",
-    "text": "5. Comparative Advantage\nNow introduce Foreign.\nSuppose Foreign has\n\\[\nMPL_C^* = 1,\n\\qquad\nMPL_W^* = 1.\n\\]\nSo one Foreign worker can produce either\n\n1 unit of cloth, or\n1 unit of wheat.\n\nForeign’s opportunity cost of wheat is therefore\n\\[\n\\frac{MPL_C^*}{MPL_W^*}\n=\n\\frac{1}{1}\n=\n1.\n\\]\nHome’s opportunity cost of wheat is\n\\[\n\\frac{MPL_C}{MPL_W}\n=\n\\frac{2}{4}\n=\n\\frac{1}{2}.\n\\]\nSince\n\\[\n\\frac{1}{2} &lt; 1,\n\\]\nHome has a comparative advantage in wheat.\nForeign therefore has a comparative advantage in cloth.\n\nEconomic Intuition\nComparative advantage is about relative efficiency, not absolute productivity.\nHome is more productive than Foreign in both goods:\n\nHome produces 2 units of cloth per worker, while Foreign produces 1.\nHome produces 4 units of wheat per worker, while Foreign produces 1.\n\nSo Home has an absolute advantage in both goods.\nBut Home gives up \\(2\\) unit of wheat to produce one more unit of cloth, while Foreign gives up 1 unit of wheat.\nThat is why Foreign has a comparative advantage in cloth, even though Home is more productive in both goods."
+    "objectID": "trade/specific.html#who-gains-and-who-loses",
+    "href": "trade/specific.html#who-gains-and-who-loses",
+    "title": "The Specific Factors Model",
+    "section": "5. Who Gains and Who Loses?",
+    "text": "5. Who Gains and Who Loses?\n\nMobile Labor\nWorkers’ wage rises.\nSince \\(P_A\\) is unchanged,\n\\[\n\\frac{W}{P_A}\\uparrow.\n\\]\nWorkers can buy more agricultural goods.\nBut \\(P_M\\) rises by more than the wage:\n\\[\n\\frac{W}{P_M}\\downarrow.\n\\]\nWorkers can buy fewer manufacturing goods.\nTherefore,\n\\[\n\\boxed{\n\\text{The effect on mobile labor is ambiguous.}\n}\n\\]\n\n\n\nCapital Specific to Manufacturing\nCapital receives what remains after manufacturing workers are paid:\n\\[\n\\text{income of }K\n=\nP_MQ_M-WL_M.\n\\]\nWhen \\(P_M\\) rises:\n\nmanufacturing expands;\nmore workers enter manufacturing;\nthe return to manufacturing capital rises.\n\nTherefore,\n\\[\n\\boxed{\n\\text{The specific factor in the expanding sector gains.}\n}\n\\]\n\n\n\nLand Specific to Agriculture\nLand receives\n\\[\n\\text{income of }T\n=\nP_AQ_A-WL_A.\n\\]\nWhen workers leave agriculture:\n\nagricultural output falls;\nthe wage rises;\nthe return to land falls.\n\nTherefore,\n\\[\n\\boxed{\n\\text{The specific factor in the shrinking sector loses.}\n}\n\\]\n\n\nSummary\n\n\n\nFactor\nSector\nEffect\n\n\n\n\nCapital \\(K\\)\nExport sector \\(M\\)\nGains\n\n\nLand \\(T\\)\nImport-competing sector \\(A\\)\nLoses\n\n\nLabor \\(L\\)\nMobile\nAmbiguous\n\n\n\nThe main lesson is:\n\\[\n\\boxed{\n\\text{Trade can benefit the economy overall while creating winners and losers.}\n}\n\\]"
   },
   {
-    "objectID": "trade/ricardian.html#opening-to-trade",
-    "href": "trade/ricardian.html#opening-to-trade",
-    "title": "The Ricardian Model",
-    "section": "6. Opening to Trade",
-    "text": "6. Opening to Trade\nWhen Home and Foreign open to trade, they face a common international relative price of wheat:\n\\[\n\\frac{P_W^I}{P_C^I}.\n\\]\nFor trade to occur, this international relative price must lie between the two countries’ autarky relative prices:\n\\[\n\\frac{P_W}{P_C}\n&lt;\n\\frac{P_W^I}{P_C^I}\n&lt;\n\\frac{P_W^*}{P_C^*}.\n\\]\nIn our numerical example,\n\\[\n\\frac{1}{2}\n&lt;\n\\frac{P_W^I}{P_C^I}\n&lt;\n1.\n\\]\nSuppose the international relative price is\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3}.\n\\]\nRecall that Home’s autarky relative price is\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{1}{2}.\n\\]\nSince\n\\[\n\\frac{2}{3}\n&gt;\n\\frac{1}{2},\n\\]\nwheat is now relatively more valuable on the international market than it was in Home under autarky.\nIn Home, the wage in the wheat industry is\n\\[\nw_W = P_W^I MPL_W.\n\\]\nThe wage in the cloth industry is\n\\[\nw_C = P_C^I MPL_C.\n\\]\nUsing\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3},\n\\qquad\nMPL_W = 4,\n\\qquad\nMPL_C = 2,\n\\]\nwe have\n\\[\nP_W^I MPL_W\n&gt;\nP_C^I MPL_C.\n\\]\nSo workers can earn more in the wheat industry.\nBecause workers can move freely between sectors, all workers move into wheat production.\nTherefore,\n\\[\nL_W = L,\n\\qquad\nL_C = 0.\n\\]\nWith\n\\[\nL = 25\n\\qquad \\text{and} \\qquad\nMPL_W = 4,\n\\]\nHome produces\n\\[\nQ_W = MPL_W L = 4 \\times 25 = 100,\n\\]\nand\n\\[\nQ_C = 0.\n\\]\nSo after opening to trade, Home fully specializes in wheat.\nFor Foreign, recall that the autarky relative price of wheat is\n\\[\n\\frac{P_W^*}{P_C^*}\n=\n1.\n\\]\nBut the international relative price is\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3}.\n\\]\nSince\n\\[\n\\frac{2}{3}\n&lt;\n1,\n\\]\nwheat is relatively less valuable on the international market than it was in Foreign under autarky.\nTherefore, workers in Foreign move into cloth production.\nSuppose Foreign has\n\\[\nL^* = 100.\n\\]\nSince all Foreign workers move into cloth production,\n\\[\nL_C^* = L^* = 100,\n\\qquad\nL_W^* = 0.\n\\]\nTherefore,\n\\[\nQ_C^*\n=\nMPL_C^* L_C^*\n=\n1 \\times 100\n=\n100,\n\\]\nand\n\\[\nQ_W^* = 0.\n\\]\nSo after opening to trade, Foreign fully specializes in cloth."
+    "objectID": "trade/specific.html#application-the-china-shock",
+    "href": "trade/specific.html#application-the-china-shock",
+    "title": "The Specific Factors Model",
+    "section": "6. Application: The China Shock",
+    "text": "6. Application: The China Shock\nThe labels “manufacturing” and “agriculture” are only examples.\nSuppose a U.S. industry competes with imports from China.\nCheaper Chinese imports lower the price received by U.S. producers in that industry:\n\\[\nP_I\\downarrow.\n\\]\nTherefore,\n\\[\nP_I MPL_I\\downarrow,\n\\]\nso labor demand in the import-competing industry falls.\nThe Specific Factors Model predicts:\n\nemployment falls in the import-competing sector;\nmobile workers move toward other sectors;\nfactors specific to the import-competing sector lose;\nconsumers benefit from lower prices.\n\nSo these statements can both be true:\n\\[\n\\boxed{\n\\text{Consumers gain from cheaper imports}\n}\n\\]\nand\n\\[\n\\boxed{\n\\text{some workers and businesses lose from import competition.}\n}\n\\]\nIn reality, workers may also have industry-specific skills or experience. This can make adjustment slower and more costly than the simple model assumes."
   },
   {
-    "objectID": "trade/ricardian.html#gains-from-trade",
-    "href": "trade/ricardian.html#gains-from-trade",
-    "title": "The Ricardian Model",
-    "section": "7. Gains from Trade",
-    "text": "7. Gains from Trade\nWith trade, production no longer has to equal consumption.\nWe will use:\n\n\\(Q_C\\) and \\(Q_W\\) for production\n\\(C_C\\) and \\(C_W\\) for consumption\n\nHome specializes in wheat, so its production is\n\\[\nQ_C = 0,\n\\qquad\nQ_W = 100.\n\\]\nBut Home can export some of its wheat and use the export revenue to import cloth.\nTherefore, Home can consume both wheat and cloth, even though it produces only wheat.\nHome earns income by producing wheat:\n\\[\n\\text{income}\n=\nP_W^I Q_W.\n\\]\nSince Home produces\n\\[\nQ_W = MPL_W L,\n\\]\nits income is\n\\[\n\\text{income}\n=\nP_W^I MPL_W L.\n\\]\nHome spends this income on cloth and wheat:\n\\[\nP_C^I C_C\n+\nP_W^I C_W.\n\\]\nTherefore, the trade budget constraint is\n\\[\nP_W^I MPL_W L\n=\nP_C^I C_C\n+\nP_W^I C_W.\n\\]\nRearranging the trade budget constraint,\n\\[\nC_C\n=\n\\frac{P_W^I}{P_C^I} MPL_W L\n-\n\\frac{P_W^I}{P_C^I} C_W.\n\\]\nUsing\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3},\n\\qquad\nMPL_W = 4,\n\\qquad\nL = 25,\n\\]\nwe get\n\\[\nC_C\n=\n\\frac{2}{3}(4)(25)\n-\n\\frac{2}{3}C_W,\n\\]\nso\n\\[\nC_C\n=\n\\frac{200}{3}\n-\n\\frac{2}{3}C_W.\n\\]\nUnder autarky, Home’s consumption possibilities are limited by the PPF:\n\\[\nC_C\n=\n50\n-\n\\frac{1}{2}C_W.\n\\]\nWith trade, Home’s consumption possibilities are\n\\[\nC_C\n=\n\\frac{200}{3}\n-\n\\frac{2}{3}C_W.\n\\]\nThe slope changes from\n\\[\n-\\frac{1}{2}\n\\]\nto\n\\[\n-\\frac{2}{3}.\n\\]\nThis happens because the relevant trade-off is no longer determined by Home’s production technology alone. With trade, Home can exchange wheat for cloth at the international relative price.\nThe intercept changes from\n\\[\n50\n\\]\nto\n\\[\n\\frac{200}{3}\n\\]\nPeople are able to purchase more cloth by using all incomes (\\(C_W = 0\\)).\n\nEconomic Intuition\nTrade expands Home’s consumption possibilities.\nUnder autarky, Home can only consume combinations that lie on its own PPF.\nWith trade, Home can specialize in wheat and exchange wheat for cloth at the international relative price.\nBecause the international relative price is more favorable than Home’s autarky trade-off, Home can reach consumption bundles that were not feasible before trade.\nThis is the gain from trade.\n\n\n\n  \n  \n  \n\n  \n  \n\n  \n  \n  \n  \n    \n      \\( \\text{Wheat}(C_W) \\)\n    \n  \n\n  \n    \n      \\( \\text{Cloth}(C_C) \\)\n    \n  \n\n    \n  \n    \n      \\( \\text{Autarky PPF: } C_C = 50 - \\frac{1}{2}C_W \\)\n    \n  \n\n  \n    \n      \\( \\text{Trade budget line: } C_C = \\frac{200}{3} - \\frac{2}{3}C_W \\)\n    \n  \n\n    \n  \n\n  \n    \n      \\( \\text{Autarky consumption} \\)\n    \n  \n\n    \n  \n\n  \n    \n      \\( \\text{Trade consumption} \\)"
+    "objectID": "trade/specific.html#practice-problems",
+    "href": "trade/specific.html#practice-problems",
+    "title": "The Specific Factors Model",
+    "section": "7. Practice Problems",
+    "text": "7. Practice Problems\n\nPractice 1: Diminishing Marginal Product\nSuppose\n\\[\nQ_M=5K^{0.5}L_M^{0.5}.\n\\]\n\nShow that the production function has constant returns to scale.\nDerive \\(MPL_M\\).\nHolding \\(K\\) fixed, what happens to \\(MPL_M\\) when \\(L_M\\) rises?\nExplain why constant returns to scale and diminishing MPL are not contradictory.\n\n\n\n\nPractice 2: Labor Market Equilibrium\nSuppose\n\\[\nQ_M=50L_M^{0.5},\n\\qquad\nQ_A=90L_A^{0.5},\n\\]\nwith\n\\[\nL=50,\n\\qquad\nP_A=1,\n\\qquad\nP_M=\\frac95.\n\\]\n\nFind \\(L_M/L_A\\).\nFind \\(L_M\\) and \\(L_A\\).\nCalculate the equilibrium wage.\nExplain why the wage must be equal across sectors.\n\n\n\n\nPractice 3: A Higher Manufacturing Price\nContinue from Practice 2.\nSuppose\n\\[\nP_M\n\\]\ndoubles to\n\\[\n\\frac{18}{5},\n\\]\nwhile \\(P_A=1\\).\n\nFind the new \\(L_M/L_A\\).\nFind the new \\(L_M\\) and \\(L_A\\).\nCalculate the new wage.\nDoes the wage rise by more or less than \\(P_M\\)?\nIs mobile labor necessarily better off?\nWhich specific factor gains and which loses?\n\n\n\n\nPractice 4: The China Shock\nA student says:\n\n“Cheaper imports from China benefit U.S. consumers, so U.S. workers cannot be hurt.”\n\nUse the Specific Factors Model to evaluate this statement.\n\nWhat happens to labor demand in the import-competing sector?\nWhat happens to employment in that sector?\nWhat happens to factors specific to that sector?\nWhy can consumers gain while some workers and businesses lose?\nDoes the existence of losers imply that the country as a whole loses from trade?"
   },
   {
-    "objectID": "trade/ricardian.html#practice-problems",
-    "href": "trade/ricardian.html#practice-problems",
-    "title": "The Ricardian Model",
-    "section": "8. Practice Problems",
-    "text": "8. Practice Problems\n\nPractice 1: Why Does Home Fully Specialize?\nRecall that Home has\n\\[\nMPL_C = 2,\n\\qquad\nMPL_W = 4,\n\\]\nand the international relative price is\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3}.\n\\]\nAt this international price,\n\\[\nP_W^I MPL_W\n&gt;\nP_C^I MPL_C,\n\\]\nso workers earn more in the wheat industry.\nA student argues:\n\n“Workers will initially move into wheat, but as more workers enter the wheat industry, the marginal product of labor in wheat should fall. Eventually, wages in the two industries will become equal again, so Home will continue producing both goods.”\n\nIs this reasoning correct in the Ricardian model?\nAnd explain why Home fully specializes in wheat in the Ricardian model.\n\n\nPractice 2: When Does Home Not Fully Specialize?\nRecall that Home has\n\\[\nMPL_C = 2,\n\\qquad\nMPL_W = 4.\n\\]\nSuppose the international relative price of wheat is instead\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{1}{2}.\n\\]\nA student says:\n\n“Home has a comparative advantage in wheat, so it should still fully specialize in wheat.”\n\nIs this correct?\nAnswer the following:\n\nCompare the wage in the wheat industry,\n\n\\[\nw_W = P_W^I MPL_W,\n\\]\nwith the wage in the cloth industry,\n\\[\nw_C = P_C^I MPL_C.\n\\]\n\nAre workers strictly better off working in one industry?\nDoes Home have to fully specialize in this case?\nExplain why any allocation of labor between cloth and wheat can be consistent with equilibrium.\n\n\n\nPractice 3: Does Full Specialization Mean Consuming Only One Good?\nUnder trade, Home fully specializes in wheat:\n\\[\nQ_W = 100,\n\\qquad\nQ_C = 0.\n\\]\nA student concludes:\n\n“Since Home produces no cloth, Home must also consume no cloth.”\n\nIs this correct?\nSuppose Home chooses to consume\n\\[\nC_W = 40.\n\\]\nUsing Home’s trade budget constraint,\n\\[\nC_C\n=\n\\frac{200}{3}\n-\n\\frac{2}{3}C_W,\n\\]\nanswer the following:\n\nHow much cloth does Home consume?\nHow much wheat does Home export?\nHow much cloth does Home import?\nExplain why full specialization in production does not imply full specialization in consumption.\n\n\n\nPractice 4: Do Gains from Trade Mean Producing Outside the PPF?\nA student looks at the gains-from-trade diagram and says:\n\n“Trade makes Home better off because it allows Home to produce outside its production possibilities frontier.”\n\nIs this statement correct?\nAnswer the following:\n\nUnder trade, where must Home’s production point lie relative to its PPF?\nWhat can lie outside Home’s PPF after trade: the production point, the consumption point, or both?\nExplain how Home can consume a bundle outside its PPF without producing outside its PPF.\n\n\n\nPractice 5: Why Must the World Relative Price Lie Between the Two Autarky Prices?\nRecall that\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{1}{2}\n\\]\nin Home, while\n\\[\n\\frac{P_W^*}{P_C^*}\n=\n1\n\\]\nin Foreign.\nSuppose instead that the international relative price of wheat were\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{3}{2}.\n\\]\nAnswer the following:\n\nIn Home, which industry would pay the higher wage?\nIn Foreign, which industry would pay the higher wage?\nWhich good would each country want to produce?\nCan this be an equilibrium in which Home exports wheat and Foreign exports cloth?\nUse this example to explain why, in the two-country Ricardian equilibrium,\n\n\\[\n\\frac{P_W}{P_C}\n&lt;\n\\frac{P_W^I}{P_C^I}\n&lt;\n\\frac{P_W^*}{P_C^*}.\n\\]\n\n\nPractice 6: Gain from Trade and Real Income\nRecall that Home has\n\\[\nMPL_W = 4,\n\\qquad\nMPL_C = 2,\n\\]\nwhile Foreign has\n\\[\nMPL_W^* = 1,\n\\qquad\nMPL_C^* = 1.\n\\]\nThe international relative price is\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3}.\n\\]\nHome specializes in wheat, while Foreign specializes in cloth.\nAnswer the following:\n\nWhat is Home’s real wage in terms of wheat after trade?\nWhat is Home’s real wage in terms of cloth after trade?\nWhat is Foreign’s real wage in terms of cloth after trade?\nWhat is Foreign’s real wage in terms of wheat after trade?\nCompare these real wages with the corresponding real wages under autarky. Does each country gain from trade?\nAfter trade, which country’s workers have the higher real income when measured in terms of wheat? What about when measured in terms of cloth?"
+    "objectID": "trade/index.html",
+    "href": "trade/index.html",
+    "title": "International Trade & Investment",
+    "section": "",
+    "text": "Topics and learning materials for Part I of ECON 3200."
+  },
+  {
+    "objectID": "migration/index.html",
+    "href": "migration/index.html",
+    "title": "Migration",
+    "section": "",
+    "text": "Topics and learning materials for Part II of ECON 3200."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ECON 3200 The Economics of Globalization",
+    "section": "",
+    "text": "Welcome to the TA website for ECON 3200: The Economics of Globalization.\nInstructor: Professor James Harrigan\nTeaching Assistant: Eric Guang-Xuan Zhou\nEmail: xus4ny@virginia.edu\nOffice Hours: We 1:30PM - 3:30PM in Monroe Basement"
+  },
+  {
+    "objectID": "index.html#important-announcements",
+    "href": "index.html#important-announcements",
+    "title": "ECON 3200 The Economics of Globalization",
+    "section": "Important Announcements",
+    "text": "Important Announcements\n\n\n\n\n\n\nImportantAugust 30, 2026 — An important note about Homework 1, Q2\n\n\n\n\n\nIf you try to follow the textbook instructions using the current WTO Data Portal, you may find that the annual merchandise export data no longer provide the “by destination” option needed for the exercise.\nTo make sure everyone can complete the problem, I have uploaded two additional files to the Homework 1 Assignment page on Canvas:\n\nWTO_ABD_Export_2024, which is the export data at a reporter–partner level\nRegional_Compositions.xlsx, which provides the WTO regional classifications\n\nPlease download both files and use an LLM (ChatGPT, Claude, Gemini, etc.) to construct the regional trade matrix needed for Question 2.\nA suggested workflow is:\n\nUpload both files to the LLM.\nUse Regional_Compositions.xlsx to assign both reporters and partners to the appropriate WTO regions. Australia and New Zealand should be treated as a separate region from Asia.\nAggregate the reporter–partner export data into regional bilateral trade flows.\nConstruct a 9 × 9 matrix with exporting regions as rows and destination regions as columns. The nine rows and columns should be:\n\nWorld\nAfrica\nAsia\nAustralia and New Zealand\nCommonwealth of Independent States (CIS)\nEurope\nMiddle East\nNorth America\nSouth and Central America and the Caribbean\n\nCheck that the matrix is constructed correctly, and then use it to answer parts (a)–(i) of Question 2.\n\n\n\n\nDiscussion Sections\n\nSection 101: Wednesday, 6:00–6:50 PM, Monroe Hall 122\nSection 102: Wednesday, 7:00–7:50 PM, Monroe Hall 122\n\nDiscussion Notes: View Discussion Materials"
+  },
+  {
+    "objectID": "index.html#homework-answer-key",
+    "href": "index.html#homework-answer-key",
+    "title": "ECON 3200 The Economics of Globalization",
+    "section": "Homework Answer Key",
+    "text": "Homework Answer Key\n\n\n\nAssignment\nDeadline\nAnswer Key\n\n\n\n\nHomework 1\n9/3 3:30pm\nView Answer Key\n\n\nHomework 2\n9/10 3:30pm\nView Answer Key"
+  },
+  {
+    "objectID": "index.html#exams",
+    "href": "index.html#exams",
+    "title": "ECON 3200 The Economics of Globalization",
+    "section": "Exams",
+    "text": "Exams\n\n\n\nExam\nDate\n\n\n\n\nExam 1\nSeptember 22, 2026\n\n\nExam 2\nOctober 29, 2026\n\n\nExam 3\nDecember 11, 2026"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "discussion-materials.html",
+    "href": "discussion-materials.html",
+    "title": "Discussion Materials",
+    "section": "",
+    "text": "SEPTEMBER 9, 2026\n\n\n\nGravity Model\nConstant Returns to Scale"
+  },
+  {
+    "objectID": "discussion-materials.html#gravity-and-returns-to-scale",
+    "href": "discussion-materials.html#gravity-and-returns-to-scale",
+    "title": "Discussion Materials",
+    "section": "",
+    "text": "Gravity Model\nConstant Returns to Scale"
+  },
+  {
+    "objectID": "discussion-materials.html#elasticity",
+    "href": "discussion-materials.html#elasticity",
+    "title": "Discussion Materials",
+    "section": "Elasticity",
+    "text": "Elasticity\nLog Functions"
+  },
+  {
+    "objectID": "macro/index.html",
+    "href": "macro/index.html",
+    "title": "International Macroeconomics",
+    "section": "",
+    "text": "Topics and learning materials for Part III of ECON 3200."
   },
   {
     "objectID": "trade/gravity.html",
@@ -126,73 +196,66 @@
     "text": "8. Practice Problems\n\nPractice 1: How Does Country Size Affect Trade?\nSuppose bilateral trade is described by\n\\[\nTrade_{AB}\n=\nT\n\\times\n\\frac{Y_A Y_B}{d_{AB}^{\\alpha}}\n\\times\n\\varepsilon_{AB}.\n\\]\nAssume distance and all other factors remain unchanged.\nA student says:\n\n“If country \\(A\\) becomes twice as large, trade between \\(A\\) and \\(B\\) should also become twice as large. If both countries become twice as large, trade should still only double.”\n\nIs this reasoning correct?\nAnswer the following:\n\nIf \\(Y_A\\) doubles while \\(Y_B\\) stays unchanged, by what factor does \\(Trade_{AB}\\) change?\nIf both \\(Y_A\\) and \\(Y_B\\) double, by what factor does \\(Trade_{AB}\\) change?\nExplain why the second case is not the same as simply doubling trade once.\n\n\n\nPractice 2: What Happens When Distance Doubles?\nSuppose\n\\[\n\\alpha = 1.\n\\]\nThen the gravity equation implies\n\\[\nTrade_{AB}\n\\propto\n\\frac{1}{d_{AB}}.\n\\]\nA student says:\n\n“If distance doubles, distance increases by 100%. Since the distance elasticity is \\(-1\\), trade must fall by 100%.”\n\nIs this reasoning correct?\nAnswer the following:\n\nIf distance changes from \\(d_{AB}\\) to \\(2d_{AB}\\), what happens to predicted trade?\nBy what percentage does trade actually fall?\nWhy does the elasticity approximation\n\n\\[\n\\%\\Delta Trade_{AB}\n\\approx\n-\\alpha \\times \\%\\Delta d_{AB}\n\\]\ngive a misleading answer when distance changes by such a large amount?\n\n\nPractice 3: Why Do We Need to Control for GDP?\nSuppose the United States trades more with a large, distant country than with a small, nearby country.\nA student concludes:\n\n“This shows that distance does not really reduce trade.”\n\nIs this conclusion correct?\nAnswer the following:\n\nAccording to the gravity equation, what two major factors affect bilateral trade?\nWhy is it misleading to compare trade across country pairs without accounting for country size?\nSuppose two trading partners are the same distance from the United States, but one has twice the GDP of the other. Which one should the gravity model predict more U.S. trade with?\nSuppose instead that two trading partners have the same GDP, but one is farther from the United States. Which one should the gravity model predict more U.S. trade with?\nExplain what economists mean by studying the effect of distance on trade while holding GDP constant.\n\n\n\nPractice 4: Extensive Margin or Intensive Margin?\nThe gravity relationship can operate through two margins:\n\nExtensive margin: countries trade more different products.\nIntensive margin: countries trade more of products that are already being traded.\n\nFor each scenario below, identify whether it represents an extensive margin, an intensive margin, or both.\n\nScenario A\nThe United States already imports auto parts from Mexico. The value of those imports increases substantially, but the set of auto parts being imported does not change.\n\n\nScenario B\nThe United States begins importing several types of products from a country that it did not previously import at all.\n\n\nScenario C\nTrade between two countries increases because they begin trading more product categories, and at the same time trade more within product categories that were already traded.\n\n\nScenario D\nThe United States imports auto parts from both Mexico and Taiwan, but imports much more auto parts from Mexico.\nAnswer the following:\n\nClassify each scenario as extensive margin, intensive margin, or both.\nA student says:\n\n\n“If two countries trade more with each other, that must mean they are trading a larger quantity of the same goods.”\n\nWhy is this statement incomplete?\n\n\n\nPractice 5: Does More Trade Reveal Comparative Advantage?\nSuppose the United States trades much more with Canada than with a smaller and more distant country.\nA student concludes:\n\n“Because the United States trades so much with Canada, Canada must have a comparative advantage in most of the goods that it exports to the United States.”\n\nIs this conclusion justified by the gravity model?\nAnswer the following:\n\nWhat does the gravity model help explain about trade between two countries?\nDoes the gravity equation by itself tell us which goods each country should export?\nWhat additional economic concept is needed to explain why one country exports one good and imports another?\n\n\n\nPractice 6: Do Larger Countries Depend More on International Trade?\nThe gravity model predicts that larger countries tend to have larger bilateral trade flows.\nA student concludes:\n\n“Because large countries trade more in absolute terms, they must also be more relied on international trade.”\n\nIs this conclusion correct?\nAnswer the following:\n\nWhat does the gravity model predict about the level of trade when country GDP increases?\nIs a larger level of trade the same thing as having a larger trade-to-GDP ratio?\nWhy might a very large country have a large amount of international trade but a relatively low trade-to-GDP ratio?"
   },
   {
-    "objectID": "macro/index.html",
-    "href": "macro/index.html",
-    "title": "International Macroeconomics",
+    "objectID": "trade/ricardian.html",
+    "href": "trade/ricardian.html",
+    "title": "The Ricardian Model",
     "section": "",
-    "text": "Topics and learning materials for Part III of ECON 3200."
+    "text": "Why do countries trade, and what determines what each country exports?\nThe Ricardian model studies how differences in productivity across countries can create gains from trade."
   },
   {
-    "objectID": "discussion-materials.html",
-    "href": "discussion-materials.html",
-    "title": "Discussion Materials",
-    "section": "",
-    "text": "SEPTEMBER 2, 2026\n\n\n\nLog Functions\nGravity Model\nConstant Returns to Scale"
+    "objectID": "trade/ricardian.html#model-setup",
+    "href": "trade/ricardian.html#model-setup",
+    "title": "The Ricardian Model",
+    "section": "1. Model Setup",
+    "text": "1. Model Setup\nWe begin with a simple world:\n\nTwo countries: Home and Foreign\nTwo goods: Cloth (\\(C\\)) and Wheat (\\(W\\))\nLabor is the only factor of production\nWorkers can move freely between industries within a country\nFirms are perfectly competitive\nTechnology has constant returns to scale\n\nFor Home, let:\n\n\\(L\\) = total number of workers\n\\(L_C\\) = workers producing cloth\n\\(L_W\\) = workers producing wheat\n\\(MPL_C\\) = marginal product of labor in cloth\n\\(MPL_W\\) = marginal product of labor in wheat\n\nTotal labor must satisfy\n\\[\nL = L_C + L_W.\n\\]"
   },
   {
-    "objectID": "discussion-materials.html#elasticity-gravity-and-returns-to-scale",
-    "href": "discussion-materials.html#elasticity-gravity-and-returns-to-scale",
-    "title": "Discussion Materials",
-    "section": "",
-    "text": "Log Functions\nGravity Model\nConstant Returns to Scale"
+    "objectID": "trade/ricardian.html#production-and-the-ppf",
+    "href": "trade/ricardian.html#production-and-the-ppf",
+    "title": "The Ricardian Model",
+    "section": "2. Production and the PPF",
+    "text": "2. Production and the PPF\n\nProduction\nIn the Ricardian model, labor is the only input used to produce both goods.\nFor cloth,\n\\[\nQ_C = MPL_C \\times L_C.\n\\]\nFor wheat,\n\\[\nQ_W = MPL_W \\times L_W.\n\\]\nThe marginal product of labor tells us how much output one worker can produce.\nFor example, suppose\n\\[\nMPL_C = 2\n\\qquad \\text{and} \\qquad\nMPL_W = 4.\n\\]\nThen one worker can produce either 2 units of cloth or 4 units of wheat, and\n\\[\nQ_C = 2L_C,\n\\qquad\nQ_W = 4L_W.\n\\]\n\n\nFrom Labor Allocation to the PPF\nRecall that total labor satisfies\n\\[\nL = L_C + L_W.\n\\]\nUsing the production equations,\n\\[\nL_C = \\frac{Q_C}{MPL_C}\n\\qquad \\text{and} \\qquad\nL_W = \\frac{Q_W}{MPL_W}.\n\\]\nSubstituting these into the labor constraint gives\n\\[\nL\n=\n\\frac{Q_C}{MPL_C}\n+\n\\frac{Q_W}{MPL_W}.\n\\]\nRearranging,\n\\[\nQ_C\n=\nMPL_C L\n-\n\\frac{MPL_C}{MPL_W}Q_W.\n\\]\nThis equation is the production possibilities frontier (PPF).\nUsing the numerical example\n\\[\nL = 25,\\qquad MPL_C = 2,\\qquad MPL_W = 4,\n\\]\nthe PPF becomes\n\\[\nQ_C\n=\n2(25)\n-\n\\frac{2}{4}Q_W,\n\\]\nso\n\\[\nQ_C\n=\n50\n-\n\\frac{1}{2}Q_W.\n\\]\nThe PPF has two important endpoints.\nIf all workers produce cloth, then\n\\[\nL_C = 25,\\qquad L_W = 0,\n\\]\nso\n\\[\nQ_C = 50,\\qquad Q_W = 0.\n\\]\nIf all workers produce wheat, then\n\\[\nL_C = 0,\\qquad L_W = 25,\n\\]\nso\n\\[\nQ_C = 0,\\qquad Q_W = 100.\n\\]\nTherefore, the PPF runs from\n\\[\n(Q_W,Q_C)=(0,50)\n\\]\nto\n\\[\n(Q_W,Q_C)=(100,0).\n\\]\n\n\nEconomic Intuition\nThe PPF shows the trade-off created by a fixed amount of labor.\nTo produce more wheat, Home must move workers from the cloth industry to the wheat industry. As a result,\n\nwheat production increases, but\ncloth production decreases.\n\nBecause the marginal products of labor are constant, this trade-off is also constant. That is why the Ricardian PPF is a straight line.\n\n\n\n  \n  \n  \n\n  \n  \n\n  \n  \n    \n      \\( \\text{Wheat}(Q_W) \\)\n    \n  \n\n  \n    \n      \\( \\text{Cloth}(Q_C) \\)\n    \n  \n\n  \n  50\n  100\n\n  \n  \n    \n      \\( \\text{PPF: } Q_C = 50 - \\frac{1}{2}Q_W \\)"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
+    "objectID": "trade/ricardian.html#opportunity-cost",
+    "href": "trade/ricardian.html#opportunity-cost",
+    "title": "The Ricardian Model",
+    "section": "3. Opportunity Cost",
+    "text": "3. Opportunity Cost\nFrom the PPF,\n\\[\nQ_C\n=\nMPL_C L\n-\n\\frac{MPL_C}{MPL_W}Q_W,\n\\]\nthe slope is\n\\[\n-\\frac{MPL_C}{MPL_W}.\n\\]\nThe absolute value of this slope,\n\\[\n\\frac{MPL_C}{MPL_W},\n\\]\nis the opportunity cost of wheat in terms of cloth.\nIt tells us how much cloth production must fall when Home produces one additional unit of wheat.\nUsing the numerical example,\n\\[\nMPL_C = 2\n\\qquad \\text{and} \\qquad\nMPL_W = 4,\n\\]\nthe opportunity cost of one additional unit of wheat is\n\\[\n\\frac{MPL_C}{MPL_W}\n=\n\\frac{2}{4}\n=\n\\frac{1}{2}.\n\\]\nSo producing 1 more unit of wheat costs Home 1/2 unit of cloth."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "ECON 3200 The Economics of Globalization",
-    "section": "",
-    "text": "Welcome to the TA website for ECON 3200: The Economics of Globalization.\nInstructor: Professor James Harrigan\nTeaching Assistant: Eric Guang-Xuan Zhou\nEmail: xus4ny@virginia.edu\nOffice Hours: We 1:30PM - 3:30PM in Monroe Basement"
+    "objectID": "trade/ricardian.html#autarky-equilibrium",
+    "href": "trade/ricardian.html#autarky-equilibrium",
+    "title": "The Ricardian Model",
+    "section": "4. Autarky Equilibrium",
+    "text": "4. Autarky Equilibrium\nAutarky means that Home cannot trade with other countries.\nIn autarky, Home must produce both cloth and wheat for its own consumption.\nLet\n\n\\(P_C\\) = price of cloth\n\\(P_W\\) = price of wheat\n\\(w\\) = wage\n\nBecause firms are perfectly competitive, a worker is paid the value of what that worker produces.\nIn the cloth industry,\n\\[\nw = P_C MPL_C.\n\\]\nIn the wheat industry,\n\\[\nw = P_W MPL_W.\n\\]\nWorkers can move freely between the two industries. Therefore, in equilibrium, the wage must be the same in both industries.\nSince the wage must be the same in both industries,\n\\[\nP_C MPL_C\n=\nP_W MPL_W.\n\\]\nRearranging,\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{MPL_C}{MPL_W}.\n\\]\nSo in autarky, the relative price of wheat is determined by relative productivity.\nUsing the numerical example,\n\\[\nMPL_C = 2\n\\qquad \\text{and} \\qquad\nMPL_W = 4,\n\\]\nwe get\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{2}{4}\n=\n\\frac{1}{2}.\n\\]\nSo in autarky, one unit of wheat is worth one-half unit of cloth.\n\nEconomic Intuition\nIn autarky, the relative price of wheat must equal its opportunity cost.\nIf wheat were worth more than its opportunity cost, firms would want to move workers into wheat production.\nIf wheat were worth less than its opportunity cost, firms would want to move workers into cloth production.\nTherefore, equilibrium requires\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{MPL_C}{MPL_W}.\n\\]"
   },
   {
-    "objectID": "index.html#important-announcements",
-    "href": "index.html#important-announcements",
-    "title": "ECON 3200 The Economics of Globalization",
-    "section": "Important Announcements",
-    "text": "Important Announcements\n\n\n\n\n\n\nImportantAugust 30, 2026 — An important note about Homework 1, Q2\n\n\n\n\n\nIf you try to follow the textbook instructions using the current WTO Data Portal, you may find that the annual merchandise export data no longer provide the “by destination” option needed for the exercise.\nTo make sure everyone can complete the problem, I have uploaded two additional files to the Homework 1 Assignment page on Canvas:\n\nWTO_ABD_Export_2024, which is the export data at a reporter–partner level\nRegional_Compositions.xlsx, which provides the WTO regional classifications\n\nPlease download both files and use an LLM (ChatGPT, Claude, Gemini, etc.) to construct the regional trade matrix needed for Question 2.\nA suggested workflow is:\n\nUpload both files to the LLM.\nUse Regional_Compositions.xlsx to assign both reporters and partners to the appropriate WTO regions. Australia and New Zealand should be treated as a separate region from Asia.\nAggregate the reporter–partner export data into regional bilateral trade flows.\nConstruct a 9 × 9 matrix with exporting regions as rows and destination regions as columns. The nine rows and columns should be:\n\nWorld\nAfrica\nAsia\nAustralia and New Zealand\nCommonwealth of Independent States (CIS)\nEurope\nMiddle East\nNorth America\nSouth and Central America and the Caribbean\n\nCheck that the matrix is constructed correctly, and then use it to answer parts (a)–(i) of Question 2.\n\n\n\n\nDiscussion Sections\n\nSection 101: Wednesday, 6:00–6:50 PM, Monroe Hall 122\nSection 102: Wednesday, 7:00–7:50 PM, Monroe Hall 122\n\nDiscussion Notes: View Discussion Materials"
+    "objectID": "trade/ricardian.html#comparative-advantage",
+    "href": "trade/ricardian.html#comparative-advantage",
+    "title": "The Ricardian Model",
+    "section": "5. Comparative Advantage",
+    "text": "5. Comparative Advantage\nNow introduce Foreign.\nSuppose Foreign has\n\\[\nMPL_C^* = 1,\n\\qquad\nMPL_W^* = 1.\n\\]\nSo one Foreign worker can produce either\n\n1 unit of cloth, or\n1 unit of wheat.\n\nForeign’s opportunity cost of wheat is therefore\n\\[\n\\frac{MPL_C^*}{MPL_W^*}\n=\n\\frac{1}{1}\n=\n1.\n\\]\nHome’s opportunity cost of wheat is\n\\[\n\\frac{MPL_C}{MPL_W}\n=\n\\frac{2}{4}\n=\n\\frac{1}{2}.\n\\]\nSince\n\\[\n\\frac{1}{2} &lt; 1,\n\\]\nHome has a comparative advantage in wheat.\nForeign therefore has a comparative advantage in cloth.\n\nEconomic Intuition\nComparative advantage is about relative efficiency, not absolute productivity.\nHome is more productive than Foreign in both goods:\n\nHome produces 2 units of cloth per worker, while Foreign produces 1.\nHome produces 4 units of wheat per worker, while Foreign produces 1.\n\nSo Home has an absolute advantage in both goods.\nBut Home gives up \\(2\\) unit of wheat to produce one more unit of cloth, while Foreign gives up 1 unit of wheat.\nThat is why Foreign has a comparative advantage in cloth, even though Home is more productive in both goods."
   },
   {
-    "objectID": "index.html#upcoming-deadlines",
-    "href": "index.html#upcoming-deadlines",
-    "title": "ECON 3200 The Economics of Globalization",
-    "section": "Upcoming Deadlines",
-    "text": "Upcoming Deadlines\n\n\n\nAssignment\nDeadline\n\n\n\n\nHomework 1\n9/3 3:30pm"
+    "objectID": "trade/ricardian.html#opening-to-trade",
+    "href": "trade/ricardian.html#opening-to-trade",
+    "title": "The Ricardian Model",
+    "section": "6. Opening to Trade",
+    "text": "6. Opening to Trade\nWhen Home and Foreign open to trade, they face a common international relative price of wheat:\n\\[\n\\frac{P_W^I}{P_C^I}.\n\\]\nFor trade to occur, this international relative price must lie between the two countries’ autarky relative prices:\n\\[\n\\frac{P_W}{P_C}\n&lt;\n\\frac{P_W^I}{P_C^I}\n&lt;\n\\frac{P_W^*}{P_C^*}.\n\\]\nIn our numerical example,\n\\[\n\\frac{1}{2}\n&lt;\n\\frac{P_W^I}{P_C^I}\n&lt;\n1.\n\\]\nSuppose the international relative price is\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3}.\n\\]\nRecall that Home’s autarky relative price is\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{1}{2}.\n\\]\nSince\n\\[\n\\frac{2}{3}\n&gt;\n\\frac{1}{2},\n\\]\nwheat is now relatively more valuable on the international market than it was in Home under autarky.\nIn Home, the wage in the wheat industry is\n\\[\nw_W = P_W^I MPL_W.\n\\]\nThe wage in the cloth industry is\n\\[\nw_C = P_C^I MPL_C.\n\\]\nUsing\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3},\n\\qquad\nMPL_W = 4,\n\\qquad\nMPL_C = 2,\n\\]\nwe have\n\\[\nP_W^I MPL_W\n&gt;\nP_C^I MPL_C.\n\\]\nSo workers can earn more in the wheat industry.\nBecause workers can move freely between sectors, all workers move into wheat production.\nTherefore,\n\\[\nL_W = L,\n\\qquad\nL_C = 0.\n\\]\nWith\n\\[\nL = 25\n\\qquad \\text{and} \\qquad\nMPL_W = 4,\n\\]\nHome produces\n\\[\nQ_W = MPL_W L = 4 \\times 25 = 100,\n\\]\nand\n\\[\nQ_C = 0.\n\\]\nSo after opening to trade, Home fully specializes in wheat.\nFor Foreign, recall that the autarky relative price of wheat is\n\\[\n\\frac{P_W^*}{P_C^*}\n=\n1.\n\\]\nBut the international relative price is\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3}.\n\\]\nSince\n\\[\n\\frac{2}{3}\n&lt;\n1,\n\\]\nwheat is relatively less valuable on the international market than it was in Foreign under autarky.\nTherefore, workers in Foreign move into cloth production.\nSuppose Foreign has\n\\[\nL^* = 100.\n\\]\nSince all Foreign workers move into cloth production,\n\\[\nL_C^* = L^* = 100,\n\\qquad\nL_W^* = 0.\n\\]\nTherefore,\n\\[\nQ_C^*\n=\nMPL_C^* L_C^*\n=\n1 \\times 100\n=\n100,\n\\]\nand\n\\[\nQ_W^* = 0.\n\\]\nSo after opening to trade, Foreign fully specializes in cloth."
   },
   {
-    "objectID": "index.html#exams",
-    "href": "index.html#exams",
-    "title": "ECON 3200 The Economics of Globalization",
-    "section": "Exams",
-    "text": "Exams\n\n\n\nExam\nDate\n\n\n\n\nExam 1\nSeptember 22, 2026\n\n\nExam 2\nOctober 29, 2026\n\n\nExam 3\nDecember 11, 2026"
+    "objectID": "trade/ricardian.html#gains-from-trade",
+    "href": "trade/ricardian.html#gains-from-trade",
+    "title": "The Ricardian Model",
+    "section": "7. Gains from Trade",
+    "text": "7. Gains from Trade\nWith trade, production no longer has to equal consumption.\nWe will use:\n\n\\(Q_C\\) and \\(Q_W\\) for production\n\\(C_C\\) and \\(C_W\\) for consumption\n\nHome specializes in wheat, so its production is\n\\[\nQ_C = 0,\n\\qquad\nQ_W = 100.\n\\]\nBut Home can export some of its wheat and use the export revenue to import cloth.\nTherefore, Home can consume both wheat and cloth, even though it produces only wheat.\nHome earns income by producing wheat:\n\\[\n\\text{income}\n=\nP_W^I Q_W.\n\\]\nSince Home produces\n\\[\nQ_W = MPL_W L,\n\\]\nits income is\n\\[\n\\text{income}\n=\nP_W^I MPL_W L.\n\\]\nHome spends this income on cloth and wheat:\n\\[\nP_C^I C_C\n+\nP_W^I C_W.\n\\]\nTherefore, the trade budget constraint is\n\\[\nP_W^I MPL_W L\n=\nP_C^I C_C\n+\nP_W^I C_W.\n\\]\nRearranging the trade budget constraint,\n\\[\nC_C\n=\n\\frac{P_W^I}{P_C^I} MPL_W L\n-\n\\frac{P_W^I}{P_C^I} C_W.\n\\]\nUsing\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3},\n\\qquad\nMPL_W = 4,\n\\qquad\nL = 25,\n\\]\nwe get\n\\[\nC_C\n=\n\\frac{2}{3}(4)(25)\n-\n\\frac{2}{3}C_W,\n\\]\nso\n\\[\nC_C\n=\n\\frac{200}{3}\n-\n\\frac{2}{3}C_W.\n\\]\nUnder autarky, Home’s consumption possibilities are limited by the PPF:\n\\[\nC_C\n=\n50\n-\n\\frac{1}{2}C_W.\n\\]\nWith trade, Home’s consumption possibilities are\n\\[\nC_C\n=\n\\frac{200}{3}\n-\n\\frac{2}{3}C_W.\n\\]\nThe slope changes from\n\\[\n-\\frac{1}{2}\n\\]\nto\n\\[\n-\\frac{2}{3}.\n\\]\nThis happens because the relevant trade-off is no longer determined by Home’s production technology alone. With trade, Home can exchange wheat for cloth at the international relative price.\nThe intercept changes from\n\\[\n50\n\\]\nto\n\\[\n\\frac{200}{3}\n\\]\nPeople are able to purchase more cloth by using all incomes (\\(C_W = 0\\)).\n\nEconomic Intuition\nTrade expands Home’s consumption possibilities.\nUnder autarky, Home can only consume combinations that lie on its own PPF.\nWith trade, Home can specialize in wheat and exchange wheat for cloth at the international relative price.\nBecause the international relative price is more favorable than Home’s autarky trade-off, Home can reach consumption bundles that were not feasible before trade.\nThis is the gain from trade.\n\n\n\n  \n  \n  \n\n  \n  \n\n  \n  \n  \n  \n    \n      \\( \\text{Wheat}(C_W) \\)\n    \n  \n\n  \n    \n      \\( \\text{Cloth}(C_C) \\)\n    \n  \n\n    \n  \n    \n      \\( \\text{Autarky PPF: } C_C = 50 - \\frac{1}{2}C_W \\)\n    \n  \n\n  \n    \n      \\( \\text{Trade budget line: } C_C = \\frac{200}{3} - \\frac{2}{3}C_W \\)\n    \n  \n\n    \n  \n\n  \n    \n      \\( \\text{Autarky consumption} \\)\n    \n  \n\n    \n  \n\n  \n    \n      \\( \\text{Trade consumption} \\)"
   },
   {
-    "objectID": "migration/index.html",
-    "href": "migration/index.html",
-    "title": "Migration",
-    "section": "",
-    "text": "Topics and learning materials for Part II of ECON 3200."
-  },
-  {
-    "objectID": "trade/index.html",
-    "href": "trade/index.html",
-    "title": "International Trade & Investment",
-    "section": "",
-    "text": "Topics and learning materials for Part I of ECON 3200."
+    "objectID": "trade/ricardian.html#practice-problems",
+    "href": "trade/ricardian.html#practice-problems",
+    "title": "The Ricardian Model",
+    "section": "8. Practice Problems",
+    "text": "8. Practice Problems\n\nPractice 1: Why Does Home Fully Specialize?\nRecall that Home has\n\\[\nMPL_C = 2,\n\\qquad\nMPL_W = 4,\n\\]\nand the international relative price is\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3}.\n\\]\nAt this international price,\n\\[\nP_W^I MPL_W\n&gt;\nP_C^I MPL_C,\n\\]\nso workers earn more in the wheat industry.\nA student argues:\n\n“Workers will initially move into wheat, but as more workers enter the wheat industry, the marginal product of labor in wheat should fall. Eventually, wages in the two industries will become equal again, so Home will continue producing both goods.”\n\nIs this reasoning correct in the Ricardian model?\nAnd explain why Home fully specializes in wheat in the Ricardian model.\n\n\nPractice 2: When Does Home Not Fully Specialize?\nRecall that Home has\n\\[\nMPL_C = 2,\n\\qquad\nMPL_W = 4.\n\\]\nSuppose the international relative price of wheat is instead\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{1}{2}.\n\\]\nA student says:\n\n“Home has a comparative advantage in wheat, so it should still fully specialize in wheat.”\n\nIs this correct?\nAnswer the following:\n\nCompare the wage in the wheat industry,\n\n\\[\nw_W = P_W^I MPL_W,\n\\]\nwith the wage in the cloth industry,\n\\[\nw_C = P_C^I MPL_C.\n\\]\n\nAre workers strictly better off working in one industry?\nDoes Home have to fully specialize in this case?\nExplain why any allocation of labor between cloth and wheat can be consistent with equilibrium.\n\n\n\nPractice 3: Does Full Specialization Mean Consuming Only One Good?\nUnder trade, Home fully specializes in wheat:\n\\[\nQ_W = 100,\n\\qquad\nQ_C = 0.\n\\]\nA student concludes:\n\n“Since Home produces no cloth, Home must also consume no cloth.”\n\nIs this correct?\nSuppose Home chooses to consume\n\\[\nC_W = 40.\n\\]\nUsing Home’s trade budget constraint,\n\\[\nC_C\n=\n\\frac{200}{3}\n-\n\\frac{2}{3}C_W,\n\\]\nanswer the following:\n\nHow much cloth does Home consume?\nHow much wheat does Home export?\nHow much cloth does Home import?\nExplain why full specialization in production does not imply full specialization in consumption.\n\n\n\nPractice 4: Do Gains from Trade Mean Producing Outside the PPF?\nA student looks at the gains-from-trade diagram and says:\n\n“Trade makes Home better off because it allows Home to produce outside its production possibilities frontier.”\n\nIs this statement correct?\nAnswer the following:\n\nUnder trade, where must Home’s production point lie relative to its PPF?\nWhat can lie outside Home’s PPF after trade: the production point, the consumption point, or both?\nExplain how Home can consume a bundle outside its PPF without producing outside its PPF.\n\n\n\nPractice 5: Why Must the World Relative Price Lie Between the Two Autarky Prices?\nRecall that\n\\[\n\\frac{P_W}{P_C}\n=\n\\frac{1}{2}\n\\]\nin Home, while\n\\[\n\\frac{P_W^*}{P_C^*}\n=\n1\n\\]\nin Foreign.\nSuppose instead that the international relative price of wheat were\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{3}{2}.\n\\]\nAnswer the following:\n\nIn Home, which industry would pay the higher wage?\nIn Foreign, which industry would pay the higher wage?\nWhich good would each country want to produce?\nCan this be an equilibrium in which Home exports wheat and Foreign exports cloth?\nUse this example to explain why, in the two-country Ricardian equilibrium,\n\n\\[\n\\frac{P_W}{P_C}\n&lt;\n\\frac{P_W^I}{P_C^I}\n&lt;\n\\frac{P_W^*}{P_C^*}.\n\\]\n\n\nPractice 6: Gain from Trade and Real Income\nRecall that Home has\n\\[\nMPL_W = 4,\n\\qquad\nMPL_C = 2,\n\\]\nwhile Foreign has\n\\[\nMPL_W^* = 1,\n\\qquad\nMPL_C^* = 1.\n\\]\nThe international relative price is\n\\[\n\\frac{P_W^I}{P_C^I}\n=\n\\frac{2}{3}.\n\\]\nHome specializes in wheat, while Foreign specializes in cloth.\nAnswer the following:\n\nWhat is Home’s real wage in terms of wheat after trade?\nWhat is Home’s real wage in terms of cloth after trade?\nWhat is Foreign’s real wage in terms of cloth after trade?\nWhat is Foreign’s real wage in terms of wheat after trade?\nCompare these real wages with the corresponding real wages under autarky. Does each country gain from trade?\nAfter trade, which country’s workers have the higher real income when measured in terms of wheat? What about when measured in terms of cloth?"
   }
 ]
