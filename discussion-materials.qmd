@@ -2,11 +2,9 @@
 title: "Discussion Materials"
 ---
 
+## September 9, 2026 {.week-title}
+
 ::: {.week-card .current-week}
-
-<div class="week-date">SEPTEMBER 9, 2026</div>
-
-## Gravity and Returns to Scale
 
 [Gravity Model](materials/Sep9_1_Gravity.pdf){target="_blank" .material-link}
 
@@ -14,9 +12,7 @@ title: "Discussion Materials"
 
 :::
 
-<div class="week-date">SEPTEMBER 2, 2026</div>
-
-## Elasticity
+## September 2, 2026 {.week-title}
 
 [Log Functions](materials/Sep2_1_Log_Functions.pdf){target="_blank" .material-link}
 
