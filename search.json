@@ -74,14 +74,7 @@
     "href": "index.html",
     "title": "ECON 3200 The Economics of Globalization",
     "section": "",
-    "text": "Welcome to the TA website for ECON 3200: The Economics of Globalization.\nInstructor: Professor James Harrigan\nTeaching Assistant: Eric Guang-Xuan Zhou\nEmail: xus4ny@virginia.edu\nOffice Hours: We 1:30PM - 3:30PM in Monroe Basement"
-  },
-  {
-    "objectID": "index.html#important-announcements",
-    "href": "index.html#important-announcements",
-    "title": "ECON 3200 The Economics of Globalization",
-    "section": "Important Announcements",
-    "text": "Important Announcements\n\n\n\n\n\n\nImportantAugust 30, 2026 — An important note about Homework 1, Q2\n\n\n\n\n\nIf you try to follow the textbook instructions using the current WTO Data Portal, you may find that the annual merchandise export data no longer provide the “by destination” option needed for the exercise.\nTo make sure everyone can complete the problem, I have uploaded two additional files to the Homework 1 Assignment page on Canvas:\n\nWTO_ABD_Export_2024, which is the export data at a reporter–partner level\nRegional_Compositions.xlsx, which provides the WTO regional classifications\n\nPlease download both files and use an LLM (ChatGPT, Claude, Gemini, etc.) to construct the regional trade matrix needed for Question 2.\nA suggested workflow is:\n\nUpload both files to the LLM.\nUse Regional_Compositions.xlsx to assign both reporters and partners to the appropriate WTO regions. Australia and New Zealand should be treated as a separate region from Asia.\nAggregate the reporter–partner export data into regional bilateral trade flows.\nConstruct a 9 × 9 matrix with exporting regions as rows and destination regions as columns. The nine rows and columns should be:\n\nWorld\nAfrica\nAsia\nAustralia and New Zealand\nCommonwealth of Independent States (CIS)\nEurope\nMiddle East\nNorth America\nSouth and Central America and the Caribbean\n\nCheck that the matrix is constructed correctly, and then use it to answer parts (a)–(i) of Question 2.\n\n\n\n\nDiscussion Sections\n\nSection 101: Wednesday, 6:00–6:50 PM, Monroe Hall 122\nSection 102: Wednesday, 7:00–7:50 PM, Monroe Hall 122\n\nDiscussion Notes: View Discussion Materials"
+    "text": "Welcome to the TA website for ECON 3200: The Economics of Globalization.\nInstructor: Professor James Harrigan\nTeaching Assistant: Eric Guang-Xuan Zhou\nEmail: xus4ny@virginia.edu\nOffice Hours: We 1:30PM - 3:30PM in Monroe Basement\nDiscussion Sections\nDiscussion Notes: View Discussion Materials"
   },
   {
     "objectID": "index.html#homework-answer-key",
