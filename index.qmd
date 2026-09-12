@@ -22,7 +22,7 @@ Welcome to the TA website for **ECON 3200: The Economics of Globalization**.
 | Assignment | Deadline | Answer Key
 |---|---|---|
 | Homework 1 | 9/3 3:30pm | [View Answer Key](materials/ECON_3200_F2026_HW1_Answer_Key.pdf){target="_blank"} |
-| Homework 2 | 9/10 3:30pm | View Answer Key |
+| Homework 2 | 9/10 3:30pm | [View Answer Key](materials/ECON_3200_F2026_HW2_Answer_Key.pdf){target="_blank"} |
 
 ## Exams
 
