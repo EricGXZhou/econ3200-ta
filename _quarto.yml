@@ -17,6 +17,8 @@ website:
             text: Ricardian Model
           - href: trade/specific.qmd
             text: Specific Factors Model
+          - href: trade/trade policy.qmd
+            text: Import Tariffs
       - href: migration/index.qmd
         text: Migration
       - href: macro/index.qmd

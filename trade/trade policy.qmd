@@ -1,0 +1,1447 @@
+---
+title: "Import Tariffs under Perfect Competition"
+---
+
+How does an import tariff affect prices, production, consumption, trade, and national welfare?
+
+Why does the answer depend on whether the importing country is small or large?
+
+## Model Setup
+
+We study one good traded between two countries:
+
+- **Home** imports the good
+- **Foreign** exports the good to Home
+- Firms and consumers are perfectly competitive
+- There are no transportation costs
+- The analysis is partial equilibrium: we focus on one market
+- Tariff revenue is included in Home national welfare
+- Foreign does not retaliate against Home's tariff
+
+Let
+
+- $P$ = price in Home
+- $P^*$ = price received by Foreign exporters
+- $P^W$ = free-trade world price
+- $t$ = specific tariff per unit imported
+
+Home import demand and Foreign export supply are
+
+$$
+M(P)=D(P)-S(P),
+\qquad
+X^*(P^*)=S^*(P^*)-D^*(P^*).
+$$
+
+Under free trade,
+
+$$
+P=P^*=P^W,
+\qquad
+M(P^W)=X^*(P^W).
+$$
+
+A specific tariff creates a wedge between the Home and Foreign prices:
+
+$$
+P=P^*+t.
+$$
+
+Home national welfare is
+
+$$
+W_H = CS + PS + TR,
+\qquad
+TR = tM.
+$$
+
+## 1. Domestic Import Demand and Foreign Export Supply
+
+### Home Import Demand
+
+At price $P$, Home consumers demand $D(P)$ and Home producers supply $S(P)$. The difference is imported:
+
+$$
+M(P)=D(P)-S(P).
+$$
+
+A lower price raises demand and reduces supply, so the import-demand curve slopes downward.
+
+Suppose
+
+$$
+D(P)=\alpha-\beta P,
+\qquad
+S(P)=\gamma+\delta P,
+$$
+
+where $\beta>0$ and $\delta>0$. Then
+
+$$
+M(P)
+=
+(\alpha-\gamma)-(\beta+\delta)P
+\equiv
+m_0-m_1P,
+$$
+
+where
+
+$$
+m_0=\alpha-\gamma,
+\qquad
+m_1=\beta+\delta>0.
+$$
+
+The Home no-trade price, $P^A$, satisfies $M(P^A)=0$:
+
+$$
+P^A=\frac{m_0}{m_1}.
+$$
+
+```{=html}
+<div style="max-width: 900px; margin: 2rem auto 0.5rem auto;">
+<svg viewBox="0 0 900 420" style="width:100%; height:auto;" role="img" aria-label="Deriving Home import demand from Home demand and supply">
+
+  <!-- Panel titles -->
+  <text x="230" y="28" text-anchor="middle" font-size="18" font-weight="600">(a) Home Market</text>
+  <text x="680" y="28" text-anchor="middle" font-size="18" font-weight="600">(b) Import Market</text>
+
+  <!-- Left axes -->
+  <line x1="70" y1="345" x2="410" y2="345" stroke="black" stroke-width="2"/>
+  <line x1="70" y1="345" x2="70" y2="55" stroke="black" stroke-width="2"/>
+  <text x="34" y="55" font-size="15">Price</text>
+  <text x="345" y="376" font-size="15">Quantity</text>
+
+  <!-- Home supply and demand -->
+  <line x1="115" y1="315" x2="345" y2="75" stroke="steelblue" stroke-width="4"/>
+  <line x1="115" y1="75" x2="345" y2="315" stroke="darkorange" stroke-width="4"/>
+  <text x="350" y="82" font-size="17" font-style="italic">S</text>
+  <text x="350" y="315" font-size="17" font-style="italic">D</text>
+
+  <!-- Prices -->
+  <line x1="70" y1="195" x2="410" y2="195" stroke="gray" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <line x1="70" y1="275" x2="410" y2="275" stroke="gray" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="37" y="200" font-size="15" font-style="italic">P<tspan baseline-shift="super" font-size="10">A</tspan></text>
+  <text x="35" y="280" font-size="15" font-style="italic">P<tspan baseline-shift="super" font-size="10">W</tspan></text>
+
+  <!-- No-trade equilibrium -->
+  <circle cx="230" cy="195" r="5" fill="black"/>
+  <text x="241" y="188" font-size="15">A</text>
+  <text x="247" y="211" font-size="13">No-trade equilibrium</text>
+
+  <!-- World-price quantities -->
+  <line x1="153" y1="275" x2="153" y2="345" stroke="gray" stroke-width="1.4" stroke-dasharray="4,4"/>
+  <line x1="307" y1="275" x2="307" y2="345" stroke="gray" stroke-width="1.4" stroke-dasharray="4,4"/>
+  <circle cx="153" cy="275" r="4" fill="steelblue"/>
+  <circle cx="307" cy="275" r="4" fill="darkorange"/>
+  <text x="144" y="366" font-size="14" font-style="italic">S<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+  <text x="299" y="366" font-size="14" font-style="italic">D<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+
+  <!-- Import bracket -->
+  <line x1="153" y1="325" x2="307" y2="325" stroke="black" stroke-width="1.5"/>
+  <line x1="153" y1="319" x2="153" y2="331" stroke="black" stroke-width="1.5"/>
+  <line x1="307" y1="319" x2="307" y2="331" stroke="black" stroke-width="1.5"/>
+  <text x="230" y="316" text-anchor="middle" font-size="14">Imports = M<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+
+  <!-- Right axes -->
+  <line x1="520" y1="345" x2="860" y2="345" stroke="black" stroke-width="2"/>
+  <line x1="520" y1="345" x2="520" y2="55" stroke="black" stroke-width="2"/>
+  <text x="484" y="55" font-size="15">Price</text>
+  <text x="802" y="376" font-size="15">Imports</text>
+
+  <!-- Import demand -->
+  <line x1="555" y1="195" x2="825" y2="330" stroke="crimson" stroke-width="4"/>
+  <text x="815" y="315" font-size="17" font-style="italic">M</text>
+
+  <!-- Matched price lines -->
+  <line x1="520" y1="195" x2="555" y2="195" stroke="gray" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <line x1="520" y1="275" x2="715" y2="275" stroke="gray" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="487" y="200" font-size="15" font-style="italic">P<tspan baseline-shift="super" font-size="10">A</tspan></text>
+  <text x="485" y="280" font-size="15" font-style="italic">P<tspan baseline-shift="super" font-size="10">W</tspan></text>
+
+  <!-- Import quantity -->
+  <circle cx="715" cy="275" r="5" fill="black"/>
+  <line x1="715" y1="275" x2="715" y2="345" stroke="gray" stroke-width="1.4" stroke-dasharray="4,4"/>
+  <text x="704" y="366" font-size="14" font-style="italic">M<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+
+</svg>
+</div>
+```
+
+*At each price, Home imports the horizontal difference between domestic demand and domestic supply. Collecting these differences gives the downward-sloping import-demand curve.*
+
+### Foreign Export Supply
+
+At price $P^*$, Foreign producers supply $S^*(P^*)$ and Foreign consumers demand $D^*(P^*)$. The difference is exported:
+
+$$
+X^*(P^*)=S^*(P^*)-D^*(P^*).
+$$
+
+A higher Foreign price raises supply and reduces demand, so the export-supply curve slopes upward.
+
+Suppose
+
+$$
+D^*(P^*)=\alpha^*-\beta^*P^*,
+\qquad
+S^*(P^*)=\gamma^*+\delta^*P^*.
+$$
+
+Then
+
+$$
+X^*(P^*)
+=
+(\gamma^*-\alpha^*)
++
+(\beta^*+\delta^*)P^*
+\equiv
+x_0+x_1P^*,
+$$
+
+where
+
+$$
+x_0=\gamma^*-\alpha^*,
+\qquad
+x_1=\beta^*+\delta^*>0.
+$$
+
+The Foreign no-trade price, $P^{A*}$, satisfies $X^*(P^{A*})=0$:
+
+$$
+P^{A*}=-\frac{x_0}{x_1}.
+$$
+
+Home imports from Foreign when
+
+$$
+P^A>P^{A*}.
+$$
+
+### Free-Trade Equilibrium
+
+Under free trade, Home import demand equals Foreign export supply:
+
+$$
+m_0-m_1P^W
+=
+x_0+x_1P^W.
+$$
+
+Therefore,
+
+$$
+P^W
+=
+\frac{m_0-x_0}{m_1+x_1},
+\qquad
+M_1=M(P^W)=X^*(P^W).
+$$
+
+```{=html}
+<div style="max-width: 900px; margin: 2rem auto 0.5rem auto;">
+<svg viewBox="0 0 900 420" style="width:100%; height:auto;" role="img" aria-label="Deriving Foreign export supply and the free-trade world equilibrium">
+
+  <!-- Panel titles -->
+  <text x="230" y="28" text-anchor="middle" font-size="18" font-weight="600">(a) Foreign Market</text>
+  <text x="680" y="28" text-anchor="middle" font-size="18" font-weight="600">(b) World Market</text>
+
+  <!-- Left axes -->
+  <line x1="70" y1="345" x2="410" y2="345" stroke="black" stroke-width="2"/>
+  <line x1="70" y1="345" x2="70" y2="55" stroke="black" stroke-width="2"/>
+  <text x="34" y="55" font-size="15">Price</text>
+  <text x="345" y="376" font-size="15">Quantity</text>
+
+  <!-- Foreign demand and supply -->
+  <line x1="115" y1="330" x2="345" y2="190" stroke="steelblue" stroke-width="4"/>
+  <line x1="115" y1="190" x2="345" y2="330" stroke="darkorange" stroke-width="4"/>
+  <text x="350" y="196" font-size="17" font-style="italic">S*</text>
+  <text x="350" y="330" font-size="17" font-style="italic">D*</text>
+
+  <!-- Prices -->
+  <line x1="70" y1="260" x2="410" y2="260" stroke="gray" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <line x1="70" y1="215" x2="410" y2="215" stroke="gray" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <text x="24" y="265" font-size="15" font-style="italic">P<tspan baseline-shift="super" font-size="10">A*</tspan></text>
+  <text x="35" y="220" font-size="15" font-style="italic">P<tspan baseline-shift="super" font-size="10">W</tspan></text>
+
+  <!-- Foreign no-trade equilibrium -->
+  <circle cx="230" cy="260" r="5" fill="black"/>
+  <text x="241" y="253" font-size="15">A*</text>
+
+  <!-- World-price quantities -->
+  <line x1="156" y1="215" x2="156" y2="345" stroke="gray" stroke-width="1.4" stroke-dasharray="4,4"/>
+  <line x1="304" y1="215" x2="304" y2="345" stroke="gray" stroke-width="1.4" stroke-dasharray="4,4"/>
+  <circle cx="156" cy="215" r="4" fill="darkorange"/>
+  <circle cx="304" cy="215" r="4" fill="steelblue"/>
+  <text x="143" y="366" font-size="14" font-style="italic">D<tspan baseline-shift="super" font-size="9">*</tspan><tspan baseline-shift="sub" font-size="10">1</tspan></text>
+  <text x="292" y="366" font-size="14" font-style="italic">S<tspan baseline-shift="super" font-size="9">*</tspan><tspan baseline-shift="sub" font-size="10">1</tspan></text>
+
+  <!-- Export bracket -->
+  <line x1="156" y1="325" x2="304" y2="325" stroke="black" stroke-width="1.5"/>
+  <line x1="156" y1="319" x2="156" y2="331" stroke="black" stroke-width="1.5"/>
+  <line x1="304" y1="319" x2="304" y2="331" stroke="black" stroke-width="1.5"/>
+  <text x="230" y="316" text-anchor="middle" font-size="14">Exports = X<tspan baseline-shift="super" font-size="9">*</tspan><tspan baseline-shift="sub" font-size="10">1</tspan></text>
+
+  <!-- Right axes -->
+  <line x1="520" y1="345" x2="860" y2="345" stroke="black" stroke-width="2"/>
+  <line x1="520" y1="345" x2="520" y2="55" stroke="black" stroke-width="2"/>
+  <text x="484" y="55" font-size="15">Price</text>
+  <text x="784" y="376" font-size="15">Imports/Exports</text>
+
+  <!-- Import demand and export supply -->
+  <line x1="555" y1="95" x2="825" y2="335" stroke="crimson" stroke-width="4"/>
+  <line x1="555" y1="335" x2="825" y2="95" stroke="seagreen" stroke-width="4"/>
+  <text x="815" y="326" font-size="17" font-style="italic">M</text>
+  <text x="815" y="102" font-size="17" font-style="italic">X*</text>
+
+  <!-- Equilibrium -->
+  <circle cx="690" cy="215" r="5" fill="black"/>
+  <line x1="520" y1="215" x2="690" y2="215" stroke="gray" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <line x1="690" y1="215" x2="690" y2="345" stroke="gray" stroke-width="1.4" stroke-dasharray="4,4"/>
+  <text x="484" y="220" font-size="15" font-style="italic">P<tspan baseline-shift="super" font-size="10">W</tspan></text>
+  <text x="680" y="366" font-size="14" font-style="italic">M<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+  <text x="704" y="190" font-size="14">Free-trade equilibrium</text>
+
+</svg>
+</div>
+```
+
+*Foreign exports are the difference between Foreign supply and Foreign demand. The free-trade world price equates Home imports with Foreign exports.*
+
+## 2. Tariff in a Small Country
+
+A **small country** cannot affect the price received by Foreign exporters. It therefore faces a perfectly elastic Foreign export supply at $P^W$.
+
+Before the tariff,
+
+$$
+P_1=P^W,
+\qquad
+M_1=D_1-S_1.
+$$
+
+After Home imposes a specific tariff $t$,
+
+$$
+P_2=P^W+t,
+\qquad
+M_2=D_2-S_2.
+$$
+
+Because the Home price rises,
+
+$$
+D_2<D_1,
+\qquad
+S_2>S_1,
+\qquad
+M_2<M_1.
+$$
+
+Using the linear import-demand curve,
+
+$$
+M_2
+=
+m_0-m_1(P^W+t)
+=
+M_1-m_1t.
+$$
+
+Therefore,
+
+$$
+M_1-M_2=m_1t=(\beta+\delta)t.
+$$
+
+We assume the tariff is not prohibitive, so $M_2>0$.
+
+### Welfare
+
+For linear demand and supply,
+
+$$
+\Delta CS
+=
+-\frac{D_1+D_2}{2}t,
+\qquad
+\Delta PS
+=
+\frac{S_1+S_2}{2}t,
+\qquad
+\Delta TR=tM_2.
+$$
+
+Adding the three components gives
+
+$$
+\Delta W_H
+=
+-\frac{1}{2}t(M_1-M_2)
+=
+-\frac{1}{2}m_1t^2<0.
+$$
+
+The two parts of the deadweight loss are
+
+$$
+\text{Production loss}
+=
+\frac{1}{2}\delta t^2,
+\qquad
+\text{Consumption loss}
+=
+\frac{1}{2}\beta t^2.
+$$
+
+Therefore,
+
+$$
+DWL
+=
+\frac{1}{2}(\beta+\delta)t^2
+=
+\frac{1}{2}t(M_1-M_2).
+$$
+
+Using the areas in the tariff diagram,
+
+$$
+\Delta CS=-(a+b+c+d),
+\qquad
+\Delta PS=a,
+\qquad
+\Delta TR=c,
+$$
+
+so
+
+$$
+\Delta W_H=-(b+d).
+$$
+
+## 3. Tariff in a Large Country
+
+A **large country** imports enough of the good that a reduction in its imports lowers the price received by Foreign exporters.
+
+After the tariff, equilibrium requires
+
+$$
+M(P_2)=X^*(P_2^*),
+\qquad
+P_2=P_2^*+t.
+$$
+
+Using the linear curves,
+
+$$
+m_0-m_1(P_2^*+t)
+=
+x_0+x_1P_2^*.
+$$
+
+Solving for the two prices gives
+
+$$
+P_2^*
+=
+P^W-\frac{m_1}{m_1+x_1}t,
+\qquad
+P_2
+=
+P^W+\frac{x_1}{m_1+x_1}t.
+$$
+
+Therefore,
+
+$$
+P_2^*<P^W<P_2.
+$$
+
+The Home price rises by less than the tariff because the Foreign export price falls:
+
+$$
+P_2-P^W
+=
+\frac{x_1}{m_1+x_1}t,
+\qquad
+P^W-P_2^*
+=
+\frac{m_1}{m_1+x_1}t.
+$$
+
+Together,
+
+$$
+t
+=
+(P_2-P^W)+(P^W-P_2^*).
+$$
+
+Post-tariff imports are
+
+$$
+M_2
+=
+M_1-\frac{m_1x_1}{m_1+x_1}t.
+$$
+
+We assume the tariff is not prohibitive, so $M_2>0$.
+
+### Welfare
+
+The change in Home consumer and producer surplus is
+
+$$
+\Delta CS+\Delta PS
+=
+-\frac{M_1+M_2}{2}(P_2-P^W).
+$$
+
+Because tariff revenue is zero before the tariff,
+
+$$
+\Delta TR=tM_2.
+$$
+
+Using
+
+$$
+t=(P_2-P^W)+(P^W-P_2^*),
+$$
+
+the change in Home welfare becomes
+
+$$
+\Delta W_H
+=
+(P^W-P_2^*)M_2
+-
+\frac{1}{2}(P_2-P^W)(M_1-M_2).
+$$
+
+The first term is the **terms-of-trade gain**:
+
+$$
+e=(P^W-P_2^*)M_2.
+$$
+
+The second term is the domestic production and consumption loss:
+
+$$
+b+d
+=
+\frac{1}{2}(P_2-P^W)(M_1-M_2).
+$$
+
+Therefore,
+
+$$
+\Delta W_H=e-(b+d).
+$$
+
+Home gains if $e>b+d$ and loses if $e<b+d$.
+
+### Comparing Small- and Large-Country Tariffs
+
+```{=html}
+<style>
+.tariff-comparison {
+  max-width: 1180px;
+  margin: 2rem auto 0.5rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: start;
+}
+.tariff-comparison > div {
+  min-width: 0;
+}
+.tariff-comparison svg {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 850px) {
+  .tariff-comparison {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="tariff-comparison">
+
+<div>
+<svg viewBox="0 0 700 410" role="img" aria-label="Small-country tariff diagram">
+  <text x="350" y="24" text-anchor="middle" font-size="19" font-weight="600">Small Country</text>
+  <text x="185" y="52" text-anchor="middle" font-size="16" font-weight="600">Home Market</text>
+  <text x="530" y="52" text-anchor="middle" font-size="16" font-weight="600">Import Market</text>
+
+  <!-- Home axes -->
+  <line x1="55" y1="340" x2="325" y2="340" stroke="black" stroke-width="2"/>
+  <line x1="55" y1="340" x2="55" y2="70" stroke="black" stroke-width="2"/>
+  <text x="16" y="75" font-size="13">Price</text>
+  <text x="268" y="368" font-size="13">Quantity</text>
+
+  <!-- Curves -->
+  <line x1="95" y1="315" x2="300" y2="60" stroke="steelblue" stroke-width="4"/>
+  <line x1="95" y1="60" x2="300" y2="315" stroke="darkorange" stroke-width="4"/>
+  <text x="304" y="67" font-size="16" font-style="italic">S</text>
+  <text x="304" y="315" font-size="16" font-style="italic">D</text>
+
+  <!-- Price lines -->
+  <line x1="55" y1="260" x2="325" y2="260" stroke="gray" stroke-width="1.3" stroke-dasharray="5,5"/>
+  <line x1="55" y1="220" x2="325" y2="220" stroke="gray" stroke-width="1.3" stroke-dasharray="5,5"/>
+  <text x="17" y="265" font-size="13" font-style="italic">P<tspan baseline-shift="super" font-size="9">W</tspan></text>
+  <text x="2" y="225" font-size="13" font-style="italic">P<tspan baseline-shift="super" font-size="9">W</tspan>+t</text>
+
+  <!-- Welfare areas -->
+  <polygon points="55,220 171,220 139,260 55,260" fill="cornflowerblue" fill-opacity="0.42"/>
+  <polygon points="139,260 171,220 171,260" fill="salmon" fill-opacity="0.65"/>
+  <rect x="171" y="220" width="57" height="40" fill="khaki" fill-opacity="0.72"/>
+  <polygon points="228,220 260,260 228,260" fill="salmon" fill-opacity="0.65"/>
+  <text x="95" y="246" font-size="15" font-style="italic">a</text>
+  <text x="155" y="249" font-size="15" font-style="italic">b</text>
+  <text x="198" y="246" font-size="15" font-style="italic">c</text>
+  <text x="240" y="249" font-size="15" font-style="italic">d</text>
+
+  <!-- Quantities -->
+  <line x1="139" y1="260" x2="139" y2="340" stroke="gray" stroke-width="1.1" stroke-dasharray="4,4"/>
+  <line x1="171" y1="220" x2="171" y2="340" stroke="gray" stroke-width="1.1" stroke-dasharray="4,4"/>
+  <line x1="228" y1="220" x2="228" y2="340" stroke="gray" stroke-width="1.1" stroke-dasharray="4,4"/>
+  <line x1="260" y1="260" x2="260" y2="340" stroke="gray" stroke-width="1.1" stroke-dasharray="4,4"/>
+  <text x="129" y="359" font-size="12" font-style="italic">S<tspan baseline-shift="sub" font-size="9">1</tspan></text>
+  <text x="161" y="359" font-size="12" font-style="italic">S<tspan baseline-shift="sub" font-size="9">2</tspan></text>
+  <text x="218" y="359" font-size="12" font-style="italic">D<tspan baseline-shift="sub" font-size="9">2</tspan></text>
+  <text x="250" y="359" font-size="12" font-style="italic">D<tspan baseline-shift="sub" font-size="9">1</tspan></text>
+
+  <!-- Import-market axes -->
+  <line x1="390" y1="340" x2="670" y2="340" stroke="black" stroke-width="2"/>
+  <line x1="390" y1="340" x2="390" y2="70" stroke="black" stroke-width="2"/>
+  <text x="351" y="75" font-size="13">Price</text>
+  <text x="615" y="368" font-size="13">Imports</text>
+
+  <!-- Import demand and horizontal export supply -->
+  <line x1="420" y1="80" x2="645" y2="325" stroke="crimson" stroke-width="4"/>
+  <line x1="390" y1="260" x2="665" y2="260" stroke="steelblue" stroke-width="4"/>
+  <line x1="390" y1="220" x2="665" y2="220" stroke="seagreen" stroke-width="4"/>
+  <text x="637" y="319" font-size="16" font-style="italic">M</text>
+  <text x="608" y="254" font-size="14" font-style="italic">X*</text>
+  <text x="590" y="214" font-size="14" font-style="italic">X*+t</text>
+
+  <!-- Equilibria -->
+  <circle cx="585" cy="260" r="4.5" fill="black"/>
+  <circle cx="548" cy="220" r="4.5" fill="black"/>
+  <line x1="585" y1="260" x2="585" y2="340" stroke="gray" stroke-width="1.1" stroke-dasharray="4,4"/>
+  <line x1="548" y1="220" x2="548" y2="340" stroke="gray" stroke-width="1.1" stroke-dasharray="4,4"/>
+  <text x="537" y="359" font-size="12" font-style="italic">M<tspan baseline-shift="sub" font-size="9">2</tspan></text>
+  <text x="574" y="359" font-size="12" font-style="italic">M<tspan baseline-shift="sub" font-size="9">1</tspan></text>
+
+  <!-- Tariff wedge -->
+  <line x1="650" y1="220" x2="650" y2="260" stroke="black" stroke-width="1.5"/>
+  <line x1="644" y1="220" x2="656" y2="220" stroke="black" stroke-width="1.5"/>
+  <line x1="644" y1="260" x2="656" y2="260" stroke="black" stroke-width="1.5"/>
+  <text x="660" y="244" font-size="14" font-style="italic">t</text>
+</svg>
+</div>
+
+<div>
+<svg viewBox="0 0 700 410" role="img" aria-label="Large-country tariff diagram">
+  <text x="350" y="24" text-anchor="middle" font-size="19" font-weight="600">Large Country</text>
+  <text x="185" y="52" text-anchor="middle" font-size="16" font-weight="600">Home Market</text>
+  <text x="530" y="52" text-anchor="middle" font-size="16" font-weight="600">World Market</text>
+
+  <!-- Home axes -->
+  <line x1="55" y1="340" x2="325" y2="340" stroke="black" stroke-width="2"/>
+  <line x1="55" y1="340" x2="55" y2="70" stroke="black" stroke-width="2"/>
+  <text x="16" y="75" font-size="13">Price</text>
+  <text x="268" y="368" font-size="13">Quantity</text>
+
+  <!-- Curves -->
+  <line x1="95" y1="315" x2="300" y2="60" stroke="steelblue" stroke-width="4"/>
+  <line x1="95" y1="60" x2="300" y2="315" stroke="darkorange" stroke-width="4"/>
+  <text x="304" y="67" font-size="16" font-style="italic">S</text>
+  <text x="304" y="315" font-size="16" font-style="italic">D</text>
+
+  <!-- Price lines -->
+  <line x1="55" y1="280" x2="325" y2="280" stroke="gray" stroke-width="1.3" stroke-dasharray="5,5"/>
+  <line x1="55" y1="250" x2="325" y2="250" stroke="gray" stroke-width="1.3" stroke-dasharray="5,5"/>
+  <line x1="55" y1="210" x2="325" y2="210" stroke="gray" stroke-width="1.3" stroke-dasharray="5,5"/>
+  <text x="15" y="285" font-size="13" font-style="italic">P<tspan baseline-shift="sub" font-size="9">2</tspan>*</text>
+  <text x="17" y="255" font-size="13" font-style="italic">P<tspan baseline-shift="super" font-size="9">W</tspan></text>
+  <text x="10" y="215" font-size="13" font-style="italic">P<tspan baseline-shift="sub" font-size="9">2</tspan></text>
+
+  <!-- Welfare areas -->
+  <polygon points="55,210 179,210 147,250 55,250" fill="cornflowerblue" fill-opacity="0.42"/>
+  <polygon points="147,250 179,210 179,250" fill="salmon" fill-opacity="0.65"/>
+  <rect x="179" y="210" width="41" height="40" fill="khaki" fill-opacity="0.72"/>
+  <polygon points="220,210 252,250 220,250" fill="salmon" fill-opacity="0.65"/>
+  <rect x="179" y="250" width="41" height="30" fill="mediumseagreen" fill-opacity="0.48"/>
+  <text x="96" y="237" font-size="15" font-style="italic">a</text>
+  <text x="160" y="240" font-size="15" font-style="italic">b</text>
+  <text x="196" y="237" font-size="15" font-style="italic">c</text>
+  <text x="232" y="240" font-size="15" font-style="italic">d</text>
+  <text x="197" y="271" font-size="15" font-style="italic">e</text>
+
+  <!-- Quantities -->
+  <line x1="147" y1="250" x2="147" y2="340" stroke="gray" stroke-width="1.1" stroke-dasharray="4,4"/>
+  <line x1="179" y1="210" x2="179" y2="340" stroke="gray" stroke-width="1.1" stroke-dasharray="4,4"/>
+  <line x1="220" y1="210" x2="220" y2="340" stroke="gray" stroke-width="1.1" stroke-dasharray="4,4"/>
+  <line x1="252" y1="250" x2="252" y2="340" stroke="gray" stroke-width="1.1" stroke-dasharray="4,4"/>
+  <text x="137" y="359" font-size="12" font-style="italic">S<tspan baseline-shift="sub" font-size="9">1</tspan></text>
+  <text x="169" y="359" font-size="12" font-style="italic">S<tspan baseline-shift="sub" font-size="9">2</tspan></text>
+  <text x="210" y="359" font-size="12" font-style="italic">D<tspan baseline-shift="sub" font-size="9">2</tspan></text>
+  <text x="242" y="359" font-size="12" font-style="italic">D<tspan baseline-shift="sub" font-size="9">1</tspan></text>
+
+  <!-- World-market axes -->
+  <line x1="390" y1="340" x2="670" y2="340" stroke="black" stroke-width="2"/>
+  <line x1="390" y1="340" x2="390" y2="70" stroke="black" stroke-width="2"/>
+  <text x="351" y="75" font-size="13">Price</text>
+  <text x="615" y="368" font-size="13">Imports</text>
+
+  <!-- Curves -->
+  <line x1="420" y1="100" x2="650" y2="320" stroke="crimson" stroke-width="4"/>
+  <line x1="420" y1="330" x2="650" y2="170" stroke="steelblue" stroke-width="4"/>
+  <line x1="420" y1="260" x2="650" y2="100" stroke="seagreen" stroke-width="4"/>
+  <text x="641" y="315" font-size="16" font-style="italic">M</text>
+  <text x="632" y="171" font-size="14" font-style="italic">X*</text>
+  <text x="615" y="103" font-size="14" font-style="italic">X*+t</text>
+
+  <!-- Free-trade and tariff equilibria -->
+  <circle cx="559" cy="233" r="4.5" fill="black"/>
+  <circle cx="517" cy="193" r="4.5" fill="black"/>
+  <circle cx="517" cy="263" r="4.5" fill="black"/>
+  <line x1="390" y1="233" x2="559" y2="233" stroke="gray" stroke-width="1.2" stroke-dasharray="5,5"/>
+  <line x1="390" y1="193" x2="517" y2="193" stroke="gray" stroke-width="1.2" stroke-dasharray="5,5"/>
+  <line x1="390" y1="263" x2="517" y2="263" stroke="gray" stroke-width="1.2" stroke-dasharray="5,5"/>
+  <line x1="559" y1="233" x2="559" y2="340" stroke="gray" stroke-width="1.1" stroke-dasharray="4,4"/>
+  <line x1="517" y1="193" x2="517" y2="340" stroke="gray" stroke-width="1.1" stroke-dasharray="4,4"/>
+  <text x="351" y="238" font-size="13" font-style="italic">P<tspan baseline-shift="super" font-size="9">W</tspan></text>
+  <text x="349" y="198" font-size="13" font-style="italic">P<tspan baseline-shift="sub" font-size="9">2</tspan></text>
+  <text x="347" y="268" font-size="13" font-style="italic">P<tspan baseline-shift="sub" font-size="9">2</tspan>*</text>
+  <text x="506" y="359" font-size="12" font-style="italic">M<tspan baseline-shift="sub" font-size="9">2</tspan></text>
+  <text x="548" y="359" font-size="12" font-style="italic">M<tspan baseline-shift="sub" font-size="9">1</tspan></text>
+
+  <!-- Tariff wedge -->
+  <line x1="517" y1="193" x2="517" y2="263" stroke="black" stroke-width="1.7"/>
+  <line x1="511" y1="193" x2="523" y2="193" stroke="black" stroke-width="1.5"/>
+  <line x1="511" y1="263" x2="523" y2="263" stroke="black" stroke-width="1.5"/>
+  <text x="527" y="232" font-size="14" font-style="italic">t</text>
+</svg>
+</div>
+
+</div>
+```
+
+In the small-country case, the Foreign price remains at $P^W$, so the Home price rises by the full tariff. In the large-country case, the tariff lowers the Foreign export price to $P_2^*$, so the Home price rises by less than $t$.
+
+|  | Small Country | Large Country |
+|---|---|---|
+| Foreign export supply | Perfectly elastic | Upward sloping |
+| Foreign export price | Unchanged | Falls |
+| Increase in Home price | Equals $t$ | Less than $t$ |
+| Terms-of-trade gain | None | $e>0$ |
+| Home welfare | Falls | May rise or fall |
+
+## 4. The Optimal Tariff
+
+The **optimal tariff** is the tariff that maximizes Home national welfare, assuming that Foreign does not retaliate.
+
+Starting from free trade, a small tariff can raise Home welfare when the terms-of-trade gain exceeds the deadweight loss. As the tariff becomes larger, imports fall and the deadweight loss eventually exceeds the terms-of-trade gain. A prohibitive tariff eliminates imports and returns Home to autarky.
+
+```{=html}
+<div style="max-width: 760px; margin: 2rem auto 0.5rem auto;">
+<svg viewBox="0 0 760 440" style="width:100%; height:auto;" role="img" aria-label="Home welfare and the optimal tariff">
+
+  <!-- Axes -->
+  <line x1="95" y1="355" x2="700" y2="355" stroke="black" stroke-width="2"/>
+  <line x1="95" y1="355" x2="95" y2="55" stroke="black" stroke-width="2"/>
+  <text x="18" y="70" font-size="16">Home</text>
+  <text x="10" y="90" font-size="16">welfare</text>
+  <text x="650" y="389" font-size="16">Tariff</text>
+
+  <!-- Welfare reference lines -->
+  <line x1="95" y1="245" x2="545" y2="245" stroke="gray" stroke-width="1.3" stroke-dasharray="5,5"/>
+  <line x1="95" y1="305" x2="690" y2="305" stroke="gray" stroke-width="1.3" stroke-dasharray="5,5"/>
+  <text x="20" y="250" font-size="14">Free trade</text>
+  <text x="25" y="310" font-size="14">Autarky</text>
+
+  <!-- Welfare curve -->
+  <path d="M145,245 C220,185 275,125 355,125 C435,125 500,190 545,305 L690,305"
+        fill="none" stroke="seagreen" stroke-width="5"/>
+
+  <!-- Key points -->
+  <circle cx="145" cy="245" r="6" fill="black"/>
+  <circle cx="355" cy="125" r="6" fill="black"/>
+  <circle cx="545" cy="305" r="6" fill="black"/>
+  <text x="129" y="232" font-size="15">B</text>
+  <text x="365" y="115" font-size="15">C</text>
+  <text x="555" y="296" font-size="15">A</text>
+
+  <!-- Vertical markers -->
+  <line x1="355" y1="125" x2="355" y2="355" stroke="gray" stroke-width="1.2" stroke-dasharray="5,5"/>
+  <line x1="545" y1="305" x2="545" y2="355" stroke="gray" stroke-width="1.2" stroke-dasharray="5,5"/>
+  <text x="325" y="382" font-size="14">Optimal tariff</text>
+  <text x="505" y="382" font-size="14">Prohibitive tariff</text>
+  <text x="139" y="378" font-size="14">0</text>
+
+  <!-- Explanations -->
+  <text x="205" y="80" font-size="14">
+    <tspan x="205" dy="0">Terms-of-trade gain</tspan>
+    <tspan x="205" dy="19">exceeds deadweight loss</tspan>
+  </text>
+  <line x1="315" y1="100" x2="335" y2="130" stroke="black" stroke-width="1.2"/>
+
+  <text x="470" y="155" font-size="14">
+    <tspan x="470" dy="0">Deadweight loss</tspan>
+    <tspan x="470" dy="19">exceeds terms-of-trade gain</tspan>
+  </text>
+  <line x1="520" y1="190" x2="505" y2="215" stroke="black" stroke-width="1.2"/>
+
+</svg>
+</div>
+```
+
+Recall that
+
+$$
+W_H=CS+PS+TR,
+\qquad
+TR=tM.
+$$
+
+A small change in the Home price changes consumer and producer surplus by
+
+$$
+dCS=-D\,dP,
+\qquad
+dPS=S\,dP.
+$$
+
+Therefore,
+
+$$
+d(CS+PS)
+=
+-(D-S)dP
+=
+-M\,dP.
+$$
+
+The change in tariff revenue is
+
+$$
+dTR=d(tM)=M\,dt+t\,dM.
+$$
+
+Because $P=P^*+t$, we have $dP=dP^*+dt$. Thus,
+
+$$
+dW_H
+=
+-MdP+Mdt+t\,dM
+=
+-MdP^*+t\,dM.
+$$
+
+Since $P^*$ depends on the quantity imported,
+
+$$
+dP^*
+=
+\frac{dP^*}{dM}dM.
+$$
+
+Therefore,
+
+$$
+dW_H
+=
+\left(
+ t-M\frac{dP^*}{dM}
+\right)dM.
+$$
+
+At the optimal tariff,
+
+$$
+t^{opt}
+=
+M\frac{dP^*}{dM}.
+$$
+
+Define the Foreign export-supply elasticity as
+
+$$
+E_X^*
+=
+\frac{dM}{dP^*}\frac{P^*}{M}.
+$$
+
+Taking the reciprocal,
+
+$$
+\frac{dP^*}{dM}
+=
+\frac{P^*}{E_X^*M}.
+$$
+
+Substituting into the optimal-tariff condition gives
+
+$$
+t^{opt}
+=
+\frac{P^*}{E_X^*}.
+$$
+
+Let the ad valorem tariff rate be
+
+$$
+\tau=\frac{t}{P^*}.
+$$
+
+The optimal ad valorem tariff is therefore
+
+$$
+\boxed{
+\tau^{opt}
+=
+\frac{1}{E_X^*}
+}.
+$$
+
+The elasticity in this formula is evaluated at the optimal tariff equilibrium.
+
+For a small country, Foreign export supply is perfectly elastic:
+
+$$
+E_X^*\rightarrow\infty,
+\qquad
+\tau^{opt}\rightarrow0.
+$$
+
+For a large country, a less elastic Foreign export supply implies a higher optimal tariff:
+
+$$
+E_X^*\downarrow
+\quad\Longrightarrow\quad
+\tau^{opt}\uparrow.
+$$
+
+## 5. Tariff Pass-Through
+
+Section 3 showed that a tariff imposed by a large country can be divided between
+
+- a higher price paid by Home importers, and
+- a lower price received by Foreign exporters.
+
+**Tariff pass-through** measures how much of a tariff increase appears in the tariff-inclusive import price paid in Home.
+
+### Import Prices with an Ad Valorem Tariff
+
+For this section, we work directly with an ad valorem tariff rate $\tau$.
+
+Let
+
+- $p$ = tariff-inclusive import price in Home
+- $p^*$ = price received by the Foreign exporter
+- $\kappa$ = transportation-cost factor
+
+Then
+
+$$
+p=(1+\tau)\kappa p^*.
+$$
+
+Taking logs gives
+
+$$
+\ln p
+=
+\ln(1+\tau)+\ln\kappa+\ln p^*.
+$$
+
+Therefore,
+
+$$
+\Delta\ln p
+=
+\Delta\ln(1+\tau)
++
+\Delta\ln\kappa
++
+\Delta\ln p^*.
+$$
+
+If transportation costs do not change, $\Delta\ln\kappa=0$, so
+
+$$
+\Delta\ln p
+=
+\Delta\ln(1+\tau)
++
+\Delta\ln p^*.
+$$
+
+::: {.callout-note title="The log approximation"}
+For a small tariff rate,
+
+$$
+\ln(1+\tau)\approx\tau.
+$$
+
+Therefore,
+
+$$
+\Delta\ln(1+\tau)\approx\Delta\tau,
+$$
+
+and the price equation can be written as
+
+$$
+\Delta\ln p
+\approx
+\Delta\tau+\Delta\ln p^*.
+$$
+
+This is a **first-order approximation** and is most accurate when tariff rates and tariff changes are small.
+
+For example, when the tariff rises from $0$ to $20\%$, the exact change in the tariff wedge is
+
+$$
+\ln(1.20)\approx0.182,
+$$
+
+while the approximation uses
+
+$$
+\Delta\tau=0.20.
+$$
+:::
+
+### Defining Tariff Pass-Through
+
+Using the approximation above,
+
+$$
+\boxed{
+\text{pass-through}
+=
+\frac{\Delta\ln p}{\Delta\tau}
+\approx
+1+
+\frac{\Delta\ln p^*}{\Delta\tau}
+}.
+$$
+
+Without the approximation, $\Delta\tau$ in the denominator is replaced by $\Delta\ln(1+\tau)$:
+
+$$
+\text{exact pass-through}
+=
+\frac{\Delta\ln p}{\Delta\ln(1+\tau)}.
+$$
+
+The value of pass-through tells us how the tariff is divided between Home importers and Foreign exporters.
+
+| Pass-through | Foreign export price | Interpretation |
+|---|---|---|
+| $1$ | Does not change | The tariff is fully passed through to the Home import price |
+| Between $0$ and $1$ | Falls | Part of the tariff is absorbed by Foreign exporters |
+| $0$ | Falls enough to offset the tariff | The Home import price does not rise |
+
+Full pass-through occurs when
+
+$$
+\Delta\ln p^*=0
+\quad\Longrightarrow\quad
+\text{pass-through}=1.
+$$
+
+Incomplete pass-through occurs when
+
+$$
+\Delta\ln p^*<0
+\quad\Longrightarrow\quad
+\text{pass-through}<1.
+$$
+
+This result connects directly to Foreign export-supply elasticity:
+
+- If Foreign export supply is **elastic**, Foreign exporters lower their price only slightly, so pass-through is close to one.
+- If Foreign export supply is **inelastic**, Foreign exporters lower their price more, so pass-through is lower.
+
+### Numerical Example
+
+Suppose the tariff rises from zero to $20\%$:
+
+$$
+\Delta\tau=0.20.
+$$
+
+Suppose the Foreign export price falls by approximately $10\%$:
+
+$$
+\Delta\ln p^*=-0.10.
+$$
+
+Using the lecture approximation,
+
+$$
+\Delta\ln p
+\approx
+0.20-0.10
+=
+0.10.
+$$
+
+Therefore,
+
+$$
+\text{pass-through}
+=
+\frac{0.10}{0.20}
+=
+\frac{1}{2}.
+$$
+
+The tariff-inclusive import price rises by approximately $10\%$. About one-half of the tariff appears in the Home import price, while the other half is absorbed through a lower Foreign export price.
+
+### Theory and Evidence
+
+The small-country model predicts full pass-through because the Foreign export price is fixed:
+
+$$
+\Delta\ln p^*=0
+\quad\Longrightarrow\quad
+\text{pass-through}=1.
+$$
+
+The standard large-country model instead predicts incomplete pass-through. A tariff reduces Home import demand, causing Foreign exporters to lower their price:
+
+$$
+\Delta\ln p^*<0
+\quad\Longrightarrow\quad
+\text{pass-through}<1.
+$$
+
+The evidence from recent U.S. tariffs was therefore surprising:
+
+| Episode | Pass-through to U.S. import prices | Share absorbed by Foreign exporters |
+|---|---:|---:|
+| Trade War 1.0 | Approximately $100\%$ | Approximately $0\%$ |
+| January–August 2025 | $94\%$ | $6\%$ |
+| November 2025 | $86\%$ | $14\%$ |
+
+During Trade War 1.0, multiple studies found nearly full pass-through, implying that Foreign export prices did not fall.
+
+In the first eight months of 2025, a $10\%$ tariff was associated with only a $0.6\%$ decline in Foreign export prices. The remaining $9.4\%$ appeared in higher U.S. import prices:
+
+$$
+10\%\times0.94=9.4\%.
+$$
+
+By November, a $10\%$ tariff was associated with a $1.4\%$ decline in Foreign export prices and an $8.6\%$ increase in U.S. import prices:
+
+$$
+10\%\times0.86=8.6\%.
+$$
+
+Thus, pass-through declined somewhat during 2025, but U.S. importers still absorbed most of the tariff.
+
+## 6. Practice Problems
+
+### Practice 1: Domestic Demand Is Not Import Demand
+
+Home demand and supply are
+
+$$
+D(P)=100-P,
+\qquad
+S(P)=20+P.
+$$
+
+Foreign demand and supply are
+
+$$
+D^*(P^*)=50-P^*,
+\qquad
+S^*(P^*)=30+P^*.
+$$
+
+1. Derive Home import demand $M(P)$ and Foreign export supply $X^*(P^*)$. Find the no-trade price in each country and determine which country imports the good.
+
+2. Solve for the free-trade world price $P^W$ and the equilibrium quantity traded $M_1$.
+
+3. Suppose Home demand and supply both increase by 10 units at every price:
+
+$$
+D'(P)=110-P,
+\qquad
+S'(P)=30+P.
+$$
+
+A student argues:
+
+> "Home imports must increase because domestic demand has increased."
+
+Is the student correct? Derive the new import-demand curve and determine whether the free-trade equilibrium changes.
+
+4. Return to the original Home demand curve, but suppose only Home supply increases:
+
+$$
+D(P)=100-P,
+\qquad
+S'(P)=30+P.
+$$
+
+Solve for the new world price and trade volume. Explain why a change in Home supply can affect the world price even though Foreign demand and supply have not changed.
+
+
+### Practice 2: The Same Tariff in a Small and a Large Country
+
+Home demand and supply are
+
+$$
+D(P)=100-P,
+\qquad
+S(P)=20+P.
+$$
+
+The initial free-trade world price is
+
+$$
+P^W=25.
+$$
+
+Home therefore initially imports
+
+$$
+M_1=D(P^W)-S(P^W).
+$$
+
+Suppose Home imposes a specific tariff
+
+$$
+t=10.
+$$
+
+1. First suppose Home is a **small country**. Find the tariff-inclusive Home price, domestic consumption, domestic production, and imports after the tariff.
+
+2. For the small-country case, calculate
+
+$$
+\Delta CS,
+\qquad
+\Delta PS,
+\qquad
+TR,
+\qquad
+\Delta W_H.
+$$
+
+Which changes are transfers within Home, and which represent a true efficiency loss?
+
+3. Now suppose Home is a **large country** and faces Foreign export supply
+
+$$
+X^*(P^*)=-20+2P^*.
+$$
+
+Solve for the post-tariff Foreign export price $P_2^*$, the Home price $P_2=P_2^*+t$, and imports $M_2$.
+
+4. In the large-country case, tariff revenue can be decomposed as
+
+$$
+TR
+=
+\underbrace{(P_2-P^W)M_2}_{c}
++
+\underbrace{(P^W-P_2^*)M_2}_{e}.
+$$
+
+Calculate $e$, $b+d$, and $\Delta W_H$. Explain why area $c$ is not a terms-of-trade gain, while area $e$ is.
+
+
+### Practice 3: Export-Supply Elasticity, Pass-Through, and Welfare
+
+Home import demand is
+
+$$
+M(P)=80-2P.
+$$
+
+Initially,
+
+$$
+P^W=25,
+\qquad
+M_1=30.
+$$
+
+Consider two possible Foreign export-supply curves:
+
+$$
+X_A^*(P^*)=-20+2P^*,
+\qquad
+X_B^*(P^*)=-120+6P^*.
+$$
+
+Home imposes a specific tariff
+
+$$
+t=12.
+$$
+
+1. Verify that both export-supply curves pass through the free-trade equilibrium
+
+$$
+(P^W,M_1)=(25,30).
+$$
+
+Compute the Foreign export-supply elasticity at the free-trade equilibrium in each case.
+
+2. For each Foreign export-supply curve, solve for
+
+$$
+P_2^*,
+\qquad
+P_2,
+\qquad
+M_2.
+$$
+
+3. For each case, calculate
+
+$$
+\text{pass-through}
+=
+\frac{P_2-P^W}{t},
+$$
+
+$$
+e=(P^W-P_2^*)M_2,
+$$
+
+and
+
+$$
+b+d
+=
+\frac{1}{2}(P_2-P^W)(M_1-M_2).
+$$
+
+Then determine
+
+$$
+\Delta W_H=e-(b+d).
+$$
+
+4. A student argues:
+
+> "A more elastic Foreign export supply makes the tariff more beneficial because imports respond more strongly."
+
+Is this statement correct? Explain how a more elastic Foreign export supply affects the Foreign price, Home-price pass-through, imports, and Home welfare.
+
+
+### Practice 4: Why "Optimal" Does Not Mean "Best for Everyone"
+
+Home faces a Foreign export-supply elasticity of
+
+$$
+E_X^*=4.
+$$
+
+Foreign faces an export-supply elasticity from Home of
+
+$$
+E_X=2.
+$$
+
+Assume each country can either keep its tariff low or impose its unilateral optimal tariff.
+
+1. Using
+
+$$
+\tau^{opt}=\frac{1}{E_X^*},
+$$
+
+calculate Home's unilateral optimal tariff and Foreign's unilateral optimal tariff.
+
+2. Suppose national-welfare payoffs are
+
+| | Foreign: Low tariff | Foreign: Optimal tariff |
+|---|---:|---:|
+| **Home: Low tariff** | $(100,\ 100)$ | $(88,\ 108)$ |
+| **Home: Optimal tariff** | $(108,\ 88)$ | $(92,\ 92)$ |
+
+For each possible action taken by Foreign, determine which action gives Home higher welfare. Then repeat the exercise from Foreign's perspective. What outcome results when both countries act independently?
+
+3. Compare this outcome with the low-tariff outcome. Why can each country have an incentive to impose its unilateral optimal tariff even though both countries end up worse off?
+
+4. A government official states:
+
+> "Economic theory proves that the optimal tariff is the best trade policy."
+
+Explain what is missing from this claim. In particular, identify the assumption from the optimal-tariff model that fails once Foreign retaliates, and explain how a trade agreement could change the outcome.
+
+
+### Practice 5: Pass-Through, Transport Costs, and the Log Approximation
+
+An ad valorem tariff rises from $0\%$ to $20\%$, so
+
+$$
+\Delta\tau=0.20.
+$$
+
+At the same time,
+
+$$
+\Delta\ln\kappa=0.04,
+\qquad
+\Delta\ln p^*=-0.08,
+$$
+
+where $\kappa$ is the transportation-cost factor and $p^*$ is the Foreign export price.
+
+You may use
+
+$$
+\ln(1.20)\approx0.182.
+$$
+
+1. Using the lecture approximation,
+
+$$
+\Delta\ln p
+\approx
+\Delta\tau+\Delta\ln\kappa+\Delta\ln p^*,
+$$
+
+calculate the approximate change in the tariff-inclusive Home import price.
+
+2. A student divides the observed import-price change by $0.20$ and reports that number as tariff pass-through.
+
+Explain why this calculation is incorrect when transportation costs have changed. After removing the transport-cost change, calculate the approximate tariff pass-through and the share of the tariff absorbed by Foreign exporters.
+
+3. Now use the exact decomposition
+
+$$
+\Delta\ln p
+=
+\Delta\ln(1+\tau)
++
+\Delta\ln\kappa
++
+\Delta\ln p^*
+$$
+
+to calculate the exact change in the import price and the exact tariff pass-through after controlling for transportation costs. Why do the exact and approximate answers differ?
+
+4. Suppose an empirical study estimates a pass-through rate of $0.94$ into U.S. import prices. A student concludes:
+
+> "This proves that the United States is a small country, and a 10% tariff must raise retail consumer prices by exactly 9.4%."
+
+Evaluate both parts of this conclusion. Distinguish between **country size**, **import prices at the border**, and **final retail prices**.
