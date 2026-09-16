@@ -2,15 +2,19 @@
 title: "Discussion Materials"
 ---
 
-## September 9, 2026 {.week-title}
+## September 16, 2026 {.week-title}
 
 ::: {.week-card .current-week}
+
+[Import Tariff](materials/Sep16_Import Tariff.pdf){target="_blank" .material-link}
+
+:::
+
+## September 9, 2026 {.week-title}
 
 [Gravity Model](materials/Sep9_1_Gravity.pdf){target="_blank" .material-link}
 
 [Constant Returns to Scale](materials/Sep9_2_CRS.pdf){target="_blank" .material-link}
-
-:::
 
 ## September 2, 2026 {.week-title}
 
