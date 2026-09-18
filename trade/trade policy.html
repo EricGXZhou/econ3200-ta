@@ -211,6 +211,7 @@ window.Quarto = {
   <li><a href="#practice-4-why-optimal-does-not-mean-best-for-everyone" id="toc-practice-4-why-optimal-does-not-mean-best-for-everyone" class="nav-link" data-scroll-target="#practice-4-why-optimal-does-not-mean-best-for-everyone">Practice 4: Why “Optimal” Does Not Mean “Best for Everyone”</a></li>
   <li><a href="#practice-5-pass-through-transport-costs-and-the-log-approximation" id="toc-practice-5-pass-through-transport-costs-and-the-log-approximation" class="nav-link" data-scroll-target="#practice-5-pass-through-transport-costs-and-the-log-approximation">Practice 5: Pass-Through, Transport Costs, and the Log Approximation</a></li>
   </ul></li>
+  <li><a href="#interactive-tariff-diagram" id="toc-interactive-tariff-diagram" class="nav-link" data-scroll-target="#interactive-tariff-diagram">7. Interactive Tariff Diagram</a></li>
   </ul>
 </nav>
     </div>
@@ -1561,9 +1562,414 @@ E_X=2.
 <p>“This proves that the United States is a small country, and a 10% tariff must raise retail consumer prices by exactly 9.4%.”</p>
 </blockquote>
 <p>Evaluate both parts of this conclusion. Distinguish between <strong>country size</strong>, <strong>import prices at the border</strong>, and <strong>final retail prices</strong>.</p>
-
-
 </section>
+</section>
+<section id="interactive-tariff-diagram" class="level2">
+<h2 class="anchored" data-anchor-id="interactive-tariff-diagram">7. Interactive Tariff Diagram</h2>
+<style>
+#tp-explorer {
+  --tp-ink:#26364a; --tp-muted:#586879; --tp-border:#d8e0e8;
+  --tp-a:#a9cde5; --tp-b:#efac86; --tp-c:#efcf7b; --tp-d:#d2b5d8; --tp-e:#a4cda7;
+  box-sizing:border-box; position:relative; margin:.65rem 0 1.25rem;
+  border:1px solid var(--tp-border); border-radius:10px;
+  background:#fff; color:var(--tp-ink); font-family:inherit; line-height:1.35;
+  overflow:visible; min-width:0;
+}
+#tp-explorer *, #tp-explorer *::before, #tp-explorer *::after {box-sizing:border-box;}
+#tp-explorer:not([open]) {min-height:38px;}
+#tp-explorer > summary {
+  position:absolute; right:.6rem; top:.4rem; z-index:3; display:flex; align-items:center; gap:.25rem;
+  cursor:pointer; padding:.15rem .3rem; border-radius:4px; color:var(--tp-muted); font-size:.76rem;
+  list-style:none; background:#fff; line-height:1.25; user-select:none;
+}
+#tp-explorer > summary::-webkit-details-marker {display:none;}
+#tp-explorer > summary::marker {content:'';}
+#tp-explorer > summary::before {content:'⌄'; font-size:.95rem; line-height:1;}
+#tp-explorer[open] > summary::before {content:'⌃';}
+#tp-explorer .tp-when-closed, #tp-explorer:not([open]) .tp-when-open {display:none;}
+#tp-explorer:not([open]) .tp-when-closed {display:inline;}
+#tp-explorer .tp-body {padding:.65rem .75rem .7rem;}
+#tp-explorer .tp-fixed {
+  display:flex; flex-wrap:wrap; gap:.15rem 1rem; padding-right:3.5rem;
+  margin:0 0 .15rem; color:var(--tp-muted); font-size:.8rem;
+}
+#tp-explorer .tp-fixed > span {white-space:nowrap;}
+#tp-explorer .tp-math {font-family:Georgia,'Times New Roman',serif;}
+#tp-explorer .tp-dock {
+  position:sticky; top:var(--tp-sticky-top,0px); z-index:5; background:#fff;
+  padding:.45rem 0 .4rem; border-bottom:1px solid var(--tp-border);
+  box-shadow:0 3px 5px -5px #53667a;
+}
+#tp-explorer .tp-controls {display:grid; grid-template-columns:minmax(0,1.14fr) minmax(0,1fr); gap:1rem; align-items:center;}
+#tp-explorer .tp-slider-panel {min-width:0;}
+#tp-explorer .tp-control-heading {display:flex; justify-content:space-between; gap:.6rem; align-items:center;}
+#tp-explorer .tp-control-heading label {font-size:.86rem; font-weight:600; margin:0;}
+#tp-explorer .tp-control-heading .tp-point {font-weight:400; color:var(--tp-muted); font-size:.76rem; white-space:nowrap;}
+#tp-explorer .tp-control-heading output {font-size:1.4rem; font-weight:700; color:#254e70; min-width:3.1rem; text-align:right; font-variant-numeric:tabular-nums;}
+#tp-explorer input[type=range] {display:block; width:100%; margin:.25rem 0 0; height:22px; accent-color:#355f80; cursor:pointer;}
+#tp-explorer .tp-range-ends {display:flex; justify-content:space-between; color:var(--tp-muted); font-size:.68rem; margin:0;}
+#tp-explorer .tp-presets {display:flex; flex-wrap:wrap; gap:.3rem; margin:.45rem 0 0;}
+#tp-explorer .tp-presets button {
+  border:1px solid #bdcad5; border-radius:5px; background:#fff; color:#31485d;
+  padding:.25rem .55rem; font:inherit; font-size:.76rem; line-height:1.25; cursor:pointer;
+}
+#tp-explorer .tp-presets button[aria-pressed=true] {color:#fff; background:#355f80; border-color:#355f80;}
+#tp-explorer button:focus-visible, #tp-explorer summary:focus-visible, #tp-explorer input:focus-visible {outline:3px solid #7297b5; outline-offset:2px;}
+#tp-explorer .tp-net {min-width:0; border-left:3px solid #5b7b97; background:#f0f5fa; padding:.35rem .65rem .45rem; border-radius:0 6px 6px 0;}
+#tp-explorer .tp-net[data-result=gain] {border-left-color:#498060; background:#eef6f0;}
+#tp-explorer .tp-net[data-result=loss] {border-left-color:#b45b4c; background:#fbf1ee;}
+#tp-explorer .tp-net-label {display:flex; justify-content:space-between; gap:.4rem; font-size:.73rem; font-weight:600; margin-bottom:.2rem;}
+#tp-explorer #tp-welfare-interpretation {font-weight:600; color:var(--tp-muted);}
+#tp-explorer .tp-net-breakdown {display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1.15fr); gap:.35rem; align-items:end; text-align:center; font-variant-numeric:tabular-nums;}
+#tp-explorer .tp-net-breakdown small {display:block; font-size:.76rem; line-height:1.2; color:var(--tp-muted);}
+#tp-explorer .tp-net-breakdown strong {display:block; font-size:1.18rem; line-height:1.25; margin-top:.08rem; white-space:nowrap;}
+#tp-explorer .tp-net-breakdown > span {font-size:1.02rem; padding-bottom:.1rem; color:var(--tp-muted);}
+#tp-explorer .tp-net-total strong {font-size:1.35rem;}
+#tp-explorer .tp-net[data-result=gain] .tp-net-total strong {color:#2f6e45;}
+#tp-explorer .tp-net[data-result=loss] .tp-net-total strong {color:#a7493c;}
+#tp-explorer .tp-metrics {display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:.35rem; margin:.45rem 0;}
+#tp-explorer .tp-metric {min-width:0; border-radius:5px; background:#f4f7fa; padding:.3rem .45rem;}
+#tp-explorer .tp-metric small {display:block; color:var(--tp-muted); font-size:.72rem; line-height:1.3; white-space:nowrap;}
+#tp-explorer .tp-metric strong {display:block; font-size:1rem; font-variant-numeric:tabular-nums; line-height:1.3; margin-top:.08rem; white-space:nowrap;}
+#tp-explorer .tp-area-grid {display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:.35rem; margin:0 0 .45rem;}
+#tp-explorer .tp-area-card {
+  display:flex; align-items:center; justify-content:center; gap:.65rem;
+  border:1px solid var(--tp-border); border-left:5px solid var(--area-color); border-radius:5px;
+  background:#fff; color:var(--tp-ink); font:inherit; padding:.25rem .4rem; cursor:pointer; min-width:0;
+}
+#tp-explorer .tp-area-card[aria-pressed=true] {outline:2px solid #355f80; outline-offset:1px;}
+#tp-explorer .tp-area-card em {font-family:Georgia,serif; font-size:1.02rem;}
+#tp-explorer .tp-area-card strong {font-size:.91rem; font-variant-numeric:tabular-nums; white-space:nowrap;}
+#tp-explorer .tp-plots {display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.5rem;}
+#tp-explorer .tp-figure {min-width:0; margin:0; border:1px solid var(--tp-border); border-radius:7px; overflow:hidden; background:#fff;}
+#tp-explorer .tp-figure figcaption {padding:.4rem .65rem 0; margin:0; color:var(--tp-ink); font-size:.85rem; font-weight:650; line-height:1.35;}
+#tp-explorer .tp-figure svg {display:block; width:100%; height:auto; max-height:320px; overflow:hidden;}
+#tp-explorer .tp-figure svg text {font-family:Arial,sans-serif;}
+#tp-explorer .tp-line-legend {display:flex; flex-wrap:wrap; gap:.25rem .75rem; padding:0 .65rem .35rem; color:var(--tp-muted); font-size:.71rem;}
+#tp-explorer .tp-line-legend span {display:inline-flex; align-items:center; gap:.3rem;}
+#tp-explorer .tp-line-legend i {display:inline-block; width:18px; border-top:3px solid;}
+#tp-explorer .tp-region {transition:opacity 100ms linear;}
+#tp-explorer .tp-region.tp-muted {opacity:.16;}
+#tp-explorer .tp-region.tp-selected {opacity:1; stroke-width:2.1;}
+#tp-explorer .tp-sr-only {position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;}
+@media (max-width:760px) {
+  #tp-explorer .tp-controls {gap:.7rem;}
+  #tp-explorer .tp-control-heading label {font-size:.81rem;}
+  #tp-explorer .tp-metric {padding:.3rem .3rem;}
+  #tp-explorer .tp-metric small {font-size:.66rem;}
+  #tp-explorer .tp-metric strong {font-size:.93rem;}
+}
+@media (max-width:600px) {
+  #tp-explorer .tp-body {padding:.6rem;}
+  #tp-explorer .tp-fixed {font-size:.74rem; gap:.1rem .7rem;}
+  #tp-explorer .tp-controls {grid-template-columns:1fr; gap:.4rem;}
+  #tp-explorer .tp-control-heading label {font-size:.82rem;}
+  #tp-explorer .tp-dock {padding:.35rem 0;}
+  #tp-explorer .tp-net {padding:.3rem .55rem;}
+  #tp-explorer .tp-net-label {margin-bottom:.1rem;}
+  #tp-explorer .tp-net-breakdown {gap:.35rem;}
+  #tp-explorer .tp-net-breakdown strong {font-size:1.04rem;}
+  #tp-explorer .tp-net-total strong {font-size:1.2rem;}
+  #tp-explorer .tp-presets {display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.25rem; margin-top:.35rem;}
+  #tp-explorer .tp-presets button {font-size:.71rem; padding:.26rem .2rem;}
+  #tp-explorer .tp-metrics {grid-template-columns:repeat(4,minmax(0,1fr));}
+  #tp-explorer .tp-metric small {font-size:.69rem;}
+  #tp-explorer .tp-metric strong {font-size:.95rem;}
+  #tp-explorer .tp-area-card {flex-direction:column; gap:.05rem; padding:.2rem .1rem; border-left-width:3px;}
+  #tp-explorer .tp-area-card em {font-size:.85rem; line-height:1.05;}
+  #tp-explorer .tp-area-card strong {font-size:.76rem;}
+  #tp-explorer .tp-plots {grid-template-columns:1fr;}
+  #tp-explorer .tp-figure svg {max-height:none;}
+}
+@media (prefers-reduced-motion:reduce) {#tp-explorer .tp-region {transition:none;}}
+</style>
+
+<details id="tp-explorer" open="">
+  <summary aria-label="Hide interactive charts" title="Show or hide the interactive charts"><span class="tp-when-open">Hide</span><span class="tp-when-closed">Show</span></summary>
+  <div class="tp-body">
+    <div class="tp-fixed">
+      <span class="tp-math"><i>D</i>(<i>P</i>) = 100 − <i>P</i>; &nbsp; <i>S</i>(<i>P</i>) = 20 + <i>P</i></span>
+      <span class="tp-math"><i>P</i><sup>W</sup> = 25; &nbsp; <i>M</i><sub>1</sub> = 30; &nbsp; <i>t</i> = 12</span>
+    </div>
+    <div class="tp-dock">
+      <div class="tp-controls">
+        <div class="tp-slider-panel">
+          <div class="tp-control-heading">
+            <label for="tp-elasticity">Foreign export-supply elasticity <span class="tp-math"><i>E</i><sub>X</sub><sup>*</sup></span> <span class="tp-point" id="tp-elasticity-note">(at free trade)</span></label>
+            <output for="tp-elasticity" id="tp-elasticity-value">∞</output>
+          </div>
+          <input id="tp-elasticity" type="range" min="0.30" max="12.00" step="0.01" value="12.00" aria-describedby="tp-elasticity-note">
+          <div class="tp-range-ends"><span>Less elastic · 0.30</span><span>More elastic · 12.00</span></div>
+        </div>
+        <div class="tp-net" id="tp-net" data-result="loss">
+          <div class="tp-net-label"><span>Home welfare</span><span id="tp-welfare-interpretation">Loss</span></div>
+          <div class="tp-net-breakdown" aria-label="Terms-of-trade gain minus distortion losses equals Home welfare change">
+            <div title="Terms-of-trade gain"><small><i>e</i></small><strong data-metric="e">0.00</strong></div>
+            <span aria-hidden="true">−</span>
+            <div title="Production and consumption losses"><small><i>b + d</i></small><strong data-metric="bd">144.00</strong></div>
+            <span aria-hidden="true">=</span>
+            <div class="tp-net-total" title="Change in Home national welfare"><small>ΔW<sub>H</sub></small><strong data-metric="welfare">−144.00</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="tp-presets" role="group" aria-label="Export-supply elasticity presets">
+        <button type="button" data-preset="0.5" aria-pressed="false">Inelastic: 0.50</button>
+        <button type="button" data-preset="practice-a" aria-pressed="false">Practice 3A: 1.67</button>
+        <button type="button" data-preset="5" aria-pressed="false">Practice 3B: 5.00</button>
+        <button type="button" data-preset="small" aria-pressed="true">Small-country limit: ∞</button>
+      </div>
+    </div>
+    <div class="tp-metrics">
+      <div class="tp-metric" title="Foreign export price"><small>P<sub>2</sub><sup>*</sup></small><strong data-metric="pstar">25.00</strong></div>
+      <div class="tp-metric" title="Home price"><small>P<sub>2</sub></small><strong data-metric="phome">37.00</strong></div>
+      <div class="tp-metric" title="Post-tariff imports"><small>M<sub>2</sub></small><strong data-metric="imports">6.00</strong></div>
+      <div class="tp-metric" title="Specific-tariff pass-through: (P₂ − Pᵂ)/t"><small>Pass-through</small><strong data-metric="pass">100.0%</strong></div>
+      <div class="tp-metric" title="Change in consumer surplus: −(a+b+c+d)"><small>ΔCS</small><strong data-metric="cs">−828.00</strong></div>
+      <div class="tp-metric" title="Change in producer surplus: a"><small>ΔPS</small><strong data-metric="ps">+612.00</strong></div>
+      <div class="tp-metric" title="Tariff revenue: c+e"><small>TR = c + e</small><strong data-metric="tr">72.00</strong></div>
+    </div>
+    <div class="tp-area-grid" role="group" aria-label="Select a welfare area to highlight it in the charts">
+      <button type="button" class="tp-area-card" data-area-button="a" aria-pressed="false" aria-label="Highlight area a: producer-surplus gain" title="a: Producer-surplus gain. Select to highlight." style="--area-color:var(--tp-a)"><em>a</em><strong data-metric="a">612.00</strong></button>
+      <button type="button" class="tp-area-card" data-area-button="b" aria-pressed="false" aria-label="Highlight area b: production loss" title="b: Production loss. Select to highlight." style="--area-color:var(--tp-b)"><em>b</em><strong data-metric="b">72.00</strong></button>
+      <button type="button" class="tp-area-card" data-area-button="c" aria-pressed="false" aria-label="Highlight area c: Home transfer to government" title="c: Home transfer to government. Select to highlight." style="--area-color:var(--tp-c)"><em>c</em><strong data-metric="c">72.00</strong></button>
+      <button type="button" class="tp-area-card" data-area-button="d" aria-pressed="false" aria-label="Highlight area d: consumption loss" title="d: Consumption loss. Select to highlight." style="--area-color:var(--tp-d)"><em>d</em><strong data-metric="d">72.00</strong></button>
+      <button type="button" class="tp-area-card" data-area-button="e" aria-pressed="false" aria-label="Highlight area e: terms-of-trade gain" title="e: Terms-of-trade gain. Select to highlight." style="--area-color:var(--tp-e)"><em>e</em><strong data-metric="e">0.00</strong></button>
+    </div>
+    <div class="tp-plots">
+      <figure class="tp-figure figure">
+        <figcaption>(a) Home market: welfare areas</figcaption>
+        <svg id="tp-home-svg" viewbox="0 0 540 405" role="img" aria-label="Home demand and supply, with tariff welfare areas a, b, c, d and e"></svg>
+        <div class="tp-line-legend"><span><i style="border-color:#35668d"></i>Home supply S</span><span><i style="border-color:#bf6a28"></i>Home demand D</span></div>
+      </figure>
+      <figure class="tp-figure figure">
+        <figcaption>(b) Import market: the tariff wedge</figcaption>
+        <svg id="tp-import-svg" viewbox="0 0 540 405" role="img" aria-label="Import demand and Foreign export supply, with the tariff wedge and free-trade and tariff equilibria"></svg>
+        <div class="tp-line-legend"><span><i style="border-color:#35668d"></i>X*</span><span><i style="border-color:#568d94;border-top-style:dashed"></i>X* + t</span><span><i style="border-color:#bf6a28"></i>M</span></div>
+      </figure>
+    </div>
+    <p class="tp-sr-only" id="tp-live" aria-live="polite" aria-atomic="true"></p>
+    <noscript><p>This interactive figure requires JavaScript. Open the rendered HTML page in a browser with JavaScript enabled.</p></noscript>
+  </div>
+</details>
+
+<script>
+/* Self-contained SVG/JavaScript widget. No external chart library or server. */
+(function () {
+  'use strict';
+  function initializeTariffExplorer() {
+    const root = document.getElementById('tp-explorer');
+    if (!root || root.dataset.initialized === 'true') return;
+    root.dataset.initialized = 'true';
+    const slider = root.querySelector('#tp-elasticity');
+    const homeSVG = root.querySelector('#tp-home-svg');
+    const importSVG = root.querySelector('#tp-import-svg');
+    const PW = 25, M1 = 30, TARIFF = 12, S1 = 45, D1 = 75;
+    const chart = { left: 66, right: 512, top: 34, bottom: 310, maxPrice: 50 };
+    const colors = { a:'#a9cde5', b:'#efac86', c:'#efcf7b', d:'#d2b5d8', e:'#a4cda7', bd:'#e9b399' };
+    const ink = '#26364a', supply = '#35668d', demand = '#bf6a28', shifted = '#568d94';
+    let elasticity = Infinity;
+    let pinnedArea = null;
+    let liveTimer;
+
+    const fmt = (value, digits = 2) => (Math.abs(value) < 1e-9 ? 0 : value).toFixed(digits);
+    const signed = value => (value > 1e-9 ? '+' : value < -1e-9 ? '−' : '') + fmt(Math.abs(value));
+    const y = p => chart.bottom - p / chart.maxPrice * (chart.bottom - chart.top);
+    const hx = q => chart.left + q / 100 * (chart.right - chart.left);
+    const ix = q => chart.left + q / 44 * (chart.right - chart.left);
+    const esc = text => String(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    const line = (x1,y1,x2,y2,color=ink,width=1.4,dash='') => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${color}" stroke-width="${width}"${dash ? ` stroke-dasharray="${dash}"` : ''}/>`;
+    const text = (x,y0,content,size=17,anchor='start',color=ink,extra='') => `<text x="${x}" y="${y0}" font-size="${size}" text-anchor="${anchor}" fill="${color}" ${extra}>${esc(content)}</text>`;
+    const point = (x,y0,color=ink,title='') => `<circle cx="${x}" cy="${y0}" r="4.6" fill="${color}" stroke="#fff" stroke-width="1.3"><title>${esc(title)}</title></circle>`;
+    function region(points,key,title) {
+      return `<polygon class="tp-region" data-region="${key}" points="${points.map(p=>p.join(',')).join(' ')}" fill="${colors[key]}" fill-opacity="0.86" stroke="#fff" stroke-width="1"><title>${esc(title)}</title></polygon>`;
+    }
+    function compute(E) {
+      const xSlope = Number.isFinite(E) ? E * M1 / PW : Infinity;
+      const pass = Number.isFinite(E) ? xSlope / (2 + xSlope) : 1;
+      const increase = TARIFF * pass;
+      const decrease = TARIFF - increase;
+      const phome = PW + increase, pstar = PW - decrease;
+      const S2 = 20 + phome, D2 = 100 - phome, M2 = D2 - S2;
+      const a = (S1 + S2) * increase / 2;
+      const b = (S2 - S1) * increase / 2;
+      const d = (D1 - D2) * increase / 2;
+      const c = increase * M2, e = decrease * M2;
+      const cs = -(D1 + D2) * increase / 2, ps = a, tr = TARIFF * M2;
+      const welfare = e - b - d;
+      return {E,xSlope,pass,increase,decrease,phome,pstar,S2,D2,M2,a,b,c,d,e,cs,ps,tr,welfare};
+    }
+    function frame(clipId,maxQ) {
+      return `<defs><clipPath id="${clipId}"><rect x="${chart.left}" y="${chart.top}" width="${chart.right-chart.left}" height="${chart.bottom-chart.top}"/></clipPath></defs>` +
+        [10,20,30,40].map(p=>line(chart.left,y(p),chart.right,y(p),'#edf0f3',.9)).join('') +
+        line(chart.left,chart.top,chart.left,chart.bottom,ink,1.7) + line(chart.left,chart.bottom,chart.right,chart.bottom,ink,1.7) +
+        text(chart.left-3,19,'Price',16,'end') + text(chart.left-8,chart.top+5,'50',13,'end','#738190') +
+        text(chart.left-8,chart.bottom+5,'0',13,'end','#738190') +
+        text(chart.left,332,'0',13,'middle','#738190') + text(chart.right,332,String(maxQ),13,'middle','#738190');
+    }
+    function priceGuides(v,endX) {
+      const levels = [{p:v.phome,label:'P₂',color:shifted},{p:PW,label:'Pᵂ',color:'#707984'}];
+      if (v.decrease > 1e-8) levels.push({p:v.pstar,label:'P₂*',color:supply});
+      else levels[1].label = 'Pᵂ=P₂*';
+      const positions = levels.map(row=>y(row.p));
+      const gap = 20;
+      for (let i=1;i<positions.length;i++) positions[i]=Math.max(positions[i],positions[i-1]+gap);
+      const averageShift = positions.reduce((sum,p,i)=>sum+p-y(levels[i].p),0) / levels.length;
+      return levels.map((row,i)=>{
+        const ly=positions[i]-averageShift;
+        return line(chart.left,y(row.p),endX,y(row.p),row.color,1.15,'5 4') +
+          line(chart.left-5,y(row.p),chart.left-15,ly,row.color,1) +
+          text(chart.left-19,ly+5,row.label,row.label.length>6?12:15,'end',row.color);
+      }).join('');
+    }
+    function letter(x0,y0,label,size=18) {
+      return text(x0,y0,label,size,'middle',ink,'font-weight="700" paint-order="stroke" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"');
+    }
+    function callout(x0,y0,lx,ly,label) {
+      return line(x0,y0,lx,ly+4,'#6e7881',1) + letter(lx,ly,label);
+    }
+    function homeChart(v) {
+      const h=v.increase, midQ=(v.S2+v.D2)/2;
+      let s = `<title>Home market at Foreign export-supply elasticity ${Number.isFinite(v.E)?fmt(v.E):'infinity'}</title>` + frame('tp-home-clip',100);
+      s += `<g clip-path="url(#tp-home-clip)">`;
+      s += region([[hx(v.S2),y(v.pstar)],[hx(v.S2),y(PW)],[hx(v.D2),y(PW)],[hx(v.D2),y(v.pstar)]],'e',`e: terms-of-trade gain = ${fmt(v.e)}`);
+      s += region([[hx(0),y(PW)],[hx(0),y(v.phome)],[hx(v.S2),y(v.phome)],[hx(S1),y(PW)]],'a',`a: producer-surplus gain = ${fmt(v.a)}`);
+      s += region([[hx(S1),y(PW)],[hx(v.S2),y(PW)],[hx(v.S2),y(v.phome)]],'b',`b: production loss = ${fmt(v.b)}`);
+      s += region([[hx(v.S2),y(PW)],[hx(v.S2),y(v.phome)],[hx(v.D2),y(v.phome)],[hx(v.D2),y(PW)]],'c',`c: transfer to government = ${fmt(v.c)}`);
+      s += region([[hx(v.D2),y(v.phome)],[hx(v.D2),y(PW)],[hx(D1),y(PW)]],'d',`d: consumption loss = ${fmt(v.d)}`);
+      s += line(hx(20),y(0),hx(70),y(50),supply,3.2) + line(hx(50),y(50),hx(100),y(0),demand,3.2);
+      s += '</g>' + priceGuides(v,chart.right);
+      s += text(hx(67)+9,y(47),'S',19,'start',supply,'font-weight="600"') + text(hx(95)-4,y(5)-12,'D',19,'end',demand,'font-weight="600"');
+      s += point(hx(60),y(40),ink,'Home no-trade equilibrium: P = 40, Q = 60') + text(hx(60)+9,y(40)-7,'A',14);
+      [[S1,PW,'S₁',333],[D1,PW,'D₁',333],[v.S2,v.phome,'S₂',356],[v.D2,v.phome,'D₂',356]].forEach(([q,p,lbl,ly])=>{
+        s += line(hx(q),y(p),hx(q),ly-16,'#87939f',1,'3 4') + text(hx(q),ly,lbl,16,'middle');
+      });
+      const ym=y(PW+h/2)+5;
+      if (h>=3.6) s+=letter(hx(20),ym,'a')+letter(hx(midQ),ym,'c');
+      else s+=callout(hx(20),y(PW+h/2),hx(20),y(v.phome)-17,'a')+callout(hx(midQ),y(PW+h/2),hx(midQ),y(v.phome)-17,'c');
+      const bx=hx((S1+2*v.S2)/3), dx=hx((D1+2*v.D2)/3), by=y(PW+h/3);
+      if (h>=4.6) s+=letter(bx,by+5,'b')+letter(dx,by+5,'d');
+      else s+=callout(bx,by,bx-12,y(v.phome)-17,'b')+callout(dx,by,dx+12,y(v.phome)-17,'d');
+      if (v.decrease>0) {
+        const ey=y((v.pstar+PW)/2);
+        s += v.decrease>=3.6 ? letter(hx(midQ),ey+5,'e') : callout(hx(midQ),ey,hx(midQ),y(v.pstar)+27,'e');
+      }
+      s += text((chart.left+chart.right)/2,389,'Home quantity',16,'middle');
+      return s;
+    }
+    function importChart(v) {
+      let s = `<title>Import market: Home price ${fmt(v.phome)}, Foreign price ${fmt(v.pstar)}, imports ${fmt(v.M2)}</title>` + frame('tp-import-clip',44);
+      const invX = q => Number.isFinite(v.xSlope) ? PW+(q-M1)/v.xSlope : PW;
+      s += `<g clip-path="url(#tp-import-clip)">`;
+      s += region([[ix(0),y(v.pstar)],[ix(0),y(PW)],[ix(v.M2),y(PW)],[ix(v.M2),y(v.pstar)]],'e',`e: terms-of-trade gain = ${fmt(v.e)}`);
+      s += region([[ix(0),y(PW)],[ix(0),y(v.phome)],[ix(v.M2),y(v.phome)],[ix(v.M2),y(PW)]],'c',`c: transfer to government = ${fmt(v.c)}`);
+      s += region([[ix(v.M2),y(PW)],[ix(v.M2),y(v.phome)],[ix(M1),y(PW)]],'bd',`b + d: distortion loss = ${fmt(v.b+v.d)}`);
+      s += line(ix(0),y(40),ix(44),y(18),demand,3.2);
+      s += line(ix(0),y(invX(0)),ix(44),y(invX(44)),supply,3.2);
+      s += line(ix(0),y(invX(0)+TARIFF),ix(44),y(invX(44)+TARIFF),shifted,3.2,'8 5');
+      s += '</g>' + priceGuides(v,ix(v.M2));
+      s += line(chart.left,y(PW),ix(M1),y(PW),'#707984',1.15,'5 4');
+      const labelQ=(offset,targetP)=>Number.isFinite(v.xSlope)?Math.min(39.5, M1+v.xSlope*(targetP-PW-offset)):39.5;
+      const qX=labelQ(0,42), qT=labelQ(TARIFF,47);
+      s += text(ix(qX)+6,y(invX(qX))-8,'X*',17,'start',supply,'font-weight="600"');
+      s += text(ix(qT)+5,y(invX(qT)+TARIFF)-8,'X* + t',17,'end',shifted,'font-weight="600"');
+      s += text(ix(42),y(19)-11,'M',18,'middle',demand,'font-weight="600"');
+      s += line(ix(M1),y(PW),ix(M1),chart.bottom,'#87939f',1,'3 4') + line(ix(v.M2),y(v.phome),ix(v.M2),chart.bottom,'#87939f',1,'3 4');
+      s += point(ix(M1),y(PW),ink,'Free trade: M = 30, P = 25') + text(ix(M1)+9,y(PW)+20,'FT',14);
+      s += point(ix(v.M2),y(v.phome),shifted,'Tariff-inclusive Home price') + point(ix(v.M2),y(v.pstar),supply,'Price received by Foreign exporters');
+      s += text(ix(v.M2),333,'M₂',16,'middle') + text(ix(M1),333,'M₁',16,'middle');
+      s += text(ix(v.M2),354,fmt(v.M2,1),13,'middle','#738190') + text(ix(M1),354,'30',13,'middle','#738190');
+      const wx=ix(v.M2)+21;
+      s += line(wx,y(v.phome),wx,y(v.pstar),ink,1.5) + line(wx-4,y(v.phome),wx+4,y(v.phome),ink,1.5) + line(wx-4,y(v.pstar),wx+4,y(v.pstar),ink,1.5);
+      s += text(wx+7,y(v.pstar+TARIFF/4)+5,'t',16,'start',ink,'font-style="italic"');
+      const cpx=ix(v.M2*.38);
+      if(v.increase>=3.6) s+=letter(cpx,y((v.phome+PW)/2)+5,'c');
+      else s+=callout(cpx,y((v.phome+PW)/2),cpx,y(v.phome)-18,'c');
+      if(v.decrease>0) {
+        const ey=y((v.pstar+PW)/2);
+        s+=v.decrease>=3.6?letter(cpx,ey+5,'e'):callout(cpx,ey,cpx,y(v.pstar)+28,'e');
+      }
+      const bx=ix((2*v.M2+M1)/3), by=y(PW+v.increase/3);
+      if(v.increase>=5) s+=letter(bx,by+5,'b+d',16);
+      else s+=callout(bx,by,bx+5,y(v.phome)-21,'b+d');
+      s += text((chart.left+chart.right)/2,389,'Imports = Foreign exports',16,'middle');
+      return s;
+    }
+    function highlight(key) {
+      root.querySelectorAll('.tp-region').forEach(el=>{
+        const regionKey=el.dataset.region;
+        const match=!key || key===regionKey || (regionKey==='bd' && (key==='b'||key==='d'));
+        el.classList.toggle('tp-muted',!!key&&!match);
+        el.classList.toggle('tp-selected',!!key&&match);
+      });
+    }
+    function render() {
+      const v=compute(elasticity);
+      const finite=Number.isFinite(elasticity);
+      root.querySelector('#tp-elasticity-value').textContent=finite?fmt(elasticity):'∞';
+      slider.setAttribute('aria-valuetext',finite?`${fmt(elasticity)} at the free-trade equilibrium`:'Perfectly elastic small-country limit selected; move the slider to return to a finite elasticity');
+      root.querySelectorAll('[data-preset]').forEach(btn=>{
+        const e=btn.dataset.preset==='small'?Infinity:btn.dataset.preset==='practice-a'?5/3:Number(btn.dataset.preset);
+        btn.setAttribute('aria-pressed',String(e===elasticity));
+      });
+      const numbers={pstar:fmt(v.pstar),phome:fmt(v.phome),imports:fmt(v.M2),pass:`${fmt(v.pass*100,1)}%`,a:fmt(v.a),b:fmt(v.b),c:fmt(v.c),d:fmt(v.d),e:fmt(v.e),cs:signed(v.cs),ps:signed(v.ps),tr:fmt(v.tr),bd:fmt(v.b+v.d),welfare:signed(v.welfare)};
+      Object.entries(numbers).forEach(([key,value])=>{root.querySelectorAll(`[data-metric="${key}"]`).forEach(node=>{node.textContent=value;});});
+      homeSVG.innerHTML=homeChart(v);
+      importSVG.innerHTML=importChart(v);
+      const gain=v.welfare>1e-8, loss=v.welfare < -1e-8;
+      root.querySelector('#tp-net').dataset.result=gain?'gain':loss?'loss':'neutral';
+      root.querySelector('#tp-welfare-interpretation').textContent=gain?'Gain':loss?'Loss':'No change';
+      // Expose numeric state in the DOM for accessibility tools and testing.
+      root.dataset.elasticity=finite?String(elasticity):'infinity';
+      root.dataset.welfare=String(v.welfare);
+      root.dataset.passThrough=String(v.pass);
+      highlight(pinnedArea);
+      clearTimeout(liveTimer);
+      liveTimer=setTimeout(()=>{
+        root.querySelector('#tp-live').textContent=`Elasticity ${finite?fmt(elasticity):'infinity'}. Foreign price ${fmt(v.pstar)}, Home price ${fmt(v.phome)}, imports ${fmt(v.M2)}, pass-through ${fmt(v.pass*100,1)} percent. Home welfare change ${signed(v.welfare)}.`;
+      },180);
+    }
+    slider.addEventListener('input',()=>{const candidate=Number(slider.value);if(Number.isFinite(candidate)&&candidate>0){elasticity=candidate;render();}});
+    root.querySelectorAll('[data-preset]').forEach(btn=>btn.addEventListener('click',()=>{
+      elasticity=btn.dataset.preset==='small'?Infinity:btn.dataset.preset==='practice-a'?5/3:Number(btn.dataset.preset);
+      slider.value=Number.isFinite(elasticity)?fmt(elasticity):slider.max;
+      render();
+    }));
+    root.querySelectorAll('[data-area-button]').forEach(button=>{
+      const key=button.dataset.areaButton;
+      button.addEventListener('mouseenter',()=>highlight(key));
+      button.addEventListener('mouseleave',()=>highlight(pinnedArea));
+      button.addEventListener('focus',()=>highlight(key));
+      button.addEventListener('blur',()=>highlight(pinnedArea));
+      button.addEventListener('click',()=>{
+        pinnedArea=pinnedArea===key?null:key;
+        root.querySelectorAll('[data-area-button]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.areaButton===pinnedArea)));
+        highlight(pinnedArea);
+      });
+    });
+    function updateStickyOffset() {
+      const header = document.querySelector('#quarto-header');
+      let top = 0;
+      if (header) {
+        const style = window.getComputedStyle(header);
+        const rect = header.getBoundingClientRect();
+        if ((style.position === 'fixed' || style.position === 'sticky') && rect.bottom > 0) top = rect.bottom;
+      }
+      root.style.setProperty('--tp-sticky-top', `${Math.ceil(top)}px`);
+    }
+    root.addEventListener('toggle', () => {
+      root.querySelector('summary').setAttribute('aria-label', root.open ? 'Hide interactive charts' : 'Show interactive charts');
+    });
+    window.addEventListener('resize', updateStickyOffset, {passive:true});
+    window.addEventListener('scroll', updateStickyOffset, {passive:true});
+    updateStickyOffset();
+    render();
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initializeTariffExplorer, {once:true});
+  else initializeTariffExplorer();
+})();
+</script>
+
+
 </section>
 
 </main> <!-- /main -->
