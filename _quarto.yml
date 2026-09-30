@@ -19,6 +19,8 @@ website:
             text: Specific Factors Model
           - href: trade/trade policy.qmd
             text: Import Tariffs
+          - href: trade/duopoly.qmd
+            text: Imperfect Competition
       - href: migration/index.qmd
         text: Migration
       - href: macro/index.qmd

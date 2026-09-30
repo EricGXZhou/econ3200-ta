@@ -1,0 +1,593 @@
+---
+title: "Imperfect Competition, Supply Chains, and Trade Policy"
+---
+
+> Can trade create gains even without differences in countries' production costs?
+
+Trade can create gains through **competition between firms selling different varieties**. We first study sales in the Home market, then extend the model to two markets to examine input tariffs, protection, and retaliation.
+
+## 1. Intraindustry Trade and Model Setup
+
+**Intraindustry trade (IIT)** means importing and exporting within the same industry. For industry $i$,
+
+$$
+\boxed{IIT_i=1-\frac{|X_i-M_i|}{X_i+M_i}.}
+$$
+
+If only imports or only exports are positive, $IIT_i=0$. If $X_i=M_i>0$, $IIT_i=1$. The index is undefined when both are zero.
+
+A high index does not by itself disprove comparative advantage: countries may specialize in different products within a broad industry. But imperfect competition provides another reason for two-way trade, even when firms have the same production costs.
+
+To model this, firm 1 is based in Home and firm 2 is based in Foreign. $Q_i$ is firm $i$'s sales **in the Home market**, and $P_i$ is its price there. Each firm chooses its quantity, taking the other firm's quantity as given.
+
+Use the following money-metric utility function throughout both parts of the model:
+
+$$
+U(Q_1,Q_2)=10(Q_1+Q_2)-(Q_1^2+Q_2^2)-Q_1Q_2.
+$$
+
+Consumers choose quantities to maximize utility minus expenditure:
+
+$$
+\max_{Q_1,Q_2\geq0}\;
+10(Q_1+Q_2)-(Q_1^2+Q_2^2)-Q_1Q_2-P_1Q_1-P_2Q_2.
+$$
+
+At an interior solution, differentiate with respect to each quantity, treating prices as given:
+
+$$
+\frac{\partial U}{\partial Q_1}-P_1=10-2Q_1-Q_2-P_1=0,
+$$
+
+$$
+\frac{\partial U}{\partial Q_2}-P_2=10-2Q_2-Q_1-P_2=0.
+$$
+
+Rearranging gives the inverse demand functions:
+
+$$
+\boxed{P_1=10-2Q_1-Q_2,\qquad P_2=10-2Q_2-Q_1.}
+$$
+
+Both firms initially have zero marginal production costs. Increasing Foreign sales shifts the demand facing Home's firm downward: the goods are substitutes, but they are not identical.
+
+**Taste for variety.** Holding total consumption at four units, $U(2,2)=28$ exceeds $U(4,0)=24$. Consumers value having both varieties. This comparison holds total consumption fixed; it is not an equilibrium welfare calculation.
+
+## 2. From Monopoly to Cournot Duopoly
+
+Under autarky, the Foreign product is unavailable, so $Q_2=0$:
+
+$$
+P_1=10-2Q_1.
+$$
+
+Revenue and marginal revenue are
+
+$$
+R_1=P_1Q_1=10Q_1-2Q_1^2,
+\qquad
+MR_1=10-4Q_1.
+$$
+
+Set $MR_1=MC_1=0$:
+
+$$
+10-4Q_1=0
+\quad\Rightarrow\quad
+\boxed{Q_1=2.5,\qquad P_1=5.}
+$$
+
+With no costs included in the example, profit is
+
+$$
+\pi_1=P_1Q_1=12.5.
+$$
+
+**Why not set $P_1=MC_1$?** A monopolist must lower its price to sell more units. Marginal revenue accounts for the lower revenue on units it would otherwise sell. Even with zero marginal cost, its optimal price is positive.
+
+With trade, both firms sell in Home, and firm 1's profit is
+
+$$
+\pi_1=(10-2Q_1-Q_2)Q_1.
+$$
+
+Differentiate with respect to $Q_1$, **holding $Q_2$ fixed**:
+
+$$
+\frac{\partial\pi_1}{\partial Q_1}=10-4Q_1-Q_2=0.
+$$
+
+Therefore,
+
+$$
+\boxed{Q_1=2.5-\frac{Q_2}{4}.}
+$$
+
+Similarly, firm 2's reaction function is
+
+$$
+\boxed{Q_2=2.5-\frac{Q_1}{4}.}
+$$
+
+A reaction function gives one firm's **profit-maximizing quantity conditional on its rival's quantity**. It is not a demand curve or an equilibrium by itself. If its formula gives a negative quantity, the best response is zero; all equilibria calculated here have positive quantities.
+
+To find the equilibrium, solve the two reaction functions together:
+
+$$
+4Q_1+Q_2=10,
+\qquad
+Q_1+4Q_2=10.
+$$
+
+Subtract the second equation from the first:
+
+$$
+3(Q_1-Q_2)=0
+\quad\Rightarrow\quad Q_1=Q_2.
+$$
+
+Substitute into either equation:
+
+$$
+5Q_1=10
+\quad\Rightarrow\quad
+\boxed{Q_1=Q_2=2,\qquad P_1=P_2=4.}
+$$
+
+This is a **Cournot–Nash equilibrium**: each quantity is a best response to the other. Neither firm can increase its profit by changing only its own quantity.
+
+As in the lecture, put $Q_2$ on the horizontal axis and $Q_1$ on the vertical axis. Firm 1's line is $Q_1=2.5-Q_2/4$. Rewrite firm 2's line as $Q_1=10-4Q_2$ to plot it on the same axes.
+
+```{=html}
+<div style="max-width:680px;margin:1.25rem auto;">
+<svg viewBox="0 0 600 430" role="img" aria-labelledby="dp-title dp-desc" style="width:100%;height:auto;color:inherit;font-family:inherit;">
+<title id="dp-title">Cournot reaction functions</title>
+<desc id="dp-desc">Firm 1's reaction function and firm 2's reaction function intersect at Q2 equals 2 and Q1 equals 2. Both axes are shown from zero to five.</desc>
+<defs><clipPath id="dp-clip"><rect x="68" y="45" width="472" height="302"/></clipPath></defs>
+<g stroke="currentColor" fill="none">
+<path d="M68 45 V347 H540" stroke-width="1.7"/>
+<path d="M162.4 347 V352 M256.8 347 V352 M351.2 347 V352 M445.6 347 V352 M540 347 V352 M63 286.6 H68 M63 226.2 H68 M63 165.8 H68 M63 105.4 H68 M63 45 H68"/>
+<g clip-path="url(#dp-clip)">
+<path d="M68 196 L540 271.5" stroke-width="3"/>
+<path d="M68 -257 L540 951" stroke-width="3" stroke-dasharray="10 5"/>
+<path d="M68 226.2 H256.8 V347" stroke-width="1" stroke-dasharray="3 4" opacity="0.6"/>
+</g></g>
+<g fill="currentColor" font-size="15" text-anchor="middle">
+<text x="68" y="372">0</text><text x="162.4" y="372">1</text><text x="256.8" y="372">2</text><text x="351.2" y="372">3</text><text x="445.6" y="372">4</text><text x="540" y="372">5</text>
+</g>
+<g fill="currentColor" font-size="15" text-anchor="end">
+<text x="55" y="292">1</text><text x="55" y="232">2</text><text x="55" y="171">3</text><text x="55" y="111">4</text><text x="55" y="50">5</text>
+</g>
+<g fill="currentColor" font-size="16">
+<text x="68" y="25">Home firm sales, Q₁</text>
+<text x="304" y="410" text-anchor="middle">Foreign firm sales, Q₂</text>
+<text x="350" y="203">Firm 1 best response</text>
+<text x="228" y="74">Firm 2 best response</text>
+<circle cx="256.8" cy="226.2" r="5"/>
+<text x="275" y="265">Equilibrium: (2, 2)</text>
+</g></svg>
+</div>
+```
+
+## 3. Gains from Trade
+
+Consumer surplus is utility minus expenditure:
+
+$$
+CS=U(Q_1,Q_2)-P_1Q_1-P_2Q_2.
+$$
+
+In autarky,
+
+$$
+CS=U(2.5,0)-5(2.5)=18.75-12.5=6.25.
+$$
+
+With trade,
+
+$$
+CS=U(2,2)-4(2)-4(2)=28-16=12.
+$$
+
+Use the utility function for the two-good calculation, rather than adding two triangles under conditional demand curves.
+
+| Outcome in the Home market | Autarky | Trade |
+|:--|--:|--:|
+| Home firm's sales, $Q_1$ | 2.5 | 2 |
+| Foreign firm's sales, $Q_2$ | 0 | 2 |
+| Total consumption, $Q_1+Q_2$ | 2.5 | 4 |
+| Price of Home's product, $P_1$ | 5 | 4 |
+| Consumer surplus | 6.25 | 12 |
+| Home firm's profit | 12.5 | 8 |
+| Home welfare, $CS+\pi_1$ | 18.75 | 20 |
+
+Therefore,
+
+$$
+\boxed{\Delta W_H=(12-6.25)+(8-12.5)=1.25>0.}
+$$
+
+Consumers gain from lower prices and access to another variety. The Home firm loses sales and profit in its domestic market, but consumers' gains exceed that loss in this example.
+
+So far, only Foreign exports to Home. If Home's firm also sells in the Foreign market, the two countries both import and export within the same industry.
+
+The lecture then extends the intuition to many firms: competition can drive small, inefficient firms out, while efficient firms expand through exporting. Larger countries have more firms and larger markets buy more foreign products; distance makes these transactions costly. This links firm-level trade to the gravity intuition from earlier in the course, without introducing a new formal model here.
+
+## 4. Supply Chains and Trade Policy
+
+> Can tariffs hurt a domestic manufacturer even when they protect its final product?
+
+We now extend the duopoly model to two markets. A firm can face import competition, buy imported inputs, and sell exports at the same time.
+
+A **multinational enterprise (MNE)** has establishments in more than one country: a parent in its headquarters country and affiliates abroad. Exporting alone does not establish that a firm is multinational.
+
+**Related-party trade** takes place between affiliated businesses across borders. **Arm's-length trade** takes place between independent businesses. An MNE can engage in both.
+
+A supply chain links production stages through purchases and sales of inputs. Labor and capital add value at each stage. This is why the same manufacturer may be affected by three different tariff channels:
+
+| Tariff channel | Direct effect on Home's manufacturer |
+|:--|:--|
+| Protection against imported final products | Less competition in its domestic market |
+| Tariffs on its imported inputs | Higher production costs |
+| Foreign retaliation against its exports | Lower competitiveness in its export market |
+
+For the two-market model, follow the lecture's notation:
+
+$$
+Q_i^j=\text{sales by firm }i\text{ in market }j.
+$$
+
+**The subscript identifies the firm; the superscript identifies the market.**
+
+| Quantity | Meaning |
+|:--|:--|
+| $Q_1^1$ | Home firm's domestic sales |
+| $Q_2^1$ | Foreign firm's exports to Home |
+| $Q_1^2$ | Home firm's exports to Foreign |
+| $Q_2^2$ | Foreign firm's domestic sales |
+
+Consumers in each market have the same utility function as in the one-market model:
+
+$$
+U(Q_1^j,Q_2^j)=10(Q_1^j+Q_2^j)-\left[(Q_1^j)^2+(Q_2^j)^2\right]-Q_1^jQ_2^j,
+\qquad
+j=1,2.
+$$
+
+Maximizing utility minus expenditure again gives marginal utility equal to price:
+
+$$
+\boxed{
+\begin{aligned}
+P_1^j&=\frac{\partial U(Q_1^j,Q_2^j)}{\partial Q_1^j}=10-2Q_1^j-Q_2^j,\\
+P_2^j&=\frac{\partial U(Q_1^j,Q_2^j)}{\partial Q_2^j}=10-2Q_2^j-Q_1^j.
+\end{aligned}
+}
+$$
+
+Here $P_i^j$ is the price paid by consumers in market $j$, including any final-product import tariff. Baseline marginal production costs remain zero. Firms choose sales separately in the two markets, with constant marginal production costs and no shared capacity constraint.
+
+Use $t_1$ for Home's input tariff, $\tau_1$ for Home's protective final-product tariff, and $\tau_2$ for Foreign's retaliatory tariff.
+
+In the lecture's numerical model, $t_1$ is represented as an addition to Home's marginal production cost. The final-product tariffs are per-unit costs on exports to the country imposing them.
+
+| Firm | Cost per unit sold in Home | Cost per unit sold in Foreign |
+|:--|:--|:--|
+| Home firm 1 | $t_1$ | $t_1+\tau_2$ |
+| Foreign firm 2 | $\tau_1$ | $0$ |
+
+The input-cost increase follows Home's production into **both markets**. Each final-product tariff applies only to the goods entering its destination market.
+
+These are the lecture's additive cost wedges, not percentage tariff rates. A separate model of input use and input prices would be needed to translate a general ad valorem input tariff into a marginal-cost increase.
+
+## 5. Two-Market Equilibrium
+
+For Home's firm selling at Home,
+
+$$
+\pi_1^1=\left[10-2Q_1^1-Q_2^1-t_1\right]Q_1^1.
+$$
+
+Differentiate, holding $Q_2^1$ fixed, and set the derivative to zero:
+
+$$
+10-4Q_1^1-Q_2^1-t_1=0.
+$$
+
+Thus,
+
+$$
+Q_1^1=\frac{10-t_1-Q_2^1}{4}=2.5-\frac{t_1}{4}-\frac{Q_2^1}{4}.
+$$
+
+Applying the same step to the other firm-market pairs gives:
+
+**Home market**
+
+$$
+\boxed{
+Q_1^1=2.5-\frac{t_1}{4}-\frac{Q_2^1}{4},
+\qquad
+Q_2^1=2.5-\frac{\tau_1}{4}-\frac{Q_1^1}{4}.
+}
+$$
+
+**Foreign market**
+
+$$
+\boxed{
+Q_1^2=2.5-\frac{t_1+\tau_2}{4}-\frac{Q_2^2}{4},
+\qquad
+Q_2^2=2.5-\frac{Q_1^2}{4}.
+}
+$$
+
+Solve the two equations **within each market**. Do not substitute a firm's sales in one market into demand in the other market.
+
+The worked examples and scenario table below have positive sales by both firms. If a calculated best response is negative, impose zero sales and solve the resulting corner case instead.
+
+With free trade, all tariffs are zero. Each market reproduces the one-market trade equilibrium: both firms sell $2$ units at a price of $4$. Home's firm therefore sells $4$ units in total and earns operating profit $16$ across the two markets.
+
+For example, with an input tariff $t_1=2$ and $\tau_1=\tau_2=0$, both markets have
+
+$$
+4Q_1^j+Q_2^j=8,
+\qquad
+Q_1^j+4Q_2^j=10.
+$$
+
+Multiply the first equation by four and subtract the second:
+
+$$
+15Q_1^j=22.
+$$
+
+Therefore,
+
+$$
+\boxed{Q_1^j=\frac{22}{15}\approx1.47,
+\qquad Q_2^j=\frac{32}{15}\approx2.13.}
+$$
+
+Home's firm loses sales in both markets. An input tariff reduces exports **even without Foreign retaliation**.
+
+More generally, allowing all three tariffs to vary, the Home-market equations are
+
+$$
+4Q_1^1+Q_2^1=10-t_1,
+\qquad
+Q_1^1+4Q_2^1=10-\tau_1.
+$$
+
+Using the same elimination method in each market gives
+
+$$
+\boxed{
+\begin{aligned}
+Q_1^1&=2-\frac{4t_1-\tau_1}{15}, &
+Q_2^1&=2+\frac{t_1-4\tau_1}{15},\\[4pt]
+Q_1^2&=2-\frac{4(t_1+\tau_2)}{15}, &
+Q_2^2&=2+\frac{t_1+\tau_2}{15}.
+\end{aligned}
+}
+$$
+
+| Policy | $(t_1,\tau_1,\tau_2)$ | $Q_1^1$ | $Q_2^1$ | $Q_1^2$ | $Q_2^2$ |
+|:--|:--:|--:|--:|--:|--:|
+| Free trade | $(0,0,0)$ | 2.00 | 2.00 | 2.00 | 2.00 |
+| Input tariff only | $(2,0,0)$ | 1.47 | 2.13 | 1.47 | 2.13 |
+| Home protection only | $(0,2,0)$ | 2.13 | 1.47 | 2.00 | 2.00 |
+| Foreign retaliation only | $(0,0,2)$ | 2.00 | 2.00 | 1.47 | 2.13 |
+| All three tariffs | $(2,2,2)$ | 1.60 | 1.60 | 0.93 | 2.27 |
+
+Each row changes only the tariffs shown. All rows use the same utility function as the one-market model. Values are rounded after solving.
+
+**Protection alone helps Home's domestic sales; it does not guarantee that the complete policy package helps the firm.** In this example, domestic sales rise relative to free trade only if $\tau_1>4t_1$. Exports fall whenever $t_1+\tau_2>0$.
+
+The controls below hold demand and baseline production costs fixed. Start with one tariff at a time, then combine them. At high enough tariffs, a firm stops selling in a market; the graph then shows its sales as zero.
+
+```{=html}
+<div id="sc-model">
+<style>
+#sc-model { margin:1.25rem 0; }
+#sc-model .sc-controls { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; }
+#sc-model .sc-control label { display:block; font-weight:600; }
+#sc-model input[type=range] { width:100%; }
+#sc-model .sc-buttons { display:flex; flex-wrap:wrap; gap:.5rem; margin:1rem 0; }
+#sc-model button { font:inherit; padding:.35rem .65rem; cursor:pointer; border:1px solid currentColor; border-radius:.25rem; background:transparent; color:inherit; }
+#sc-model button:focus-visible { outline:3px solid currentColor; outline-offset:2px; }
+#sc-model .sc-plots { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:1rem; }
+#sc-model h4 { font-size:1.05rem; margin:.75rem 0 .2rem; }
+#sc-model svg { display:block; width:100%; height:auto; font-family:inherit; }
+#sc-model .sc-table-wrap { overflow-x:auto; }
+#sc-model table { width:100%; border-collapse:collapse; margin:.6rem 0; }
+#sc-model th, #sc-model td { padding:.4rem .55rem; text-align:right; white-space:nowrap; }
+#sc-model th:first-child, #sc-model td:first-child { text-align:left; }
+#sc-model th { border-bottom:1px solid currentColor; }
+#sc-model .sc-hint { font-size:.92rem; }
+</style>
+<div class="sc-controls">
+<div class="sc-control"><label for="sc-input">Input tariff t₁: <output id="sc-input-value" for="sc-input">0.0</output></label><input id="sc-input" type="range" min="0" max="4" step="0.1" value="0"></div>
+<div class="sc-control"><label for="sc-protect">Home protection τ₁: <output id="sc-protect-value" for="sc-protect">0.0</output></label><input id="sc-protect" type="range" min="0" max="4" step="0.1" value="0"></div>
+<div class="sc-control"><label for="sc-retaliate">Foreign retaliation τ₂: <output id="sc-retaliate-value" for="sc-retaliate">0.0</output></label><input id="sc-retaliate" type="range" min="0" max="4" step="0.1" value="0"></div>
+</div>
+<div class="sc-buttons" role="group" aria-label="Tariff scenarios">
+<button type="button" data-values="0,0,0">Free trade</button>
+<button type="button" data-values="2,0,0">Input tariff only</button>
+<button type="button" data-values="0,2,0">Protection only</button>
+<button type="button" data-values="0,0,2">Retaliation only</button>
+<button type="button" data-values="2,2,2">All three</button>
+</div>
+<p class="sc-hint">Thick solid line: Firm 1's best response. Thick dashed line: Firm 2's best response. Thin dotted lines and the open circle: free-trade reference. The filled circle is the current equilibrium. Axes are zoomed to 0–4.</p>
+<div class="sc-plots">
+<div><h4>Market 1: Home</h4><svg id="sc-home" viewBox="0 0 500 425" role="img" aria-label="Home market reaction functions"></svg></div>
+<div><h4>Market 2: Foreign</h4><svg id="sc-foreign" viewBox="0 0 500 425" role="img" aria-label="Foreign market reaction functions"></svg></div>
+</div>
+<div class="sc-table-wrap"><table aria-label="Current equilibrium quantities"><thead><tr><th>Market</th><th>Firm 1 sales</th><th>Firm 2 sales</th><th>Total consumption</th></tr></thead><tbody id="sc-results"></tbody></table></div>
+<p id="sc-summary" aria-live="polite"></p>
+<noscript><p>Enable JavaScript to use the controls. The scenario table above gives numerical examples without JavaScript.</p></noscript>
+<script>
+(() => {
+  'use strict';
+  const root = document.getElementById('sc-model');
+  if (!root) return;
+  const ids = ['sc-input','sc-protect','sc-retaliate'];
+  const controls = ids.map(id => root.querySelector('#' + id));
+  const fmt = n => Number(n).toFixed(2);
+  // Cournot solution for P1 = 10 - 2Q1 - Q2 and P2 = 10 - 2Q2 - Q1.
+  function equilibrium(k1, k2) {
+    const q1 = (30-4*k1+k2)/15;
+    const q2 = (30-4*k2+k1)/15;
+    if (q1 <= 0) return {q1:0, q2:Math.max(0,(10-k2)/4)};
+    if (q2 <= 0) return {q1:Math.max(0,(10-k1)/4), q2:0};
+    return {q1,q2};
+  }
+  function draw(id, market, k1, k2, eq) {
+    const svg = root.querySelector('#' + id);
+    const x = q => 62 + q*100;
+    const y = q => 355 - q*75;
+    const bestResponseLine = (firm,cost,style) => {
+      const kink = Math.min(4,Math.max(0,10-cost));
+      const points = [0,kink,4].map(rival => {
+        const own = Math.max(0,(10-cost-rival)/4);
+        return firm===1 ? `${x(rival)},${y(own)}` : `${x(own)},${y(rival)}`;
+      }).join(' ');
+      return `<polyline points="${points}" ${style}/>`;
+    };
+    let ticks = '';
+    for (let q=0; q<=4; q+=1) {
+      ticks += `<path d="M${x(q)} 355 v5 M57 ${y(q)} h5" stroke="currentColor" fill="none"/>`;
+      ticks += `<text x="${x(q)}" y="382" text-anchor="middle">${q}</text>`;
+      if (q>0) ticks += `<text x="48" y="${y(q)+5}" text-anchor="end">${q}</text>`;
+    }
+    const baseline = (k1!==0 || k2!==0) ?
+      bestResponseLine(1,0,'stroke-width="1.3" stroke-dasharray="2 5" opacity="0.45"') +
+      bestResponseLine(2,0,'stroke-width="1.3" stroke-dasharray="2 5" opacity="0.45"') : '';
+    const sup = market===1 ? '¹' : '²';
+    svg.innerHTML = `<title>Market ${market}: quantities and best responses</title>
+      <desc>Firm 1 sells ${fmt(eq.q1)} and Firm 2 sells ${fmt(eq.q2)}. Horizontal axis is Firm 2 sales; vertical axis is Firm 1 sales.</desc>
+      <defs><clipPath id="${id}-clip"><rect x="62" y="55" width="400" height="300"/></clipPath></defs>
+      <g fill="currentColor" font-size="15">${ticks}
+        <text x="62" y="28">Firm 1 sales, Q₁${sup}</text>
+        <text x="262" y="416" text-anchor="middle">Firm 2 sales, Q₂${sup}</text>
+      </g>
+      <path d="M62 55 V355 H462" stroke="currentColor" stroke-width="1.6" fill="none"/>
+      <g clip-path="url(#${id}-clip)" fill="none" stroke="currentColor">
+        ${baseline}
+        ${bestResponseLine(1,k1,'stroke-width="2.8"')}
+        ${bestResponseLine(2,k2,'stroke-width="2.8" stroke-dasharray="10 5"')}
+        <path d="M62 ${y(eq.q1)} H${x(eq.q2)} V355" stroke-width="1" stroke-dasharray="3 4" opacity="0.65"/>
+        <circle cx="${x(2)}" cy="${y(2)}" r="5.5" stroke-width="1.2" opacity="0.55"/>
+      </g>
+      <circle cx="${x(eq.q2)}" cy="${y(eq.q1)}" r="4.5" fill="currentColor"/>
+      <text x="${x(eq.q2)+12}" y="${y(eq.q1)-14}" fill="currentColor" font-size="15">(${fmt(eq.q2)}, ${fmt(eq.q1)})</text>`;
+  }
+  function update() {
+    const values = controls.map(el => Number(el.value));
+    if (values.some(v => !Number.isFinite(v) || v<0 || v>4)) return;
+    const [t,protect,retaliate] = values;
+    ids.forEach((id,i) => {root.querySelector('#'+id+'-value').textContent=values[i].toFixed(1);});
+    const home = equilibrium(t,protect);
+    const foreign = equilibrium(t+retaliate,0);
+    draw('sc-home',1,t,protect,home);
+    draw('sc-foreign',2,t+retaliate,0,foreign);
+    root.querySelector('#sc-results').innerHTML = [['Home',home],['Foreign',foreign]].map(([label,e]) =>
+      `<tr><td>${label}</td><td>${fmt(e.q1)}</td><td>${fmt(e.q2)}</td><td>${fmt(e.q1+e.q2)}</td></tr>`).join('');
+    const total = home.q1+foreign.q1;
+    const profit = 2*(home.q1**2+foreign.q1**2);
+    root.querySelector('#sc-summary').textContent = `Home firm's total sales: ${fmt(total)} (free trade: 4.00). Operating profit after input costs and export tariffs: ${fmt(profit)} (free trade: 16.00). This is firm profit, not national welfare.`;
+  }
+  controls.forEach(el => el.addEventListener('input',update));
+  root.querySelectorAll('button[data-values]').forEach(button => {
+    button.addEventListener('click',() => {
+      button.dataset.values.split(',').forEach((value,i) => {controls[i].value=value;});
+      update();
+    });
+  });
+  update();
+})();
+</script>
+</div>
+```
+
+**Check your understanding:** Which reaction function moves in which market when only $t_1$ rises? Why does $\tau_1$ alone leave the Foreign-market equilibrium unchanged in this model?
+
+Home's total sales are $Q_1^1+Q_1^2$, not just $Q_1^1$. Its operating profit is
+
+$$
+\pi_1=(P_1^1-t_1)Q_1^1
++(P_1^2-t_1-\tau_2)Q_1^2.
+$$
+
+For a firm with positive sales, the first-order condition in each market implies that price minus the delivered unit cost equals $2Q_i^j$. Hence,
+
+$$
+\boxed{\pi_1=2\left[(Q_1^1)^2+(Q_1^2)^2\right].}
+$$
+
+This identity applies to operating profit with the costs specified above; it is not a statement that tariffs are costless.
+
+A higher domestic market share does not necessarily mean higher domestic sales, total sales, or total profit. And a change in firm profit alone is **not** a national welfare calculation: consumer surplus and tariff revenue also matter. We do not calculate national welfare for the supply-chain model because an explicit input-market and tariff-revenue accounting would also be needed.
+
+## 6. Practice Problems
+
+### Problem 1. Interpreting IIT
+
+An industry exports $60$ million and imports $40$ million.
+
+1. Calculate its IIT index.
+2. Recalculate the index if both trade flows double. What does the index measure, and what does it not measure?
+3. Does a positive IIT index necessarily contradict comparative advantage? Explain briefly.
+
+### Problem 2. Monopoly versus Trade
+
+For this problem and Problem 3, use the following utility function:
+
+$$
+U(Q_1,Q_2)=12(Q_1+Q_2)-(Q_1^2+Q_2^2)-Q_1Q_2.
+$$
+
+The firms have different constant marginal production costs:
+
+$$
+MC_1=4,\qquad MC_2=1.
+$$
+
+There are no fixed costs. In this problem, there are no tariffs.
+
+Start by deriving the inverse demand functions from utility minus expenditure.
+
+1. Find the Home monopoly's quantity, price, and profit under autarky.
+2. Derive both reaction functions and solve for the trade equilibrium, both prices, and each firm's profit.
+3. Calculate consumer surplus and Home welfare before and after trade. Count only Home-owned profit in Home welfare.
+4. Explain why the firms sell different quantities. How can total consumption rise even though the Home firm's domestic sales fall?
+
+### Problem 3. Protection with Input Costs and Retaliation
+
+Use the same utility function as in Problem 2 in each market:
+
+$$
+U(Q_1^j,Q_2^j)=12(Q_1^j+Q_2^j)-\left[(Q_1^j)^2+(Q_2^j)^2\right]-Q_1^jQ_2^j,
+\qquad j=1,2.
+$$
+
+Keep the same baseline marginal production costs, $MC_1=4$ and $MC_2=1$, and no fixed costs. Each firm chooses its sales separately in the two markets. Suppose
+
+$$
+t_1=1,\qquad \tau_1=4,\qquad \tau_2=2.
+$$
+
+The input tariff adds to Home's marginal production cost in both markets. Each final-product tariff adds to the cost of serving the market that imposes it.
+
+1. Identify the total cost per unit for each firm in each market, including baseline production costs and applicable tariffs, and write all four reaction functions.
+2. Solve for $Q_1^1$, $Q_2^1$, $Q_1^2$, and $Q_2^2$.
+3. Compare Home's domestic sales, exports, total sales, and operating profit with free trade.
+4. Calculate Home's domestic market share. Explain why an increase in this share is not enough to conclude that the firm benefits overall.
+
+### Problem 4. Reading a Supply Chain
+
+A Home manufacturer imports parts from an independent Foreign supplier. It also exports finished goods to a wholly owned sales affiliate abroad.
+
+1. Which transaction is arm's-length trade, and which is related-party trade?
+2. Explain how an input tariff at Home can hurt this firm's exports even if Foreign does not retaliate.
+3. A classmate says, “The protective tariff increases the manufacturer's domestic sales, so the whole tariff package must increase its profit and Home's welfare.” Identify the missing steps in this argument.

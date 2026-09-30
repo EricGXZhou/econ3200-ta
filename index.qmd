@@ -24,6 +24,7 @@ Welcome to the TA website for **ECON 3200: The Economics of Globalization**.
 | [Homework 1](materials/Econ_3200_F2026_Homework_1.pdf){target="_blank"} | 9/3 3:30pm | [View Answer Key](materials/ECON_3200_F2026_HW1_Answer_Key.pdf){target="_blank"} |
 | [Homework 2](materials/Econ_3200_F2026_Homework_2.pdf){target="_blank"} | 9/10 3:30pm | [View Answer Key](materials/ECON_3200_F2026_HW2_Answer_Key.pdf){target="_blank"} |
 | [Homework 3](materials/Econ_3200_F2026_Homework_3.pdf){target="_blank"} | 9/17 3:30pm | [View Answer Key](materials/ECON_3200_F2026_HW3_Answer_Key.pdf){target="_blank"} |
+| [Homework 4](materials/Econ_3200_F2026_Homework_4.pdf){target="_blank"} | 10/1 3:30pm | View Answer Key |
 
 ## Exams
 
