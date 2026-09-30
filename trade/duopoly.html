@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Imperfect Competition, Supply Chains, and Trade Policy – ECON 3200: The Economics of Globalization</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">ECON 3200: The Economics of Globalization</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../discussion-materials.html"> 
+<span class="menu-text">Discussion Materials</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-trade" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Trade</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-trade">    
+        <li>
+    <a class="dropdown-item" href="../trade/gravity.html">
+ <span class="dropdown-text">Gravity Model</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../trade/ricardian.html">
+ <span class="dropdown-text">Ricardian Model</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../trade/specific.html">
+ <span class="dropdown-text">Specific Factors Model</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../trade/trade policy.html">
+ <span class="dropdown-text">Import Tariffs</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../trade/duopoly.html">
+ <span class="dropdown-text">Imperfect Competition</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../migration/index.html"> 
+<span class="menu-text">Migration</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../macro/index.html"> 
+<span class="menu-text">International Macroeconomics</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#intraindustry-trade-and-model-setup" id="toc-intraindustry-trade-and-model-setup" class="nav-link active" data-scroll-target="#intraindustry-trade-and-model-setup">1. Intraindustry Trade and Model Setup</a></li>
+  <li><a href="#from-monopoly-to-cournot-duopoly" id="toc-from-monopoly-to-cournot-duopoly" class="nav-link" data-scroll-target="#from-monopoly-to-cournot-duopoly">2. From Monopoly to Cournot Duopoly</a></li>
+  <li><a href="#gains-from-trade" id="toc-gains-from-trade" class="nav-link" data-scroll-target="#gains-from-trade">3. Gains from Trade</a></li>
+  <li><a href="#supply-chains-and-trade-policy" id="toc-supply-chains-and-trade-policy" class="nav-link" data-scroll-target="#supply-chains-and-trade-policy">4. Supply Chains and Trade Policy</a></li>
+  <li><a href="#two-market-equilibrium" id="toc-two-market-equilibrium" class="nav-link" data-scroll-target="#two-market-equilibrium">5. Two-Market Equilibrium</a></li>
+  <li><a href="#practice-problems" id="toc-practice-problems" class="nav-link" data-scroll-target="#practice-problems">6. Practice Problems</a>
+  <ul class="collapse">
+  <li><a href="#problem-1.-interpreting-iit" id="toc-problem-1.-interpreting-iit" class="nav-link" data-scroll-target="#problem-1.-interpreting-iit">Problem 1. Interpreting IIT</a></li>
+  <li><a href="#problem-2.-monopoly-versus-trade" id="toc-problem-2.-monopoly-versus-trade" class="nav-link" data-scroll-target="#problem-2.-monopoly-versus-trade">Problem 2. Monopoly versus Trade</a></li>
+  <li><a href="#problem-3.-protection-with-input-costs-and-retaliation" id="toc-problem-3.-protection-with-input-costs-and-retaliation" class="nav-link" data-scroll-target="#problem-3.-protection-with-input-costs-and-retaliation">Problem 3. Protection with Input Costs and Retaliation</a></li>
+  <li><a href="#problem-4.-reading-a-supply-chain" id="toc-problem-4.-reading-a-supply-chain" class="nav-link" data-scroll-target="#problem-4.-reading-a-supply-chain">Problem 4. Reading a Supply Chain</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Imperfect Competition, Supply Chains, and Trade Policy</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>Can trade create gains even without differences in countries’ production costs?</p>
+</blockquote>
+<p>Trade can create gains through <strong>competition between firms selling different varieties</strong>. We first study sales in the Home market, then extend the model to two markets to examine input tariffs, protection, and retaliation.</p>
+<section id="intraindustry-trade-and-model-setup" class="level2">
+<h2 class="anchored" data-anchor-id="intraindustry-trade-and-model-setup">1. Intraindustry Trade and Model Setup</h2>
+<p><strong>Intraindustry trade (IIT)</strong> means importing and exporting within the same industry. For industry <span class="math inline">\(i\)</span>,</p>
+<p><span class="math display">\[
+\boxed{IIT_i=1-\frac{|X_i-M_i|}{X_i+M_i}.}
+\]</span></p>
+<p>If only imports or only exports are positive, <span class="math inline">\(IIT_i=0\)</span>. If <span class="math inline">\(X_i=M_i&gt;0\)</span>, <span class="math inline">\(IIT_i=1\)</span>. The index is undefined when both are zero.</p>
+<p>A high index does not by itself disprove comparative advantage: countries may specialize in different products within a broad industry. But imperfect competition provides another reason for two-way trade, even when firms have the same production costs.</p>
+<p>To model this, firm 1 is based in Home and firm 2 is based in Foreign. <span class="math inline">\(Q_i\)</span> is firm <span class="math inline">\(i\)</span>’s sales <strong>in the Home market</strong>, and <span class="math inline">\(P_i\)</span> is its price there. Each firm chooses its quantity, taking the other firm’s quantity as given.</p>
+<p>Use the following money-metric utility function throughout both parts of the model:</p>
+<p><span class="math display">\[
+U(Q_1,Q_2)=10(Q_1+Q_2)-(Q_1^2+Q_2^2)-Q_1Q_2.
+\]</span></p>
+<p>Consumers choose quantities to maximize utility minus expenditure:</p>
+<p><span class="math display">\[
+\max_{Q_1,Q_2\geq0}\;
+10(Q_1+Q_2)-(Q_1^2+Q_2^2)-Q_1Q_2-P_1Q_1-P_2Q_2.
+\]</span></p>
+<p>At an interior solution, differentiate with respect to each quantity, treating prices as given:</p>
+<p><span class="math display">\[
+\frac{\partial U}{\partial Q_1}-P_1=10-2Q_1-Q_2-P_1=0,
+\]</span></p>
+<p><span class="math display">\[
+\frac{\partial U}{\partial Q_2}-P_2=10-2Q_2-Q_1-P_2=0.
+\]</span></p>
+<p>Rearranging gives the inverse demand functions:</p>
+<p><span class="math display">\[
+\boxed{P_1=10-2Q_1-Q_2,\qquad P_2=10-2Q_2-Q_1.}
+\]</span></p>
+<p>Both firms initially have zero marginal production costs. Increasing Foreign sales shifts the demand facing Home’s firm downward: the goods are substitutes, but they are not identical.</p>
+<p><strong>Taste for variety.</strong> Holding total consumption at four units, <span class="math inline">\(U(2,2)=28\)</span> exceeds <span class="math inline">\(U(4,0)=24\)</span>. Consumers value having both varieties. This comparison holds total consumption fixed; it is not an equilibrium welfare calculation.</p>
+</section>
+<section id="from-monopoly-to-cournot-duopoly" class="level2">
+<h2 class="anchored" data-anchor-id="from-monopoly-to-cournot-duopoly">2. From Monopoly to Cournot Duopoly</h2>
+<p>Under autarky, the Foreign product is unavailable, so <span class="math inline">\(Q_2=0\)</span>:</p>
+<p><span class="math display">\[
+P_1=10-2Q_1.
+\]</span></p>
+<p>Revenue and marginal revenue are</p>
+<p><span class="math display">\[
+R_1=P_1Q_1=10Q_1-2Q_1^2,
+\qquad
+MR_1=10-4Q_1.
+\]</span></p>
+<p>Set <span class="math inline">\(MR_1=MC_1=0\)</span>:</p>
+<p><span class="math display">\[
+10-4Q_1=0
+\quad\Rightarrow\quad
+\boxed{Q_1=2.5,\qquad P_1=5.}
+\]</span></p>
+<p>With no costs included in the example, profit is</p>
+<p><span class="math display">\[
+\pi_1=P_1Q_1=12.5.
+\]</span></p>
+<p><strong>Why not set <span class="math inline">\(P_1=MC_1\)</span>?</strong> A monopolist must lower its price to sell more units. Marginal revenue accounts for the lower revenue on units it would otherwise sell. Even with zero marginal cost, its optimal price is positive.</p>
+<p>With trade, both firms sell in Home, and firm 1’s profit is</p>
+<p><span class="math display">\[
+\pi_1=(10-2Q_1-Q_2)Q_1.
+\]</span></p>
+<p>Differentiate with respect to <span class="math inline">\(Q_1\)</span>, <strong>holding <span class="math inline">\(Q_2\)</span> fixed</strong>:</p>
+<p><span class="math display">\[
+\frac{\partial\pi_1}{\partial Q_1}=10-4Q_1-Q_2=0.
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\boxed{Q_1=2.5-\frac{Q_2}{4}.}
+\]</span></p>
+<p>Similarly, firm 2’s reaction function is</p>
+<p><span class="math display">\[
+\boxed{Q_2=2.5-\frac{Q_1}{4}.}
+\]</span></p>
+<p>A reaction function gives one firm’s <strong>profit-maximizing quantity conditional on its rival’s quantity</strong>. It is not a demand curve or an equilibrium by itself. If its formula gives a negative quantity, the best response is zero; all equilibria calculated here have positive quantities.</p>
+<p>To find the equilibrium, solve the two reaction functions together:</p>
+<p><span class="math display">\[
+4Q_1+Q_2=10,
+\qquad
+Q_1+4Q_2=10.
+\]</span></p>
+<p>Subtract the second equation from the first:</p>
+<p><span class="math display">\[
+3(Q_1-Q_2)=0
+\quad\Rightarrow\quad Q_1=Q_2.
+\]</span></p>
+<p>Substitute into either equation:</p>
+<p><span class="math display">\[
+5Q_1=10
+\quad\Rightarrow\quad
+\boxed{Q_1=Q_2=2,\qquad P_1=P_2=4.}
+\]</span></p>
+<p>This is a <strong>Cournot–Nash equilibrium</strong>: each quantity is a best response to the other. Neither firm can increase its profit by changing only its own quantity.</p>
+<p>As in the lecture, put <span class="math inline">\(Q_2\)</span> on the horizontal axis and <span class="math inline">\(Q_1\)</span> on the vertical axis. Firm 1’s line is <span class="math inline">\(Q_1=2.5-Q_2/4\)</span>. Rewrite firm 2’s line as <span class="math inline">\(Q_1=10-4Q_2\)</span> to plot it on the same axes.</p>
+<div style="max-width:680px;margin:1.25rem auto;">
+<svg viewbox="0 0 600 430" role="img" aria-labelledby="dp-title dp-desc" style="width:100%;height:auto;color:inherit;font-family:inherit;">
+<title id="dp-title">Cournot reaction functions</title>
+<desc id="dp-desc">Firm 1's reaction function and firm 2's reaction function intersect at Q2 equals 2 and Q1 equals 2. Both axes are shown from zero to five.</desc>
+<defs><clippath id="dp-clip"><rect x="68" y="45" width="472" height="302"></rect></clippath></defs>
+<g stroke="currentColor" fill="none">
+<path d="M68 45 V347 H540" stroke-width="1.7"></path>
+<path d="M162.4 347 V352 M256.8 347 V352 M351.2 347 V352 M445.6 347 V352 M540 347 V352 M63 286.6 H68 M63 226.2 H68 M63 165.8 H68 M63 105.4 H68 M63 45 H68"></path>
+<g clip-path="url(#dp-clip)">
+<path d="M68 196 L540 271.5" stroke-width="3"></path>
+<path d="M68 -257 L540 951" stroke-width="3" stroke-dasharray="10 5"></path>
+<path d="M68 226.2 H256.8 V347" stroke-width="1" stroke-dasharray="3 4" opacity="0.6"></path>
+</g></g>
+<g fill="currentColor" font-size="15" text-anchor="middle">
+<text x="68" y="372">0</text><text x="162.4" y="372">1</text><text x="256.8" y="372">2</text><text x="351.2" y="372">3</text><text x="445.6" y="372">4</text><text x="540" y="372">5</text>
+</g>
+<g fill="currentColor" font-size="15" text-anchor="end">
+<text x="55" y="292">1</text><text x="55" y="232">2</text><text x="55" y="171">3</text><text x="55" y="111">4</text><text x="55" y="50">5</text>
+</g>
+<g fill="currentColor" font-size="16">
+<text x="68" y="25">Home firm sales, Q₁</text>
+<text x="304" y="410" text-anchor="middle">Foreign firm sales, Q₂</text>
+<text x="350" y="203">Firm 1 best response</text>
+<text x="228" y="74">Firm 2 best response</text>
+<circle cx="256.8" cy="226.2" r="5"></circle>
+<text x="275" y="265">Equilibrium: (2, 2)</text>
+</g></svg>
+</div>
+</section>
+<section id="gains-from-trade" class="level2">
+<h2 class="anchored" data-anchor-id="gains-from-trade">3. Gains from Trade</h2>
+<p>Consumer surplus is utility minus expenditure:</p>
+<p><span class="math display">\[
+CS=U(Q_1,Q_2)-P_1Q_1-P_2Q_2.
+\]</span></p>
+<p>In autarky,</p>
+<p><span class="math display">\[
+CS=U(2.5,0)-5(2.5)=18.75-12.5=6.25.
+\]</span></p>
+<p>With trade,</p>
+<p><span class="math display">\[
+CS=U(2,2)-4(2)-4(2)=28-16=12.
+\]</span></p>
+<p>Use the utility function for the two-good calculation, rather than adding two triangles under conditional demand curves.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Outcome in the Home market</th>
+<th style="text-align: right;">Autarky</th>
+<th style="text-align: right;">Trade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Home firm’s sales, <span class="math inline">\(Q_1\)</span></td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Foreign firm’s sales, <span class="math inline">\(Q_2\)</span></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Total consumption, <span class="math inline">\(Q_1+Q_2\)</span></td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Price of Home’s product, <span class="math inline">\(P_1\)</span></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Consumer surplus</td>
+<td style="text-align: right;">6.25</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Home firm’s profit</td>
+<td style="text-align: right;">12.5</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Home welfare, <span class="math inline">\(CS+\pi_1\)</span></td>
+<td style="text-align: right;">18.75</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\boxed{\Delta W_H=(12-6.25)+(8-12.5)=1.25&gt;0.}
+\]</span></p>
+<p>Consumers gain from lower prices and access to another variety. The Home firm loses sales and profit in its domestic market, but consumers’ gains exceed that loss in this example.</p>
+<p>So far, only Foreign exports to Home. If Home’s firm also sells in the Foreign market, the two countries both import and export within the same industry.</p>
+<p>The lecture then extends the intuition to many firms: competition can drive small, inefficient firms out, while efficient firms expand through exporting. Larger countries have more firms and larger markets buy more foreign products; distance makes these transactions costly. This links firm-level trade to the gravity intuition from earlier in the course, without introducing a new formal model here.</p>
+</section>
+<section id="supply-chains-and-trade-policy" class="level2">
+<h2 class="anchored" data-anchor-id="supply-chains-and-trade-policy">4. Supply Chains and Trade Policy</h2>
+<blockquote class="blockquote">
+<p>Can tariffs hurt a domestic manufacturer even when they protect its final product?</p>
+</blockquote>
+<p>We now extend the duopoly model to two markets. A firm can face import competition, buy imported inputs, and sell exports at the same time.</p>
+<p>A <strong>multinational enterprise (MNE)</strong> has establishments in more than one country: a parent in its headquarters country and affiliates abroad. Exporting alone does not establish that a firm is multinational.</p>
+<p><strong>Related-party trade</strong> takes place between affiliated businesses across borders. <strong>Arm’s-length trade</strong> takes place between independent businesses. An MNE can engage in both.</p>
+<p>A supply chain links production stages through purchases and sales of inputs. Labor and capital add value at each stage. This is why the same manufacturer may be affected by three different tariff channels:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Tariff channel</th>
+<th style="text-align: left;">Direct effect on Home’s manufacturer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Protection against imported final products</td>
+<td style="text-align: left;">Less competition in its domestic market</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Tariffs on its imported inputs</td>
+<td style="text-align: left;">Higher production costs</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Foreign retaliation against its exports</td>
+<td style="text-align: left;">Lower competitiveness in its export market</td>
+</tr>
+</tbody>
+</table>
+<p>For the two-market model, follow the lecture’s notation:</p>
+<p><span class="math display">\[
+Q_i^j=\text{sales by firm }i\text{ in market }j.
+\]</span></p>
+<p><strong>The subscript identifies the firm; the superscript identifies the market.</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Quantity</th>
+<th style="text-align: left;">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(Q_1^1\)</span></td>
+<td style="text-align: left;">Home firm’s domestic sales</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(Q_2^1\)</span></td>
+<td style="text-align: left;">Foreign firm’s exports to Home</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(Q_1^2\)</span></td>
+<td style="text-align: left;">Home firm’s exports to Foreign</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(Q_2^2\)</span></td>
+<td style="text-align: left;">Foreign firm’s domestic sales</td>
+</tr>
+</tbody>
+</table>
+<p>Consumers in each market have the same utility function as in the one-market model:</p>
+<p><span class="math display">\[
+U(Q_1^j,Q_2^j)=10(Q_1^j+Q_2^j)-\left[(Q_1^j)^2+(Q_2^j)^2\right]-Q_1^jQ_2^j,
+\qquad
+j=1,2.
+\]</span></p>
+<p>Maximizing utility minus expenditure again gives marginal utility equal to price:</p>
+<p><span class="math display">\[
+\boxed{
+\begin{aligned}
+P_1^j&amp;=\frac{\partial U(Q_1^j,Q_2^j)}{\partial Q_1^j}=10-2Q_1^j-Q_2^j,\\
+P_2^j&amp;=\frac{\partial U(Q_1^j,Q_2^j)}{\partial Q_2^j}=10-2Q_2^j-Q_1^j.
+\end{aligned}
+}
+\]</span></p>
+<p>Here <span class="math inline">\(P_i^j\)</span> is the price paid by consumers in market <span class="math inline">\(j\)</span>, including any final-product import tariff. Baseline marginal production costs remain zero. Firms choose sales separately in the two markets, with constant marginal production costs and no shared capacity constraint.</p>
+<p>Use <span class="math inline">\(t_1\)</span> for Home’s input tariff, <span class="math inline">\(\tau_1\)</span> for Home’s protective final-product tariff, and <span class="math inline">\(\tau_2\)</span> for Foreign’s retaliatory tariff.</p>
+<p>In the lecture’s numerical model, <span class="math inline">\(t_1\)</span> is represented as an addition to Home’s marginal production cost. The final-product tariffs are per-unit costs on exports to the country imposing them.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Firm</th>
+<th style="text-align: left;">Cost per unit sold in Home</th>
+<th style="text-align: left;">Cost per unit sold in Foreign</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Home firm 1</td>
+<td style="text-align: left;"><span class="math inline">\(t_1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(t_1+\tau_2\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Foreign firm 2</td>
+<td style="text-align: left;"><span class="math inline">\(\tau_1\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(0\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>The input-cost increase follows Home’s production into <strong>both markets</strong>. Each final-product tariff applies only to the goods entering its destination market.</p>
+<p>These are the lecture’s additive cost wedges, not percentage tariff rates. A separate model of input use and input prices would be needed to translate a general ad valorem input tariff into a marginal-cost increase.</p>
+</section>
+<section id="two-market-equilibrium" class="level2">
+<h2 class="anchored" data-anchor-id="two-market-equilibrium">5. Two-Market Equilibrium</h2>
+<p>For Home’s firm selling at Home,</p>
+<p><span class="math display">\[
+\pi_1^1=\left[10-2Q_1^1-Q_2^1-t_1\right]Q_1^1.
+\]</span></p>
+<p>Differentiate, holding <span class="math inline">\(Q_2^1\)</span> fixed, and set the derivative to zero:</p>
+<p><span class="math display">\[
+10-4Q_1^1-Q_2^1-t_1=0.
+\]</span></p>
+<p>Thus,</p>
+<p><span class="math display">\[
+Q_1^1=\frac{10-t_1-Q_2^1}{4}=2.5-\frac{t_1}{4}-\frac{Q_2^1}{4}.
+\]</span></p>
+<p>Applying the same step to the other firm-market pairs gives:</p>
+<p><strong>Home market</strong></p>
+<p><span class="math display">\[
+\boxed{
+Q_1^1=2.5-\frac{t_1}{4}-\frac{Q_2^1}{4},
+\qquad
+Q_2^1=2.5-\frac{\tau_1}{4}-\frac{Q_1^1}{4}.
+}
+\]</span></p>
+<p><strong>Foreign market</strong></p>
+<p><span class="math display">\[
+\boxed{
+Q_1^2=2.5-\frac{t_1+\tau_2}{4}-\frac{Q_2^2}{4},
+\qquad
+Q_2^2=2.5-\frac{Q_1^2}{4}.
+}
+\]</span></p>
+<p>Solve the two equations <strong>within each market</strong>. Do not substitute a firm’s sales in one market into demand in the other market.</p>
+<p>The worked examples and scenario table below have positive sales by both firms. If a calculated best response is negative, impose zero sales and solve the resulting corner case instead.</p>
+<p>With free trade, all tariffs are zero. Each market reproduces the one-market trade equilibrium: both firms sell <span class="math inline">\(2\)</span> units at a price of <span class="math inline">\(4\)</span>. Home’s firm therefore sells <span class="math inline">\(4\)</span> units in total and earns operating profit <span class="math inline">\(16\)</span> across the two markets.</p>
+<p>For example, with an input tariff <span class="math inline">\(t_1=2\)</span> and <span class="math inline">\(\tau_1=\tau_2=0\)</span>, both markets have</p>
+<p><span class="math display">\[
+4Q_1^j+Q_2^j=8,
+\qquad
+Q_1^j+4Q_2^j=10.
+\]</span></p>
+<p>Multiply the first equation by four and subtract the second:</p>
+<p><span class="math display">\[
+15Q_1^j=22.
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\boxed{Q_1^j=\frac{22}{15}\approx1.47,
+\qquad Q_2^j=\frac{32}{15}\approx2.13.}
+\]</span></p>
+<p>Home’s firm loses sales in both markets. An input tariff reduces exports <strong>even without Foreign retaliation</strong>.</p>
+<p>More generally, allowing all three tariffs to vary, the Home-market equations are</p>
+<p><span class="math display">\[
+4Q_1^1+Q_2^1=10-t_1,
+\qquad
+Q_1^1+4Q_2^1=10-\tau_1.
+\]</span></p>
+<p>Using the same elimination method in each market gives</p>
+<p><span class="math display">\[
+\boxed{
+\begin{aligned}
+Q_1^1&amp;=2-\frac{4t_1-\tau_1}{15}, &amp;
+Q_2^1&amp;=2+\frac{t_1-4\tau_1}{15},\\[4pt]
+Q_1^2&amp;=2-\frac{4(t_1+\tau_2)}{15}, &amp;
+Q_2^2&amp;=2+\frac{t_1+\tau_2}{15}.
+\end{aligned}
+}
+\]</span></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Policy</th>
+<th style="text-align: center;"><span class="math inline">\((t_1,\tau_1,\tau_2)\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(Q_1^1\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(Q_2^1\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(Q_1^2\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(Q_2^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Free trade</td>
+<td style="text-align: center;"><span class="math inline">\((0,0,0)\)</span></td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">2.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Input tariff only</td>
+<td style="text-align: center;"><span class="math inline">\((2,0,0)\)</span></td>
+<td style="text-align: right;">1.47</td>
+<td style="text-align: right;">2.13</td>
+<td style="text-align: right;">1.47</td>
+<td style="text-align: right;">2.13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Home protection only</td>
+<td style="text-align: center;"><span class="math inline">\((0,2,0)\)</span></td>
+<td style="text-align: right;">2.13</td>
+<td style="text-align: right;">1.47</td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">2.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Foreign retaliation only</td>
+<td style="text-align: center;"><span class="math inline">\((0,0,2)\)</span></td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">2.00</td>
+<td style="text-align: right;">1.47</td>
+<td style="text-align: right;">2.13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">All three tariffs</td>
+<td style="text-align: center;"><span class="math inline">\((2,2,2)\)</span></td>
+<td style="text-align: right;">1.60</td>
+<td style="text-align: right;">1.60</td>
+<td style="text-align: right;">0.93</td>
+<td style="text-align: right;">2.27</td>
+</tr>
+</tbody>
+</table>
+<p>Each row changes only the tariffs shown. All rows use the same utility function as the one-market model. Values are rounded after solving.</p>
+<p><strong>Protection alone helps Home’s domestic sales; it does not guarantee that the complete policy package helps the firm.</strong> In this example, domestic sales rise relative to free trade only if <span class="math inline">\(\tau_1&gt;4t_1\)</span>. Exports fall whenever <span class="math inline">\(t_1+\tau_2&gt;0\)</span>.</p>
+<p>The controls below hold demand and baseline production costs fixed. Start with one tariff at a time, then combine them. At high enough tariffs, a firm stops selling in a market; the graph then shows its sales as zero.</p>
+<div id="sc-model">
+<style>
+#sc-model { margin:1.25rem 0; }
+#sc-model .sc-controls { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; }
+#sc-model .sc-control label { display:block; font-weight:600; }
+#sc-model input[type=range] { width:100%; }
+#sc-model .sc-buttons { display:flex; flex-wrap:wrap; gap:.5rem; margin:1rem 0; }
+#sc-model button { font:inherit; padding:.35rem .65rem; cursor:pointer; border:1px solid currentColor; border-radius:.25rem; background:transparent; color:inherit; }
+#sc-model button:focus-visible { outline:3px solid currentColor; outline-offset:2px; }
+#sc-model .sc-plots { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:1rem; }
+#sc-model h4 { font-size:1.05rem; margin:.75rem 0 .2rem; }
+#sc-model svg { display:block; width:100%; height:auto; font-family:inherit; }
+#sc-model .sc-table-wrap { overflow-x:auto; }
+#sc-model table { width:100%; border-collapse:collapse; margin:.6rem 0; }
+#sc-model th, #sc-model td { padding:.4rem .55rem; text-align:right; white-space:nowrap; }
+#sc-model th:first-child, #sc-model td:first-child { text-align:left; }
+#sc-model th { border-bottom:1px solid currentColor; }
+#sc-model .sc-hint { font-size:.92rem; }
+</style>
+<div class="sc-controls">
+<div class="sc-control"><label for="sc-input">Input tariff t₁: <output id="sc-input-value" for="sc-input">0.0</output></label><input id="sc-input" type="range" min="0" max="4" step="0.1" value="0"></div>
+<div class="sc-control"><label for="sc-protect">Home protection τ₁: <output id="sc-protect-value" for="sc-protect">0.0</output></label><input id="sc-protect" type="range" min="0" max="4" step="0.1" value="0"></div>
+<div class="sc-control"><label for="sc-retaliate">Foreign retaliation τ₂: <output id="sc-retaliate-value" for="sc-retaliate">0.0</output></label><input id="sc-retaliate" type="range" min="0" max="4" step="0.1" value="0"></div>
+</div>
+<div class="sc-buttons" role="group" aria-label="Tariff scenarios">
+<button type="button" data-values="0,0,0">Free trade</button>
+<button type="button" data-values="2,0,0">Input tariff only</button>
+<button type="button" data-values="0,2,0">Protection only</button>
+<button type="button" data-values="0,0,2">Retaliation only</button>
+<button type="button" data-values="2,2,2">All three</button>
+</div>
+<p class="sc-hint">Thick solid line: Firm 1's best response. Thick dashed line: Firm 2's best response. Thin dotted lines and the open circle: free-trade reference. The filled circle is the current equilibrium. Axes are zoomed to 0–4.</p>
+<div class="sc-plots">
+<div><h4 class="anchored">Market 1: Home</h4><svg id="sc-home" viewbox="0 0 500 425" role="img" aria-label="Home market reaction functions"></svg></div>
+<div><h4 class="anchored">Market 2: Foreign</h4><svg id="sc-foreign" viewbox="0 0 500 425" role="img" aria-label="Foreign market reaction functions"></svg></div>
+</div>
+<div class="sc-table-wrap">
+<table class="caption-top" aria-label="Current equilibrium quantities">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Market</th>
+<th data-quarto-table-cell-role="th">Firm 1 sales</th>
+<th data-quarto-table-cell-role="th">Firm 2 sales</th>
+<th data-quarto-table-cell-role="th">Total consumption</th>
+</tr>
+</thead>
+<tbody id="sc-results">
+</tbody>
+</table>
+</div>
+<p id="sc-summary" aria-live="polite"></p>
+<noscript><p>Enable JavaScript to use the controls. The scenario table above gives numerical examples without JavaScript.</p></noscript>
+<script>
+(() => {
+  'use strict';
+  const root = document.getElementById('sc-model');
+  if (!root) return;
+  const ids = ['sc-input','sc-protect','sc-retaliate'];
+  const controls = ids.map(id => root.querySelector('#' + id));
+  const fmt = n => Number(n).toFixed(2);
+  // Cournot solution for P1 = 10 - 2Q1 - Q2 and P2 = 10 - 2Q2 - Q1.
+  function equilibrium(k1, k2) {
+    const q1 = (30-4*k1+k2)/15;
+    const q2 = (30-4*k2+k1)/15;
+    if (q1 <= 0) return {q1:0, q2:Math.max(0,(10-k2)/4)};
+    if (q2 <= 0) return {q1:Math.max(0,(10-k1)/4), q2:0};
+    return {q1,q2};
+  }
+  function draw(id, market, k1, k2, eq) {
+    const svg = root.querySelector('#' + id);
+    const x = q => 62 + q*100;
+    const y = q => 355 - q*75;
+    const bestResponseLine = (firm,cost,style) => {
+      const kink = Math.min(4,Math.max(0,10-cost));
+      const points = [0,kink,4].map(rival => {
+        const own = Math.max(0,(10-cost-rival)/4);
+        return firm===1 ? `${x(rival)},${y(own)}` : `${x(own)},${y(rival)}`;
+      }).join(' ');
+      return `<polyline points="${points}" ${style}/>`;
+    };
+    let ticks = '';
+    for (let q=0; q<=4; q+=1) {
+      ticks += `<path d="M${x(q)} 355 v5 M57 ${y(q)} h5" stroke="currentColor" fill="none"/>`;
+      ticks += `<text x="${x(q)}" y="382" text-anchor="middle">${q}</text>`;
+      if (q>0) ticks += `<text x="48" y="${y(q)+5}" text-anchor="end">${q}</text>`;
+    }
+    const baseline = (k1!==0 || k2!==0) ?
+      bestResponseLine(1,0,'stroke-width="1.3" stroke-dasharray="2 5" opacity="0.45"') +
+      bestResponseLine(2,0,'stroke-width="1.3" stroke-dasharray="2 5" opacity="0.45"') : '';
+    const sup = market===1 ? '¹' : '²';
+    svg.innerHTML = `<title>Market ${market}: quantities and best responses</title>
+      <desc>Firm 1 sells ${fmt(eq.q1)} and Firm 2 sells ${fmt(eq.q2)}. Horizontal axis is Firm 2 sales; vertical axis is Firm 1 sales.</desc>
+      <defs><clipPath id="${id}-clip"><rect x="62" y="55" width="400" height="300"/></clipPath></defs>
+      <g fill="currentColor" font-size="15">${ticks}
+        <text x="62" y="28">Firm 1 sales, Q₁${sup}</text>
+        <text x="262" y="416" text-anchor="middle">Firm 2 sales, Q₂${sup}</text>
+      </g>
+      <path d="M62 55 V355 H462" stroke="currentColor" stroke-width="1.6" fill="none"/>
+      <g clip-path="url(#${id}-clip)" fill="none" stroke="currentColor">
+        ${baseline}
+        ${bestResponseLine(1,k1,'stroke-width="2.8"')}
+        ${bestResponseLine(2,k2,'stroke-width="2.8" stroke-dasharray="10 5"')}
+        <path d="M62 ${y(eq.q1)} H${x(eq.q2)} V355" stroke-width="1" stroke-dasharray="3 4" opacity="0.65"/>
+        <circle cx="${x(2)}" cy="${y(2)}" r="5.5" stroke-width="1.2" opacity="0.55"/>
+      </g>
+      <circle cx="${x(eq.q2)}" cy="${y(eq.q1)}" r="4.5" fill="currentColor"/>
+      <text x="${x(eq.q2)+12}" y="${y(eq.q1)-14}" fill="currentColor" font-size="15">(${fmt(eq.q2)}, ${fmt(eq.q1)})</text>`;
+  }
+  function update() {
+    const values = controls.map(el => Number(el.value));
+    if (values.some(v => !Number.isFinite(v) || v<0 || v>4)) return;
+    const [t,protect,retaliate] = values;
+    ids.forEach((id,i) => {root.querySelector('#'+id+'-value').textContent=values[i].toFixed(1);});
+    const home = equilibrium(t,protect);
+    const foreign = equilibrium(t+retaliate,0);
+    draw('sc-home',1,t,protect,home);
+    draw('sc-foreign',2,t+retaliate,0,foreign);
+    root.querySelector('#sc-results').innerHTML = [['Home',home],['Foreign',foreign]].map(([label,e]) =>
+      `<tr><td>${label}</td><td>${fmt(e.q1)}</td><td>${fmt(e.q2)}</td><td>${fmt(e.q1+e.q2)}</td></tr>`).join('');
+    const total = home.q1+foreign.q1;
+    const profit = 2*(home.q1**2+foreign.q1**2);
+    root.querySelector('#sc-summary').textContent = `Home firm's total sales: ${fmt(total)} (free trade: 4.00). Operating profit after input costs and export tariffs: ${fmt(profit)} (free trade: 16.00). This is firm profit, not national welfare.`;
+  }
+  controls.forEach(el => el.addEventListener('input',update));
+  root.querySelectorAll('button[data-values]').forEach(button => {
+    button.addEventListener('click',() => {
+      button.dataset.values.split(',').forEach((value,i) => {controls[i].value=value;});
+      update();
+    });
+  });
+  update();
+})();
+</script>
+</div>
+<p><strong>Check your understanding:</strong> Which reaction function moves in which market when only <span class="math inline">\(t_1\)</span> rises? Why does <span class="math inline">\(\tau_1\)</span> alone leave the Foreign-market equilibrium unchanged in this model?</p>
+<p>Home’s total sales are <span class="math inline">\(Q_1^1+Q_1^2\)</span>, not just <span class="math inline">\(Q_1^1\)</span>. Its operating profit is</p>
+<p><span class="math display">\[
+\pi_1=(P_1^1-t_1)Q_1^1
++(P_1^2-t_1-\tau_2)Q_1^2.
+\]</span></p>
+<p>For a firm with positive sales, the first-order condition in each market implies that price minus the delivered unit cost equals <span class="math inline">\(2Q_i^j\)</span>. Hence,</p>
+<p><span class="math display">\[
+\boxed{\pi_1=2\left[(Q_1^1)^2+(Q_1^2)^2\right].}
+\]</span></p>
+<p>This identity applies to operating profit with the costs specified above; it is not a statement that tariffs are costless.</p>
+<p>A higher domestic market share does not necessarily mean higher domestic sales, total sales, or total profit. And a change in firm profit alone is <strong>not</strong> a national welfare calculation: consumer surplus and tariff revenue also matter. We do not calculate national welfare for the supply-chain model because an explicit input-market and tariff-revenue accounting would also be needed.</p>
+</section>
+<section id="practice-problems" class="level2">
+<h2 class="anchored" data-anchor-id="practice-problems">6. Practice Problems</h2>
+<section id="problem-1.-interpreting-iit" class="level3">
+<h3 class="anchored" data-anchor-id="problem-1.-interpreting-iit">Problem 1. Interpreting IIT</h3>
+<p>An industry exports <span class="math inline">\(60\)</span> million and imports <span class="math inline">\(40\)</span> million.</p>
+<ol type="1">
+<li>Calculate its IIT index.</li>
+<li>Recalculate the index if both trade flows double. What does the index measure, and what does it not measure?</li>
+<li>Does a positive IIT index necessarily contradict comparative advantage? Explain briefly.</li>
+</ol>
+</section>
+<section id="problem-2.-monopoly-versus-trade" class="level3">
+<h3 class="anchored" data-anchor-id="problem-2.-monopoly-versus-trade">Problem 2. Monopoly versus Trade</h3>
+<p>For this problem and Problem 3, use the following utility function:</p>
+<p><span class="math display">\[
+U(Q_1,Q_2)=12(Q_1+Q_2)-(Q_1^2+Q_2^2)-Q_1Q_2.
+\]</span></p>
+<p>The firms have different constant marginal production costs:</p>
+<p><span class="math display">\[
+MC_1=4,\qquad MC_2=1.
+\]</span></p>
+<p>There are no fixed costs. In this problem, there are no tariffs.</p>
+<p>Start by deriving the inverse demand functions from utility minus expenditure.</p>
+<ol type="1">
+<li>Find the Home monopoly’s quantity, price, and profit under autarky.</li>
+<li>Derive both reaction functions and solve for the trade equilibrium, both prices, and each firm’s profit.</li>
+<li>Calculate consumer surplus and Home welfare before and after trade. Count only Home-owned profit in Home welfare.</li>
+<li>Explain why the firms sell different quantities. How can total consumption rise even though the Home firm’s domestic sales fall?</li>
+</ol>
+</section>
+<section id="problem-3.-protection-with-input-costs-and-retaliation" class="level3">
+<h3 class="anchored" data-anchor-id="problem-3.-protection-with-input-costs-and-retaliation">Problem 3. Protection with Input Costs and Retaliation</h3>
+<p>Use the same utility function as in Problem 2 in each market:</p>
+<p><span class="math display">\[
+U(Q_1^j,Q_2^j)=12(Q_1^j+Q_2^j)-\left[(Q_1^j)^2+(Q_2^j)^2\right]-Q_1^jQ_2^j,
+\qquad j=1,2.
+\]</span></p>
+<p>Keep the same baseline marginal production costs, <span class="math inline">\(MC_1=4\)</span> and <span class="math inline">\(MC_2=1\)</span>, and no fixed costs. Each firm chooses its sales separately in the two markets. Suppose</p>
+<p><span class="math display">\[
+t_1=1,\qquad \tau_1=4,\qquad \tau_2=2.
+\]</span></p>
+<p>The input tariff adds to Home’s marginal production cost in both markets. Each final-product tariff adds to the cost of serving the market that imposes it.</p>
+<ol type="1">
+<li>Identify the total cost per unit for each firm in each market, including baseline production costs and applicable tariffs, and write all four reaction functions.</li>
+<li>Solve for <span class="math inline">\(Q_1^1\)</span>, <span class="math inline">\(Q_2^1\)</span>, <span class="math inline">\(Q_1^2\)</span>, and <span class="math inline">\(Q_2^2\)</span>.</li>
+<li>Compare Home’s domestic sales, exports, total sales, and operating profit with free trade.</li>
+<li>Calculate Home’s domestic market share. Explain why an increase in this share is not enough to conclude that the firm benefits overall.</li>
+</ol>
+</section>
+<section id="problem-4.-reading-a-supply-chain" class="level3">
+<h3 class="anchored" data-anchor-id="problem-4.-reading-a-supply-chain">Problem 4. Reading a Supply Chain</h3>
+<p>A Home manufacturer imports parts from an independent Foreign supplier. It also exports finished goods to a wholly owned sales affiliate abroad.</p>
+<ol type="1">
+<li>Which transaction is arm’s-length trade, and which is related-party trade?</li>
+<li>Explain how an input tariff at Home can hurt this firm’s exports even if Foreign does not retaliate.</li>
+<li>A classmate says, “The protective tariff increases the manufacturer’s domestic sales, so the whole tariff package must increase its profit and Home’s welfare.” Identify the missing steps in this argument.</li>
+</ol>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+
+
+  // Keep the homepage fully expanded
+
+  const path = window.location.pathname;
+
+  if (path.endsWith("/") || path.endsWith("/index.html") || path.endsWith("/discussion-materials.html")) {
+
+    return;
+
+  }
+
+
+
+  const main = document.querySelector("main");
+
+  if (!main) return;
+
+
+
+  const headings = Array.from(main.querySelectorAll("h2"));
+
+
+
+  headings.forEach((heading) => {
+
+    const section = document.createElement("details");
+
+    const summary = document.createElement("summary");
+
+
+
+    summary.innerHTML = heading.innerHTML;
+
+    section.appendChild(summary);
+
+
+
+    let next = heading.nextSibling;
+
+
+
+    while (next && !(next.nodeType === 1 && next.tagName === "H2")) {
+
+      const current = next;
+
+      next = next.nextSibling;
+
+      section.appendChild(current);
+
+    }
+
+
+
+    heading.replaceWith(section);
+
+  });
+
+});
+
+</script>
+<!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;8b3d0ce1599c47fa80534c85f9280c12&quot;}"></script><!-- End Cloudflare Web Analytics -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/EricGXZhou\.github\.io\/econ3200-ta\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
