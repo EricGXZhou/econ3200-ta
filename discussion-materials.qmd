@@ -2,7 +2,7 @@
 title: "Discussion Materials"
 ---
 
-## September 30, 2026 {.week-title}
+## October 14, 2026 {.week-title}
 
 ::: {.week-card .current-week}
 
