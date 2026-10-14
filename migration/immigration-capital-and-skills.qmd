@@ -1,0 +1,1329 @@
+---
+title: "Immigration: Capital Adjustment, Immigration Surplus, and Skill Differences"
+---
+
+> How do investment and differences in workers' skills change the effects of immigration?
+
+The previous note kept capital fixed. Here we ask what changes when firms invest in more capital and workers have different skills. We also separate the increase in total output from the income gains of people who already lived in the country. Firms are competitive, the price of output is one, and each worker supplies one unit of labor. Productivity stays fixed unless stated otherwise.
+
+## 1. Aggregate Production and Short-Run Effects
+
+Begin with identical workers and a single good:
+
+$$
+Y=AK^\alpha L^{1-\alpha},\qquad A>0,\quad 0<\alpha<1.
+$$
+
+Here $Y$ is total output, $K$ is capital, $L$ is employment, and $A$ is productivity. Dividing by employment gives output per worker:
+
+$$
+\frac{Y}{L}=A\left(\frac{K}{L}\right)^\alpha.
+$$
+
+Competitive firms pay each worker the extra output that worker produces. They pay for each unit of capital in the same way. Taking derivatives gives
+
+$$
+w=\frac{\partial Y}{\partial L}
+=(1-\alpha)AK^\alpha L^{-\alpha}
+=\boxed{(1-\alpha)A\left(\frac{K}{L}\right)^\alpha},
+$$
+
+$$
+r=\frac{\partial Y}{\partial K}
+=\alpha AK^{\alpha-1}L^{1-\alpha}
+=\boxed{\alpha A\left(\frac{K}{L}\right)^{\alpha-1}}.
+$$
+
+More capital per worker raises wages but lowers the payment for each unit of capital. Total income is divided between workers and capital owners:
+
+$$
+wL=(1-\alpha)Y,\qquad rK=\alpha Y,\qquad Y=wL+rK.
+$$
+
+Workers receive the share $1-\alpha$ of output, and capital owners receive the share $\alpha$. Capital income pays for the use of capital; it is not profit left over after all production costs.
+
+**Immigration with fixed capital.** Suppose immigration increases employment from $L_1$ to $L_2=(1+m)L_1$, where $m>0$. Holding $A$ and $K$ fixed,
+
+$$
+\boxed{\frac{Y_2}{Y_1}=(1+m)^{1-\alpha}},
+\qquad
+\boxed{\frac{w_2}{w_1}=(1+m)^{-\alpha}},
+\qquad
+\boxed{\frac{r_2}{r_1}=(1+m)^{1-\alpha}}.
+$$
+
+Total output rises, but output per worker and wages fall because $K/L$ falls. Capital becomes more productive, raising its return. A larger economy does not imply higher income for every existing resident.
+
+For small changes, taking logs of the production function gives the growth-accounting approximation
+
+$$
+\frac{\Delta Y}{Y}\approx
+\frac{\Delta A}{A}+\alpha\frac{\Delta K}{K}
++(1-\alpha)\frac{\Delta L}{L}.
+$$
+
+For example, with $\alpha=1/3$, a $15\%$ labor increase at fixed $A$ and $K$ raises output by approximately $10\%$. The exact increase is $1.15^{2/3}-1\approx9.77\%$.
+
+## 2. Capital Adjustment and the Long Run
+
+The higher return on capital encourages firms to invest and attracts capital from abroad. With more equipment and buildings, workers produce more and their wages rise. Wages recover only partway if capital has not fully adjusted.
+
+To describe full adjustment, suppose the long-run rental payment returns to its initial level. Since $A$ is unchanged,
+
+$$
+r_{\mathrm{LR}}=r_1
+\quad\Rightarrow\quad
+\left(\frac{K_{\mathrm{LR}}}{L_2}\right)^{\alpha-1}
+=\left(\frac{K_1}{L_1}\right)^{\alpha-1}
+\quad\Rightarrow\quad
+\boxed{\frac{K_{\mathrm{LR}}}{L_2}=\frac{K_1}{L_1}.}
+$$
+
+Substituting this ratio into the wage equation yields
+
+$$
+\boxed{w_{\mathrm{LR}}=w_1.}
+$$
+
+Capital and output expand in the same proportion as employment:
+
+$$
+\frac{K_{\mathrm{LR}}}{K_1}
+=\frac{Y_{\mathrm{LR}}}{Y_1}
+=\frac{L_2}{L_1}=1+m.
+$$
+
+```{=html}
+<svg role="img" aria-label="Immigration and capital adjustment using Figure 4-1 labels" style="max-width:100%;height:auto;background:white" xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="403.2pt" viewBox="0 0 576 403.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-13T14:32:56.963980</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="migration-ah-adjust-figure_1">
+  <g id="migration-ah-adjust-patch_1">
+   <path d="M 0 403.2 
+L 576 403.2 
+L 576 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="migration-ah-adjust-axes_1">
+   <g id="migration-ah-adjust-patch_2">
+    <path d="M 52.739917 353.32 
+L 563.04 353.32 
+L 563.04 37.76 
+L 52.739917 37.76 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="migration-ah-adjust-patch_3">
+    <path d="M 52.739917 198.897021 
+L 52.739917 118.328511 
+L 198.539941 198.897021 
+z
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-adjust-patch_4">
+    <path d="M 52.739917 239.181277 
+L 198.539941 239.181277 
+L 198.539941 198.897021 
+L 52.739917 198.897021 
+z
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-adjust-patch_5">
+    <path d="M 52.739917 353.32 
+L 198.539941 353.32 
+L 198.539941 239.181277 
+L 52.739917 239.181277 
+z
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-adjust-patch_6">
+    <path d="M 198.539941 353.32 
+L 271.439953 353.32 
+L 271.439953 239.181277 
+L 198.539941 239.181277 
+z
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-adjust-patch_7">
+    <path d="M 198.539941 239.181277 
+L 271.439953 239.181277 
+L 198.539941 198.897021 
+z
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-adjust-patch_8">
+    <path d="M 198.539941 198.897021 
+L 271.439953 239.181277 
+L 271.439953 198.897021 
+z
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-adjust-patch_9">
+    <path d="M 198.539941 198.897021 
+L 271.439953 198.897021 
+L 198.539941 158.612766 
+z
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-adjust-patch_10">
+    <path d="M 52.739917 118.328511 
+L 198.539941 198.897021 
+L 198.539941 158.612766 
+L 52.739917 78.044255 
+z
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: #ffffff; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-adjust-matplotlib.axis_1">
+    <g id="migration-ah-adjust-xtick_1">
+     <g id="migration-ah-adjust-line2d_1">
+      <defs>
+       <path id="migration-ah-adjust-m3df6d0a589" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#migration-ah-adjust-m3df6d0a589" x="198.539941" y="353.32" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="migration-ah-adjust-text_1">
+      <!-- $N$ -->
+      <g transform="translate(194.039941 369.438125)">
+       <text>
+        <tspan x="0" y="-0.25" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">N</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="migration-ah-adjust-xtick_2">
+     <g id="migration-ah-adjust-line2d_2">
+      <g>
+       <use xlink:href="#migration-ah-adjust-m3df6d0a589" x="271.439953" y="353.32" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="migration-ah-adjust-text_2">
+      <!-- $N+M$ -->
+      <g transform="translate(254.399953 369.438125)">
+       <text>
+        <tspan x="0" y="-0.25" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">N</tspan>
+        <tspan x="23.707031" y="-0.25" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">M</tspan>
+        <tspan x="11.314453" y="-0.25" style="font-size: 12px; font-family: 'DejaVu Sans'">+</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="migration-ah-adjust-text_3">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="307.889958" y="385.051875" transform="rotate(-0 307.889958 385.051875)">Labor</text>
+    </g>
+   </g>
+   <g id="migration-ah-adjust-matplotlib.axis_2">
+    <g id="migration-ah-adjust-ytick_1">
+     <g id="migration-ah-adjust-line2d_3">
+      <defs>
+       <path id="migration-ah-adjust-m4b450a55d1" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#migration-ah-adjust-m4b450a55d1" x="52.739917" y="239.181277" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="migration-ah-adjust-text_4">
+      <!-- $w_2$ -->
+      <g transform="translate(30.139917 243.740339)">
+       <text>
+        <tspan x="0" y="-0.4375" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">w</tspan>
+        <tspan x="9.814453" y="1.53125" style="font-size: 8.4px; font-family: 'DejaVu Sans'">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="migration-ah-adjust-ytick_2">
+     <g id="migration-ah-adjust-line2d_4">
+      <g>
+       <use xlink:href="#migration-ah-adjust-m4b450a55d1" x="52.739917" y="198.897021" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="migration-ah-adjust-text_5">
+      <!-- $w_1$ -->
+      <g transform="translate(30.139917 203.456084)">
+       <text>
+        <tspan x="0" y="-0.4375" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">w</tspan>
+        <tspan x="9.814453" y="1.53125" style="font-size: 8.4px; font-family: 'DejaVu Sans'">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="migration-ah-adjust-text_6">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="23.644292" y="195.54" transform="rotate(-90 23.644292 195.54)">Wages</text>
+    </g>
+   </g>
+   <g id="migration-ah-adjust-line2d_5">
+    <path d="M 52.739917 118.328511 
+L 535.702496 385.211702 
+L 535.702496 385.211702 
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: none; stroke: #3876ae; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="migration-ah-adjust-line2d_6">
+    <path d="M 52.739917 78.044255 
+L 535.702496 344.927447 
+L 535.702496 344.927447 
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #3876ae; stroke-width: 2"/>
+   </g>
+   <g id="migration-ah-adjust-LineCollection_1">
+    <path d="M 198.539941 353.32 
+L 198.539941 59.580638 
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: none; stroke: #bb5750; stroke-width: 1.7"/>
+    <path d="M 271.439953 353.32 
+L 271.439953 59.580638 
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: none; stroke: #bb5750; stroke-width: 1.7"/>
+   </g>
+   <g id="migration-ah-adjust-LineCollection_2">
+    <path d="M 52.739917 239.181277 
+L 271.439953 239.181277 
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #976464"/>
+    <path d="M 52.739917 198.897021 
+L 271.439953 198.897021 
+" clip-path="url(#migration-ah-adjust-pba32b136d2)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #976464"/>
+   </g>
+   <g id="migration-ah-adjust-patch_11">
+    <path d="M 52.739917 353.32 
+L 52.739917 37.76 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="migration-ah-adjust-patch_12">
+    <path d="M 52.739917 353.32 
+L 563.04 353.32 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="migration-ah-adjust-text_7">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="184.539941" y="215.897021" transform="rotate(-0 184.539941 215.897021)">1</text>
+   </g>
+   <g id="migration-ah-adjust-text_8">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="277.439953" y="255.181277" transform="rotate(-0 277.439953 255.181277)">2</text>
+   </g>
+   <g id="migration-ah-adjust-text_9">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="277.439953" y="193.897021" transform="rotate(-0 277.439953 193.897021)">3</text>
+   </g>
+   <g id="migration-ah-adjust-text_10">
+    <!-- $L_1^S$ -->
+    <g style="fill: #bb5750" transform="translate(191.939941 52.866596)">
+     <text>
+      <tspan x="0" y="-0.171875" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #bb5750">L</tspan>
+      <tspan x="7.527734" y="-4.765625" style="font-style: oblique; font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #bb5750">S</tspan>
+      <tspan x="6.685547" y="3.109375" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #bb5750">1</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="migration-ah-adjust-text_11">
+    <!-- $L_2^S$ -->
+    <g style="fill: #bb5750" transform="translate(264.839953 52.866596)">
+     <text>
+      <tspan x="0" y="-0.171875" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #bb5750">L</tspan>
+      <tspan x="7.527734" y="-4.765625" style="font-style: oblique; font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #bb5750">S</tspan>
+      <tspan x="6.685547" y="3.109375" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #bb5750">2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="migration-ah-adjust-text_12">
+    <!-- $L_1^D$ -->
+    <g style="fill: #3876ae" transform="translate(466.447484 338.213404)">
+     <text>
+      <tspan x="0" y="-0.28125" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #3876ae">L</tspan>
+      <tspan x="7.527734" y="-4.875" style="font-style: oblique; font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #3876ae">D</tspan>
+      <tspan x="6.685547" y="3" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #3876ae">1</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="migration-ah-adjust-text_13">
+    <!-- $L_2^D$ -->
+    <g style="fill: #3876ae" transform="translate(532.057495 336.534894)">
+     <text>
+      <tspan x="0" y="-0.28125" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #3876ae">L</tspan>
+      <tspan x="7.527734" y="-4.875" style="font-style: oblique; font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #3876ae">D</tspan>
+      <tspan x="6.685547" y="3" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #3876ae">2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="migration-ah-adjust-text_14">
+    <text style="font-size: 14.4px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="307.889958" y="23.76" transform="rotate(-0 307.889958 23.76)">Immigration and capital adjustment</text>
+   </g>
+   <g id="migration-ah-adjust-PathCollection_1">
+    <defs>
+     <path id="migration-ah-adjust-m1babfb5603" d="M 0 2.345208 
+C 0.621956 2.345208 1.218523 2.098102 1.658312 1.658312 
+C 2.098102 1.218523 2.345208 0.621956 2.345208 0 
+C 2.345208 -0.621956 2.098102 -1.218523 1.658312 -1.658312 
+C 1.218523 -2.098102 0.621956 -2.345208 0 -2.345208 
+C -0.621956 -2.345208 -1.218523 -2.098102 -1.658312 -1.658312 
+C -2.098102 -1.218523 -2.345208 -0.621956 -2.345208 0 
+C -2.345208 0.621956 -2.098102 1.218523 -1.658312 1.658312 
+C -1.218523 2.098102 -0.621956 2.345208 0 2.345208 
+z
+" style="stroke: #304b60"/>
+    </defs>
+    <g clip-path="url(#migration-ah-adjust-pba32b136d2)">
+     <use xlink:href="#migration-ah-adjust-m1babfb5603" x="198.539941" y="198.897021" style="fill: #304b60; stroke: #304b60"/>
+    </g>
+   </g>
+   <g id="migration-ah-adjust-PathCollection_2">
+    <g clip-path="url(#migration-ah-adjust-pba32b136d2)">
+     <use xlink:href="#migration-ah-adjust-m1babfb5603" x="271.439953" y="239.181277" style="fill: #304b60; stroke: #304b60"/>
+    </g>
+   </g>
+   <g id="migration-ah-adjust-PathCollection_3">
+    <g clip-path="url(#migration-ah-adjust-pba32b136d2)">
+     <use xlink:href="#migration-ah-adjust-m1babfb5603" x="271.439953" y="198.897021" style="fill: #304b60; stroke: #304b60"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="migration-ah-adjust-pba32b136d2">
+   <rect x="52.739917" y="37.76" width="510.300083" height="315.56"/>
+  </clipPath>
+ </defs>
+</svg>
+
+```
+
+*Labels follow Lecture 12 and Figure 4-1 in Chapter 4: point 1 is the initial equilibrium, point 2 is the short run, and point 3 is the long run. The initial wage is $w_1$; the short-run wage is $w_2$.*
+
+Immigration shifts labor supply to the right, moving equilibrium from 1 to 2 along the initial labor-demand curve. Investment then shifts labor demand outward. At point 3, capital per worker and the wage have returned to their initial values.
+
+Here, “long run” means that enough capital has arrived to bring its return back to the original level. It does not mean a particular number of years. Firms may even start investing before immigrants arrive if they expect the increase in workers.
+
+## 3. Immigration Surplus and Redistribution
+
+Return to the **short run**, with capital fixed. Let $N$ denote the original workforce and $M$ the newly arriving immigrants, so employment increases from $N$ to $N+M$. Assume existing residents own all capital and immigrants arrive without capital.
+
+Before immigration, existing residents receive all output, $Y_1=w_1N+r_1K$. Afterwards, immigrants receive $w_2M$, leaving $Y_2-w_2M$ for existing residents. Their combined income gain is therefore
+
+$$
+\boxed{E=(Y_2-Y_1)-w_2M.}
+$$
+
+This is the **immigration surplus**: the extra income received by existing residents. It does not include taxes, government spending, or the gains immigrants receive compared with staying in their home countries.
+
+```{=html}
+<svg role="img" aria-label="Short run: capital is fixed using Figure 4-1 labels" style="max-width:100%;height:auto;background:white" xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="403.2pt" viewBox="0 0 576 403.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-13T14:32:57.234063</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="migration-ah-short-figure_1">
+  <g id="migration-ah-short-patch_1">
+   <path d="M 0 403.2 
+L 576 403.2 
+L 576 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="migration-ah-short-axes_1">
+   <g id="migration-ah-short-patch_2">
+    <path d="M 52.739917 353.32 
+L 563.04 353.32 
+L 563.04 37.76 
+L 52.739917 37.76 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="migration-ah-short-patch_3">
+    <path d="M 52.739917 198.897021 
+L 52.739917 118.328511 
+L 198.539941 198.897021 
+z
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: #c8d9ef; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-short-patch_4">
+    <path d="M 52.739917 239.181277 
+L 198.539941 239.181277 
+L 198.539941 198.897021 
+L 52.739917 198.897021 
+z
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: #d5badb; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-short-patch_5">
+    <path d="M 52.739917 353.32 
+L 198.539941 353.32 
+L 198.539941 239.181277 
+L 52.739917 239.181277 
+z
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: #efc8bf; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-short-patch_6">
+    <path d="M 198.539941 353.32 
+L 271.439953 353.32 
+L 271.439953 239.181277 
+L 198.539941 239.181277 
+z
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: #d5e8b1; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-short-patch_7">
+    <path d="M 198.539941 239.181277 
+L 271.439953 239.181277 
+L 198.539941 198.897021 
+z
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: #91bbde; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-short-patch_8">
+    <path d="M 198.539941 198.897021 
+L 271.439953 239.181277 
+L 271.439953 198.897021 
+z
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: #f7f7f7; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-short-patch_9">
+    <path d="M 198.539941 198.897021 
+L 271.439953 198.897021 
+L 198.539941 158.612766 
+z
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: #f7f7f7; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-short-patch_10">
+    <path d="M 52.739917 118.328511 
+L 198.539941 198.897021 
+L 198.539941 158.612766 
+L 52.739917 78.044255 
+z
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: #f7f7f7; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-short-matplotlib.axis_1">
+    <g id="migration-ah-short-xtick_1">
+     <g id="migration-ah-short-line2d_1">
+      <defs>
+       <path id="migration-ah-short-m0c2bb1af75" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#migration-ah-short-m0c2bb1af75" x="198.539941" y="353.32" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="migration-ah-short-text_1">
+      <!-- $N$ -->
+      <g transform="translate(194.039941 369.438125)">
+       <text>
+        <tspan x="0" y="-0.25" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">N</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="migration-ah-short-xtick_2">
+     <g id="migration-ah-short-line2d_2">
+      <g>
+       <use xlink:href="#migration-ah-short-m0c2bb1af75" x="271.439953" y="353.32" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="migration-ah-short-text_2">
+      <!-- $N+M$ -->
+      <g transform="translate(254.399953 369.438125)">
+       <text>
+        <tspan x="0" y="-0.25" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">N</tspan>
+        <tspan x="23.707031" y="-0.25" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">M</tspan>
+        <tspan x="11.314453" y="-0.25" style="font-size: 12px; font-family: 'DejaVu Sans'">+</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="migration-ah-short-text_3">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="307.889958" y="385.051875" transform="rotate(-0 307.889958 385.051875)">Labor</text>
+    </g>
+   </g>
+   <g id="migration-ah-short-matplotlib.axis_2">
+    <g id="migration-ah-short-ytick_1">
+     <g id="migration-ah-short-line2d_3">
+      <defs>
+       <path id="migration-ah-short-m8658d4b8c4" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#migration-ah-short-m8658d4b8c4" x="52.739917" y="239.181277" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="migration-ah-short-text_4">
+      <!-- $w_2$ -->
+      <g transform="translate(30.139917 243.740339)">
+       <text>
+        <tspan x="0" y="-0.4375" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">w</tspan>
+        <tspan x="9.814453" y="1.53125" style="font-size: 8.4px; font-family: 'DejaVu Sans'">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="migration-ah-short-ytick_2">
+     <g id="migration-ah-short-line2d_4">
+      <g>
+       <use xlink:href="#migration-ah-short-m8658d4b8c4" x="52.739917" y="198.897021" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="migration-ah-short-text_5">
+      <!-- $w_1$ -->
+      <g transform="translate(30.139917 203.456084)">
+       <text>
+        <tspan x="0" y="-0.4375" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">w</tspan>
+        <tspan x="9.814453" y="1.53125" style="font-size: 8.4px; font-family: 'DejaVu Sans'">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="migration-ah-short-text_6">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="23.644292" y="195.54" transform="rotate(-90 23.644292 195.54)">Wages</text>
+    </g>
+   </g>
+   <g id="migration-ah-short-line2d_5">
+    <path d="M 52.739917 118.328511 
+L 535.702496 385.211702 
+L 535.702496 385.211702 
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: none; stroke: #3876ae; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="migration-ah-short-line2d_6">
+    <path d="M 52.739917 78.044255 
+L 535.702496 344.927447 
+L 535.702496 344.927447 
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #3876ae; stroke-width: 2"/>
+   </g>
+   <g id="migration-ah-short-LineCollection_1">
+    <path d="M 198.539941 353.32 
+L 198.539941 59.580638 
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: none; stroke: #bb5750; stroke-width: 1.7"/>
+    <path d="M 271.439953 353.32 
+L 271.439953 59.580638 
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: none; stroke: #bb5750; stroke-width: 1.7"/>
+   </g>
+   <g id="migration-ah-short-LineCollection_2">
+    <path d="M 52.739917 239.181277 
+L 271.439953 239.181277 
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #976464"/>
+    <path d="M 52.739917 198.897021 
+L 271.439953 198.897021 
+" clip-path="url(#migration-ah-short-p6db8d047e7)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #976464"/>
+   </g>
+   <g id="migration-ah-short-patch_11">
+    <path d="M 52.739917 353.32 
+L 52.739917 37.76 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="migration-ah-short-patch_12">
+    <path d="M 52.739917 353.32 
+L 563.04 353.32 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="migration-ah-short-text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="98.302424" y="175.352101" transform="rotate(-0 98.302424 175.352101)">A</text>
+   </g>
+   <g id="migration-ah-short-text_8">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="101.947425" y="222.350399" transform="rotate(-0 101.947425 222.350399)">B</text>
+   </g>
+   <g id="migration-ah-short-text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="101.947425" y="299.561888" transform="rotate(-0 101.947425 299.561888)">C</text>
+   </g>
+   <g id="migration-ah-short-text_10">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="234.989947" y="299.561888" transform="rotate(-0 234.989947 299.561888)">D</text>
+   </g>
+   <g id="migration-ah-short-text_11">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="218.587444" y="229.903697" transform="rotate(-0 218.587444 229.903697)">E</text>
+   </g>
+   <g id="migration-ah-short-text_12">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="249.569949" y="212.615037" transform="rotate(-0 249.569949 212.615037)">F</text>
+   </g>
+   <g id="migration-ah-short-text_13">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="218.587444" y="188.780186" transform="rotate(-0 218.587444 188.780186)">G</text>
+   </g>
+   <g id="migration-ah-short-text_14">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="125.639929" y="141.781888" transform="rotate(-0 125.639929 141.781888)">H</text>
+   </g>
+   <g id="migration-ah-short-text_15">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="184.539941" y="215.897021" transform="rotate(-0 184.539941 215.897021)">1</text>
+   </g>
+   <g id="migration-ah-short-text_16">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="277.439953" y="255.181277" transform="rotate(-0 277.439953 255.181277)">2</text>
+   </g>
+   <g id="migration-ah-short-text_17">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="277.439953" y="193.897021" transform="rotate(-0 277.439953 193.897021)">3</text>
+   </g>
+   <g id="migration-ah-short-text_18">
+    <!-- $L_1^S$ -->
+    <g style="fill: #bb5750" transform="translate(191.939941 52.866596)">
+     <text>
+      <tspan x="0" y="-0.171875" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #bb5750">L</tspan>
+      <tspan x="7.527734" y="-4.765625" style="font-style: oblique; font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #bb5750">S</tspan>
+      <tspan x="6.685547" y="3.109375" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #bb5750">1</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="migration-ah-short-text_19">
+    <!-- $L_2^S$ -->
+    <g style="fill: #bb5750" transform="translate(264.839953 52.866596)">
+     <text>
+      <tspan x="0" y="-0.171875" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #bb5750">L</tspan>
+      <tspan x="7.527734" y="-4.765625" style="font-style: oblique; font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #bb5750">S</tspan>
+      <tspan x="6.685547" y="3.109375" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #bb5750">2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="migration-ah-short-text_20">
+    <!-- $L_1^D$ -->
+    <g style="fill: #3876ae" transform="translate(466.447484 338.213404)">
+     <text>
+      <tspan x="0" y="-0.28125" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #3876ae">L</tspan>
+      <tspan x="7.527734" y="-4.875" style="font-style: oblique; font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #3876ae">D</tspan>
+      <tspan x="6.685547" y="3" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #3876ae">1</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="migration-ah-short-text_21">
+    <!-- $L_2^D$ -->
+    <g style="fill: #3876ae" transform="translate(532.057495 336.534894)">
+     <text>
+      <tspan x="0" y="-0.28125" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #3876ae">L</tspan>
+      <tspan x="7.527734" y="-4.875" style="font-style: oblique; font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #3876ae">D</tspan>
+      <tspan x="6.685547" y="3" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #3876ae">2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="migration-ah-short-text_22">
+    <text style="font-size: 14.4px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="307.889958" y="23.76" transform="rotate(-0 307.889958 23.76)">Short run: capital is fixed</text>
+   </g>
+   <g id="migration-ah-short-PathCollection_1">
+    <defs>
+     <path id="migration-ah-short-m7d69828cb7" d="M 0 2.345208 
+C 0.621956 2.345208 1.218523 2.098102 1.658312 1.658312 
+C 2.098102 1.218523 2.345208 0.621956 2.345208 0 
+C 2.345208 -0.621956 2.098102 -1.218523 1.658312 -1.658312 
+C 1.218523 -2.098102 0.621956 -2.345208 0 -2.345208 
+C -0.621956 -2.345208 -1.218523 -2.098102 -1.658312 -1.658312 
+C -2.098102 -1.218523 -2.345208 -0.621956 -2.345208 0 
+C -2.345208 0.621956 -2.098102 1.218523 -1.658312 1.658312 
+C -1.218523 2.098102 -0.621956 2.345208 0 2.345208 
+z
+" style="stroke: #304b60"/>
+    </defs>
+    <g clip-path="url(#migration-ah-short-p6db8d047e7)">
+     <use xlink:href="#migration-ah-short-m7d69828cb7" x="198.539941" y="198.897021" style="fill: #304b60; stroke: #304b60"/>
+    </g>
+   </g>
+   <g id="migration-ah-short-PathCollection_2">
+    <g clip-path="url(#migration-ah-short-p6db8d047e7)">
+     <use xlink:href="#migration-ah-short-m7d69828cb7" x="271.439953" y="239.181277" style="fill: #304b60; stroke: #304b60"/>
+    </g>
+   </g>
+   <g id="migration-ah-short-PathCollection_3">
+    <g clip-path="url(#migration-ah-short-p6db8d047e7)">
+     <use xlink:href="#migration-ah-short-m7d69828cb7" x="271.439953" y="198.897021" style="fill: #304b60; stroke: #304b60"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="migration-ah-short-p6db8d047e7">
+   <rect x="52.739917" y="37.76" width="510.300083" height="315.56"/>
+  </clipPath>
+ </defs>
+</svg>
+
+```
+
+*Short-run income areas, using the A–H labels in Lecture 12 and Figure 4-1. The straight lines are schematic; the Cobb-Douglas demand curve is curved. Areas F, G, and H are used below to explain capital adjustment.*
+
+Before immigration, wages are $B+C$ and capital income is $A$. In the short run, original workers earn $C$, immigrants earn $D$, and capital owners earn $A+B+E$.
+
+The original workers' labor-income loss is the rectangle
+
+$$
+B=(w_1-w_2)N.
+$$
+
+Using $rK=Y-wL$, the increase in capital income is
+
+$$
+(r_2-r_1)K
+=(Y_2-Y_1)-w_2M+(w_1-w_2)N
+=\boxed{E+B}.
+$$
+
+Capital owners gain $B+E$, while original workers lose $B$. Adding these changes leaves a net gain of $E$ for existing residents. Immigrants earn $D=w_2M$, so the extra output is $D+E$. **A small overall gain can hide large gains for capital owners and large losses for workers.** A person who earns both wages and capital income may gain or lose overall.
+
+**Approximating the surplus.** The area $E$ lies above the new wage and below the initial labor-demand curve between $N$ and $N+M$. A straight-line approximation gives
+
+$$
+E\approx\frac12(w_1-w_2)M.
+$$
+
+Because $w=(1-\alpha)AK^\alpha L^{-\alpha}$,
+
+$$
+\frac{d\ln w}{d\ln L}=-\alpha
+\quad\Rightarrow\quad
+\frac{w_1-w_2}{w_1}\approx\alpha\frac{M}{N}.
+$$
+
+This wage response is the inverse of the labor-demand elasticity, $d\ln L/d\ln w=-1/\alpha$. Substituting and dividing by initial output,
+
+$$
+\frac{E}{Y_1}
+\approx\frac12\alpha\frac{M}{N}\frac{w_1M}{Y_1}
+=\frac12\alpha\left(\frac{M}{N}\right)^2\frac{w_1N}{Y_1}.
+$$
+
+Since $w_1N/Y_1=1-\alpha$,
+
+$$
+\boxed{\frac{E}{Y_1}\approx
+\frac12\alpha(1-\alpha)\left(\frac{M}{N}\right)^2.}
+$$
+
+This is a small-change approximation. $M/N$ measures immigration relative to the original workforce; the immigrant share of the final workforce is instead $M/(N+M)$.
+
+**A numerical example.** Let $A=1$, $\alpha=1/3$, and initially $K=N=100$. Suppose $M=10$. Then $Y_1=100$, $w_1=2/3$, and
+
+$$
+Y_2=100(1.10)^{2/3}\approx106.560,
+\qquad
+w_2=\frac23(1.10)^{-1/3}\approx0.64582.
+$$
+
+Using unrounded values:
+
+| Income change | Amount |
+|:---|---:|
+| Additional output, $Y_2-Y_1$ | 6.560 |
+| Immigrant labor income, $D$ | 6.458 |
+| Original workers' labor-income loss, $B$ | 2.085 |
+| Capital-income increase, $B+E$ | 2.187 |
+| Original residents' net gain, $E$ | 0.102 |
+
+The exact surplus is about $0.102\%$ of initial GDP. The formula above gives $\tfrac12(1/3)(2/3)(0.10)^2\approx0.111\%$. The two answers differ because the triangle formula is only an approximation.
+
+**The same income breakdown in the long run.** Now allow capital to increase until its return falls back to $r_1$. Capital per worker returns to its original level, so the wage also returns to $w_1$.
+
+```{=html}
+<svg role="img" aria-label="Long run: capital has adjusted using Figure 4-1 labels" style="max-width:100%;height:auto;background:white" xmlns:xlink="http://www.w3.org/1999/xlink" width="576pt" height="403.2pt" viewBox="0 0 576 403.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-13T14:32:57.514523</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="migration-ah-long-figure_1">
+  <g id="migration-ah-long-patch_1">
+   <path d="M 0 403.2 
+L 576 403.2 
+L 576 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="migration-ah-long-axes_1">
+   <g id="migration-ah-long-patch_2">
+    <path d="M 52.739917 353.32 
+L 563.04 353.32 
+L 563.04 37.76 
+L 52.739917 37.76 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="migration-ah-long-patch_3">
+    <path d="M 52.739917 198.897021 
+L 52.739917 118.328511 
+L 198.539941 198.897021 
+z
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: #c8d9ef; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-long-patch_4">
+    <path d="M 52.739917 239.181277 
+L 198.539941 239.181277 
+L 198.539941 198.897021 
+L 52.739917 198.897021 
+z
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: #d5badb; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-long-patch_5">
+    <path d="M 52.739917 353.32 
+L 198.539941 353.32 
+L 198.539941 239.181277 
+L 52.739917 239.181277 
+z
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: #efc8bf; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-long-patch_6">
+    <path d="M 198.539941 353.32 
+L 271.439953 353.32 
+L 271.439953 239.181277 
+L 198.539941 239.181277 
+z
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: #d5e8b1; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-long-patch_7">
+    <path d="M 198.539941 239.181277 
+L 271.439953 239.181277 
+L 198.539941 198.897021 
+z
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: #91bbde; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-long-patch_8">
+    <path d="M 198.539941 198.897021 
+L 271.439953 239.181277 
+L 271.439953 198.897021 
+z
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: #d5e8b1; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-long-patch_9">
+    <path d="M 198.539941 198.897021 
+L 271.439953 198.897021 
+L 198.539941 158.612766 
+z
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: #d9c9e7; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-long-patch_10">
+    <path d="M 52.739917 118.328511 
+L 198.539941 198.897021 
+L 198.539941 158.612766 
+L 52.739917 78.044255 
+z
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: #d9c9e7; stroke: #ffffff; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="migration-ah-long-matplotlib.axis_1">
+    <g id="migration-ah-long-xtick_1">
+     <g id="migration-ah-long-line2d_1">
+      <defs>
+       <path id="migration-ah-long-mab06b2baa7" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#migration-ah-long-mab06b2baa7" x="198.539941" y="353.32" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="migration-ah-long-text_1">
+      <!-- $N$ -->
+      <g transform="translate(194.039941 369.438125)">
+       <text>
+        <tspan x="0" y="-0.25" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">N</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="migration-ah-long-xtick_2">
+     <g id="migration-ah-long-line2d_2">
+      <g>
+       <use xlink:href="#migration-ah-long-mab06b2baa7" x="271.439953" y="353.32" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="migration-ah-long-text_2">
+      <!-- $N+M$ -->
+      <g transform="translate(254.399953 369.438125)">
+       <text>
+        <tspan x="0" y="-0.25" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">N</tspan>
+        <tspan x="23.707031" y="-0.25" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">M</tspan>
+        <tspan x="11.314453" y="-0.25" style="font-size: 12px; font-family: 'DejaVu Sans'">+</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="migration-ah-long-text_3">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="307.889958" y="385.051875" transform="rotate(-0 307.889958 385.051875)">Labor</text>
+    </g>
+   </g>
+   <g id="migration-ah-long-matplotlib.axis_2">
+    <g id="migration-ah-long-ytick_1">
+     <g id="migration-ah-long-line2d_3">
+      <defs>
+       <path id="migration-ah-long-m2cbb5c6275" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#migration-ah-long-m2cbb5c6275" x="52.739917" y="239.181277" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="migration-ah-long-text_4">
+      <!-- $w_2$ -->
+      <g transform="translate(30.139917 243.740339)">
+       <text>
+        <tspan x="0" y="-0.4375" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">w</tspan>
+        <tspan x="9.814453" y="1.53125" style="font-size: 8.4px; font-family: 'DejaVu Sans'">2</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="migration-ah-long-ytick_2">
+     <g id="migration-ah-long-line2d_4">
+      <g>
+       <use xlink:href="#migration-ah-long-m2cbb5c6275" x="52.739917" y="198.897021" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="migration-ah-long-text_5">
+      <!-- $w_1$ -->
+      <g transform="translate(30.139917 203.456084)">
+       <text>
+        <tspan x="0" y="-0.4375" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'">w</tspan>
+        <tspan x="9.814453" y="1.53125" style="font-size: 8.4px; font-family: 'DejaVu Sans'">1</tspan>
+       </text>
+      </g>
+     </g>
+    </g>
+    <g id="migration-ah-long-text_6">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="23.644292" y="195.54" transform="rotate(-90 23.644292 195.54)">Wages</text>
+    </g>
+   </g>
+   <g id="migration-ah-long-line2d_5">
+    <path d="M 52.739917 118.328511 
+L 535.702496 385.211702 
+L 535.702496 385.211702 
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: none; stroke: #3876ae; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="migration-ah-long-line2d_6">
+    <path d="M 52.739917 78.044255 
+L 535.702496 344.927447 
+L 535.702496 344.927447 
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #3876ae; stroke-width: 2"/>
+   </g>
+   <g id="migration-ah-long-LineCollection_1">
+    <path d="M 198.539941 353.32 
+L 198.539941 59.580638 
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: none; stroke: #bb5750; stroke-width: 1.7"/>
+    <path d="M 271.439953 353.32 
+L 271.439953 59.580638 
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: none; stroke: #bb5750; stroke-width: 1.7"/>
+   </g>
+   <g id="migration-ah-long-LineCollection_2">
+    <path d="M 52.739917 239.181277 
+L 271.439953 239.181277 
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #976464"/>
+    <path d="M 52.739917 198.897021 
+L 271.439953 198.897021 
+" clip-path="url(#migration-ah-long-pf7d41ed538)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #976464"/>
+   </g>
+   <g id="migration-ah-long-patch_11">
+    <path d="M 52.739917 353.32 
+L 52.739917 37.76 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="migration-ah-long-patch_12">
+    <path d="M 52.739917 353.32 
+L 563.04 353.32 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="migration-ah-long-text_7">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="98.302424" y="175.352101" transform="rotate(-0 98.302424 175.352101)">A</text>
+   </g>
+   <g id="migration-ah-long-text_8">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="101.947425" y="222.350399" transform="rotate(-0 101.947425 222.350399)">B</text>
+   </g>
+   <g id="migration-ah-long-text_9">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="101.947425" y="299.561888" transform="rotate(-0 101.947425 299.561888)">C</text>
+   </g>
+   <g id="migration-ah-long-text_10">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="234.989947" y="299.561888" transform="rotate(-0 234.989947 299.561888)">D</text>
+   </g>
+   <g id="migration-ah-long-text_11">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="218.587444" y="229.903697" transform="rotate(-0 218.587444 229.903697)">E</text>
+   </g>
+   <g id="migration-ah-long-text_12">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="249.569949" y="212.615037" transform="rotate(-0 249.569949 212.615037)">F</text>
+   </g>
+   <g id="migration-ah-long-text_13">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="218.587444" y="188.780186" transform="rotate(-0 218.587444 188.780186)">G</text>
+   </g>
+   <g id="migration-ah-long-text_14">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #253f59" x="125.639929" y="141.781888" transform="rotate(-0 125.639929 141.781888)">H</text>
+   </g>
+   <g id="migration-ah-long-text_15">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="184.539941" y="215.897021" transform="rotate(-0 184.539941 215.897021)">1</text>
+   </g>
+   <g id="migration-ah-long-text_16">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="277.439953" y="255.181277" transform="rotate(-0 277.439953 255.181277)">2</text>
+   </g>
+   <g id="migration-ah-long-text_17">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start" x="277.439953" y="193.897021" transform="rotate(-0 277.439953 193.897021)">3</text>
+   </g>
+   <g id="migration-ah-long-text_18">
+    <!-- $L_1^S$ -->
+    <g style="fill: #bb5750" transform="translate(191.939941 52.866596)">
+     <text>
+      <tspan x="0" y="-0.171875" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #bb5750">L</tspan>
+      <tspan x="7.527734" y="-4.765625" style="font-style: oblique; font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #bb5750">S</tspan>
+      <tspan x="6.685547" y="3.109375" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #bb5750">1</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="migration-ah-long-text_19">
+    <!-- $L_2^S$ -->
+    <g style="fill: #bb5750" transform="translate(264.839953 52.866596)">
+     <text>
+      <tspan x="0" y="-0.171875" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #bb5750">L</tspan>
+      <tspan x="7.527734" y="-4.765625" style="font-style: oblique; font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #bb5750">S</tspan>
+      <tspan x="6.685547" y="3.109375" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #bb5750">2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="migration-ah-long-text_20">
+    <!-- $L_1^D$ -->
+    <g style="fill: #3876ae" transform="translate(466.447484 338.213404)">
+     <text>
+      <tspan x="0" y="-0.28125" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #3876ae">L</tspan>
+      <tspan x="7.527734" y="-4.875" style="font-style: oblique; font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #3876ae">D</tspan>
+      <tspan x="6.685547" y="3" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #3876ae">1</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="migration-ah-long-text_21">
+    <!-- $L_2^D$ -->
+    <g style="fill: #3876ae" transform="translate(532.057495 336.534894)">
+     <text>
+      <tspan x="0" y="-0.28125" style="font-style: oblique; font-size: 12px; font-family: 'DejaVu Sans'; fill: #3876ae">L</tspan>
+      <tspan x="7.527734" y="-4.875" style="font-style: oblique; font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #3876ae">D</tspan>
+      <tspan x="6.685547" y="3" style="font-size: 8.4px; font-family: 'DejaVu Sans'; fill: #3876ae">2</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="migration-ah-long-text_22">
+    <text style="font-size: 14.4px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle" x="307.889958" y="23.76" transform="rotate(-0 307.889958 23.76)">Long run: capital has adjusted</text>
+   </g>
+   <g id="migration-ah-long-PathCollection_1">
+    <defs>
+     <path id="migration-ah-long-me789a735e2" d="M 0 2.345208 
+C 0.621956 2.345208 1.218523 2.098102 1.658312 1.658312 
+C 2.098102 1.218523 2.345208 0.621956 2.345208 0 
+C 2.345208 -0.621956 2.098102 -1.218523 1.658312 -1.658312 
+C 1.218523 -2.098102 0.621956 -2.345208 0 -2.345208 
+C -0.621956 -2.345208 -1.218523 -2.098102 -1.658312 -1.658312 
+C -2.098102 -1.218523 -2.345208 -0.621956 -2.345208 0 
+C -2.345208 0.621956 -2.098102 1.218523 -1.658312 1.658312 
+C -1.218523 2.098102 -0.621956 2.345208 0 2.345208 
+z
+" style="stroke: #304b60"/>
+    </defs>
+    <g clip-path="url(#migration-ah-long-pf7d41ed538)">
+     <use xlink:href="#migration-ah-long-me789a735e2" x="198.539941" y="198.897021" style="fill: #304b60; stroke: #304b60"/>
+    </g>
+   </g>
+   <g id="migration-ah-long-PathCollection_2">
+    <g clip-path="url(#migration-ah-long-pf7d41ed538)">
+     <use xlink:href="#migration-ah-long-me789a735e2" x="271.439953" y="239.181277" style="fill: #304b60; stroke: #304b60"/>
+    </g>
+   </g>
+   <g id="migration-ah-long-PathCollection_3">
+    <g clip-path="url(#migration-ah-long-pf7d41ed538)">
+     <use xlink:href="#migration-ah-long-me789a735e2" x="271.439953" y="198.897021" style="fill: #304b60; stroke: #304b60"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="migration-ah-long-pf7d41ed538">
+   <rect x="52.739917" y="37.76" width="510.300083" height="315.56"/>
+  </clipPath>
+ </defs>
+</svg>
+
+```
+
+*Long-run income areas, using the same curves, equilibrium points, and A–H labels as Lecture 12 and Figure 4-1. Capital adjustment shifts labor demand from $L_1^D$ to $L_2^D$, moving the economy from point 2 to point 3. The wage returns to $w_1$.*
+
+The area labels stay in the same places in both diagrams. What changes is who receives the income:
+
+| Income | Before immigration | Short run | Long run |
+|:---|:---|:---|:---|
+| Original workers' wages | $B+C$ | $C$ | $B+C$ |
+| Immigrants' wages | $0$ | $D$ | $D+E+F$ |
+| Income on original capital | $A$ | $A+B+E$ | $A$ |
+| Income on new capital | $0$ | $0$ | $G+H$ |
+
+Original workers recover $B$, the wages they lost in the short run. Immigrants' wages rise from $D$ to $D+E+F$. Owners of the original capital return to income $A$, so their temporary gain $B+E$ is gone. New capital receives $G+H$.
+
+**Area E does not disappear from the drawing.** In the short run it is extra income for existing residents. In the long run it is part of immigrants' wages. Thus E no longer represents a gain for existing residents.
+
+The book illustrates the long run by having immigrants bring enough capital to keep capital per worker unchanged. In that case, immigrants receive both $D+E+F$ in wages and $G+H$ in capital income. If someone else supplies the new capital, that owner receives $G+H$ instead.
+
+Total output is now
+
+$$
+Y_{\mathrm{LR}}=w_1N+w_1M+r_1K_1+r_1(K_{\mathrm{LR}}-K_1).
+$$
+
+Subtracting initial output gives
+
+$$
+\boxed{Y_{\mathrm{LR}}-Y_1=w_1M+r_1(K_{\mathrm{LR}}-K_1).}
+$$
+
+**The extra output pays the new workers and the new capital.** Income from the original workers and original capital is unchanged:
+
+$$
+\boxed{(w_{\mathrm{LR}}-w_1)N+(r_{\mathrm{LR}}-r_1)K_1=0.}
+$$
+
+This is why the short-run income gain for existing residents disappears after full capital adjustment. We cannot carry the short-run formula $E=\Delta Y-wM$ into the long run without also subtracting the payment to new capital. If original residents supply that capital, they receive its income, but they must first pay for the investment. If foreign investors supply it, that income goes abroad. Gains or losses earned during the adjustment period are not erased.
+
+In the numerical example above, $N=K_1=100$ and $M=10$. Full adjustment gives $K_{\mathrm{LR}}=110$, $Y_{\mathrm{LR}}=110$, $w_{\mathrm{LR}}=2/3$, and $r_{\mathrm{LR}}=1/3$. The additional output of $10$ is divided into $6.667$ of immigrant wages and $3.333$ of income on the new capital. Original workers still earn $66.667$, and the original capital still earns $33.333$.
+
+## 4. Skill Differences: Short-Run and Long-Run Effects
+
+Now distinguish skilled labor $L_s$ and unskilled labor $L_u$. Following the lecture, define a composite labor input
+
+$$
+L=L_s^\beta L_u^{1-\beta},\qquad 0<\beta<1.
+$$
+
+Here $L$ combines the two types of labor into one production input. It is not the number of people, $L_s+L_u$. Production becomes
+
+$$
+Y=AK^\alpha\left(L_s^\beta L_u^{1-\beta}\right)^{1-\alpha}
+=AK^\alpha L_s^{(1-\alpha)\beta}L_u^{(1-\alpha)(1-\beta)}.
+$$
+
+Differentiating with respect to each labor input gives
+
+$$
+w_s=A(1-\alpha)\beta K^\alpha
+L_s^{(1-\alpha)\beta-1}L_u^{(1-\alpha)(1-\beta)}
+=\boxed{(1-\alpha)\beta\frac{Y}{L_s}},
+$$
+
+$$
+w_u=A(1-\alpha)(1-\beta)K^\alpha
+L_s^{(1-\alpha)\beta}L_u^{(1-\alpha)(1-\beta)-1}
+=\boxed{(1-\alpha)(1-\beta)\frac{Y}{L_u}}.
+$$
+
+Capital still receives $r=\alpha Y/K$.
+
+**Low-skill immigration in the short run.** Let $L_u$ increase by a proportion $m_u$, holding $K$, $L_s$, and $A$ fixed. Then
+
+$$
+\frac{Y_2}{Y_1}=(1+m_u)^{(1-\alpha)(1-\beta)}.
+$$
+
+Substituting into the factor-payment equations gives
+
+$$
+\boxed{\frac{w_{s2}}{w_{s1}}=(1+m_u)^{(1-\alpha)(1-\beta)}>1,}
+$$
+
+$$
+\boxed{\frac{w_{u2}}{w_{u1}}=(1+m_u)^{(1-\alpha)(1-\beta)-1}<1,}
+$$
+
+$$
+\frac{r_2}{r_1}=(1+m_u)^{(1-\alpha)(1-\beta)}>1.
+$$
+
+Additional low-skilled workers raise the marginal products of skilled labor and capital. They also compete with existing low-skilled workers, lowering that group's wage. Within each skill group, the model assumes that an immigrant and a native-born worker can do exactly the same work, so they receive the same wage.
+
+Dividing the two wage equations yields the skill premium:
+
+$$
+\boxed{\frac{w_s}{w_u}=\frac{\beta}{1-\beta}\frac{L_u}{L_s}.}
+$$
+
+An increase in $L_u/L_s$ raises skilled workers' relative wage. In this Cobb-Douglas example, $\beta$ alone does not guarantee $w_s>w_u$; relative supplies also matter.
+
+**After capital adjusts.** Suppose $r$ returns to its original level while $A$ stays fixed. Capital per unit of effective labor returns to its initial value. Since $L_s$ is unchanged,
+
+$$
+\frac{K_{\mathrm{LR}}}{K_1}
+=\frac{L_2}{L_1}
+=\frac{Y_{\mathrm{LR}}}{Y_1}
+=(1+m_u)^{1-\beta}.
+$$
+
+Therefore,
+
+$$
+\boxed{\frac{w_{s,\mathrm{LR}}}{w_{s1}}=(1+m_u)^{1-\beta}>1,
+\qquad
+\frac{w_{u,\mathrm{LR}}}{w_{u1}}=(1+m_u)^{-\beta}<1.}
+$$
+
+More capital raises both wages from their short-run levels. But **the low-skilled wage stays below its original level, and the skilled wage stays above it**. The reason is that there are still more low-skilled workers per skilled worker. Capital does not appear in the wage-ratio formula, so adding capital cannot undo this change.
+
+For $\alpha=1/3$ and $\beta=1/2$, the wage ratios are particularly simple:
+
+| Wage ratio relative to its initial value | Short run | Long run |
+|:---|:---:|:---:|
+| Skilled wage | $(1+m_u)^{1/3}$ | $(1+m_u)^{0.5}$ |
+| Unskilled wage | $(1+m_u)^{-2/3}$ | $(1+m_u)^{-0.5}$ |
+
+
+By contrast, if both skill groups expand in the same proportion, their relative supply is unchanged. With full capital adjustment, both wages return to their initial levels.
+
+## 5. Practice Problems
+
+**Practice 1: Short Run, Long Run, and Immigration Surplus**
+
+An economy produces
+
+$$
+Y=K^{1/3}L^{2/3}.
+$$
+
+Initially, $K=100$ and there are $N=100$ workers. Immigration brings $M=20$ additional workers. Existing residents own all initial capital; immigrants arrive without capital. Labor supply is inelastic and productivity is unchanged.
+
+1. Derive $w$ and $r$. Calculate initial output, output per worker, wages, and the rental payment per unit of capital.
+2. Holding capital fixed, calculate these quantities after immigration. Compare the exact output growth rate with the growth-accounting approximation.
+3. Calculate the original workers' total labor-income loss, the increase in capital income, and immigrants' total labor income. Obtain the exact immigration surplus and verify the income decomposition.
+4. Calculate the surplus using $\tfrac12(w_1-w_2)M$ and using $E/Y_1\approx\tfrac12\alpha(1-\alpha)(M/N)^2$. Explain why these approximations need not equal the exact answer.
+5. Let capital adjust until $r$ returns to its initial level. Find the required capital stock, output, and wage. Explain why higher GDP alone does not establish a gain for original residents.
+
+**Practice 2: Immigration and the Skill Premium**
+
+Consider
+
+$$
+Y=K^{1/3}L_s^{1/3}L_u^{1/3},
+$$
+
+corresponding to $A=1$, $\alpha=1/3$, and $\beta=1/2$. Initially, $K=200$, $L_s=100$, and $L_u=200$. Compare the following two scenarios with the same initial equilibrium:
+
+- **Scenario A:** Low-skilled immigration raises $L_u$ by $20\%$, while $L_s$ stays fixed.
+- **Scenario B:** Immigration raises both $L_s$ and $L_u$ by $20\%$.
+
+1. Derive $w_s$, $w_u$, and $r$, and calculate their initial values and the initial skill premium.
+2. With capital fixed, calculate the percentage changes in output and all three factor prices in each scenario. Explain why the skilled wage responds differently across scenarios.
+3. For each scenario, allow capital to adjust until $r$ returns to its original level. Find the required capital stock and the percentage changes in both wages relative to their initial values.
+4. Calculate the skill premium before immigration, in the short run, and in the long run. Why does capital adjustment fail to restore the original skill premium in Scenario A?
+5. Suppose data show that new immigrants lower earlier immigrants' wages more than native-born wages within the same education group. Which assumption of our model would need to change to explain that difference?

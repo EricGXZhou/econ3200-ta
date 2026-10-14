@@ -21,8 +21,12 @@ website:
             text: Import Tariffs
           - href: trade/duopoly.qmd
             text: Imperfect Competition
-      - href: migration/index.qmd
-        text: Migration
+      - text: Migration
+        menu:
+          - href: migration/SF_immigration.qmd
+            text: Specific Factors Model of Immigration    
+          - href: migration/immigration-capital-and-skills.qmd
+            text: Immigration, Capital, and Skills
       - href: macro/index.qmd
         text: International Macroeconomics
 format:
