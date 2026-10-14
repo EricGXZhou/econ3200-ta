@@ -6,9 +6,14 @@ title: "Discussion Materials"
 
 ::: {.week-card .current-week}
 
-[Incomplete market](materials/Sep30_Incomplete Market.pdf){target="_blank" .material-link}
+[Immigration](materials/Oct14_immigration.pdf){target="_blank" .material-link}
 
 :::
+
+## September 30, 2026 {.week-title}
+
+[Incomplete market](materials/Sep30_Incomplete Market.pdf){target="_blank" .material-link}
+
 
 ## September 16, 2026 {.week-title}
 
