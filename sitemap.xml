@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://EricGXZhou.github.io/econ3200-ta/trade/trade policy.html</loc>
-    <lastmod>2026-09-28T16:39:57.599Z</lastmod>
+    <lastmod>2026-10-11T20:37:06.814Z</lastmod>
   </url>
   <url>
     <loc>https://EricGXZhou.github.io/econ3200-ta/trade/ricardian.html</loc>
@@ -13,12 +13,16 @@
     <lastmod>2026-08-30T21:35:01.853Z</lastmod>
   </url>
   <url>
-    <loc>https://EricGXZhou.github.io/econ3200-ta/migration/index.html</loc>
-    <lastmod>2026-08-30T21:35:01.852Z</lastmod>
+    <loc>https://EricGXZhou.github.io/econ3200-ta/migration/SF_immigration.html</loc>
+    <lastmod>2026-10-14T13:56:35.192Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EricGXZhou.github.io/econ3200-ta/migration/immigration-capital-and-skills.html</loc>
+    <lastmod>2026-10-14T13:56:37.156Z</lastmod>
   </url>
   <url>
     <loc>https://EricGXZhou.github.io/econ3200-ta/index.html</loc>
-    <lastmod>2026-10-03T22:38:26.222Z</lastmod>
+    <lastmod>2026-10-14T13:56:28.898Z</lastmod>
   </url>
   <url>
     <loc>https://EricGXZhou.github.io/econ3200-ta/about.html</loc>
@@ -31,6 +35,10 @@
   <url>
     <loc>https://EricGXZhou.github.io/econ3200-ta/macro/index.html</loc>
     <lastmod>2026-08-30T21:35:01.850Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EricGXZhou.github.io/econ3200-ta/migration/index.html</loc>
+    <lastmod>2026-08-30T21:35:01.852Z</lastmod>
   </url>
   <url>
     <loc>https://EricGXZhou.github.io/econ3200-ta/trade/duopoly.html</loc>
