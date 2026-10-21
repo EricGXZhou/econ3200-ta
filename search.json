@@ -224,6 +224,139 @@
     "text": "4. Practice Problems\nPractice 1: Immigration with Unequal Sector Sizes\nUse the same production functions:\n\\[\nQ_M=50L_M^{0.5},\\qquad Q_A=90L_A^{0.5}.\n\\]\nLet \\(P_M=2\\), \\(P_A=1\\), and initially \\(L_0=181\\). Immigration adds \\(44\\) workers, so \\(L_1=225\\). Prices, technology, capital, and land remain fixed.\n\nDerive the equilibrium ratio \\(L_M/L_A\\). Calculate employment in each sector and the wage before and after immigration. Report numerical answers to two decimal places.\nCalculate both outputs and the total incomes accruing to capital and land before and after immigration.\nCompare the original workforce’s total labor income, \\(WL_0\\), with the wage bill for all workers, \\(WL\\). How does each change after immigration?\nExplain why aggregate employment expands in both sectors. Does the model identify which sector each immigrant works in?\n\nPractice 2: Wage Growth and the Counterfactual\nStart from the same baseline production functions, with any positive initial labor supply \\(L_0\\) and fixed goods prices. Between the initial and final periods, labor supply increases by \\(21\\%\\) through immigration, and productivity rises by \\(10\\%\\) in both sectors. The new production functions are\n\\[\n\\widetilde Q_M=1.10(50L_M^{0.5}),\n\\qquad\n\\widetilde Q_A=1.10(90L_A^{0.5}).\n\\]\nCapital and land remain fixed. Compare each scenario below with the same initial equilibrium.\n\nIf only immigration occurred, what would be the percentage change in the wage?\nIf only productivity improved, what would be the percentage change in the wage?\nDerive the wage change when both occur. Does the equilibrium allocation of labor across sectors change in proportional terms?\nCompare the final wage with the counterfactual wage under productivity growth without immigration. Express the difference as a percentage of that counterfactual wage.\nExplain why observing no wage decline over time is not enough to conclude that immigration had no effect on wages."
   },
   {
+    "objectID": "migration/immigration-labor-and-growth.html",
+    "href": "migration/immigration-labor-and-growth.html",
+    "title": "Immigration: Local Labor Markets, Substitution, and Economic Growth",
+    "section": "",
+    "text": "What can local wage comparisons tell us, and how does immigration affect the size and productivity of the economy?\nThis note accompanies Lectures 13–14. It builds on the previous note’s production model and capital adjustment. We first ask how to interpret wage evidence, then derive the effects of imperfect substitution and the contributions of immigration to output growth. Firms are competitive and the price of output is one."
+  },
+  {
+    "objectID": "migration/immigration-labor-and-growth.html#what-can-local-labor-market-comparisons-tell-us",
+    "href": "migration/immigration-labor-and-growth.html#what-can-local-labor-market-comparisons-tell-us",
+    "title": "Immigration: Local Labor Markets, Substitution, and Economic Growth",
+    "section": "1. What Can Local Labor Market Comparisons Tell Us?",
+    "text": "1. What Can Local Labor Market Comparisons Tell Us?\nThe local labor market approach compares wage or employment changes in places receiving different amounts of immigration. A commuting zone groups nearby communities whose residents work in the same local labor market.\nSuppose area A receives many immigrants and area B receives few. A simple comparison is\n\\[\n\\text{Difference in wage changes}\n=(w_{A,\\mathrm{after}}-w_{A,\\mathrm{before}})\n-(w_{B,\\mathrm{after}}-w_{B,\\mathrm{before}}).\n\\]\nTo interpret this difference as an effect of immigration in A, we need B to show what would have happened in A without immigration. Two problems can prevent that interpretation.\nImmigrants choose where to live. People often move toward good job opportunities. If a local industry expands, it may both attract immigrants and raise wages. A positive relationship between immigration and wage growth can therefore reflect labor demand rather than the effect of immigration.\nFor example, suppose a demand boom would have raised wages in A by \\(5\\%\\) without immigration, while the extra labor supply reduces that increase by 2 percentage points. Observed wage growth is \\(3\\%\\). If wages in B are unchanged, attributing the entire \\(3\\%\\) difference to immigration gets the causal effect wrong. The estimate is too high; in this example it understates the adverse effect.\nOne strategy uses historical settlement patterns to predict new arrivals: immigrants often move near people from the same origin country. This can help separate immigration from current local demand. For the prediction to be a valid instrument, it must predict arrivals without also tracking other causes of current wage growth. Persistent differences in local economic conditions can make this requirement fail.\nAn immigration shock can affect other areas. Follow the two-area diagrams in Lecture 13. Initially, the areas have identical labor demand and employment, so \\(w_A^1=w_B^1\\). Hold capital and labor demand fixed throughout this exercise.\n\n\n \n \n  \n \n \n  \n   \n  \n  \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    \n     Employment\n    \n   \n   \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    Wage\n   \n   \n    \n    \n     \n      D\n     \n    \n   \n   \n    \n    \n     \n      S\n      1\n      A\n     \n    \n   \n   \n    \n    \n     \n      w\n      1\n      A\n     \n    \n   \n   \n    \n    \n     \n      S\n      2\n      A\n     \n    \n   \n   \n    \n    \n     \n      w\n      2\n      A\n     \n    \n   \n   \n    \n    \n   \n   \n    Commuting zone A\n   \n   \n    \n     \n    \n    \n     \n    \n   \n   \n    \n     \n    \n    \n     \n    \n   \n  \n \n \n  \n   \n  \n \n\n\n\n \n \n  \n \n \n  \n   \n  \n  \n   \n    \n   \n   \n    \n   \n   \n    \n     Employment\n    \n   \n   \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    Wage\n   \n   \n    \n    \n     \n      D\n     \n    \n   \n   \n    \n    \n     \n      S\n      1\n      B\n     \n    \n   \n   \n    \n    \n     \n      w\n      1\n      B\n     \n    \n   \n   \n    Commuting zone B\n   \n   \n    \n     \n    \n    \n     \n    \n   \n  \n \n \n  \n   \n  \n \n\n\n\nStage 2: Immigration shifts A’s labor supply from \\(S_A^1\\) to \\(S_A^2\\). Its wage falls to \\(w_A^2\\). B has not yet been affected. Curve and wage labels follow Lecture 13, slide 15.\nThe wage gap gives workers an incentive to move from A to B. A’s supply moves back toward its original position, while B’s supply increases.\n\n\n \n \n  \n \n \n  \n   \n  \n  \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    \n     Employment\n    \n   \n   \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    Wage\n   \n   \n    \n    \n     \n      D\n     \n    \n   \n   \n    \n    \n     \n      S\n      1\n      A\n     \n    \n   \n   \n    \n    \n     \n      w\n      1\n      A\n     \n    \n   \n   \n    \n    \n     \n      S\n      2\n      A\n     \n    \n   \n   \n    \n    \n     \n      w\n      2\n      A\n     \n    \n   \n   \n    \n    \n     \n      S\n      3\n      A\n     \n    \n   \n   \n    \n    \n     \n      w\n      3\n      A\n     \n    \n   \n   \n    \n    \n   \n   \n    \n    \n   \n   \n    Commuting zone A\n   \n   \n    \n     \n    \n    \n     \n    \n   \n   \n    \n     \n    \n    \n     \n    \n   \n   \n    \n     \n    \n    \n     \n    \n   \n  \n \n \n  \n   \n  \n \n\n\n\n \n \n  \n \n \n  \n   \n  \n  \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    \n     Employment\n    \n   \n   \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    \n   \n   \n    Wage\n   \n   \n    \n    \n     \n      D\n     \n    \n   \n   \n    \n    \n     \n      S\n      1\n      B\n     \n    \n   \n   \n    \n    \n     \n      w\n      1\n      B\n     \n    \n   \n   \n    \n    \n     \n      S\n      3\n      B\n     \n    \n   \n   \n    \n    \n     \n      w\n      3\n      B\n     \n    \n   \n   \n    \n    \n   \n   \n    Commuting zone B\n   \n   \n    \n     \n    \n    \n     \n    \n   \n   \n    \n     \n    \n    \n     \n    \n   \n  \n \n \n  \n   \n  \n \n\n\n\nStage 3: Relocation moves supply to \\(S_A^3\\) and \\(S_B^3\\). A’s wage partly recovers; B’s wage falls. With identical demand curves and costless mobility, \\(w_A^3=w_B^3&lt;w_A^1=w_B^1\\). Labels follow Lecture 13, slide 16.\nAfter relocation,\n\\[\n(w_A^3-w_A^1)-(w_B^3-w_B^1)=0,\n\\]\neven though both wages are below their initial levels. A small difference between places can coexist with an effect shared across places. B is no longer an unaffected comparison area.\nHere the later stage allows workers to relocate but keeps capital fixed. It is a different adjustment from the capital accumulation in the previous note. In actual economies, labor mobility, investment, and trade can all spread or offset local effects. Their importance is an empirical question; the diagram illustrates a mechanism rather than a universal prediction."
+  },
+  {
+    "objectID": "migration/immigration-labor-and-growth.html#from-substitution-to-relative-wages",
+    "href": "migration/immigration-labor-and-growth.html#from-substitution-to-relative-wages",
+    "title": "Immigration: Local Labor Markets, Substitution, and Economic Growth",
+    "section": "2. From Substitution to Relative Wages",
+    "text": "2. From Substitution to Relative Wages\nThe previous model allowed skilled and unskilled workers to perform different roles but treated immigrants and native-born workers within each group as identical. We now relax that second assumption.\nStart with the skill premium. The earlier Cobb-Douglas model gives\n\\[\n\\frac{w_s}{w_u}=\\frac{\\beta}{1-\\beta}\\frac{L_u}{L_s}.\n\\]\nRearranging and taking logs,\n\\[\n\\ln\\left(\\frac{L_s}{L_u}\\right)\n=\\ln\\left(\\frac{\\beta}{1-\\beta}\\right)\n-\\ln\\left(\\frac{w_s}{w_u}\\right).\n\\]\nA \\(1\\%\\) increase in the skill premium reduces relative skill demand by \\(1\\%\\). This elasticity is built into Cobb-Douglas; it is not an estimate from data.\nAllow imperfect substitution within a skill group. Let \\(j=s,u\\) denote the skill group and \\(N,F\\) denote native-born and foreign-born workers. Combine the two types with a constant-elasticity-of-substitution (CES) function:\n\\[\nL_j=\\left[\n\\theta_j L_{jN}^{(\\sigma_j-1)/\\sigma_j}\n+(1-\\theta_j)L_{jF}^{(\\sigma_j-1)/\\sigma_j}\n\\right]^{\\sigma_j/(\\sigma_j-1)},\n\\qquad 0&lt;\\theta_j&lt;1,\\quad \\sigma_j&gt;1.\n\\]\nHere \\(L_j\\) is effective labor, not a headcount. The parameter \\(\\theta_j\\) sets the relative weight on the two inputs. A larger \\(\\sigma_j\\) means employers can substitute more easily between them. These are differences in productive roles within an education group, not a ranking of people by birthplace.\nLet \\(v_j=\\partial Y/\\partial L_j\\) be the extra output from one unit of effective labor. Applying the chain rule gives each worker type’s wage:\n\\[\nw_{jN}=v_j\\frac{\\partial L_j}{\\partial L_{jN}}\n=v_j\\theta_j L_j^{1/\\sigma_j}L_{jN}^{-1/\\sigma_j},\n\\]\n\\[\nw_{jF}=v_j\\frac{\\partial L_j}{\\partial L_{jF}}\n=v_j(1-\\theta_j)L_j^{1/\\sigma_j}L_{jF}^{-1/\\sigma_j}.\n\\]\nDividing cancels the common terms:\n\\[\n\\boxed{\\frac{w_{jN}}{w_{jF}}\n=\\frac{\\theta_j}{1-\\theta_j}\n\\left(\\frac{L_{jN}}{L_{jF}}\\right)^{-1/\\sigma_j}.}\n\\]\nRearranging gives the lecture’s relative labor demand equation:\n\\[\n\\ln\\left(\\frac{L_{jN}}{L_{jF}}\\right)\n=\\sigma_j\\ln\\left(\\frac{\\theta_j}{1-\\theta_j}\\right)\n-\\sigma_j\\ln\\left(\\frac{w_{jN}}{w_{jF}}\\right).\n\\]\nThe substitution elasticity \\(\\sigma_j\\) is positive; the elasticity of relative demand with respect to the relative wage is \\(-\\sigma_j\\). Thus a reported relative-demand elasticity of \\(-10\\) corresponds to \\(\\sigma_j=10\\).\nUse the equation to predict a change. Holding \\(\\theta_j\\) fixed,\n\\[\n\\boxed{\\Delta\\ln\\left(\\frac{w_{jN}}{w_{jF}}\\right)\n=-\\frac{1}{\\sigma_j}\n\\left(\\Delta\\ln L_{jN}-\\Delta\\ln L_{jF}\\right).}\n\\]\nIf native employment is fixed and immigrant employment increases by \\(m\\), the exact wage-ratio change is\n\\[\n\\frac{(w_{jN}/w_{jF})_{\\mathrm{after}}}\n{(w_{jN}/w_{jF})_{\\mathrm{before}}}\n=(1+m)^{1/\\sigma_j}.\n\\]\nFor example, \\(m=0.08\\) and \\(\\sigma_j=4\\) imply an increase of \\(1.08^{1/4}-1\\approx1.94\\%\\), or approximately \\(8\\%/4=2\\%\\). Native workers become relatively scarcer, so their relative wage rises.\nThis calculation determines a wage ratio. Since\n\\[\n\\Delta\\ln w_{jN}\n=\\Delta\\ln(w_{jN}/w_{jF})+\\Delta\\ln w_{jF},\n\\]\nthe native wage itself also depends on what happens to the immigrant wage. Changes in capital, productivity, and other labor inputs help determine both wage levels. Imperfect substitution alone does not guarantee that every native worker gains.\nReading the evidence. Lecture 13 reports the following estimates from Caiumi and Peri (2026):\n\n\n\n\n\n\n\n\nEducation group\nRelative-demand elasticity\nPositive substitution elasticity\n\n\n\n\nNo high school degree\n\\(-16\\)\n\\(16\\)\n\n\nHigh school degree\n\\(-75\\)\n\\(75\\)\n\n\nSome college\n\\(-34\\)\n\\(34\\)\n\n\nCollege degree\n\\(-10\\)\n\\(10\\)\n\n\n\nThese finite values reject perfect substitution within education groups. Smaller values imply a larger relative-wage response to the same relative-supply change. The lecture separately reports an elasticity around 2 between skill groups, compared with 1 in the Cobb-Douglas benchmark. These are different margins of substitution.\nWith perfect substitutes of equal productivity, employers choose the cheaper worker type. Both types can be employed together only at equal wages. In the CES function, this case corresponds to equal weights, \\(\\theta_j=1/2\\), and the limit \\(\\sigma_j\\to\\infty\\)."
+  },
+  {
+    "objectID": "migration/immigration-labor-and-growth.html#immigrations-direct-contribution-to-growth",
+    "href": "migration/immigration-labor-and-growth.html#immigrations-direct-contribution-to-growth",
+    "title": "Immigration: Local Labor Markets, Substitution, and Economic Growth",
+    "section": "3. Immigration’s Direct Contribution to Growth",
+    "text": "3. Immigration’s Direct Contribution to Growth\nFor the growth-accounting exercise, return to Lecture 14’s simpler benchmark:\n\\[\nY=AK^{\\alpha_K}L_s^{\\alpha_s}L_u^{\\alpha_u},\n\\qquad \\alpha_K+\\alpha_s+\\alpha_u=1.\n\\]\nThe parameters are positive income shares. In the previous note’s notation, \\(\\alpha_K=\\alpha\\), \\(\\alpha_s=(1-\\alpha)\\beta\\), and \\(\\alpha_u=(1-\\alpha)(1-\\beta)\\). Under competitive factor payments, for example, \\(w_sL_s/Y=\\alpha_s\\).\nIn this section, workers within each skill group are again perfect substitutes of equal productivity:\n\\[\nL_s=L_{sN}+L_{sF},\\qquad L_u=L_{uN}+L_{uF}.\n\\]\nThis makes the contribution of worker counts easy to calculate. It replaces the CES assumption in Section 2; a CES labor composite would require different weights.\nFrom production to growth accounting. Taking logs,\n\\[\n\\ln Y=\\ln A+\\alpha_K\\ln K+\\alpha_s\\ln L_s+\\alpha_u\\ln L_u.\n\\]\nWith constant parameters, changes in this equation are exact in logs. Write \\(g_X=\\Delta X/X\\) for the ordinary proportional change over the period. Using \\(\\Delta\\ln X\\approx g_X\\) gives\n\\[\n\\boxed{g_Y\\approx g_A+\\alpha_Kg_K+\\alpha_sg_{L_s}+\\alpha_ug_{L_u}.}\n\\]\nEnter \\(10\\%\\) as \\(0.10\\). A contribution of \\(0.02\\) means approximately 2 percentage points of output growth over that period, not 2 percent of total growth.\nFrom immigrant growth to total labor growth. Since \\(L_j=L_{jN}+L_{jF}\\),\n\\[\n\\frac{\\Delta L_j}{L_j}\n=\\frac{\\Delta L_{jN}+\\Delta L_{jF}}{L_j}\n=\\frac{L_{jN}}{L_j}\\frac{\\Delta L_{jN}}{L_{jN}}\n+\\frac{L_{jF}}{L_j}\\frac{\\Delta L_{jF}}{L_{jF}}.\n\\]\nDefine the initial immigrant share within group \\(j\\) as \\(\\lambda_{jF}=L_{jF}/L_j\\). Then\n\\[\n\\boxed{g_{L_j}=(1-\\lambda_{jF})g_{L_{jN}}+\\lambda_{jF}g_{L_{jF}}.}\n\\]\nThis identity is exact for ordinary growth rates when the weights and denominators use the beginning of the period. If immigrants make up \\(15\\%\\) of a group and their number rises by \\(20\\%\\), with native employment fixed, total employment in that group rises by \\(0.15\\times0.20=3\\%\\).\nSubstituting both groups into growth accounting gives\n\\[\n\\begin{aligned}\ng_Y\\approx{}&g_A+\\alpha_Kg_K\\\\\n&+\\alpha_s(1-\\lambda_{sF})g_{L_{sN}}\n+\\alpha_u(1-\\lambda_{uF})g_{L_{uN}}\\\\\n&+\\alpha_s\\lambda_{sF}g_{L_{sF}}\n+\\alpha_u\\lambda_{uF}g_{L_{uF}}.\n\\end{aligned}\n\\]\nThe last line is the direct immigrant labor contribution, which we denote by \\(G_F\\):\n\\[\n\\boxed{G_F=\\alpha_s\\lambda_{sF}g_{L_{sF}}\n+\\alpha_u\\lambda_{uF}g_{L_{uF}}.}\n\\]\nUse separate immigrant shares for the two groups unless they are assumed equal. Growth in the foreign-born workforce is also not automatically the number of new arrivals: departures and changes in labor force participation can matter."
+  },
+  {
+    "objectID": "migration/immigration-labor-and-growth.html#capital-adjustment-and-the-composition-of-immigration",
+    "href": "migration/immigration-labor-and-growth.html#capital-adjustment-and-the-composition-of-immigration",
+    "title": "Immigration: Local Labor Markets, Substitution, and Economic Growth",
+    "section": "4. Capital Adjustment and the Composition of Immigration",
+    "text": "4. Capital Adjustment and the Composition of Immigration\nMore labor raises the return to capital and encourages investment. To isolate this response, hold productivity fixed and let capital adjust until its rental payment returns to its initial value.\nDerive the indirect contribution. From the production function,\n\\[\nr=\\frac{\\partial Y}{\\partial K}=\\alpha_K\\frac{Y}{K}.\n\\]\nIf \\(r\\) and \\(\\alpha_K\\) are unchanged, \\(Y/K\\) is unchanged. Therefore \\(K_2/K_1=Y_2/Y_1\\), so \\(g_K=g_Y\\). Substitute into growth accounting with \\(g_A=0\\):\n\\[\ng_Y\\approx\\alpha_Kg_Y+\\alpha_sg_{L_s}+\\alpha_ug_{L_u}.\n\\]\nMoving the capital term to the left gives\n\\[\n\\boxed{g_Y\\approx\n\\frac{\\alpha_sg_{L_s}+\\alpha_ug_{L_u}}{1-\\alpha_K}.}\n\\]\nHolding native labor and productivity fixed, the approximate contributions of immigrant growth are\n\n\n\nChannel\nContribution\n\n\n\n\nDirect labor contribution\n\\(G_F\\)\n\n\nInduced capital contribution\n\\(\\dfrac{\\alpha_K}{1-\\alpha_K}G_F\\)\n\n\nTotal after capital adjustment\n\\(\\dfrac{G_F}{1-\\alpha_K}\\)\n\n\n\nThe last row already includes the direct contribution. If \\(\\alpha_K=1/3\\), investment adds half as much output as the direct labor contribution, making the total 1.5 times the direct contribution.\nAn illustration using Lecture 14’s parameters. Use a common immigrant weight of \\(0.13\\), immigrant labor growth of \\(0.26\\) in each group, and \\(\\alpha_K=\\alpha_s=\\alpha_u=1/3\\). Treat these as the fixed weights and changes for the classroom calculation. Then\n\\[\nG_F=\\frac13(0.13)(0.26)+\\frac13(0.13)(0.26)\n\\approx0.02253.\n\\]\nThe direct contribution is approximately \\(2.25\\%\\), the induced capital contribution is \\(1.13\\%\\), and the total is \\(3.38\\%\\). These are contributions over the full period used in the example, not annual rates. They do not include any immigration-induced change in productivity.\nIf immigrant labor growth in each group were scaled down by the same proportion, with the initial shares and all other assumptions unchanged, these contributions would scale down in that proportion. This statement concerns the immigration contribution; it does not scale down unrelated sources of growth.\nChange the skill mix while keeping the number of immigrants fixed. Suppose \\(M\\) new workers arrive, a fraction \\(f\\) enters the skilled group, and the rest enters the unskilled group. With native labor fixed,\n\\[\ng_{L_s}=\\frac{fM}{L_s},\\qquad\ng_{L_u}=\\frac{(1-f)M}{L_u}.\n\\]\nThe long-run output effect is approximately\n\\[\n\\boxed{g_Y\\approx\\frac{M}{1-\\alpha_K}\n\\left[\\frac{\\alpha_s f}{L_s}\n+\\frac{\\alpha_u(1-f)}{L_u}\\right].}\n\\]\nThe denominator for each labor growth rate is that group’s initial employment. Moving one arrival from the unskilled to the skilled group raises the first-order output contribution if \\(\\alpha_s/L_s&gt;\\alpha_u/L_u\\). Since \\(w_j=\\alpha_jY/L_j\\), this means the skilled worker initially has a higher marginal product. Equal income shares do not imply equal worker counts or equal wages.\nFor larger changes, we can check the approximation using the exact long-run formula. With \\(A\\) fixed and \\(r\\) restored,\n\\[\n\\frac{Y_2}{Y_1}\n=\\left(\\frac{Y_2}{Y_1}\\right)^{\\alpha_K}\n\\left(\\frac{L_{s2}}{L_{s1}}\\right)^{\\alpha_s}\n\\left(\\frac{L_{u2}}{L_{u1}}\\right)^{\\alpha_u}.\n\\]\nHence\n\\[\n\\boxed{\\frac{Y_2}{Y_1}\n=\\left(\\frac{L_{s2}}{L_{s1}}\\right)^{\\alpha_s/(1-\\alpha_K)}\n\\left(\\frac{L_{u2}}{L_{u1}}\\right)^{\\alpha_u/(1-\\alpha_K)}.}\n\\]\nWith all three income shares equal to \\(1/3\\), both exponents become \\(0.5\\).\nKeep the outcome clear. These calculations concern total GDP. For population \\(P\\), growth in GDP per person is approximately \\(g_Y-g_P\\). A higher level of GDP does not by itself show that GDP per person, every native worker’s wage, or original residents’ income has increased. Nor does a one-time level increase establish a permanently higher annual growth rate."
+  },
+  {
+    "objectID": "migration/immigration-labor-and-growth.html#beyond-labor-and-capital",
+    "href": "migration/immigration-labor-and-growth.html#beyond-labor-and-capital",
+    "title": "Immigration: Local Labor Markets, Substitution, and Economic Growth",
+    "section": "5. Beyond Labor and Capital",
+    "text": "5. Beyond Labor and Capital\nProductivity can change too. Growth accounting leaves a residual:\n\\[\ng_A\\approx g_Y-\\alpha_Kg_K-\\alpha_sg_{L_s}-\\alpha_ug_{L_u}.\n\\]\nThis is total factor productivity growth: output growth not accounted for by the measured inputs in this model. It is not automatically a measure of immigration’s effect. Identifying that effect requires evidence that separates immigration from other causes of productivity growth and from measurement error.\nImmigrants can contribute new ideas themselves, help colleagues develop ideas, or connect firms to knowledge abroad. These channels can raise output from a given amount of measured labor and capital. They also help explain why the number of patents with an immigrant inventor need not capture the full contribution to innovation.\nLecture 14 discusses Bernstein et al. (2025): immigrants account for \\(16\\%\\) of inventors and author \\(23\\%\\) of patents in the study. Its model attributes \\(32\\%\\) of aggregate innovation to immigrants, including their effects on collaborators. These percentages describe different quantities. The \\(32\\%\\) is a model-based innovation contribution, not a measured share of GDP or a forecast of GDP growth from a particular immigration policy.\nFirms can change their scale and location. A firm unable to hire an immigrant worker may hire someone else, reduce production, cancel a project, or expand an overseas affiliate. Restricting one source of labor therefore does not mechanically create the same number of jobs for native workers.\nLecture 14 presents Mahajan et al. (2025), which uses random variation from the 2007 H-1B lottery. Comparing firms with different lottery outcomes, while accounting for their applications, helps isolate access to workers from firms’ underlying growth plans. The study finds increases in immigrant hiring, firm scale, and survival, without evidence of net displacement of native-born college-educated workers within participating firms. That is a result about a specific setting and outcome, not proof that every worker or every firm benefits.\nThe lecture also discusses Glennon’s evidence that multinational firms expand foreign affiliate employment when access to H-1B workers is restricted. This adds an international adjustment margin to the local movement of workers in Section 1. Evaluating a restriction requires considering how both workers and firms respond."
+  },
+  {
+    "objectID": "migration/immigration-labor-and-growth.html#practice-problems",
+    "href": "migration/immigration-labor-and-growth.html#practice-problems",
+    "title": "Immigration: Local Labor Markets, Substitution, and Economic Growth",
+    "section": "6. Practice Problems",
+    "text": "6. Practice Problems\nUse first-order percentage-change approximations where requested. Unless stated otherwise, native employment and productivity are fixed. For Practices 3–4, \\(s\\) denotes college-educated labor and \\(u\\) denotes labor without a college degree; these are the two groups in the simplified production model.\nPractice 1: Local Comparisons and Worker Mobility\nTwo areas, A and B, each have labor demand \\(w=40-0.1L\\) and initially 100 employed workers. Twenty additional workers immigrate into A. Labor supply in each area is inelastic before relocation. Keep both demand curves and both capital stocks fixed.\n\nCalculate the initial wage and each area’s wage immediately after immigration, before anyone relocates.\nWorkers can now move freely between the areas. Find how many move, final employment in each area, and the common wage.\nAt each stage, calculate the wage change in A minus the wage change in B. Explain why the final difference does not measure the full effect on wages.\nReturn to the stage before relocation. Suppose an unrelated demand boom also shifts A’s demand to \\(w=43-0.1L\\). Calculate A’s observed wage change. Compare its wage with the wage under the same boom but without immigration. What would a comparison with unchanged B wrongly attribute to immigration?\n\nPractice 2: Substitution and Relative Wages\nWithin one skill group, immigrant employment rises by \\(12\\%\\). Native employment and the CES weight \\(\\theta\\) remain fixed. Compare two economies, one with \\(\\sigma=4\\) and one with \\(\\sigma=12\\).\n\nStarting from the CES marginal products, derive the wage ratio and the relationship between changes in relative employment and relative wages.\nUse a first-order approximation to calculate the change in native wages relative to immigrant wages in each economy.\nWhich economy has closer substitutes? Explain why its wage ratio responds less.\nIn the economy with \\(\\sigma=4\\), suppose immigrant wages fall by \\(1\\%\\). Approximate the change in native wages. Could you have calculated this change without the additional information about immigrant wages?\nFor \\(\\sigma=4\\), calculate the exact change in the wage ratio and then the exact change in native wages if immigrant wages fall by exactly \\(1\\%\\). Compare with your approximations.\n\nPractice 3: Labor Growth and Capital Adjustment\nAn economy produces\n\\[\nY=AK^{1/3}L_s^{1/3}L_u^{1/3}.\n\\]\nInitially, immigrants account for \\(20\\%\\) of college-educated employment and \\(10\\%\\) of non-college employment. Over the period, immigrant employment grows by \\(10\\%\\) in the college group and \\(20\\%\\) in the non-college group. Native employment and \\(A\\) do not change. Within each group, immigrant and native workers are perfect substitutes of equal productivity. Use first-order approximations.\n\nCalculate the growth rate of total employment in each skill group. Why is neither growth rate equal to that group’s immigrant growth rate?\nWith capital fixed, calculate immigration’s direct contribution to output growth.\nAllow capital to adjust until its rental payment returns to the initial level. Calculate total output growth, capital growth, and the capital contribution to output growth. Verify that the direct and capital contributions add to the total.\nRepeat the calculation if immigrant employment grows by \\(5\\%\\) in the college group and \\(10\\%\\) in the non-college group. Keep all initial shares unchanged.\nSuppose the measured changes cover a 20-year period. Explain why your answer is neither the annual GDP growth rate nor, without additional information, the change in GDP per person.\n\nPractice 4: The Same Number of Immigrants, Different Skills\nUse the production function and within-group substitution assumption from Practice 3, with \\(A=1\\). Initially, \\(L_s=100\\) and \\(L_u=200\\). Twenty additional employed workers arrive. Compare two alternatives from the same initial equilibrium:\n\n\n\nScenario\nNew college-educated workers\nNew non-college workers\n\n\n\n\nA\n10\n10\n\n\nB\n20\n0\n\n\n\n\nCalculate the growth rate of each labor input in each scenario.\nUse first-order approximations to calculate the direct output contribution and the total after capital returns to its initial rental payment.\nExplain why the same number of arrivals produces different output contributions. Use the initial marginal products to explain your answer.\nRepeat the first-order comparison if initial employment is instead \\(L_s=L_u=100\\). What changes?\nFor the original employment levels, calculate the exact long-run output increase in each scenario using exponents of \\(0.5\\). Compare with your approximations.\n\nPractice 5: Interpreting Innovation and Firm Evidence\nAnswer briefly.\n\nWhy can immigrants’ contribution to innovation exceed their share of directly authored patents? Why does neither share directly measure the effect on GDP?\nWhy is random variation in visa access useful for studying firms, compared with simply comparing firms that hire immigrants with firms that do not?\nA firm loses access to a foreign worker. Give two possible responses other than hiring a native worker into the same job. Explain how these responses affect the claim that one fewer immigrant creates one more native job.\n\nReading: NAS, The Economic and Fiscal Consequences of Immigration (2017), Sections 5.3–5.4, 5.6, 6.2, and 6.5. The recent studies above are those discussed in Lectures 13–14."
+  },
+  {
+    "objectID": "macro/index.html",
+    "href": "macro/index.html",
+    "title": "International Macroeconomics",
+    "section": "",
+    "text": "Topics and learning materials for Part III of ECON 3200."
+  },
+  {
+    "objectID": "discussion-materials.html",
+    "href": "discussion-materials.html",
+    "title": "Discussion Materials",
+    "section": "",
+    "text": "Immigration and economic growth"
+  },
+  {
+    "objectID": "discussion-materials.html#october-21-2026",
+    "href": "discussion-materials.html#october-21-2026",
+    "title": "Discussion Materials",
+    "section": "",
+    "text": "Immigration and economic growth"
+  },
+  {
+    "objectID": "discussion-materials.html#october-14-2026",
+    "href": "discussion-materials.html#october-14-2026",
+    "title": "Discussion Materials",
+    "section": "October 14, 2026",
+    "text": "October 14, 2026\nImmigration"
+  },
+  {
+    "objectID": "discussion-materials.html#september-30-2026",
+    "href": "discussion-materials.html#september-30-2026",
+    "title": "Discussion Materials",
+    "section": "September 30, 2026",
+    "text": "September 30, 2026\nIncomplete market"
+  },
+  {
+    "objectID": "discussion-materials.html#september-16-2026",
+    "href": "discussion-materials.html#september-16-2026",
+    "title": "Discussion Materials",
+    "section": "September 16, 2026",
+    "text": "September 16, 2026\nImport Tariff"
+  },
+  {
+    "objectID": "discussion-materials.html#september-9-2026",
+    "href": "discussion-materials.html#september-9-2026",
+    "title": "Discussion Materials",
+    "section": "September 9, 2026",
+    "text": "September 9, 2026\nGravity Model\nConstant Returns to Scale"
+  },
+  {
+    "objectID": "discussion-materials.html#september-2-2026",
+    "href": "discussion-materials.html#september-2-2026",
+    "title": "Discussion Materials",
+    "section": "September 2, 2026",
+    "text": "September 2, 2026\nLog Functions"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "ECON 3200 The Economics of Globalization",
+    "section": "",
+    "text": "Welcome to the TA website for ECON 3200: The Economics of Globalization.\nInstructor: Professor James Harrigan\nTeaching Assistant: Eric Guang-Xuan Zhou\nEmail: xus4ny@virginia.edu\nOffice Hours: We 1:30PM - 3:30PM in Monroe Basement\nDiscussion Sections\nDiscussion Notes: View Discussion Materials"
+  },
+  {
+    "objectID": "index.html#homework-answer-key",
+    "href": "index.html#homework-answer-key",
+    "title": "ECON 3200 The Economics of Globalization",
+    "section": "Homework Answer Key",
+    "text": "Homework Answer Key\n\n\n\nAssignment\nDeadline\nAnswer Key\n\n\n\n\nHomework 1\n9/3 3:30pm\nView Answer Key\n\n\nHomework 2\n9/10 3:30pm\nView Answer Key\n\n\nHomework 3\n9/17 3:30pm\nView Answer Key\n\n\nHomework 4\n10/1 3:30pm\nView Answer Key\n\n\nHomework 5\n10/8 3:30pm\nView Answer Key\n\n\nHomework 6\n10/15 3:30pm\nView Answer Key\n\n\nHomework 7\n10/22 3:30pm\nView Answer Key"
+  },
+  {
+    "objectID": "index.html#exams",
+    "href": "index.html#exams",
+    "title": "ECON 3200 The Economics of Globalization",
+    "section": "Exams",
+    "text": "Exams\n\n\n\nExam\nDate\n\n\n\n\nExam 1\nSeptember 22, 2026\n\n\nExam 2\nOctober 29, 2026\n\n\nExam 3\nDecember 11, 2026"
+  },
+  {
     "objectID": "migration/immigration-capital-and-skills.html",
     "href": "migration/immigration-capital-and-skills.html",
     "title": "Immigration: Capital Adjustment, Immigration Surplus, and Skill Differences",
@@ -264,83 +397,6 @@
     "title": "Immigration: Capital Adjustment, Immigration Surplus, and Skill Differences",
     "section": "5. Practice Problems",
     "text": "5. Practice Problems\nPractice 1: Short Run, Long Run, and Immigration Surplus\nAn economy produces\n\\[\nY=K^{1/3}L^{2/3}.\n\\]\nInitially, \\(K=100\\) and there are \\(N=100\\) workers. Immigration brings \\(M=20\\) additional workers. Existing residents own all initial capital; immigrants arrive without capital. Labor supply is inelastic and productivity is unchanged.\n\nDerive \\(w\\) and \\(r\\). Calculate initial output, output per worker, wages, and the rental payment per unit of capital.\nHolding capital fixed, calculate these quantities after immigration. Compare the exact output growth rate with the growth-accounting approximation.\nCalculate the original workers’ total labor-income loss, the increase in capital income, and immigrants’ total labor income. Obtain the exact immigration surplus and verify the income decomposition.\nCalculate the surplus using \\(\\tfrac12(w_1-w_2)M\\) and using \\(E/Y_1\\approx\\tfrac12\\alpha(1-\\alpha)(M/N)^2\\). Explain why these approximations need not equal the exact answer.\nLet capital adjust until \\(r\\) returns to its initial level. Find the required capital stock, output, and wage. Explain why higher GDP alone does not establish a gain for original residents.\n\nPractice 2: Immigration and the Skill Premium\nConsider\n\\[\nY=K^{1/3}L_s^{1/3}L_u^{1/3},\n\\]\ncorresponding to \\(A=1\\), \\(\\alpha=1/3\\), and \\(\\beta=1/2\\). Initially, \\(K=200\\), \\(L_s=100\\), and \\(L_u=200\\). Compare the following two scenarios with the same initial equilibrium:\n\nScenario A: Low-skilled immigration raises \\(L_u\\) by \\(20\\%\\), while \\(L_s\\) stays fixed.\nScenario B: Immigration raises both \\(L_s\\) and \\(L_u\\) by \\(20\\%\\).\n\n\nDerive \\(w_s\\), \\(w_u\\), and \\(r\\), and calculate their initial values and the initial skill premium.\nWith capital fixed, calculate the percentage changes in output and all three factor prices in each scenario. Explain why the skilled wage responds differently across scenarios.\nFor each scenario, allow capital to adjust until \\(r\\) returns to its original level. Find the required capital stock and the percentage changes in both wages relative to their initial values.\nCalculate the skill premium before immigration, in the short run, and in the long run. Why does capital adjustment fail to restore the original skill premium in Scenario A?\nSuppose data show that new immigrants lower earlier immigrants’ wages more than native-born wages within the same education group. Which assumption of our model would need to change to explain that difference?"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "ECON 3200 The Economics of Globalization",
-    "section": "",
-    "text": "Welcome to the TA website for ECON 3200: The Economics of Globalization.\nInstructor: Professor James Harrigan\nTeaching Assistant: Eric Guang-Xuan Zhou\nEmail: xus4ny@virginia.edu\nOffice Hours: We 1:30PM - 3:30PM in Monroe Basement\nDiscussion Sections\nDiscussion Notes: View Discussion Materials"
-  },
-  {
-    "objectID": "index.html#homework-answer-key",
-    "href": "index.html#homework-answer-key",
-    "title": "ECON 3200 The Economics of Globalization",
-    "section": "Homework Answer Key",
-    "text": "Homework Answer Key\n\n\n\nAssignment\nDeadline\nAnswer Key\n\n\n\n\nHomework 1\n9/3 3:30pm\nView Answer Key\n\n\nHomework 2\n9/10 3:30pm\nView Answer Key\n\n\nHomework 3\n9/17 3:30pm\nView Answer Key\n\n\nHomework 4\n10/1 3:30pm\nView Answer Key\n\n\nHomework 5\n10/8 3:30pm\nView Answer Key\n\n\nHomework 6\n10/15 3:30pm\nView Answer Key"
-  },
-  {
-    "objectID": "index.html#exams",
-    "href": "index.html#exams",
-    "title": "ECON 3200 The Economics of Globalization",
-    "section": "Exams",
-    "text": "Exams\n\n\n\nExam\nDate\n\n\n\n\nExam 1\nSeptember 22, 2026\n\n\nExam 2\nOctober 29, 2026\n\n\nExam 3\nDecember 11, 2026"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "discussion-materials.html",
-    "href": "discussion-materials.html",
-    "title": "Discussion Materials",
-    "section": "",
-    "text": "Immigration"
-  },
-  {
-    "objectID": "discussion-materials.html#october-14-2026",
-    "href": "discussion-materials.html#october-14-2026",
-    "title": "Discussion Materials",
-    "section": "",
-    "text": "Immigration"
-  },
-  {
-    "objectID": "discussion-materials.html#september-30-2026",
-    "href": "discussion-materials.html#september-30-2026",
-    "title": "Discussion Materials",
-    "section": "September 30, 2026",
-    "text": "September 30, 2026\nIncomplete market"
-  },
-  {
-    "objectID": "discussion-materials.html#september-16-2026",
-    "href": "discussion-materials.html#september-16-2026",
-    "title": "Discussion Materials",
-    "section": "September 16, 2026",
-    "text": "September 16, 2026\nImport Tariff"
-  },
-  {
-    "objectID": "discussion-materials.html#september-9-2026",
-    "href": "discussion-materials.html#september-9-2026",
-    "title": "Discussion Materials",
-    "section": "September 9, 2026",
-    "text": "September 9, 2026\nGravity Model\nConstant Returns to Scale"
-  },
-  {
-    "objectID": "discussion-materials.html#september-2-2026",
-    "href": "discussion-materials.html#september-2-2026",
-    "title": "Discussion Materials",
-    "section": "September 2, 2026",
-    "text": "September 2, 2026\nLog Functions"
-  },
-  {
-    "objectID": "macro/index.html",
-    "href": "macro/index.html",
-    "title": "International Macroeconomics",
-    "section": "",
-    "text": "Topics and learning materials for Part III of ECON 3200."
   },
   {
     "objectID": "migration/index.html",
