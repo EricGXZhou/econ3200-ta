@@ -2,13 +2,20 @@
 title: "Discussion Materials"
 ---
 
-## October 14, 2026 {.week-title}
+## October 21, 2026 {.week-title}
 
 ::: {.week-card .current-week}
 
-[Immigration](materials/Oct14_immigration.pdf){target="_blank" .material-link}
+[Immigration and economic growth](materials/Oct21-immigration-and-growth.pdf){target="_blank" .material-link}
 
 :::
+
+## October 14, 2026 {.week-title}
+
+
+[Immigration](materials/Oct14_immigration.pdf){target="_blank" .material-link}
+
+
 
 ## September 30, 2026 {.week-title}
 

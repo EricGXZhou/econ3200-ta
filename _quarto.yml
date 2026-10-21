@@ -27,6 +27,8 @@ website:
             text: Specific Factors Model of Immigration    
           - href: migration/immigration-capital-and-skills.qmd
             text: Immigration, Capital, and Skills
+          - href: migration/immigration-labor-and-growth.qmd
+            text: Immigration and Labor Market
       - href: macro/index.qmd
         text: International Macroeconomics
 format:

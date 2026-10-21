@@ -1,0 +1,1082 @@
+---
+title: "Immigration: Local Labor Markets, Substitution, and Economic Growth"
+---
+
+> What can local wage comparisons tell us, and how does immigration affect the size and productivity of the economy?
+
+This note accompanies Lectures 13–14. It builds on the previous note's production model and capital adjustment. We first ask how to interpret wage evidence, then derive the effects of imperfect substitution and the contributions of immigration to output growth. Firms are competitive and the price of output is one.
+
+## 1. What Can Local Labor Market Comparisons Tell Us?
+
+The **local labor market approach** compares wage or employment changes in places receiving different amounts of immigration. A commuting zone groups nearby communities whose residents work in the same local labor market.
+
+Suppose area A receives many immigrants and area B receives few. A simple comparison is
+
+$$
+\text{Difference in wage changes}
+=(w_{A,\mathrm{after}}-w_{A,\mathrm{before}})
+-(w_{B,\mathrm{after}}-w_{B,\mathrm{before}}).
+$$
+
+To interpret this difference as an effect of immigration in A, we need B to show what would have happened in A without immigration. Two problems can prevent that interpretation.
+
+**Immigrants choose where to live.** People often move toward good job opportunities. If a local industry expands, it may both attract immigrants and raise wages. A positive relationship between immigration and wage growth can therefore reflect labor demand rather than the effect of immigration.
+
+For example, suppose a demand boom would have raised wages in A by $5\%$ without immigration, while the extra labor supply reduces that increase by 2 percentage points. Observed wage growth is $3\%$. If wages in B are unchanged, attributing the entire $3\%$ difference to immigration gets the causal effect wrong. The estimate is too high; in this example it understates the adverse effect.
+
+One strategy uses **historical settlement patterns** to predict new arrivals: immigrants often move near people from the same origin country. This can help separate immigration from current local demand. For the prediction to be a valid instrument, it must predict arrivals without also tracking other causes of current wage growth. Persistent differences in local economic conditions can make this requirement fail.
+
+**An immigration shock can affect other areas.** Follow the two-area diagrams in Lecture 13. Initially, the areas have identical labor demand and employment, so $w_A^1=w_B^1$. Hold capital and labor demand fixed throughout this exercise.
+
+```{=html}
+<div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:1rem 0">
+<div style="flex:1 1 290px;min-width:0;max-width:520px"><svg role="img" aria-label="Commuting zone A: after immigration, before relocation" style="width:100%;height:auto;display:block" xmlns:xlink="http://www.w3.org/1999/xlink" width="360pt" height="277.2pt" viewBox="0 0 360 277.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="local-labor-stage2-a-figure_1">
+  <g id="local-labor-stage2-a-patch_1">
+   <path d="M 0 277.2 
+L 360 277.2 
+L 360 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="local-labor-stage2-a-axes_1">
+   <g id="local-labor-stage2-a-patch_2">
+    <path d="M 57.6 232.848 
+L 349.2 232.848 
+L 349.2 44.352 
+L 57.6 44.352 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="local-labor-stage2-a-line2d_1">
+    <path d="M 166.95 232.848 
+L 166.95 70.451446 
+" clip-path="url(#local-labor-stage2-a-p7f330bd056)" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #596474; stroke-width: 1.8"/>
+   </g>
+   <g id="local-labor-stage2-a-line2d_2">
+    <path d="M 269.01 232.848 
+L 269.01 70.451446 
+" clip-path="url(#local-labor-stage2-a-p7f330bd056)" style="fill: none; stroke: #b64d32; stroke-width: 1.8; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage2-a-matplotlib.axis_1">
+    <g id="local-labor-stage2-a-text_1">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="203.4" y="249.966125" transform="rotate(-0 203.4 249.966125)">Employment</text>
+    </g>
+   </g>
+   <g id="local-labor-stage2-a-matplotlib.axis_2"/>
+   <g id="local-labor-stage2-a-line2d_3">
+    <path d="M 94.05 80.601231 
+L 327.33 219.798277 
+" clip-path="url(#local-labor-stage2-a-p7f330bd056)" style="fill: none; stroke: #1f344b; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage2-a-line2d_4">
+    <path d="M 57.6 124.100308 
+L 166.95 124.100308 
+" clip-path="url(#local-labor-stage2-a-p7f330bd056)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #596474"/>
+   </g>
+   <g id="local-labor-stage2-a-line2d_5">
+    <path d="M 57.6 184.999015 
+L 269.01 184.999015 
+" clip-path="url(#local-labor-stage2-a-p7f330bd056)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #b64d32"/>
+   </g>
+   <g id="local-labor-stage2-a-patch_3">
+    <path d="M 57.6 232.848 
+L 57.6 44.352 
+" style="fill: none; stroke: #475569; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage2-a-patch_4">
+    <path d="M 57.6 232.848 
+L 349.2 232.848 
+" style="fill: none; stroke: #475569; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage2-a-text_2">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="22.608" y="34.9272" transform="rotate(-0 22.608 34.9272)">Wage</text>
+   </g>
+   <g id="local-labor-stage2-a-text_3">
+    <!-- $D$ -->
+    <g style="fill: #1f344b" transform="translate(330.246 218.348308)">
+     <text>
+      <tspan x="0" y="-0.796875" style="font-style: oblique; font-size: 14px; font-family: 'DejaVu Sans'; fill: #1f344b">D</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage2-a-text_4">
+    <!-- $S_A^1$ -->
+    <g style="fill: #596474" transform="translate(159.28 60.141588)">
+     <text>
+      <tspan x="0" y="-0.384375" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #596474">S</tspan>
+      <tspan x="9.189115" y="-5.360938" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">1</tspan>
+      <tspan x="8.251953" y="3.170312" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">A</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage2-a-text_5">
+    <!-- $w_A^1$ -->
+    <g style="fill: #596474" transform="translate(32.89 128.130308)">
+     <text>
+      <tspan x="0" y="-0.384375" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #596474">w</tspan>
+      <tspan x="11.212923" y="-5.360938" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">1</tspan>
+      <tspan x="10.632324" y="3.170312" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">A</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage2-a-text_6">
+    <!-- $S_A^2$ -->
+    <g style="fill: #b64d32" transform="translate(261.34 60.141588)">
+     <text>
+      <tspan x="0" y="-0.264062" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #b64d32">S</tspan>
+      <tspan x="9.189115" y="-5.240625" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #b64d32">2</tspan>
+      <tspan x="8.251953" y="3.290625" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #b64d32">A</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage2-a-text_7">
+    <!-- $w_A^2$ -->
+    <g style="fill: #b64d32" transform="translate(32.89 189.094015)">
+     <text>
+      <tspan x="0" y="-0.264062" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #b64d32">w</tspan>
+      <tspan x="11.212923" y="-5.240625" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #b64d32">2</tspan>
+      <tspan x="10.632324" y="3.290625" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #b64d32">A</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage2-a-patch_5">
+    <path d="M 168.952703 90.751015 
+Q 217.981328 90.751015 265.332902 90.751015 
+" style="fill: none; stroke: #b64d32; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 260.532902 88.351015 
+L 265.332902 90.751015 
+L 260.532902 93.151015 
+" style="fill: none; stroke: #b64d32; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="local-labor-stage2-a-text_8">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="203.4" y="23.352" transform="rotate(-0 203.4 23.352)">Commuting zone A</text>
+   </g>
+   <g id="local-labor-stage2-a-line2d_6">
+    <defs>
+     <path id="local-labor-stage2-a-m80819f5388" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #596474"/>
+    </defs>
+    <g clip-path="url(#local-labor-stage2-a-p7f330bd056)">
+     <use xlink:href="#local-labor-stage2-a-m80819f5388" x="166.95" y="124.100308" style="fill: #596474; stroke: #596474"/>
+    </g>
+   </g>
+   <g id="local-labor-stage2-a-line2d_7">
+    <defs>
+     <path id="local-labor-stage2-a-m471e7798eb" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #b64d32"/>
+    </defs>
+    <g clip-path="url(#local-labor-stage2-a-p7f330bd056)">
+     <use xlink:href="#local-labor-stage2-a-m471e7798eb" x="269.01" y="184.999015" style="fill: #b64d32; stroke: #b64d32"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="local-labor-stage2-a-p7f330bd056">
+   <rect x="57.6" y="44.352" width="291.6" height="188.496"/>
+  </clipPath>
+ </defs>
+</svg>
+</div>
+<div style="flex:1 1 290px;min-width:0;max-width:520px"><svg role="img" aria-label="Commuting zone B: after immigration, before relocation" style="width:100%;height:auto;display:block" xmlns:xlink="http://www.w3.org/1999/xlink" width="360pt" height="277.2pt" viewBox="0 0 360 277.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="local-labor-stage2-b-figure_1">
+  <g id="local-labor-stage2-b-patch_1">
+   <path d="M 0 277.2 
+L 360 277.2 
+L 360 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="local-labor-stage2-b-axes_1">
+   <g id="local-labor-stage2-b-patch_2">
+    <path d="M 57.6 232.848 
+L 349.2 232.848 
+L 349.2 44.352 
+L 57.6 44.352 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="local-labor-stage2-b-line2d_1">
+    <path d="M 166.95 232.848 
+L 166.95 70.451446 
+" clip-path="url(#local-labor-stage2-b-pdebc50a16b)" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #596474; stroke-width: 1.8"/>
+   </g>
+   <g id="local-labor-stage2-b-matplotlib.axis_1">
+    <g id="local-labor-stage2-b-text_1">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="203.4" y="249.966125" transform="rotate(-0 203.4 249.966125)">Employment</text>
+    </g>
+   </g>
+   <g id="local-labor-stage2-b-matplotlib.axis_2"/>
+   <g id="local-labor-stage2-b-line2d_2">
+    <path d="M 94.05 80.601231 
+L 327.33 219.798277 
+" clip-path="url(#local-labor-stage2-b-pdebc50a16b)" style="fill: none; stroke: #1f344b; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage2-b-line2d_3">
+    <path d="M 57.6 124.100308 
+L 166.95 124.100308 
+" clip-path="url(#local-labor-stage2-b-pdebc50a16b)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #596474"/>
+   </g>
+   <g id="local-labor-stage2-b-patch_3">
+    <path d="M 57.6 232.848 
+L 57.6 44.352 
+" style="fill: none; stroke: #475569; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage2-b-patch_4">
+    <path d="M 57.6 232.848 
+L 349.2 232.848 
+" style="fill: none; stroke: #475569; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage2-b-text_2">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="22.608" y="34.9272" transform="rotate(-0 22.608 34.9272)">Wage</text>
+   </g>
+   <g id="local-labor-stage2-b-text_3">
+    <!-- $D$ -->
+    <g style="fill: #1f344b" transform="translate(330.246 218.348308)">
+     <text>
+      <tspan x="0" y="-0.796875" style="font-style: oblique; font-size: 14px; font-family: 'DejaVu Sans'; fill: #1f344b">D</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage2-b-text_4">
+    <!-- $S_B^1$ -->
+    <g style="fill: #596474" transform="translate(159.28 60.141588)">
+     <text>
+      <tspan x="0" y="-0.384375" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #596474">S</tspan>
+      <tspan x="9.189115" y="-5.360938" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">1</tspan>
+      <tspan x="8.251953" y="3.170312" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">B</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage2-b-text_5">
+    <!-- $w_B^1$ -->
+    <g style="fill: #596474" transform="translate(32.89 128.130308)">
+     <text>
+      <tspan x="0" y="-0.384375" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #596474">w</tspan>
+      <tspan x="11.212923" y="-5.360938" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">1</tspan>
+      <tspan x="10.632324" y="3.170312" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">B</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage2-b-text_6">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="203.4" y="23.352" transform="rotate(-0 203.4 23.352)">Commuting zone B</text>
+   </g>
+   <g id="local-labor-stage2-b-line2d_4">
+    <defs>
+     <path id="local-labor-stage2-b-m4dd037268f" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #596474"/>
+    </defs>
+    <g clip-path="url(#local-labor-stage2-b-pdebc50a16b)">
+     <use xlink:href="#local-labor-stage2-b-m4dd037268f" x="166.95" y="124.100308" style="fill: #596474; stroke: #596474"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="local-labor-stage2-b-pdebc50a16b">
+   <rect x="57.6" y="44.352" width="291.6" height="188.496"/>
+  </clipPath>
+ </defs>
+</svg>
+</div>
+</div>
+```
+
+*Stage 2: Immigration shifts A's labor supply from $S_A^1$ to $S_A^2$. Its wage falls to $w_A^2$. B has not yet been affected. Curve and wage labels follow Lecture 13, slide 15.*
+
+The wage gap gives workers an incentive to move from A to B. A's supply moves back toward its original position, while B's supply increases.
+
+```{=html}
+<div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:1rem 0">
+<div style="flex:1 1 290px;min-width:0;max-width:520px"><svg role="img" aria-label="Commuting zone A: after workers relocate" style="width:100%;height:auto;display:block" xmlns:xlink="http://www.w3.org/1999/xlink" width="360pt" height="277.2pt" viewBox="0 0 360 277.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="local-labor-stage3-a-figure_1">
+  <g id="local-labor-stage3-a-patch_1">
+   <path d="M 0 277.2 
+L 360 277.2 
+L 360 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="local-labor-stage3-a-axes_1">
+   <g id="local-labor-stage3-a-patch_2">
+    <path d="M 57.6 232.848 
+L 349.2 232.848 
+L 349.2 44.352 
+L 57.6 44.352 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="local-labor-stage3-a-line2d_1">
+    <path d="M 166.95 232.848 
+L 166.95 70.451446 
+" clip-path="url(#local-labor-stage3-a-pa3749f60a6)" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #596474; stroke-width: 1.8"/>
+   </g>
+   <g id="local-labor-stage3-a-line2d_2">
+    <path d="M 269.01 232.848 
+L 269.01 70.451446 
+" clip-path="url(#local-labor-stage3-a-pa3749f60a6)" style="fill: none; stroke: #b64d32; stroke-width: 1.8; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage3-a-line2d_3">
+    <path d="M 217.98 232.848 
+L 217.98 70.451446 
+" clip-path="url(#local-labor-stage3-a-pa3749f60a6)" style="fill: none; stroke: #167a70; stroke-width: 1.8; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage3-a-matplotlib.axis_1">
+    <g id="local-labor-stage3-a-text_1">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="203.4" y="249.966125" transform="rotate(-0 203.4 249.966125)">Employment</text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-a-matplotlib.axis_2"/>
+   <g id="local-labor-stage3-a-line2d_4">
+    <path d="M 94.05 80.601231 
+L 327.33 219.798277 
+" clip-path="url(#local-labor-stage3-a-pa3749f60a6)" style="fill: none; stroke: #1f344b; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage3-a-line2d_5">
+    <path d="M 57.6 124.100308 
+L 166.95 124.100308 
+" clip-path="url(#local-labor-stage3-a-pa3749f60a6)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #596474"/>
+   </g>
+   <g id="local-labor-stage3-a-line2d_6">
+    <path d="M 57.6 184.999015 
+L 269.01 184.999015 
+" clip-path="url(#local-labor-stage3-a-pa3749f60a6)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #b64d32"/>
+   </g>
+   <g id="local-labor-stage3-a-line2d_7">
+    <path d="M 57.6 154.549662 
+L 217.98 154.549662 
+" clip-path="url(#local-labor-stage3-a-pa3749f60a6)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #167a70"/>
+   </g>
+   <g id="local-labor-stage3-a-patch_3">
+    <path d="M 57.6 232.848 
+L 57.6 44.352 
+" style="fill: none; stroke: #475569; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage3-a-patch_4">
+    <path d="M 57.6 232.848 
+L 349.2 232.848 
+" style="fill: none; stroke: #475569; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage3-a-text_2">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="22.608" y="34.9272" transform="rotate(-0 22.608 34.9272)">Wage</text>
+   </g>
+   <g id="local-labor-stage3-a-text_3">
+    <!-- $D$ -->
+    <g style="fill: #1f344b" transform="translate(330.246 218.348308)">
+     <text>
+      <tspan x="0" y="-0.796875" style="font-style: oblique; font-size: 14px; font-family: 'DejaVu Sans'; fill: #1f344b">D</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-a-text_4">
+    <!-- $S_A^1$ -->
+    <g style="fill: #596474" transform="translate(159.28 60.141588)">
+     <text>
+      <tspan x="0" y="-0.384375" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #596474">S</tspan>
+      <tspan x="9.189115" y="-5.360938" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">1</tspan>
+      <tspan x="8.251953" y="3.170312" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">A</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-a-text_5">
+    <!-- $w_A^1$ -->
+    <g style="fill: #596474" transform="translate(32.89 128.130308)">
+     <text>
+      <tspan x="0" y="-0.384375" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #596474">w</tspan>
+      <tspan x="11.212923" y="-5.360938" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">1</tspan>
+      <tspan x="10.632324" y="3.170312" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">A</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-a-text_6">
+    <!-- $S_A^2$ -->
+    <g style="fill: #b64d32" transform="translate(261.34 60.141588)">
+     <text>
+      <tspan x="0" y="-0.264062" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #b64d32">S</tspan>
+      <tspan x="9.189115" y="-5.240625" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #b64d32">2</tspan>
+      <tspan x="8.251953" y="3.290625" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #b64d32">A</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-a-text_7">
+    <!-- $w_A^2$ -->
+    <g style="fill: #b64d32" transform="translate(32.89 189.094015)">
+     <text>
+      <tspan x="0" y="-0.264062" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #b64d32">w</tspan>
+      <tspan x="11.212923" y="-5.240625" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #b64d32">2</tspan>
+      <tspan x="10.632324" y="3.290625" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #b64d32">A</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-a-text_8">
+    <!-- $S_A^3$ -->
+    <g style="fill: #167a70" transform="translate(210.31 60.141588)">
+     <text>
+      <tspan x="0" y="-0.264062" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #167a70">S</tspan>
+      <tspan x="9.189115" y="-5.240625" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #167a70">3</tspan>
+      <tspan x="8.251953" y="3.290625" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #167a70">A</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-a-text_9">
+    <!-- $w_A^3$ -->
+    <g style="fill: #167a70" transform="translate(32.89 158.644662)">
+     <text>
+      <tspan x="0" y="-0.264062" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #167a70">w</tspan>
+      <tspan x="11.212923" y="-5.240625" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #167a70">3</tspan>
+      <tspan x="10.632324" y="3.290625" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #167a70">A</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-a-patch_5">
+    <path d="M 168.952703 90.751015 
+Q 217.981328 90.751015 265.332902 90.751015 
+" style="fill: none; stroke: #b64d32; stroke-width: 1.5; stroke-linecap: round"/>
+    <path d="M 260.532902 88.351015 
+L 265.332902 90.751015 
+L 260.532902 93.151015 
+" style="fill: none; stroke: #b64d32; stroke-width: 1.5; stroke-linecap: round"/>
+   </g>
+   <g id="local-labor-stage3-a-patch_6">
+    <path d="M 267.007297 108.150646 
+Q 243.494602 108.150646 221.994369 108.150646 
+" style="fill: none; stroke: #167a70; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 226.794369 110.550646 
+L 221.994369 108.150646 
+L 226.794369 105.750646 
+" style="fill: none; stroke: #167a70; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="local-labor-stage3-a-text_10">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="203.4" y="23.352" transform="rotate(-0 203.4 23.352)">Commuting zone A</text>
+   </g>
+   <g id="local-labor-stage3-a-line2d_8">
+    <defs>
+     <path id="local-labor-stage3-a-mbe94647dd5" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #596474"/>
+    </defs>
+    <g clip-path="url(#local-labor-stage3-a-pa3749f60a6)">
+     <use xlink:href="#local-labor-stage3-a-mbe94647dd5" x="166.95" y="124.100308" style="fill: #596474; stroke: #596474"/>
+    </g>
+   </g>
+   <g id="local-labor-stage3-a-line2d_9">
+    <defs>
+     <path id="local-labor-stage3-a-m4a52608993" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #b64d32"/>
+    </defs>
+    <g clip-path="url(#local-labor-stage3-a-pa3749f60a6)">
+     <use xlink:href="#local-labor-stage3-a-m4a52608993" x="269.01" y="184.999015" style="fill: #b64d32; stroke: #b64d32"/>
+    </g>
+   </g>
+   <g id="local-labor-stage3-a-line2d_10">
+    <defs>
+     <path id="local-labor-stage3-a-ma59f8450cb" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #167a70"/>
+    </defs>
+    <g clip-path="url(#local-labor-stage3-a-pa3749f60a6)">
+     <use xlink:href="#local-labor-stage3-a-ma59f8450cb" x="217.98" y="154.549662" style="fill: #167a70; stroke: #167a70"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="local-labor-stage3-a-pa3749f60a6">
+   <rect x="57.6" y="44.352" width="291.6" height="188.496"/>
+  </clipPath>
+ </defs>
+</svg>
+</div>
+<div style="flex:1 1 290px;min-width:0;max-width:520px"><svg role="img" aria-label="Commuting zone B: after workers relocate" style="width:100%;height:auto;display:block" xmlns:xlink="http://www.w3.org/1999/xlink" width="360pt" height="277.2pt" viewBox="0 0 360 277.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ 
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="local-labor-stage3-b-figure_1">
+  <g id="local-labor-stage3-b-patch_1">
+   <path d="M 0 277.2 
+L 360 277.2 
+L 360 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="local-labor-stage3-b-axes_1">
+   <g id="local-labor-stage3-b-patch_2">
+    <path d="M 57.6 232.848 
+L 349.2 232.848 
+L 349.2 44.352 
+L 57.6 44.352 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="local-labor-stage3-b-line2d_1">
+    <path d="M 166.95 232.848 
+L 166.95 70.451446 
+" clip-path="url(#local-labor-stage3-b-p1950d219f9)" style="fill: none; stroke-dasharray: 6.66,2.88; stroke-dashoffset: 0; stroke: #596474; stroke-width: 1.8"/>
+   </g>
+   <g id="local-labor-stage3-b-line2d_2">
+    <path d="M 217.98 232.848 
+L 217.98 70.451446 
+" clip-path="url(#local-labor-stage3-b-p1950d219f9)" style="fill: none; stroke: #167a70; stroke-width: 1.8; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage3-b-matplotlib.axis_1">
+    <g id="local-labor-stage3-b-text_1">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="203.4" y="249.966125" transform="rotate(-0 203.4 249.966125)">Employment</text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-b-matplotlib.axis_2"/>
+   <g id="local-labor-stage3-b-line2d_3">
+    <path d="M 94.05 80.601231 
+L 327.33 219.798277 
+" clip-path="url(#local-labor-stage3-b-p1950d219f9)" style="fill: none; stroke: #1f344b; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage3-b-line2d_4">
+    <path d="M 57.6 124.100308 
+L 166.95 124.100308 
+" clip-path="url(#local-labor-stage3-b-p1950d219f9)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #596474"/>
+   </g>
+   <g id="local-labor-stage3-b-line2d_5">
+    <path d="M 57.6 154.549662 
+L 217.98 154.549662 
+" clip-path="url(#local-labor-stage3-b-p1950d219f9)" style="fill: none; stroke-dasharray: 3,3; stroke-dashoffset: 0; stroke: #167a70"/>
+   </g>
+   <g id="local-labor-stage3-b-patch_3">
+    <path d="M 57.6 232.848 
+L 57.6 44.352 
+" style="fill: none; stroke: #475569; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage3-b-patch_4">
+    <path d="M 57.6 232.848 
+L 349.2 232.848 
+" style="fill: none; stroke: #475569; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="local-labor-stage3-b-text_2">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start" x="22.608" y="34.9272" transform="rotate(-0 22.608 34.9272)">Wage</text>
+   </g>
+   <g id="local-labor-stage3-b-text_3">
+    <!-- $D$ -->
+    <g style="fill: #1f344b" transform="translate(330.246 218.348308)">
+     <text>
+      <tspan x="0" y="-0.796875" style="font-style: oblique; font-size: 14px; font-family: 'DejaVu Sans'; fill: #1f344b">D</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-b-text_4">
+    <!-- $S_B^1$ -->
+    <g style="fill: #596474" transform="translate(159.28 60.141588)">
+     <text>
+      <tspan x="0" y="-0.384375" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #596474">S</tspan>
+      <tspan x="9.189115" y="-5.360938" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">1</tspan>
+      <tspan x="8.251953" y="3.170312" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">B</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-b-text_5">
+    <!-- $w_B^1$ -->
+    <g style="fill: #596474" transform="translate(32.89 128.130308)">
+     <text>
+      <tspan x="0" y="-0.384375" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #596474">w</tspan>
+      <tspan x="11.212923" y="-5.360938" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">1</tspan>
+      <tspan x="10.632324" y="3.170312" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #596474">B</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-b-text_6">
+    <!-- $S_B^3$ -->
+    <g style="fill: #167a70" transform="translate(210.31 60.141588)">
+     <text>
+      <tspan x="0" y="-0.264062" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #167a70">S</tspan>
+      <tspan x="9.189115" y="-5.240625" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #167a70">3</tspan>
+      <tspan x="8.251953" y="3.290625" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #167a70">B</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-b-text_7">
+    <!-- $w_B^3$ -->
+    <g style="fill: #167a70" transform="translate(32.89 158.644662)">
+     <text>
+      <tspan x="0" y="-0.264062" style="font-style: oblique; font-size: 13px; font-family: 'DejaVu Sans'; fill: #167a70">w</tspan>
+      <tspan x="11.212923" y="-5.240625" style="font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #167a70">3</tspan>
+      <tspan x="10.632324" y="3.290625" style="font-style: oblique; font-size: 9.1px; font-family: 'DejaVu Sans'; fill: #167a70">B</tspan>
+     </text>
+    </g>
+   </g>
+   <g id="local-labor-stage3-b-patch_5">
+    <path d="M 168.952703 108.150646 
+Q 192.465398 108.150646 213.965631 108.150646 
+" style="fill: none; stroke: #167a70; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 209.165631 105.750646 
+L 213.965631 108.150646 
+L 209.165631 110.550646 
+" style="fill: none; stroke: #167a70; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="local-labor-stage3-b-text_8">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="203.4" y="23.352" transform="rotate(-0 203.4 23.352)">Commuting zone B</text>
+   </g>
+   <g id="local-labor-stage3-b-line2d_6">
+    <defs>
+     <path id="local-labor-stage3-b-m28fac01ff7" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #596474"/>
+    </defs>
+    <g clip-path="url(#local-labor-stage3-b-p1950d219f9)">
+     <use xlink:href="#local-labor-stage3-b-m28fac01ff7" x="166.95" y="124.100308" style="fill: #596474; stroke: #596474"/>
+    </g>
+   </g>
+   <g id="local-labor-stage3-b-line2d_7">
+    <defs>
+     <path id="local-labor-stage3-b-mf28732847b" d="M 0 2.5 
+C 0.663008 2.5 1.29895 2.236584 1.767767 1.767767 
+C 2.236584 1.29895 2.5 0.663008 2.5 0 
+C 2.5 -0.663008 2.236584 -1.29895 1.767767 -1.767767 
+C 1.29895 -2.236584 0.663008 -2.5 0 -2.5 
+C -0.663008 -2.5 -1.29895 -2.236584 -1.767767 -1.767767 
+C -2.236584 -1.29895 -2.5 -0.663008 -2.5 0 
+C -2.5 0.663008 -2.236584 1.29895 -1.767767 1.767767 
+C -1.29895 2.236584 -0.663008 2.5 0 2.5 
+z
+" style="stroke: #167a70"/>
+    </defs>
+    <g clip-path="url(#local-labor-stage3-b-p1950d219f9)">
+     <use xlink:href="#local-labor-stage3-b-mf28732847b" x="217.98" y="154.549662" style="fill: #167a70; stroke: #167a70"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="local-labor-stage3-b-p1950d219f9">
+   <rect x="57.6" y="44.352" width="291.6" height="188.496"/>
+  </clipPath>
+ </defs>
+</svg>
+</div>
+</div>
+```
+
+*Stage 3: Relocation moves supply to $S_A^3$ and $S_B^3$. A's wage partly recovers; B's wage falls. With identical demand curves and costless mobility, $w_A^3=w_B^3<w_A^1=w_B^1$. Labels follow Lecture 13, slide 16.*
+
+After relocation,
+
+$$
+(w_A^3-w_A^1)-(w_B^3-w_B^1)=0,
+$$
+
+even though both wages are below their initial levels. **A small difference between places can coexist with an effect shared across places.** B is no longer an unaffected comparison area.
+
+Here the later stage allows workers to relocate but keeps capital fixed. It is a different adjustment from the capital accumulation in the previous note. In actual economies, labor mobility, investment, and trade can all spread or offset local effects. Their importance is an empirical question; the diagram illustrates a mechanism rather than a universal prediction.
+
+## 2. From Substitution to Relative Wages
+
+The previous model allowed skilled and unskilled workers to perform different roles but treated immigrants and native-born workers within each group as identical. We now relax that second assumption.
+
+**Start with the skill premium.** The earlier Cobb-Douglas model gives
+
+$$
+\frac{w_s}{w_u}=\frac{\beta}{1-\beta}\frac{L_u}{L_s}.
+$$
+
+Rearranging and taking logs,
+
+$$
+\ln\left(\frac{L_s}{L_u}\right)
+=\ln\left(\frac{\beta}{1-\beta}\right)
+-\ln\left(\frac{w_s}{w_u}\right).
+$$
+
+A $1\%$ increase in the skill premium reduces relative skill demand by $1\%$. This elasticity is built into Cobb-Douglas; it is not an estimate from data.
+
+**Allow imperfect substitution within a skill group.** Let $j=s,u$ denote the skill group and $N,F$ denote native-born and foreign-born workers. Combine the two types with a constant-elasticity-of-substitution (CES) function:
+
+$$
+L_j=\left[
+\theta_j L_{jN}^{(\sigma_j-1)/\sigma_j}
++(1-\theta_j)L_{jF}^{(\sigma_j-1)/\sigma_j}
+\right]^{\sigma_j/(\sigma_j-1)},
+\qquad 0<\theta_j<1,\quad \sigma_j>1.
+$$
+
+Here $L_j$ is effective labor, not a headcount. The parameter $\theta_j$ sets the relative weight on the two inputs. A larger $\sigma_j$ means employers can substitute more easily between them. These are differences in productive roles within an education group, not a ranking of people by birthplace.
+
+Let $v_j=\partial Y/\partial L_j$ be the extra output from one unit of effective labor. Applying the chain rule gives each worker type's wage:
+
+$$
+w_{jN}=v_j\frac{\partial L_j}{\partial L_{jN}}
+=v_j\theta_j L_j^{1/\sigma_j}L_{jN}^{-1/\sigma_j},
+$$
+
+$$
+w_{jF}=v_j\frac{\partial L_j}{\partial L_{jF}}
+=v_j(1-\theta_j)L_j^{1/\sigma_j}L_{jF}^{-1/\sigma_j}.
+$$
+
+Dividing cancels the common terms:
+
+$$
+\boxed{\frac{w_{jN}}{w_{jF}}
+=\frac{\theta_j}{1-\theta_j}
+\left(\frac{L_{jN}}{L_{jF}}\right)^{-1/\sigma_j}.}
+$$
+
+Rearranging gives the lecture's relative labor demand equation:
+
+$$
+\ln\left(\frac{L_{jN}}{L_{jF}}\right)
+=\sigma_j\ln\left(\frac{\theta_j}{1-\theta_j}\right)
+-\sigma_j\ln\left(\frac{w_{jN}}{w_{jF}}\right).
+$$
+
+The substitution elasticity $\sigma_j$ is positive; the elasticity of relative demand with respect to the relative wage is $-\sigma_j$. Thus a reported relative-demand elasticity of $-10$ corresponds to $\sigma_j=10$.
+
+**Use the equation to predict a change.** Holding $\theta_j$ fixed,
+
+$$
+\boxed{\Delta\ln\left(\frac{w_{jN}}{w_{jF}}\right)
+=-\frac{1}{\sigma_j}
+\left(\Delta\ln L_{jN}-\Delta\ln L_{jF}\right).}
+$$
+
+If native employment is fixed and immigrant employment increases by $m$, the exact wage-ratio change is
+
+$$
+\frac{(w_{jN}/w_{jF})_{\mathrm{after}}}
+{(w_{jN}/w_{jF})_{\mathrm{before}}}
+=(1+m)^{1/\sigma_j}.
+$$
+
+For example, $m=0.08$ and $\sigma_j=4$ imply an increase of $1.08^{1/4}-1\approx1.94\%$, or approximately $8\%/4=2\%$. Native workers become relatively scarcer, so their relative wage rises.
+
+This calculation determines a **wage ratio**. Since
+
+$$
+\Delta\ln w_{jN}
+=\Delta\ln(w_{jN}/w_{jF})+\Delta\ln w_{jF},
+$$
+
+the native wage itself also depends on what happens to the immigrant wage. Changes in capital, productivity, and other labor inputs help determine both wage levels. Imperfect substitution alone does not guarantee that every native worker gains.
+
+**Reading the evidence.** Lecture 13 reports the following estimates from Caiumi and Peri (2026):
+
+| Education group | Relative-demand elasticity | Positive substitution elasticity |
+|:---|---:|---:|
+| No high school degree | $-16$ | $16$ |
+| High school degree | $-75$ | $75$ |
+| Some college | $-34$ | $34$ |
+| College degree | $-10$ | $10$ |
+
+These finite values reject perfect substitution within education groups. Smaller values imply a larger relative-wage response to the same relative-supply change. The lecture separately reports an elasticity around 2 **between skill groups**, compared with 1 in the Cobb-Douglas benchmark. These are different margins of substitution.
+
+With perfect substitutes of equal productivity, employers choose the cheaper worker type. Both types can be employed together only at equal wages. In the CES function, this case corresponds to equal weights, $\theta_j=1/2$, and the limit $\sigma_j\to\infty$.
+
+## 3. Immigration's Direct Contribution to Growth
+
+For the growth-accounting exercise, return to Lecture 14's simpler benchmark:
+
+$$
+Y=AK^{\alpha_K}L_s^{\alpha_s}L_u^{\alpha_u},
+\qquad \alpha_K+\alpha_s+\alpha_u=1.
+$$
+
+The parameters are positive income shares. In the previous note's notation, $\alpha_K=\alpha$, $\alpha_s=(1-\alpha)\beta$, and $\alpha_u=(1-\alpha)(1-\beta)$. Under competitive factor payments, for example, $w_sL_s/Y=\alpha_s$.
+
+In this section, workers within each skill group are again perfect substitutes of equal productivity:
+
+$$
+L_s=L_{sN}+L_{sF},\qquad L_u=L_{uN}+L_{uF}.
+$$
+
+This makes the contribution of worker counts easy to calculate. It replaces the CES assumption in Section 2; a CES labor composite would require different weights.
+
+**From production to growth accounting.** Taking logs,
+
+$$
+\ln Y=\ln A+\alpha_K\ln K+\alpha_s\ln L_s+\alpha_u\ln L_u.
+$$
+
+With constant parameters, changes in this equation are exact in logs. Write $g_X=\Delta X/X$ for the ordinary proportional change over the period. Using $\Delta\ln X\approx g_X$ gives
+
+$$
+\boxed{g_Y\approx g_A+\alpha_Kg_K+\alpha_sg_{L_s}+\alpha_ug_{L_u}.}
+$$
+
+Enter $10\%$ as $0.10$. A contribution of $0.02$ means approximately 2 percentage points of output growth over that period, not 2 percent of total growth.
+
+**From immigrant growth to total labor growth.** Since $L_j=L_{jN}+L_{jF}$,
+
+$$
+\frac{\Delta L_j}{L_j}
+=\frac{\Delta L_{jN}+\Delta L_{jF}}{L_j}
+=\frac{L_{jN}}{L_j}\frac{\Delta L_{jN}}{L_{jN}}
++\frac{L_{jF}}{L_j}\frac{\Delta L_{jF}}{L_{jF}}.
+$$
+
+Define the initial immigrant share within group $j$ as $\lambda_{jF}=L_{jF}/L_j$. Then
+
+$$
+\boxed{g_{L_j}=(1-\lambda_{jF})g_{L_{jN}}+\lambda_{jF}g_{L_{jF}}.}
+$$
+
+This identity is exact for ordinary growth rates when the weights and denominators use the beginning of the period. If immigrants make up $15\%$ of a group and their number rises by $20\%$, with native employment fixed, total employment in that group rises by $0.15\times0.20=3\%$.
+
+Substituting both groups into growth accounting gives
+
+$$
+\begin{aligned}
+g_Y\approx{}&g_A+\alpha_Kg_K\\
+&+\alpha_s(1-\lambda_{sF})g_{L_{sN}}
++\alpha_u(1-\lambda_{uF})g_{L_{uN}}\\
+&+\alpha_s\lambda_{sF}g_{L_{sF}}
++\alpha_u\lambda_{uF}g_{L_{uF}}.
+\end{aligned}
+$$
+
+The last line is the **direct immigrant labor contribution**, which we denote by $G_F$:
+
+$$
+\boxed{G_F=\alpha_s\lambda_{sF}g_{L_{sF}}
++\alpha_u\lambda_{uF}g_{L_{uF}}.}
+$$
+
+Use separate immigrant shares for the two groups unless they are assumed equal. Growth in the foreign-born workforce is also not automatically the number of new arrivals: departures and changes in labor force participation can matter.
+
+## 4. Capital Adjustment and the Composition of Immigration
+
+More labor raises the return to capital and encourages investment. To isolate this response, hold productivity fixed and let capital adjust until its rental payment returns to its initial value.
+
+**Derive the indirect contribution.** From the production function,
+
+$$
+r=\frac{\partial Y}{\partial K}=\alpha_K\frac{Y}{K}.
+$$
+
+If $r$ and $\alpha_K$ are unchanged, $Y/K$ is unchanged. Therefore $K_2/K_1=Y_2/Y_1$, so $g_K=g_Y$. Substitute into growth accounting with $g_A=0$:
+
+$$
+g_Y\approx\alpha_Kg_Y+\alpha_sg_{L_s}+\alpha_ug_{L_u}.
+$$
+
+Moving the capital term to the left gives
+
+$$
+\boxed{g_Y\approx
+\frac{\alpha_sg_{L_s}+\alpha_ug_{L_u}}{1-\alpha_K}.}
+$$
+
+Holding native labor and productivity fixed, the approximate contributions of immigrant growth are
+
+| Channel | Contribution |
+|:---|:---:|
+| Direct labor contribution | $G_F$ |
+| Induced capital contribution | $\dfrac{\alpha_K}{1-\alpha_K}G_F$ |
+| Total after capital adjustment | $\dfrac{G_F}{1-\alpha_K}$ |
+
+The last row already includes the direct contribution. If $\alpha_K=1/3$, investment adds half as much output as the direct labor contribution, making the total 1.5 times the direct contribution.
+
+**An illustration using Lecture 14's parameters.** Use a common immigrant weight of $0.13$, immigrant labor growth of $0.26$ in each group, and $\alpha_K=\alpha_s=\alpha_u=1/3$. Treat these as the fixed weights and changes for the classroom calculation. Then
+
+$$
+G_F=\frac13(0.13)(0.26)+\frac13(0.13)(0.26)
+\approx0.02253.
+$$
+
+The direct contribution is approximately $2.25\%$, the induced capital contribution is $1.13\%$, and the total is $3.38\%$. These are contributions over the full period used in the example, not annual rates. They do not include any immigration-induced change in productivity.
+
+If immigrant labor growth in each group were scaled down by the same proportion, with the initial shares and all other assumptions unchanged, these contributions would scale down in that proportion. This statement concerns the immigration contribution; it does not scale down unrelated sources of growth.
+
+**Change the skill mix while keeping the number of immigrants fixed.** Suppose $M$ new workers arrive, a fraction $f$ enters the skilled group, and the rest enters the unskilled group. With native labor fixed,
+
+$$
+g_{L_s}=\frac{fM}{L_s},\qquad
+g_{L_u}=\frac{(1-f)M}{L_u}.
+$$
+
+The long-run output effect is approximately
+
+$$
+\boxed{g_Y\approx\frac{M}{1-\alpha_K}
+\left[\frac{\alpha_s f}{L_s}
++\frac{\alpha_u(1-f)}{L_u}\right].}
+$$
+
+The denominator for each labor growth rate is that group's initial employment. Moving one arrival from the unskilled to the skilled group raises the first-order output contribution if $\alpha_s/L_s>\alpha_u/L_u$. Since $w_j=\alpha_jY/L_j$, this means the skilled worker initially has a higher marginal product. Equal income shares do not imply equal worker counts or equal wages.
+
+For larger changes, we can check the approximation using the exact long-run formula. With $A$ fixed and $r$ restored,
+
+$$
+\frac{Y_2}{Y_1}
+=\left(\frac{Y_2}{Y_1}\right)^{\alpha_K}
+\left(\frac{L_{s2}}{L_{s1}}\right)^{\alpha_s}
+\left(\frac{L_{u2}}{L_{u1}}\right)^{\alpha_u}.
+$$
+
+Hence
+
+$$
+\boxed{\frac{Y_2}{Y_1}
+=\left(\frac{L_{s2}}{L_{s1}}\right)^{\alpha_s/(1-\alpha_K)}
+\left(\frac{L_{u2}}{L_{u1}}\right)^{\alpha_u/(1-\alpha_K)}.}
+$$
+
+With all three income shares equal to $1/3$, both exponents become $0.5$.
+
+**Keep the outcome clear.** These calculations concern total GDP. For population $P$, growth in GDP per person is approximately $g_Y-g_P$. A higher level of GDP does not by itself show that GDP per person, every native worker's wage, or original residents' income has increased. Nor does a one-time level increase establish a permanently higher annual growth rate.
+
+## 5. Beyond Labor and Capital
+
+**Productivity can change too.** Growth accounting leaves a residual:
+
+$$
+g_A\approx g_Y-\alpha_Kg_K-\alpha_sg_{L_s}-\alpha_ug_{L_u}.
+$$
+
+This is total factor productivity growth: output growth not accounted for by the measured inputs in this model. It is not automatically a measure of immigration's effect. Identifying that effect requires evidence that separates immigration from other causes of productivity growth and from measurement error.
+
+Immigrants can contribute new ideas themselves, help colleagues develop ideas, or connect firms to knowledge abroad. These channels can raise output from a given amount of measured labor and capital. They also help explain why the number of patents with an immigrant inventor need not capture the full contribution to innovation.
+
+Lecture 14 discusses Bernstein et al. (2025): immigrants account for $16\%$ of inventors and author $23\%$ of patents in the study. Its model attributes $32\%$ of aggregate innovation to immigrants, including their effects on collaborators. These percentages describe different quantities. The $32\%$ is a model-based innovation contribution, not a measured share of GDP or a forecast of GDP growth from a particular immigration policy.
+
+**Firms can change their scale and location.** A firm unable to hire an immigrant worker may hire someone else, reduce production, cancel a project, or expand an overseas affiliate. Restricting one source of labor therefore does not mechanically create the same number of jobs for native workers.
+
+Lecture 14 presents Mahajan et al. (2025), which uses random variation from the 2007 H-1B lottery. Comparing firms with different lottery outcomes, while accounting for their applications, helps isolate access to workers from firms' underlying growth plans. The study finds increases in immigrant hiring, firm scale, and survival, without evidence of net displacement of native-born college-educated workers within participating firms. That is a result about a specific setting and outcome, not proof that every worker or every firm benefits.
+
+The lecture also discusses Glennon's evidence that multinational firms expand foreign affiliate employment when access to H-1B workers is restricted. This adds an international adjustment margin to the local movement of workers in Section 1. Evaluating a restriction requires considering how both workers and firms respond.
+
+## 6. Practice Problems
+
+Use first-order percentage-change approximations where requested. Unless stated otherwise, native employment and productivity are fixed. For Practices 3–4, $s$ denotes college-educated labor and $u$ denotes labor without a college degree; these are the two groups in the simplified production model.
+
+**Practice 1: Local Comparisons and Worker Mobility**
+
+Two areas, A and B, each have labor demand $w=40-0.1L$ and initially 100 employed workers. Twenty additional workers immigrate into A. Labor supply in each area is inelastic before relocation. Keep both demand curves and both capital stocks fixed.
+
+1. Calculate the initial wage and each area's wage immediately after immigration, before anyone relocates.
+2. Workers can now move freely between the areas. Find how many move, final employment in each area, and the common wage.
+3. At each stage, calculate the wage change in A minus the wage change in B. Explain why the final difference does not measure the full effect on wages.
+4. Return to the stage before relocation. Suppose an unrelated demand boom also shifts A's demand to $w=43-0.1L$. Calculate A's observed wage change. Compare its wage with the wage under the same boom but without immigration. What would a comparison with unchanged B wrongly attribute to immigration?
+
+**Practice 2: Substitution and Relative Wages**
+
+Within one skill group, immigrant employment rises by $12\%$. Native employment and the CES weight $\theta$ remain fixed. Compare two economies, one with $\sigma=4$ and one with $\sigma=12$.
+
+1. Starting from the CES marginal products, derive the wage ratio and the relationship between changes in relative employment and relative wages.
+2. Use a first-order approximation to calculate the change in native wages relative to immigrant wages in each economy.
+3. Which economy has closer substitutes? Explain why its wage ratio responds less.
+4. In the economy with $\sigma=4$, suppose immigrant wages fall by $1\%$. Approximate the change in native wages. Could you have calculated this change without the additional information about immigrant wages?
+5. For $\sigma=4$, calculate the exact change in the wage ratio and then the exact change in native wages if immigrant wages fall by exactly $1\%$. Compare with your approximations.
+
+**Practice 3: Labor Growth and Capital Adjustment**
+
+An economy produces
+
+$$
+Y=AK^{1/3}L_s^{1/3}L_u^{1/3}.
+$$
+
+Initially, immigrants account for $20\%$ of college-educated employment and $10\%$ of non-college employment. Over the period, immigrant employment grows by $10\%$ in the college group and $20\%$ in the non-college group. Native employment and $A$ do not change. Within each group, immigrant and native workers are perfect substitutes of equal productivity. Use first-order approximations.
+
+1. Calculate the growth rate of total employment in each skill group. Why is neither growth rate equal to that group's immigrant growth rate?
+2. With capital fixed, calculate immigration's direct contribution to output growth.
+3. Allow capital to adjust until its rental payment returns to the initial level. Calculate total output growth, capital growth, and the capital contribution to output growth. Verify that the direct and capital contributions add to the total.
+4. Repeat the calculation if immigrant employment grows by $5\%$ in the college group and $10\%$ in the non-college group. Keep all initial shares unchanged.
+5. Suppose the measured changes cover a 20-year period. Explain why your answer is neither the annual GDP growth rate nor, without additional information, the change in GDP per person.
+
+**Practice 4: The Same Number of Immigrants, Different Skills**
+
+Use the production function and within-group substitution assumption from Practice 3, with $A=1$. Initially, $L_s=100$ and $L_u=200$. Twenty additional employed workers arrive. Compare two alternatives from the same initial equilibrium:
+
+| Scenario | New college-educated workers | New non-college workers |
+|:---|---:|---:|
+| A | 10 | 10 |
+| B | 20 | 0 |
+
+1. Calculate the growth rate of each labor input in each scenario.
+2. Use first-order approximations to calculate the direct output contribution and the total after capital returns to its initial rental payment.
+3. Explain why the same number of arrivals produces different output contributions. Use the initial marginal products to explain your answer.
+4. Repeat the first-order comparison if initial employment is instead $L_s=L_u=100$. What changes?
+5. For the original employment levels, calculate the exact long-run output increase in each scenario using exponents of $0.5$. Compare with your approximations.
+
+**Practice 5: Interpreting Innovation and Firm Evidence**
+
+Answer briefly.
+
+1. Why can immigrants' contribution to innovation exceed their share of directly authored patents? Why does neither share directly measure the effect on GDP?
+2. Why is random variation in visa access useful for studying firms, compared with simply comparing firms that hire immigrants with firms that do not?
+3. A firm loses access to a foreign worker. Give two possible responses other than hiring a native worker into the same job. Explain how these responses affect the claim that one fewer immigrant creates one more native job.
+
+*Reading: NAS, The Economic and Fiscal Consequences of Immigration (2017), Sections 5.3–5.4, 5.6, 6.2, and 6.5. The recent studies above are those discussed in Lectures 13–14.*
