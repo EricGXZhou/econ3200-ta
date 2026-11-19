@@ -1,0 +1,312 @@
+---
+title: "Exchange Rates and Foreign Exchange Markets"
+---
+
+How do exchange rates affect international transactions, and what links exchange rates to interest rates and prices?
+
+This note accompanies Lectures 16–17 and the relevant material in Feenstra–Taylor Chapters 13–14. The goal is to understand the equations and their economic intuition, not simply memorize them.
+
+## 1. Exchange Rate Quotations and Cross Rates
+
+An **exchange rate** is the price of one currency in terms of another. In ECON 3200, we quote it as the **domestic currency price of one unit of foreign currency**. For the United States and Eurozone,
+
+$$
+E_{\$/€}=1.12\ \frac{\$}{€}.
+$$
+
+One euro costs $1.12. The reciprocal quote is
+
+$$
+E_{€/\$}=\frac{1}{E_{\$/€}}=\frac{1}{1.12}=0.893\ \frac{€}{\$}.
+$$
+
+**Always check the units.** For example, a product priced at €50 costs $56 at this exchange rate: $50\,\mathrm{EUR}\times 1.12\,\mathrm{USD/EUR}=56\,\mathrm{USD}$.
+
+With our convention:
+
+- If $E_{\$/€}$ **increases**, one euro costs more dollars: the **dollar depreciates** against the euro.
+- If $E_{\$/€}$ **decreases**, one euro costs fewer dollars: the **dollar appreciates** against the euro.
+
+The percentage change is
+
+$$
+\%\Delta E_{\$/€}
+=100\times\frac{E_{\mathrm{new}}-E_{\mathrm{old}}}{E_{\mathrm{old}}}.
+$$
+
+For example, an increase from $1.10/€ to $1.21/€ is a **10% increase in the dollar-per-euro exchange rate**, indicating dollar depreciation. Percentage changes in a rate and its reciprocal are not exactly equal in magnitude.
+
+**Cross rates** allow us to calculate the exchange rate between two currencies using their dollar exchange rates. Suppose
+
+$$
+E_{\$/€}=1.20\ \frac{\$}{€},
+\qquad E_{\$/\mathrm{C}\$}=0.80\ \frac{\$}{\mathrm{C}\$}.
+$$
+
+The Canadian-dollar price of one euro is
+
+$$
+E_{\mathrm{C}\$/€}
+=\frac{E_{\$/€}}{E_{\$/\mathrm{C}\$}}
+=\frac{1.20\,\$/€}{0.80\,\$/\mathrm{C}\$}
+=1.50\ \frac{\mathrm{C}\$}{€}.
+$$
+
+The dollar units cancel. This formula follows from **triangular arbitrage**: converting euros directly into Canadian dollars must give the same amount as converting euros into U.S. dollars and then into Canadian dollars, apart from transaction costs.
+
+## 2. Effective Exchange Rates and Exchange Rate Regimes
+
+A currency may appreciate against one trading partner and depreciate against another. A **nominal effective exchange rate** summarizes bilateral movements using trade weights:
+
+$$
+\%\Delta E_{\mathrm{effective}}
+\approx\sum_j w_j\,\%\Delta E_{\$/j},
+\qquad \sum_j w_j=1.
+$$
+
+For example, if 60% of trade is with the Eurozone and 40% with Canada, and the dollar-per-foreign-currency rates change by $+5\%$ and $-2\%$, respectively,
+
+$$
+\%\Delta E_{\mathrm{effective}}
+\approx 0.60(5\%)+0.40(-2\%)=2.2\%.
+$$
+
+**Under this dollar-per-foreign-currency definition, an increase means dollar depreciation against the trade-weighted basket.** Some published dollar indexes use the inverse quotation, so check the index definition before interpreting a graph.
+
+Exchange rate behavior also depends on the **exchange rate regime**:
+
+- **Floating:** the exchange rate is primarily market-determined.
+- **Pegged or fixed:** policymakers seek to keep the exchange rate at or near a target, sometimes within a band.
+- **Crawling peg:** the target exchange rate is adjusted gradually over time.
+
+A nearly flat exchange-rate series may indicate a peg, whereas a steady trend may indicate a crawling arrangement. A sudden discrete change in an official peg is called a **devaluation** or **revaluation**, depending on direction. A graph alone does not always reveal the full policy arrangement.
+
+## 3. Spot, Forward, and Covered Interest Parity
+
+In the **spot market**, currencies are exchanged at the current spot rate $E_{\$/€}$. A **forward contract** fixes today the rate $F_{\$/€}$ for an exchange at a specified future date. Forwards can hedge exchange-rate risk.
+
+For example, a U.S. exporter expecting a euro payment in three months can arrange today to **sell euros forward for dollars**. This fixes the future dollar revenue regardless of the spot rate three months later, but also gives up any benefit from a favorable exchange-rate movement.
+
+Now suppose an investor has **$1 today** and can invest for one year. Let $i_\$$ and $i_€$ be the one-year dollar and euro interest rates. The investor has two alternatives:
+
+| Strategy | Dollar payoff in one year |
+|---|---|
+| Invest directly in a U.S. dollar deposit | $1+i_\$$ |
+| Buy euros at spot, invest in euros, and sell the future euros forward | $\displaystyle \frac{1}{E_{\$/€}}(1+i_€)F_{\$/€}$ |
+
+If both investments have the same risk and there are no relevant trading frictions, **covered interest parity (CIP)** requires equal payoffs:
+
+$$
+\boxed{
+1+i_\$
+=\frac{1}{E_{\$/€}}(1+i_€)F_{\$/€}
+}
+$$
+
+Rearranging,
+
+$$
+\boxed{
+F_{\$/€}
+=E_{\$/€}\frac{1+i_\$}{1+i_€}
+}
+$$
+
+The forward premium is therefore
+
+$$
+\frac{F_{\$/€}-E_{\$/€}}{E_{\$/€}}
+=\frac{i_\$-i_€}{1+i_€}
+\approx i_\$-i_€.
+$$
+
+This approximation works well for relatively small interest rates. **All interest rates must match the maturity of the forward contract**: for example, use three-month returns with a three-month forward rate.
+
+Why does CIP hold? If the dollar deposit offers the higher covered return, traders can **borrow euros, convert them into dollars at spot, invest the dollars, and buy euros forward** to repay the euro loan. If the covered euro deposit offers the higher return, traders can **borrow dollars, buy and invest euros, and sell euros forward**. These trades tend to eliminate the difference in covered returns.
+
+A frequent mistake is to conclude that $F_{\$/€}>E_{\$/€}$ guarantees a profit. It does **not**. The forward rate must be compared with the **interest-rate-adjusted** spot rate in the CIP equation.
+
+## 4. Uncovered Interest Parity and Expectations
+
+What if the investor buys euros and earns euro interest **without** selling them forward? The dollar return now depends on the unknown future spot exchange rate.
+
+Write $E_{\$/€}^{e}$ for the **expected future** dollar-per-euro exchange rate over the same investment horizon. The expected dollar payoff on the euro strategy is
+
+$$
+\frac{1}{E_{\$/€}}(1+i_€)E_{\$/€}^{e}.
+$$
+
+If investors are risk-neutral and the two deposits are otherwise comparable, **uncovered interest parity (UIP)** implies
+
+$$
+\boxed{
+1+i_\$
+=\frac{1}{E_{\$/€}}(1+i_€)E_{\$/€}^{e}
+}
+$$
+
+Equivalently,
+
+$$
+\frac{E_{\$/€}^{e}}{E_{\$/€}}
+=\frac{1+i_\$}{1+i_€}.
+$$
+
+To interpret this result, use the identity
+
+$$
+\frac{E_{\$/€}^{e}}{E_{\$/€}}
+=1+\frac{E_{\$/€}^{e}-E_{\$/€}}{E_{\$/€}}.
+$$
+
+Substituting into UIP and ignoring the product of two small rates gives
+
+$$
+\boxed{
+\frac{E_{\$/€}^{e}-E_{\$/€}}{E_{\$/€}}
+\approx i_\$-i_€
+}
+$$
+
+Thus, **the expected rate of dollar depreciation is approximately the dollar-minus-euro interest-rate differential**. If the dollar interest rate is higher, UIP predicts that the dollar is expected to depreciate, offsetting the extra interest earned on dollar deposits.
+
+CIP uses the **known forward rate** $F_{\$/€}$ and compares covered, approximately riskless returns. UIP uses the **expected future spot rate** $E_{\$/€}^{e}$ and compares risky expected returns. If *both* conditions hold, then
+
+$$
+F_{\$/€}=E_{\$/€}^{e}.
+$$
+
+But this equality is **not guaranteed**: risk aversion, risk premiums, and market frictions may cause UIP to fail even when CIP holds closely. Nor does UIP predict that the *actual* future spot rate must equal its expectation.
+
+## 5. The Law of One Price, PPP, and Real Exchange Rates
+
+Exchange rates convert prices into a common currency. For an individual good $g$, define
+
+$$
+q_{\mathrm{US/EUR}}^g
+=\frac{E_{\$/€}P_{\mathrm{EUR}}^g}{P_{\mathrm{US}}^g},
+$$
+
+where $P_{\mathrm{EUR}}^g$ is the price in euros and $P_{\mathrm{US}}^g$ is the price in dollars.
+
+- If $q_{\mathrm{US/EUR}}^g<1$, the good is cheaper in Europe than in the United States, measured in dollars.
+- If $q_{\mathrm{US/EUR}}^g>1$, the good is more expensive in Europe than in the United States.
+
+For an identical, freely traded good with negligible transaction costs, traders can buy where the price is low and sell where it is high. The **law of one price (LOOP)** then predicts
+
+$$
+P_{\mathrm{US}}^g=E_{\$/€}P_{\mathrm{EUR}}^g
+\qquad\Longleftrightarrow\qquad
+q_{\mathrm{US/EUR}}^g=1.
+$$
+
+LOOP may fail when transportation costs, tariffs, taxes, regulations, or other barriers prevent profitable arbitrage. It is especially unlikely to hold for many services, such as haircuts and restaurant meals.
+
+Now replace the price of one good with the price of a **comparable basket of goods and services**. Let $P_{\mathrm{US}}$ and $P_{\mathrm{EUR}}$ denote aggregate price levels. The **real exchange rate (RER)** is
+
+$$
+\boxed{
+q_{\mathrm{US/EUR}}
+=\frac{E_{\$/€}P_{\mathrm{EUR}}}{P_{\mathrm{US}}}
+}
+$$
+
+It is unit-free and measures the dollar price of the European basket relative to the U.S. basket.
+
+- $q_{\mathrm{US/EUR}}>1$: the European basket is relatively expensive; the dollar is **weak (undervalued)** relative to the PPP benchmark.
+- $q_{\mathrm{US/EUR}}<1$: the European basket is relatively cheap; the dollar is **strong (overvalued)** relative to the PPP benchmark.
+- $q_{\mathrm{US/EUR}}=1$: the baskets cost the same in a common currency; **absolute purchasing power parity (PPP)** holds.
+
+Under absolute PPP,
+
+$$
+\boxed{
+E_{\$/€}=\frac{P_{\mathrm{US}}}{P_{\mathrm{EUR}}}
+}
+$$
+
+For instance, if comparable baskets cost $120 and €100, the PPP-implied rate is $1.20 per euro. This is a **benchmark**, not a claim that the observed exchange rate must equal $1.20.
+
+An **increase** in $q_{\mathrm{US/EUR}}$ is a **real depreciation** of the dollar. A **decrease** is a **real appreciation**. Nominal and real appreciation need not move in the same direction, because domestic and foreign price levels can also change.
+
+## 6. Absolute and Relative PPP
+
+From the definition of the real exchange rate,
+
+$$
+q_{\mathrm{US/EUR}}
+=\frac{E_{\$/€}P_{\mathrm{EUR}}}{P_{\mathrm{US}}},
+$$
+
+small percentage changes satisfy approximately
+
+$$
+\%\Delta q_{\mathrm{US/EUR}}
+\approx\%\Delta E_{\$/€}
++\pi_{\mathrm{EUR}}-\pi_{\mathrm{US}},
+$$
+
+where $\pi_{\mathrm{US}}$ and $\pi_{\mathrm{EUR}}$ are the inflation rates over the same period.
+
+**Relative PPP** says that the real exchange rate remains constant, not necessarily equal to one. Setting $\%\Delta q_{\mathrm{US/EUR}}=0$ gives
+
+$$
+\boxed{
+\%\Delta E_{\$/€}
+\approx\pi_{\mathrm{US}}-\pi_{\mathrm{EUR}}
+}
+$$
+
+If U.S. inflation is 5% and Eurozone inflation is 2%, relative PPP predicts approximately **3% nominal dollar depreciation** against the euro.
+
+The distinction is important:
+
+- **Absolute PPP:** $q=1$ — equal price levels in a common currency.
+- **Relative PPP:** $\%\Delta q=0$ — the relative price levels are stable, even if $q\ne1$.
+
+Absolute PPP is not a good description of international price levels: many goods and services cannot be traded or arbitraged, and poorer countries often have lower common-currency price levels. Relative PPP is also a poor guide to **short-run** exchange-rate fluctuations, but has more empirical support over **long periods**. The Big Mac Index illustrates the price comparison behind PPP, while also highlighting why a single good is an imperfect measure of an economy's overall price level.
+
+## 7. Practice Problems
+
+### Practice 1: Quotations, Cross Rates, and Effective Exchange Rates
+
+In Year 1, suppose $E_{\$/€}=1.10$ and $E_{\$/\mathrm{C}\$}=0.80$. In Year 2, these rates are 1.155 and 0.784. Assume the Eurozone and Canada account for 60% and 40% of U.S. trade, respectively.
+
+1. In Year 1, how many Canadian dollars does one euro buy? Show the currency units in your calculation.
+2. Calculate the percentage change in each dollar-per-foreign-currency exchange rate. Did the dollar appreciate or depreciate against each currency?
+3. Calculate the approximate change in the effective exchange rate, using the trade weights above. Interpret the sign.
+
+### Practice 2: Hedging an Export Payment
+
+A U.S. exporter expects to receive C$100,000 in three months. The three-month forward rate is $0.75 per Canadian dollar. The spot rate in three months may be either $0.70 or $0.82 per Canadian dollar.
+
+1. How many U.S. dollars will the exporter receive under each future spot rate **without** hedging?
+2. What forward transaction can the exporter use to eliminate this uncertainty?
+3. How many dollars will the exporter receive with a forward hedge? What potential benefit does the exporter give up?
+
+### Practice 3: Covered Interest Parity and Arbitrage
+
+Suppose the one-year rates are $i_\$=4\%$ and $i_€=2\%$, and the spot exchange rate is $E_{\$/€}=1.10$.
+
+1. Calculate the forward rate implied by CIP.
+2. Suppose the market instead quotes $F_{\$/€}=1.14$. Calculate the covered dollar return on euro deposits and compare it with the dollar-deposit return. Describe a trading strategy that exploits the difference, including **which currency to borrow** and **which currency to sell forward**.
+3. Repeat the direction-of-trade reasoning if the market forward rate is instead $F_{\$/€}=1.10$.
+4. Why is $F_{\$/€}>E_{\$/€}$ alone insufficient to establish an arbitrage opportunity?
+
+### Practice 4: Uncovered Interest Parity
+
+Suppose $E_{\$/€}=1.10$, $i_\$=5\%$, and $i_€=2\%$, with all rates referring to one year.
+
+1. Under UIP, calculate the expected exchange rate one year from now.
+2. What is the exact implied expected percentage change in $E_{\$/€}$? Compare it with the interest differential approximation.
+3. If CIP also holds, what is the equilibrium one-year forward rate?
+4. Does UIP guarantee that the actual exchange rate in one year will equal your answer to (1)? Explain.
+
+### Practice 5: Goods Prices, the RER, and Relative PPP
+
+An identical good sells for $150 in the United States and €110 in Europe. The exchange rate is $1.20 per euro. Separately, suppose the price of a comparable consumption basket is $125 in the United States and €100 in Europe, at that same exchange rate.
+
+1. Calculate the good-level relative price $q_{\mathrm{US/EUR}}^g$. Assuming costless trade, where would an arbitrageur buy the good and where would they sell it? What pressures would this create on the two local prices?
+2. Calculate the basket-level real exchange rate. Does absolute PPP hold? Is the dollar overvalued or undervalued relative to the PPP benchmark?
+3. Now suppose U.S. inflation is 4%, Eurozone inflation is 2%, and the nominal dollar-per-euro exchange rate increases by approximately 2% over the next year. What does the real-exchange-rate change formula predict?
+4. Can relative PPP hold even if absolute PPP does not? Use the preceding calculations to explain.

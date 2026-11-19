@@ -29,8 +29,10 @@ website:
             text: Immigration, Capital, and Skills
           - href: migration/immigration-labor-and-growth.qmd
             text: Immigration and Labor Market
-      - href: macro/index.qmd
-        text: International Macroeconomics
+      - text: International Macroeconomics
+        menu:
+          - href: macro/exchange-rates.qmd
+            text: Exchange Rates and CIP
 format:
   html:
     theme:
